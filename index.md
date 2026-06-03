@@ -1,4 +1,12 @@
-# 🐧 Ninja Linux 
+<p align="center">
+  <img src="images/capacete.png" width="250">
+</p>
+
+<h1 align="center">Ninja Linux</h1>
+
+<p align="center">
+Linux • Rocky Linux • Squid • WatchGuard • LVM • Redes
+</p>
 
 Documentação dos meus estudos, laboratórios e procedimentos Linux.
 
