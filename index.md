@@ -115,5 +115,7 @@ Este repositório reúne laboratórios, anotações e procedimentos desenvolvido
 
 ### Contato
 
-* GitHub: https://github.com/joaopedros111
-* LinkedIn: https://www.linkedin.com/in/jo%C3%A3o-santos-67a17685/
+## Contato
+
+- 🔗 [GitHub](https://github.com/joaopedros111)
+- 💼 [LinkedIn](https://www.linkedin.com/in/jo%C3%A3o-santos-67a17685/)
