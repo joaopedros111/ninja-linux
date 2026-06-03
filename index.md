@@ -25,7 +25,7 @@ Aqui vou documentar comandos, testes, erros, soluções e anotações práticas 
 
   <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
     <h3>🐧 Linux</h3>
-    <p>Comandos, permissões, serviços, logs e troubleshooting.</p>
+    <p>Comandos, LVM, permissões, serviços, logs e troubleshooting.</p>
     <a href="linux/">Acessar →</a>
   </div>
 
