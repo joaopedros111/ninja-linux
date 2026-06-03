@@ -4,7 +4,7 @@ title: Ninja Linux
 ---
 
 <p align="center">
-  <img src="images/capacete.png" width="260">
+  <img src="images/capacete01.png" width="260">
 </p>
 
 <h1 align="center">Ninja Linux</h1>
