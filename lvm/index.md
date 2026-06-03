@@ -5,17 +5,43 @@ title: LVM
 
 # LVM
 
-Bem-vindo à seção de LVM.
-
-Aqui serão publicados tutoriais sobre:
-
-- Criação de Physical Volumes (PV)
-- Criação de Volume Groups (VG)
-- Criação de Logical Volumes (LV)
-- Expansão de discos
-- Redimensionamento de sistemas de arquivos
-- Troubleshooting
-
 ## Tutoriais
 
-Em breve...
+### Expandindo um Volume Lógico no Rocky Linux 8
+
+Verificar discos:
+
+```bash
+lsblk
+```
+
+Verificar volumes:
+
+```bash
+pvs
+vgs
+lvs
+```
+
+Expandir o Logical Volume:
+
+```bash
+lvextend -l +100%FREE /dev/mapper/rl-root
+```
+
+Expandir o sistema de arquivos XFS:
+
+```bash
+xfs_growfs /
+```
+
+Verificar o resultado:
+
+```bash
+df -h
+```
+
+### Referências
+
+- Rocky Linux
+- Red Hat Enterprise Linux
