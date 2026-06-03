@@ -6,7 +6,7 @@ title: LVM
 
 # LVM
 
-Tutorial sobre como criar um novo volume no LVM
+Tutoriais sobre como administrar discos LVM
 
 ## Artigos
 
