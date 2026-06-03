@@ -39,12 +39,6 @@ Aqui vou documentar comandos, testes, erros, soluções e anotações práticas 
 </div>
 
   <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
-    <h3>🔧 LVM</h3>
-    <p>Gerenciamento de volumes, discos e expansão de storage.</p>
-    <a href="lvm/">Acessar →</a>
-  </div>
-
-  <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
     <h3>🦑 Squid</h3>
     <p>Proxy, ACLs, cache e troubleshooting.</p>
     <a href="squid/">Acessar →</a>
@@ -73,7 +67,6 @@ Aqui vou documentar comandos, testes, erros, soluções e anotações práticas 
 * [Linux básico](linux/)
 * [Zabbix](zabbix/)
 * [Rocky Linux](rocky-linux/)
-* [LVM](lvm/)
 * [Squid Proxy](squid/)
 * [WatchGuard](watchguard/)
 * [Redes](redes/)
