@@ -1,4 +1,4 @@
-# 🐧 Linux Docs
+# 🐧 Ninja Linux 
 
 Documentação dos meus estudos, laboratórios e procedimentos Linux.
 
