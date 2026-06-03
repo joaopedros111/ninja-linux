@@ -23,6 +23,8 @@ sdb    10G disk
 ```bash
 pvcreate /dev/sdb
 ```
+![Saída do comando pvcreate](../images/pvcreate.png)
+
 
 Verificar:
 
