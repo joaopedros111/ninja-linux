@@ -35,7 +35,7 @@ Aqui vou documentar comandos, testes, erros, soluções e anotações práticas 
     Zabbix
   </h3>
   <p>Instalação do zabbix-server e zabbix-agent.</p>
-  <a href="Zabbix/">Acessar →</a>
+  <a href="zabbix/">Acessar →</a>
 </div>
 
   <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
