@@ -5,7 +5,7 @@
 <h1 align="center">Ninja Linux</h1>
 
 <p align="center">
-Linux • Rocky Linux • Squid • WatchGuard • LVM • Redes
+Linux • Red Hat • SysOps • Squid • Docker • LVM • Redes
 </p>
 
 Documentação dos meus estudos, laboratórios e procedimentos Linux.
