@@ -56,6 +56,16 @@ Aqui vou documentar comandos, testes, erros, soluções e anotações práticas 
     <a href="redes/">Acessar →</a>
   </div>
 
+<div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
+  <h3>
+    <img src="images/shellscript.png" width="24" style="vertical-align: middle;">
+    Zabbix
+  </h3>
+  <p>Instalação do zabbix-server e zabbix-agent.</p>
+  <a href="Scripts Shell/">Acessar →</a>
+</div>
+
+
 </div>
 
 ## Conteúdos
