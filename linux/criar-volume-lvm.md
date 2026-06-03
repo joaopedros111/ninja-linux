@@ -9,7 +9,7 @@ lsblk
 ```
 
 Exemplo:
-![Saída do comando lsblk](images/lsblk.png)
+![Saída do comando lsblk](/git/linux-docs/images/lsblk.png)
 
 ```text
 sdb    20G disk
