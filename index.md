@@ -61,6 +61,7 @@ Aqui vou documentar comandos, testes, erros, soluções e anotações práticas 
 ## Conteúdos
 
 * [Linux básico](linux/)
+* [Zabbix](Zabbix/)
 * [Rocky Linux](rocky-linux/)
 * [LVM](lvm/)
 * [Squid Proxy](squid/)
