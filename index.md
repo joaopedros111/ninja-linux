@@ -1,8 +1,7 @@
 ---
-
 layout: default
 title: Ninja Linux
-------------------
+---
 
 <p align="center">
   <img src="images/capacete.png" width="260">
@@ -14,7 +13,7 @@ title: Ninja Linux
 Linux • Infraestrutura • Red Hat • Squid • LVM • Redes
 </p>
 
----
+<hr>
 
 ## Sobre o projeto
 
@@ -77,4 +76,3 @@ lsblk
 ip a
 systemctl status squid
 ```
-
