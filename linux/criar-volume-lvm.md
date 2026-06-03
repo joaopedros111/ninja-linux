@@ -9,6 +9,7 @@ lsblk
 ```
 
 Exemplo:
+![Saída do comando lsblk](images/lsblk.png)
 
 ```text
 sdb    20G disk
