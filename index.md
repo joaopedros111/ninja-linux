@@ -1,56 +1,80 @@
+---
+
+layout: default
+title: Ninja Linux
+------------------
+
 <p align="center">
-  <img src="images/capacete.png" width="250">
+  <img src="images/capacete.png" width="260">
 </p>
 
 <h1 align="center">Ninja Linux</h1>
 
 <p align="center">
-Linux • Red Hat • SysOps • Squid • Docker • LVM • Redes
+Linux • Infraestrutura • Red Hat • Squid • LVM • Redes
 </p>
 
-Documentação dos meus estudos, laboratórios e procedimentos Linux.
-
-Este repositório reúne tutoriais criados durante meus estudos e testes em ambiente de laboratório, utilizando Rocky Linux, LVM, Docker, redes e outras tecnologias de infraestrutura.
-
 ---
 
-## 📚 Tutoriais
+## Sobre o projeto
 
-### Armazenamento (LVM)
+Este site é meu laboratório de estudos em Linux e infraestrutura.
 
-* [Como criar um novo volume LVM](linux/criar-volume-lvm.md)
+Aqui vou documentar comandos, testes, erros, soluções e anotações práticas do dia a dia como sysadmin.
 
----
+<div style="display: flex; gap: 15px; flex-wrap: wrap;">
 
-## 🚧 Em desenvolvimento
+  <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
+    <h3>🐧 Linux</h3>
+    <p>Comandos, permissões, serviços, logs e troubleshooting.</p>
+    <a href="linux/">Acessar →</a>
+  </div>
 
-* Como expandir um volume LVM
-* Entendendo o LVM (PV, VG e LV)
-* Como criar usuários e grupos
-* Como configurar SSH
-* Como utilizar o arquivo fstab
-* Como analisar logs com journalctl
+  <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
+    <h3>🔧 LVM</h3>
+    <p>Gerenciamento de volumes, discos e expansão de storage.</p>
+    <a href="lvm/">Acessar →</a>
+  </div>
 
----
+  <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
+    <h3>🦑 Squid</h3>
+    <p>Proxy, ACLs, cache e troubleshooting.</p>
+    <a href="squid/">Acessar →</a>
+  </div>
 
-## 🛠 Tecnologias
+  <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
+    <h3>🌐 Redes</h3>
+    <p>TCP/IP, DNS, Gateway, VLAN e análise de tráfego.</p>
+    <a href="redes/">Acessar →</a>
+  </div>
 
-* Linux
-* Rocky Linux
-* LVM
-* Git
-* Docker
-* Ansible
-* Redes
-* Squid
+</div>
 
----
+## Conteúdos
 
-## 👨‍💻 Autor
+* [Linux básico](linux/)
+* [Rocky Linux](rocky-linux/)
+* [LVM](lvm/)
+* [Squid Proxy](squid/)
+* [WatchGuard](watchguard/)
+* [Redes](redes/)
+* [Scripts Shell](scripts/)
 
-João Pedro dos Santos
+## Últimos estudos
 
-Analista de Infraestrutura focado em Linux, redes e automação.
+* Instalação e configuração do Squid
+* Expansão de disco com LVM
+* Comandos úteis no Rocky Linux
+* Troubleshooting com `journalctl`
+* Laboratório de redes
 
-GitHub: @joaopedros111
+## Comandos úteis
+
+```bash
+journalctl -u squid
+df -h
+lsblk
+ip a
+systemctl status squid
+```
 
