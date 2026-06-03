@@ -29,6 +29,15 @@ Aqui vou documentar comandos, testes, erros, soluções e anotações práticas 
     <a href="linux/">Acessar →</a>
   </div>
 
+<div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
+  <h3>
+    <img src="../images/zabbix-logo.png" width="24" style="vertical-align: middle;">
+    Zabbix
+  </h3>
+  <p>Instalação do zabbix-server e zabbix-agent.</p>
+  <a href="Zabbix/">Acessar →</a>
+</div>
+
   <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
     <h3>🔧 LVM</h3>
     <p>Gerenciamento de volumes, discos e expansão de storage.</p>
