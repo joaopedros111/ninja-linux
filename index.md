@@ -76,3 +76,24 @@ lsblk
 ip a
 systemctl status squid
 ```
+## 👨‍💻 Sobre o autor
+
+Meu nome é João Pedro dos Santos e atuo como Analista de Infraestrutura com foco em ambientes Linux.
+
+Este repositório reúne laboratórios, anotações e procedimentos desenvolvidos durante meus estudos e atividades profissionais, com foco em Linux, automação, redes e infraestrutura.
+
+### Tecnologias
+
+* Linux
+* Rocky Linux
+* LVM
+* Docker
+* Ansible
+* Redes
+* Squid
+* Zabbix
+
+### Contato
+
+* GitHub: https://github.com/joaopedros111
+* LinkedIn: https://www.linkedin.com/in/jo%C3%A3o-santos-67a17685/
