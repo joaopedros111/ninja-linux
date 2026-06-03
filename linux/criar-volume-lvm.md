@@ -40,29 +40,31 @@ pvs
 ```bash
 vgcreate dados-vg /dev/sdb
 ```
+![Saída do comando vgcreate](../images/vgcreate.png)
 
 Verificar:
 
 ```bash
 vgs
 ```
-
+![Saída do comando vgs](../images/vgs.png)
 ---
 
 ## Criar o Logical Volume (LV)
 
-Utilizando todo o espaço disponível:
+Adicionando 5G do dico disponível:
 
 ```bash
-lvcreate -l 100%FREE -n dados-lv dados-vg
+lvcreate -l 5 -n dados-lv dados-vg
 ```
+![Saída do comando lvcreate](../images/lvcreate.png)
 
 Verificar:
 
 ```bash
 lvs
 ```
-
+![Saída do comando lvs](../images/lvs.png)
 ---
 
 ## Criar o filesystem
@@ -78,6 +80,7 @@ ou EXT4:
 ```bash
 mkfs.ext4 /dev/dados-vg/dados-lv
 ```
+![Saída do comando mkfs](../images/mkfs.png)
 
 ---
 
@@ -100,7 +103,7 @@ Validar:
 ```bash
 df -h
 ```
-
+![Saída do comando df-h](../images/df-h.png)
 ---
 
 ## Configurar montagem automática
