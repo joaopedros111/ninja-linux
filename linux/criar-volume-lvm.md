@@ -31,6 +31,7 @@ Verificar:
 ```bash
 pvs
 ```
+![Saída do comando pvs](../images/pvs.png)
 
 ---
 
