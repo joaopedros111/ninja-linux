@@ -91,7 +91,7 @@ systemctl status squid
 ```
 ## 👨‍💻 Sobre o autor
 
-Meu nome é João Pedro dos Santos e atuo como Analista de Infraestrutura com foco em ambientes Linux.
+Meu nome é João e atuo como Analista de Infraestrutura com foco em ambientes Linux.
 
 Este repositório reúne laboratórios, anotações e procedimentos desenvolvidos durante meus estudos e atividades profissionais, com foco em Linux, automação, redes e infraestrutura.
 
