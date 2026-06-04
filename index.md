@@ -32,26 +32,26 @@ Aqui vou documentar comandos, testes, erros, soluções e anotações práticas 
   <h3>
     <img src="images/zabbix-logo.png" width="24" style="vertical-align: middle;">
     Zabbix
-  </h3>
-  <a href="zabbix/">Acessar →</a>
+  </h3>   <a href="zabbix/">Acessar →</a>
+
 </div>
 
   <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
-    <h3>🦑 Squid</h3>
-    <a href="squid/">Acessar →</a>
+    <h3>🦑 Squid</h3>     <a href="squid/">Acessar →</a>
+
   </div>
 
   <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
-    <h3>🌐 Redes</h3>
-    <a href="redes/">Acessar →</a>
+    <h3>🌐 Redes</h3>     <a href="redes/">Acessar →</a>
+
   </div>
 
 <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
   <h3>
     <img src="images/shellscript.png" width="24" style="vertical-align: middle;">
     Script Shell
-  </h3>
-  <a href="Scripts Shell/">Acessar →</a>
+  </h3>   <a href="Scripts Shell/">Acessar →</a>
+
 </div>
 
 
