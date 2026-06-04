@@ -24,8 +24,7 @@ Aqui vou documentar comandos, testes, erros, soluções e anotações práticas 
 <div style="display: flex; gap: 15px; flex-wrap: wrap;">
 
   <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
-    <h3>🐧 Linux</h3><a href="linux/">Acessar →</a>
-
+    <h3>🐧 Linux</h3> <a href="linux/">Acessar →</a>
   </div>
 
 <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
