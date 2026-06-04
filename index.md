@@ -33,19 +33,16 @@ Aqui vou documentar comandos, testes, erros, soluções e anotações práticas 
     <img src="images/zabbix-logo.png" width="24" style="vertical-align: middle;">
     Zabbix
   </h3>
-  <p>Instalação do zabbix-server e zabbix-agent.</p>
   <a href="zabbix/">Acessar →</a>
 </div>
 
   <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
     <h3>🦑 Squid</h3>
-    <p>Proxy, ACLs, cache e troubleshooting.</p>
     <a href="squid/">Acessar →</a>
   </div>
 
   <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
     <h3>🌐 Redes</h3>
-    <p>TCP/IP, DNS, Gateway, VLAN e análise de tráfego.</p>
     <a href="redes/">Acessar →</a>
   </div>
 
@@ -54,7 +51,6 @@ Aqui vou documentar comandos, testes, erros, soluções e anotações práticas 
     <img src="images/shellscript.png" width="24" style="vertical-align: middle;">
     Script Shell
   </h3>
-  <p>Shell Script basico</p>
   <a href="Scripts Shell/">Acessar →</a>
 </div>
 
