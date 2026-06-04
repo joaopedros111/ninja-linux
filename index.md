@@ -28,7 +28,6 @@ Aqui vou documentar comandos, testes, erros, soluções e anotações práticas 
       <h3 style="margin: 0;">🐧 Linux</h3>
       <a href="linux/" style="margin-left: auto;">Acessar →</a>
     </div>
-    <p>Comandos, LVM, permissões, serviços, logs e troubleshooting.</p>
   </div>
 
   <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
@@ -39,7 +38,6 @@ Aqui vou documentar comandos, testes, erros, soluções e anotações práticas 
       </h3>
       <a href="zabbix/" style="margin-left: auto;">Acessar →</a>
     </div>
-    <p>Instalação do zabbix-server e zabbix-agent.</p>
   </div>
 
   <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
@@ -47,7 +45,6 @@ Aqui vou documentar comandos, testes, erros, soluções e anotações práticas 
       <h3 style="margin: 0;">🦑 Squid</h3>
       <a href="squid/" style="margin-left: auto;">Acessar →</a>
     </div>
-    <p>Proxy, ACLs, cache e troubleshooting.</p>
   </div>
 
   <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
@@ -55,7 +52,6 @@ Aqui vou documentar comandos, testes, erros, soluções e anotações práticas 
       <h3 style="margin: 0;">🌐 Redes</h3>
       <a href="redes/" style="margin-left: auto;">Acessar →</a>
     </div>
-    <p>TCP/IP, DNS, Gateway, VLAN e análise de tráfego.</p>
   </div>
 
   <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
