@@ -62,7 +62,6 @@ Aqui vou documentar comandos, testes, erros, soluções e anotações práticas 
       </h3>
       <a href="scripts/" style="margin-left: auto;">Acessar →</a>
     </div>
-    <p>Shell Script básico.</p>
   </div>
 
 </div>
