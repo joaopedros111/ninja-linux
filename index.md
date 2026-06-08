@@ -196,23 +196,6 @@ ip a
 
 systemctl status squid
 
-👨‍💻 Sobre o Autor
-
-Meu nome é João Pedro dos Santos e atuo como Analista de Infraestrutura, com foco em ambientes Linux.
-
-Este site reúne laboratórios, procedimentos e anotações desenvolvidos durante meus estudos e atividades profissionais.
-
-Tecnologias
-Linux
-Rocky Linux
-Docker
-Ansible
-LVM
-Redes
-Squid
-Zabbix
-Harbor
-WatchGuard
 
 ## Contato
 
