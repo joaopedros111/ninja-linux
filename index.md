@@ -25,35 +25,10 @@ Aqui documento comandos, testes, erros, soluções e procedimentos utilizados no
 ## 📂 Categorias
 
 <h3>🐧 Linux <a href="linux/">➡️ Acessar</a></h3>
-<h3>🐧 Zabbix <a href="zabbix/">➡️ Acessar</a></h3>
-<h3>🐧 Squid <a href="squid/">➡️ Acessar</a></h3>
-<h3>🐧 Redes <a href="redes/">➡️ Acessar</a></h3>
-<h3>🐧 Script Shell <a href="scripts/">➡️ Acessar</a></h3>
-
-<div style="display:flex; justify-content:space-between; align-items:center;">
-  <h3 style="margin:0;">🐧 Linux</h3>
-  <a href="linux/">➡️ Acessar</a>
-</div>
-
-<div style="display:flex; justify-content:space-between; align-items:center;">
-  <h3 style="margin:0;">📊 Zabbix</h3>
-  <a href="zabbix/">➡️ Acessar</a>
-</div>
-
-<div style="display:flex; justify-content:space-between; align-items:center;">
-  <h3 style="margin:0;">🦑 Squid</h3>
-  <a href="squid/">➡️ Acessar</a>
-</div>
-
-<div style="display:flex; justify-content:space-between; align-items:center;">
-  <h3 style="margin:0;">🌐 Redes</h3>
-  <a href="redes/">➡️ Acessar</a>
-</div>
-
-<div style="display:flex; justify-content:space-between; align-items:center;">
-  <h3 style="margin:0;">📜 Scrip Shell</h3>
-  <a href="scripts/">➡️ Acessar</a>
-</div>
+<h3>📊 Zabbix <a href="zabbix/">➡️ Acessar</a></h3>
+<h3>🦑 Squid <a href="squid/">➡️ Acessar</a></h3>
+<h3>🌐 Redes <a href="redes/">➡️ Acessar</a></h3>
+<h3>📜 Script Shell <a href="scripts/">➡️ Acessar</a></h3>
 
 ---
 
