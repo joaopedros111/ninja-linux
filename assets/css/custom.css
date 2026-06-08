@@ -69,3 +69,30 @@ td {
     font-weight: bold;
     color: #ff5555;
 }
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000000;
+    color: #e0e0e0;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.page-content {
+    background: #000000;
+}
+
+p, li {
+    line-height: 1.6;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #555;
+    margin: 30px 0;
+}
