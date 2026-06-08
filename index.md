@@ -13,7 +13,6 @@ title: Ninja Linux
 Linux • Infraestrutura • Red Hat • Squid • LVM • Redes
 
 ---
-
 ## Sobre o projeto
 
 Este site é meu laboratório de estudos em Linux e infraestrutura.
@@ -42,17 +41,6 @@ Aqui documento comandos, testes, erros, soluções e procedimentos utilizados no
 * Atualização de certificados SSL
 
 ---
-
-## 💻 Comandos Úteis
-
-```bash
-journalctl -u squid
-df -h
-lsblk
-ip a
-systemctl status squid
-```
-
 ## 🔗 Contato
 
 <div style="display: flex; gap: 15px; align-items: center;">
