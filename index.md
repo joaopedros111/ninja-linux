@@ -23,50 +23,51 @@ Aqui vou documentar comandos, testes, erros, soluções e anotações práticas 
 
 <div style="display: flex; gap: 15px; flex-wrap: wrap;">
 
-<div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
-
-  <div style="display: flex; justify-content: space-between; align-items: center;">
-    <h3 style="margin: 0;">🐧 Linux</h3>
-<a href="linux/" style="text-decoration:none; font-weight:bold; color:#cc0000;">
-  Acessar →
-</a>
-  
-</div>
-
-</div>
-
-<div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
-  <h3>
-    <img src="images/zabbix-logo.png" width="24" style="vertical-align: middle;">
-    Zabbix
-  </h3>
-<a href="zabbix/" style="text-decoration:none; font-weight:bold; color:#cc0000;">
-  Acessar →
-</a>
-
-</div>
-
+  <!-- Linux -->
   <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
-    <h3>🦑 Squid</h3>
-    <p>Proxy, ACLs, cache e troubleshooting.</p>
-    <a href="squid/">Acessar →</a>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <h3 style="margin: 0;">🐧 Linux</h3>
+      <a href="linux/" style="text-decoration:none; font-weight:bold; color:#cc0000;">Acessar →</a>
+    </div>
   </div>
 
+  <!-- Zabbix -->
   <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
-    <h3>🌐 Redes</h3>
-    <p>TCP/IP, DNS, Gateway, VLAN e análise de tráfego.</p>
-    <a href="redes/">Acessar →</a>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <h3 style="margin: 0;">
+        <img src="images/zabbix-logo.png" width="24" style="vertical-align: middle;">
+        Zabbix
+      </h3>
+      <a href="zabbix/" style="text-decoration:none; font-weight:bold; color:#cc0000;">Acessar →</a>
+    </div>
   </div>
 
-<div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
-  <h3>
-    <img src="images/shellscript.png" width="24" style="vertical-align: middle;">
-    Script Shell
-  </h3>
-  <p>Shell Script basico</p>
-  <a href="Scripts Shell/">Acessar →</a>
-</div>
+  <!-- Squid -->
+  <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <h3 style="margin: 0;">🦑 Squid</h3>
+      <a href="squid/" style="text-decoration:none; font-weight:bold; color:#cc0000;">Acessar →</a>
+    </div>
+  </div>
 
+  <!-- Redes -->
+  <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <h3 style="margin: 0;">🌐 Redes</h3>
+      <a href="redes/" style="text-decoration:none; font-weight:bold; color:#cc0000;">Acessar →</a>
+    </div>
+  </div>
+
+  <!-- Script Shell -->
+  <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <h3 style="margin: 0;">
+        <img src="images/shellscript.png" width="24" style="vertical-align: middle;">
+        Script Shell
+      </h3>
+      <a href="Scripts Shell/" style="text-decoration:none; font-weight:bold; color:#cc0000;">Acessar →</a>
+    </div>
+  </div>
 
 </div>
 
