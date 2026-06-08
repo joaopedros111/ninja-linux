@@ -196,6 +196,7 @@ ip a
 
 systemctl status squid
 
+````
 
 ## Contato
 
