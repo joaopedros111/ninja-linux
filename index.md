@@ -90,20 +90,30 @@ Aqui documento comandos, testes, erros, soluções e procedimentos utilizados no
 * Docker e Harbor
 * Atualização de certificados SSL
 
----
-
 ## 💻 Comandos Úteis
 
-```bash
+<pre><code>
 journalctl -u squid
 df -h
 lsblk
 ip a
 systemctl status squid
-```
+</code></pre>
 
 ## Contato
 
-* 🔗 GitHub: https://github.com/joaopedros111
-* 💼 LinkedIn: https://www.linkedin.com/in/jo%C3%A3o-santos-67a17685/
+<ul>
+  <li>
+    🔗 <strong>GitHub:</strong>
+    <a href="https://github.com/joaopedros111" target="_blank">
+      github.com/joaopedros111
+    </a>
+  </li>
 
+  <li>
+    💼 <strong>LinkedIn:</strong>
+    <a href="https://www.linkedin.com/in/jo%C3%A3o-santos-67a17685/" target="_blank">
+      João Santos
+    </a>
+  </li>
+</ul>
