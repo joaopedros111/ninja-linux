@@ -12,6 +12,7 @@ Tutoriais, comandos e procedimentos para administração de sistemas Linux.
 * [Como criar um novo volume no LVM](criar-volume-lvm.md)
 * [Atualização do Certificado SSL no Harbor (Docker)](certificadossl.md)
 * [Comandos básicos do Linux](comandos-basicos.md)
+* [Atualizar Certificado SSL Wiki](atualizarSSLwiki.md)
 
 
 ## Em desenvolvimento
