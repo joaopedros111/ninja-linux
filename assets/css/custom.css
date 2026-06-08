@@ -1,81 +1,17 @@
-body,
-main,
-.page-content,
-.wrapper,
-.site-content,
-.markdown-body {
-    background-color: #000000 !important;
-    color: #e0e0e0 !important;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: #ffffff !important;
-}
-
-a {
-    color: #ff5555 !important;
-}
-
-hr {
-    border-color: #333333 !important;
-}
-
-pre,
-.highlight,
-.highlight pre {
-    background-color: #111111 !important;
-    color: #00ff88 !important;
-    border: 1px solid #333333 !important;
-    border-radius: 8px;
-}
-
-code {
-    color: #00ff88 !important;
-}
-
-table {
-    background-color: #111111 !important;
-    color: #e0e0e0 !important;
-}
-
-th,
-td {
-    border: 1px solid #333333 !important;
-}
-
-.card {
-    border-left: 5px solid #cc0000;
-    background: #2b2b2b;
-    color: #e0e0e0;
-    padding: 15px;
-    border-radius: 8px;
-    width: 250px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-    transition: 0.2s;
-}
-
-.card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 14px rgba(255,0,0,0.25);
-}
-
-.card h3 {
-    margin: 0;
-    color: #ffffff;
-}
-
-.card a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #ff5555;
-}
+```css
+/* =========================
+   TEMA NINJA LINUX
+   ========================= */
 
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #000000;
+    background-color: #000000;
     color: #e0e0e0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
+/* Container principal */
 
 .wrapper {
     max-width: 1100px;
@@ -84,24 +20,118 @@ body {
 }
 
 .page-content {
-    background: #000000;
+    background-color: #000000;
 }
 
-p, li {
+/* Textos */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #ffffff;
+}
+
+p,
+li {
     line-height: 1.6;
 }
 
-hr {
-    border: 0;
-    border-top: 1px solid #555;
-    margin: 30px 0;
+a {
+    color: #ff5555;
+    text-decoration: none;
 }
 
-pre {
+a:hover {
+    text-decoration: underline;
+}
+
+/* Remove linhas horizontais */
+
+hr {
+    display: none;
+}
+
+/* Cards */
+
+.card {
+    border-left: 5px solid #cc0000;
+    background: #2b2b2b;
+    color: #e0e0e0;
+    padding: 15px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 14px rgba(255, 0, 0, 0.25);
+}
+
+.card h3 {
+    margin: 0;
+    color: #ffffff;
+}
+
+.card a {
+    color: #ff5555;
+    font-weight: bold;
+}
+
+/* Blocos de código */
+
+pre,
+.highlight,
+.highlight pre {
+    background-color: #111111 !important;
+    color: #00ff88 !important;
     border: none !important;
     box-shadow: none !important;
+    border-radius: 8px;
+    padding: 15px;
+    overflow-x: auto;
 }
 
-pre code {
-    border: none !important;
+code {
+    background: transparent !important;
+    color: #00ff88 !important;
 }
+
+/* Tabelas */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #111111;
+}
+
+th,
+td {
+    border: 1px solid #333333;
+    padding: 10px;
+}
+
+th {
+    background: #1b1b1b;
+    color: #ffffff;
+}
+
+/* Listas */
+
+ul,
+ol {
+    margin-left: 20px;
+}
+
+/* Imagens */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+```
+
