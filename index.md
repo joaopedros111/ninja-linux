@@ -1,5 +1,4 @@
 ---
-
 layout: default
 title: Ninja Linux
 ---
@@ -10,9 +9,7 @@ title: Ninja Linux
 
 # 🐧 Ninja Linux
 
-Linux • Infraestrutura • Red Hat • Squid • LVM • Redes
 
----
 ## Sobre o projeto
 
 Este site é meu laboratório de estudos em Linux e infraestrutura.
