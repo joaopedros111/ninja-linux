@@ -1,4 +1,7 @@
 ---
+layout: default
+title: Ninja Linux
+---
 <style>
 body {
     background-color: #1e1e1e;
@@ -13,10 +16,6 @@ hr {
     border-color: #444;
 }
 </style>
-
-layout: default
-title: Ninja Linux
----
 
 <p align="center">
   <img src="images/capacete01.png" width="260">
