@@ -81,6 +81,15 @@ systemctl status squid
 
 ## 🔗 Contato
 
-* GitHub: https://github.com/joaopedros111
-* LinkedIn: https://www.linkedin.com/in/jo%C3%A3o-santos-67a17685/
+<p align="center">
+  <a href="https://github.com/joaopedros111" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="40" alt="GitHub">
+  </a>
+
+   
+
+  <a href="https://www.linkedin.com/in/jo%C3%A3o-santos-67a17685/" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="40" alt="LinkedIn">
+  </a>
+</p>
 
