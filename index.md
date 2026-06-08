@@ -22,6 +22,7 @@ Aqui documento comandos, testes, erros, soluções e procedimentos utilizados no
 
 ---
 
+---
 ## 📂 Categorias
 
 <h3>🐧 Linux <a href="linux/">➡️ Acessar</a></h3>
@@ -29,6 +30,7 @@ Aqui documento comandos, testes, erros, soluções e procedimentos utilizados no
 <h3>🦑 Squid <a href="squid/">➡️ Acessar</a></h3>
 <h3>🌐 Redes <a href="redes/">➡️ Acessar</a></h3>
 <h3>📜 Script Shell <a href="scripts/">➡️ Acessar</a></h3>
+---
 
 ## 🚀 Últimos Estudos
 
