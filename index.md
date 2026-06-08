@@ -1,4 +1,19 @@
 ---
+<style>
+body {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+a {
+    color: #ff5555;
+}
+
+hr {
+    border-color: #444;
+}
+</style>
+
 layout: default
 title: Ninja Linux
 ---
@@ -24,7 +39,7 @@ Aqui vou documentar comandos, testes, erros, soluções e anotações práticas 
 <div style="display: flex; gap: 15px; flex-wrap: wrap;">
 
   <!-- Linux -->
-  <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
+  <div style="border-left: 5px solid #cc0000; background: #2b2b2b; color: #e0e0e0; padding: 15px; border-radius: 8px; width: 250px;">
     <div style="display: flex; justify-content: space-between; align-items: center;">
       <h3 style="margin: 0;">🐧 Linux</h3>
       <a href="linux/" style="text-decoration:none; font-weight:bold; color:#cc0000;">Acessar →</a>
