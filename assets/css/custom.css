@@ -1,0 +1,44 @@
+body,
+main,
+.page-content,
+.wrapper,
+.site-content,
+.markdown-body {
+    background-color: #000000 !important;
+    color: #e0e0e0 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff !important;
+}
+
+a {
+    color: #ff5555 !important;
+}
+
+hr {
+    border-color: #333333 !important;
+}
+
+pre,
+.highlight,
+.highlight pre {
+    background-color: #111111 !important;
+    color: #00ff88 !important;
+    border: 1px solid #333333 !important;
+    border-radius: 8px;
+}
+
+code {
+    color: #00ff88 !important;
+}
+
+table {
+    background-color: #111111 !important;
+    color: #e0e0e0 !important;
+}
+
+th,
+td {
+    border: 1px solid #333333 !important;
+}
