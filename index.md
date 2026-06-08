@@ -81,35 +81,6 @@ systemctl status squid
 
 ## 🔗 Contato
 
-<p align="center">
-  <a href="https://github.com/joaopedros111" target="_blank">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="40" alt="GitHub">
-  </a>
-
-   
-
-  <a href="https://www.linkedin.com/in/jo%C3%A3o-santos-67a17685/" target="_blank">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="40" alt="LinkedIn">
-  </a>
-</p>
-
-
-## 🔗 Contato
-
-<div>
-  <a href="https://github.com/joaopedros111" target="_blank">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="40" alt="GitHub">
-  </a>
-
-  <a href="https://www.linkedin.com/in/jo%C3%A3o-santos-67a17685/" target="_blank" style="margin-left: 15px;">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="40" alt="LinkedIn">
-  </a>
-</div>
-
-
-
-## 🔗 Contato
-
 <div style="display: flex; gap: 15px; align-items: center;">
   <a href="https://github.com/joaopedros111" target="_blank">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="40" alt="GitHub">
