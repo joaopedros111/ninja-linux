@@ -214,7 +214,7 @@ Zabbix
 Harbor
 WatchGuard
 
-📞 Contato
-🔗 GitHub
-💼 LinkedIn
-=======
+## Contato
+
+- 🔗 [GitHub](https://github.com/joaopedros111)
+- 💼 [LinkedIn](https://www.linkedin.com/in/jo%C3%A3o-santos-67a17685/)
