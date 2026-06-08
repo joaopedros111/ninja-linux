@@ -2,6 +2,40 @@
 layout: default
 title: Ninja Linux
 ---
+<style>
+body,
+main,
+.page-content,
+.wrapper,
+.site-content,
+.markdown-body {
+    background: #000000 !important;
+    color: #e0e0e0 !important;
+}
+
+h1, h2, h3, h4, p, li {
+    color: #ffffff !important;
+}
+
+a {
+    color: #ff5555 !important;
+}
+
+pre,
+.highlight,
+.highlight pre {
+    background: #111111 !important;
+    color: #00ff88 !important;
+    border: 1px solid #333333 !important;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+code {
+    background: #111111 !important;
+    color: #00ff88 !important;
+}
+</style>
 
 <style>
 body {
