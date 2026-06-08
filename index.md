@@ -7,7 +7,7 @@ title: Ninja Linux
   <img src="images/capacete.png" width="260">
 </p>
 
-# 🐧 Ninja Linux
+# 🐧 Ninja Linux 🐧
 
 
 ## Sobre o projeto
