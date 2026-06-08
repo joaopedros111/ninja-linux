@@ -2,109 +2,85 @@
 layout: default
 title: Ninja Linux
 ---
+
 <p align="center">
   <img src="images/capacete01.png" width="260">
 </p>
 
-<h1 align="center">🐧 Ninja Linux</h1>
+<h1 align="center">Ninja Linux</h1>
 
 <p align="center">
-<b>Linux • Infraestrutura • Red Hat • Squid • LVM • Redes</b>
+Linux • Infraestrutura • Red Hat • Squid • LVM • Redes
 </p>
 
-<p align="center">
-📚 Laboratório de estudos • 🔧 Troubleshooting • 🚀 Automação • 🌐 Infraestrutura
-</p>
+<hr>
 
----
+## Sobre o projeto
 
-## 🚀 Bem-vindo ao Ninja Linux
+Este site é meu laboratório de estudos em Linux e infraestrutura.
 
-Este site reúne meus estudos, laboratórios e anotações práticas sobre Linux e infraestrutura.
-
-Aqui você encontrará documentação criada durante atividades profissionais e laboratórios pessoais envolvendo administração de servidores, monitoramento, automação, redes e segurança.
-
----
-
-## 📂 Áreas de estudo
+Aqui vou documentar comandos, testes, erros, soluções e anotações práticas do dia a dia como sysadmin.
 
 <div style="display: flex; gap: 15px; flex-wrap: wrap;">
 
-  <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 280px;">
-    <div style="display: flex; align-items: center;">
-      <h3 style="margin: 0;">🐧 Linux</h3>
-      <a href="linux/" style="margin-left: auto;">Acessar →</a>
-    </div>
-    <p>Comandos, permissões, systemd, logs, troubleshooting e administração Linux.</p>
+  <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
+    <h3>🐧 Linux</h3>
+    <p>Comandos, LVM, permissões, serviços, logs e troubleshooting.</p>
+    <a href="linux/">Acessar →</a>
   </div>
 
-  <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 280px;">
-    <div style="display: flex; align-items: center;">
-      <h3 style="margin: 0;">
-        <img src="images/zabbix-logo.png" width="24">
-        Zabbix
-      </h3>
-      <a href="zabbix/" style="margin-left: auto;">Acessar →</a>
-    </div>
-    <p>Instalação, monitoramento, templates, hosts e troubleshooting.</p>
+<div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
+  <h3>
+    <img src="images/zabbix-logo.png" width="24" style="vertical-align: middle;">
+    Zabbix
+  </h3>
+  <p>Instalação do zabbix-server e zabbix-agent.</p>
+  <a href="zabbix/">Acessar →</a>
+</div>
+
+  <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
+    <h3>🦑 Squid</h3>
+    <p>Proxy, ACLs, cache e troubleshooting.</p>
+    <a href="squid/">Acessar →</a>
   </div>
 
-  <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 280px;">
-    <div style="display: flex; align-items: center;">
-      <h3 style="margin: 0;">🦑 Squid</h3>
-      <a href="squid/" style="margin-left: auto;">Acessar →</a>
-    </div>
-    <p>Proxy, ACLs, autenticação, cache e análise de logs.</p>
+  <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
+    <h3>🌐 Redes</h3>
+    <p>TCP/IP, DNS, Gateway, VLAN e análise de tráfego.</p>
+    <a href="redes/">Acessar →</a>
   </div>
 
-  <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 280px;">
-    <div style="display: flex; align-items: center;">
-      <h3 style="margin: 0;">🌐 Redes</h3>
-      <a href="redes/" style="margin-left: auto;">Acessar →</a>
-    </div>
-    <p>TCP/IP, DNS, VLAN, Gateway, Roteamento e troubleshooting.</p>
-  </div>
+<div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 250px;">
+  <h3>
+    <img src="images/shellscript.png" width="24" style="vertical-align: middle;">
+    Script Shell
+  </h3>
+  <p>Shell Script basico</p>
+  <a href="Scripts Shell/">Acessar →</a>
+</div>
 
-  <div style="border-left: 5px solid #cc0000; background: #f8f8f8; padding: 15px; border-radius: 8px; width: 280px;">
-    <div style="display: flex; align-items: center;">
-      <h3 style="margin: 0;">
-        <img src="images/shellscript.png" width="24">
-        Shell Script
-      </h3>
-      <a href="scripts/" style="margin-left: auto;">Acessar →</a>
-    </div>
-    <p>Automação de tarefas administrativas utilizando Bash.</p>
-  </div>
 
 </div>
 
----
+## Conteúdos
 
-## 📈 Laboratório
+* [Linux básico](linux/)
+* [Zabbix](zabbix/)
+* [Rocky Linux](rocky-linux/)
+* [Squid Proxy](squid/)
+* [WatchGuard](watchguard/)
+* [Redes](redes/)
+* [Scripts Shell](scripts/)
 
-| Item         | Status          |
-| ------------ | --------------- |
-| Rocky Linux  | ✅               |
-| Zabbix       | ✅               |
-| Squid        | ✅               |
-| Shell Script | ✅               |
-| Redes        | ✅               |
-| LPIC-2       | 🚧 Em andamento |
-
----
-
-## 🔥 Últimos estudos
+## Últimos estudos
 
 * Instalação e configuração do Squid
 * Expansão de disco com LVM
-* Administração Rocky Linux
-* Troubleshooting com journalctl
-* Monitoramento com Zabbix
-* Automação com Shell Script
+* Comandos úteis no Rocky Linux
+* Troubleshooting com `journalctl`
+* Laboratório de redes
 
----
-
-## ⚡ Comandos úteis
+## Comandos úteis
 
 ```bash
 journalctl -u squid
@@ -112,5 +88,27 @@ df -h
 lsblk
 ip a
 systemctl status squid
-free -h
 ```
+## 👨‍💻 Sobre o autor
+
+Meu nome é João Pedro dos Santos e atuo como Analista de Infraestrutura com foco em ambientes Linux.
+
+Este repositório reúne laboratórios, anotações e procedimentos desenvolvidos durante meus estudos e atividades profissionais, com foco em Linux, automação, redes e infraestrutura.
+
+### Tecnologias
+
+* Linux
+* Rocky Linux
+* LVM
+* Docker
+* Ansible
+* Redes
+* Squid
+* Zabbix
+
+### Contato
+
+## Contato
+
+- 🔗 [GitHub](https://github.com/joaopedros111)
+- 💼 [LinkedIn](https://www.linkedin.com/in/jo%C3%A3o-santos-67a17685/)
