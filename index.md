@@ -27,8 +27,11 @@ Aqui vou documentar comandos, testes, erros, soluções e anotações práticas 
 
   <div style="display: flex; justify-content: space-between; align-items: center;">
     <h3 style="margin: 0;">🐧 Linux</h3>
-    <a href="linux/">Acessar →</a>
-  </div>
+<a href="linux/" style="text-decoration:none; font-weight:bold; color:#cc0000;">
+  Acessar →
+</a>
+  
+</div>
 
 </div>
 
