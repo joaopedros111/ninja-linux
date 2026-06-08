@@ -31,7 +31,7 @@ Aqui documento comandos, testes, erros, soluções e procedimentos utilizados no
 <h3>🌐 Redes <a href="redes/">➡️ Acessar</a></h3>
 <h3>📜 Script Shell <a href="scripts/">➡️ Acessar</a></h3>
 
-
+---
 ## 🚀 Últimos Estudos
 
 * Instalação e configuração do Squid
@@ -42,7 +42,6 @@ Aqui documento comandos, testes, erros, soluções e procedimentos utilizados no
 * Docker e Harbor
 * Atualização de certificados SSL
 
----
 
 ## 💻 Comandos Úteis
 
