@@ -30,19 +30,6 @@ Aqui documento comandos, testes, erros, soluções e procedimentos utilizados no
 <h3>🌐 Redes <a href="redes/">➡️ Acessar</a></h3>
 <h3>📜 Script Shell <a href="scripts/">➡️ Acessar</a></h3>
 
----
-
-## 📚 Conteúdos
-
-* [Linux](linux/)
-* [Zabbix](zabbix/)
-* [Squid Proxy](squid/)
-* [WatchGuard](watchguard/)
-* [Redes](redes/)
-* [Scripts Shell](scripts/)
-
----
-
 ## 🚀 Últimos Estudos
 
 * Instalação e configuração do Squid
