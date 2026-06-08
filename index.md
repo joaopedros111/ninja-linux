@@ -24,25 +24,30 @@ Aqui documento comandos, testes, erros, soluções e procedimentos utilizados no
 
 ## 📂 Categorias
 
-### 🐧 Linux
+<div style="display:flex; justify-content:space-between; align-items:center;">
+  <h3 style="margin:0;">🐧 Linux</h3>
+  <a href="linux/">➡️ Acessar</a>
+</div>
 
-➡️ [Acessar](linux/)
+<div style="display:flex; justify-content:space-between; align-items:center;">
+  <h3 style="margin:0;">📊 Zabbix</h3>
+  <a href="zabbix/">➡️ Acessar</a>
+</div>
 
-### 📊 Zabbix
+<div style="display:flex; justify-content:space-between; align-items:center;">
+  <h3 style="margin:0;">🦑 Squid</h3>
+  <a href="squid/">➡️ Acessar</a>
+</div>
 
-➡️ [Acessar](zabbix/)
+<div style="display:flex; justify-content:space-between; align-items:center;">
+  <h3 style="margin:0;">🌐 Redes</h3>
+  <a href="redes/">➡️ Acessar</a>
+</div>
 
-### 🦑 Squid
-
-➡️ [Acessar](squid/)
-
-### 🌐 Redes
-
-➡️ [Acessar](redes/)
-
-### 📜 Script Shell
-
-➡️ [Acessar](scripts/)
+<div style="display:flex; justify-content:space-between; align-items:center;">
+  <h3 style="margin:0;">📜 Scrip Shell</h3>
+  <a href="scripts/">➡️ Acessar</a>
+</div>
 
 ---
 
