@@ -1,132 +1,8 @@
 ---
+
 layout: default
 title: Ninja Linux
----
-<style>
-body,
-main,
-.page-content,
-.wrapper,
-.site-content,
-.markdown-body {
-    background: #000000 !important;
-    color: #e0e0e0 !important;
-}
-
-h1, h2, h3, h4, p, li {
-    color: #ffffff !important;
-}
-
-a {
-    color: #ff5555 !important;
-}
-
-pre,
-.highlight,
-.highlight pre {
-    background: #111111 !important;
-    color: #00ff88 !important;
-    border: 1px solid #333333 !important;
-    border-radius: 8px;
-    padding: 12px;
-}
-
-code {
-    background: #111111 !important;
-    color: #00ff88 !important;
-}
-</style>
-
-<style>
-body {
-    background: #000000;
-    color: #e0e0e0;
-}
-
-a {
-    color: #ff5555;
-}
-
-hr {
-    border-color: #333;
-}
-
-h1, h2, h3 {
-    color: #ffffff;
-}
-
-.card {
-    border-left: 5px solid #cc0000;
-    background: #161616;
-    color: #e0e0e0;
-    padding: 15px;
-    border-radius: 8px;
-    width: 250px;
-    box-shadow: 0 2px 8px rgba(255, 0, 0, 0.15);
-    transition: 0.2s;
-}
-
-.card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 14px rgba(255, 0, 0, 0.25);
-}
-
-.card h3 {
-    margin: 0;
-    color: #ffffff;
-}
-
-.card a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #ff5555;
-}
-
-pre {
-    background: #0d0d0d;
-    color: #00ff88;
-    border: 1px solid #333;
-    border-radius: 8px;
-    padding: 12px;
-}
-
-code {
-    color: #00ff88;
-}
-
-.card {
-    border-left: 5px solid #cc0000;
-    background: #2b2b2b;
-    color: #e0e0e0;
-    padding: 15px;
-    border-radius: 8px;
-    width: 250px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-}
-
-.card h3 {
-    margin: 0;
-    color: #ffffff;
-}
-
-.card a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #ff5555;
-}
-
-pre {
-    background: #111;
-    color: #00ff88;
-    border: 1px solid #333;
-    border-radius: 8px;
-    padding: 12px;
-}
-
-code {
-    color: #00ff88;
-}
-</style>
+------------------
 
 <p align="center">
   <img src="images/capacete01.png" width="260">
@@ -195,24 +71,24 @@ Aqui documento comandos, testes, erros, soluções e procedimentos utilizados no
 
 ## 📚 Conteúdos
 
-- [Linux](linux/)
-- [Zabbix](zabbix/)
-- [Squid Proxy](squid/)
-- [WatchGuard](watchguard/)
-- [Redes](redes/)
-- [Scripts Shell](scripts/)
+* [Linux](linux/)
+* [Zabbix](zabbix/)
+* [Squid Proxy](squid/)
+* [WatchGuard](watchguard/)
+* [Redes](redes/)
+* [Scripts Shell](scripts/)
 
 ---
 
 ## 🚀 Últimos Estudos
 
-- Instalação e configuração do Squid
-- Expansão de disco com LVM
-- Comandos úteis no Rocky Linux
-- Troubleshooting com journalctl
-- Laboratórios de Redes
-- Docker e Harbor
-- Atualização de certificados SSL
+* Instalação e configuração do Squid
+* Expansão de disco com LVM
+* Comandos úteis no Rocky Linux
+* Troubleshooting com journalctl
+* Laboratórios de Redes
+* Docker e Harbor
+* Atualização de certificados SSL
 
 ---
 
@@ -220,18 +96,14 @@ Aqui documento comandos, testes, erros, soluções e procedimentos utilizados no
 
 ```bash
 journalctl -u squid
-
 df -h
-
 lsblk
-
 ip a
-
 systemctl status squid
-
 ```
 
 ## Contato
 
-- 🔗 [GitHub](https://github.com/joaopedros111)
-- 💼 [LinkedIn](https://www.linkedin.com/in/jo%C3%A3o-santos-67a17685/)
+* 🔗 GitHub: https://github.com/joaopedros111
+* 💼 LinkedIn: https://www.linkedin.com/in/jo%C3%A3o-santos-67a17685/
+
