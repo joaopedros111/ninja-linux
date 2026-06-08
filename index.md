@@ -59,6 +59,39 @@ pre {
 code {
     color: #00ff88;
 }
+
+.card {
+    border-left: 5px solid #cc0000;
+    background: #2b2b2b;
+    color: #e0e0e0;
+    padding: 15px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.card h3 {
+    margin: 0;
+    color: #ffffff;
+}
+
+.card a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ff5555;
+}
+
+pre {
+    background: #111;
+    color: #00ff88;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+code {
+    color: #00ff88;
+}
 </style>
 
 <p align="center">
@@ -154,9 +187,13 @@ Aqui documento comandos, testes, erros, soluções e procedimentos utilizados no
 
 ```bash
 journalctl -u squid
+
 df -h
+
 lsblk
+
 ip a
+
 systemctl status squid
 
 👨‍💻 Sobre o Autor
@@ -180,3 +217,4 @@ WatchGuard
 📞 Contato
 🔗 GitHub
 💼 LinkedIn
+=======
