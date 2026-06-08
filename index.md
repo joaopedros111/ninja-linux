@@ -161,9 +161,8 @@ Aqui documento comandos, testes, erros, soluções e procedimentos utilizados no
 
 ## 📚 Conteúdos
 
-- [Linux Básico](linux/)
+- [Linux](linux/)
 - [Zabbix](zabbix/)
-- [Rocky Linux](rocky-linux/)
 - [Squid Proxy](squid/)
 - [WatchGuard](watchguard/)
 - [Redes](redes/)
