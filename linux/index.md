@@ -10,9 +10,9 @@ Tutoriais, comandos e procedimentos para administração de sistemas Linux.
 
 ## Artigos
 
-* [Comandos básicos do Linux](comandos-basicos.md)
 * [Como criar um novo volume no LVM](criar-volume-lvm.md)
-* [Como Atualizar o Certificado SSL no Harbor (Docker) - Rocky Linux](certificadossl.md)
+* [Atualização do Certificado SSL no Harbor (Docker)](certificadossl.md)
+* [Comandos básicos do Linux](comandos-basicos.md)
 
 
 ## Em desenvolvimento
