@@ -20,7 +20,6 @@ Este site é meu laboratório de estudos em Linux e infraestrutura.
 
 Aqui documento comandos, testes, erros, soluções e procedimentos utilizados no dia a dia como Analista de Infraestrutura.
 
----
 
 ---
 ## 📂 Categorias
@@ -42,6 +41,7 @@ Aqui documento comandos, testes, erros, soluções e procedimentos utilizados no
 * Docker e Harbor
 * Atualização de certificados SSL
 
+---
 
 ## 💻 Comandos Úteis
 
