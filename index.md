@@ -5,6 +5,34 @@ title: Ninja Linux
 
 <style>
 body {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+main,
+.page-content,
+.wrapper,
+.site-content,
+.markdown-body {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+h1, h2, h3, h4, p, li {
+  color: #ffffff !important;
+}
+
+a {
+  color: #ff4444 !important;
+}
+
+hr {
+  border-color: #cccccc !important;
+}
+</style>
+
+<style>
+body {
     background: #000000;
     color: #e0e0e0;
 }
