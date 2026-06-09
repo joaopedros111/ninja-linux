@@ -19,16 +19,17 @@ O conteúdo abrange temas como Linux, Redes, LVM, Git, Shell Script, Squid, Zabb
 ---
 ## 📂 Categorias
 
-<h3>🐧 Linux <a href="linux/">➡️ Acessar</a></h3>
-<h3>💾 LVM <a href="lvm/">➡️ Acessar</a></h3>
-<h3>🔐 Certificados SSL <a href="certificados/">➡️ Acessar</a></h3>
-<h3>🐙 Git <a href="git/">➡️ Acessar</a></h3>
-<h3>📊 Zabbix <a href="zabbix/">➡️ Acessar</a></h3>
-<h3>🚨 Troubleshooting <a href="troubleshooting/">➡️ Acessar</a></h3>
-<h3>🦑 Squid <a href="squid/">➡️ Acessar</a></h3>
-<h3>🔥 WatchGuard <a href="watchguard/"> ➡️ Acessar</a></h3>
-<h3>🌐 Redes <a href="redes/">➡️ Acessar</a></h3>
-<h3>📜 Script Shell <a href="scripts/">➡️ Acessar</a></h3>
+<h3><a href="linux/" style="text-decoration: none;">🐧 Linux</a></h3>
+<h3><a href="lvm/" style="text-decoration: none;">💾LVM</a></h3>
+<h3><a href="certificados/" style="text-decoration: none;">🔐Certificados SSL</a></h3>
+<h3><a href="git/" style="text-decoration: none;">🐙Git</a></h3>
+<h3><a href="zabbix/" style="text-decoration: none;">📊Zabbix</a></h3>
+<h3><a href="troubleshooting/" style="text-decoration: none;"> 🚨Troubleshooting</a></h3>
+<h3><a href="squid/" style="text-decoration: none;">🦑 Squid</a></h3>
+<h3><a href="watchgard/" style="text-decoration: none;">🔥 WhachGuard</a></h3>
+<h3><a href="redes/" style="text-decoration: none;">🌐 Redes</a></h3>
+<h3><a href="scripts/" style="text-decoration: none;">📜 Shell Script</a></h3>
+
 ---
 
 ## 🔗 Contato
