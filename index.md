@@ -18,7 +18,7 @@ Aqui documento comandos, testes, erros, soluções e procedimentos utilizados no
 
 
 ---
-## 📂 Categorias 🚀
+## 📂 Categorias
 
 <h3>🐧 Linux <a href="linux/">➡️ Acessar</a></h3>
 <h3>💾 LVM <a href="lvm/">➡️ Acessar</a></h3>
