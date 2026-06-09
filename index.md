@@ -31,8 +31,6 @@ O conteúdo abrange temas como Linux, Redes, LVM, Git, Shell Script, Squid, Zabb
 <h3><a href="redes/" style="text-decoration: none;">🌐 Redes</a></h3>
 <h3><a href="scripts/" style="text-decoration: none;">📜 Shell Script</a></h3>
 <h3><a href="nutanix/" style="text-decoration: none;">🥜 Nutanix</a></h3>
-
-🥜 Nutanix
 ---
 
 ## 🔗 Contato
