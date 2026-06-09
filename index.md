@@ -19,6 +19,7 @@ O conteúdo abrange temas como Linux, Redes, LVM, Git, Shell Script, Squid, Zabb
 ---
 ## 📂 Categorias
 
+<h3><a href="kubernetes/" style="text-decoration: none;">☸ CKubernetes</a></h3>
 <h3><a href="linux/" style="text-decoration: none;">🐧 Linux</a></h3>
 <h3><a href="lvm/" style="text-decoration: none;">💾LVM</a></h3>
 <h3><a href="certificados/" style="text-decoration: none;">🔐Certificados SSL</a></h3>
