@@ -25,11 +25,11 @@ Aqui documento comandos, testes, erros, soluções e procedimentos utilizados no
 <h3>🔐 Certificados SSL <a href="certificados/">➡️ Acessar</a></h3>
 <h3>🐙 Git <a href="git/">➡️ Acessar</a></h3>
 <h3>📊 Zabbix <a href="zabbix/">➡️ Acessar</a></h3>
+<h3>🚨 Troubleshooting <a href="troubleshooting/">➡️ Acessar</a></h3>
 <h3>🦑 Squid <a href="squid/">➡️ Acessar</a></h3>
 <h3>🔥 WatchGuard <a href="watchguard/"> ➡️ Acessar</a></h3>
 <h3>🌐 Redes <a href="redes/">➡️ Acessar</a></h3>
 <h3>📜 Script Shell <a href="scripts/">➡️ Acessar</a></h3>
-<h3>🚨 Troubleshooting <a href="troubleshooting/">➡️ Acessar</a></h3>
 ---
 
 ## 🔗 Contato
