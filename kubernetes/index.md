@@ -14,7 +14,7 @@ Aqui serão registrados conceitos, comandos, procedimentos, troubleshooting e at
 
 ## 📚 Conceitos
 
-➡️ [O que é Kubernetes](conceitos/o-que-e-kubernetes.md)
+➡️ [O que é Kubernetes](conceito.md)
 
 ➡️ [Arquitetura do Cluster](conceitos/arquitetura.md)
 
