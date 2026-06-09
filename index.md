@@ -27,6 +27,7 @@ O objetivo é centralizar conhecimento adquirido através de estudos, laboratór
 
 * 🐧 Linux
 * ☸️ Kubernetes
+* 💾 LVM
 * 🥜 Nutanix
 * 🦑 Squid
 * 📊 Zabbix
