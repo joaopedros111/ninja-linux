@@ -1,275 +1,83 @@
----
-layout: default
-title: Nutanix 
----
-
 # 🥜 Nutanix
 
 ## Introdução
 
 O Nutanix é uma plataforma de infraestrutura hiperconvergente (HCI - Hyper-Converged Infrastructure) que integra computação, armazenamento, virtualização e gerenciamento em uma única solução.
 
-Seu objetivo é simplificar a administração de ambientes virtualizados, eliminando a necessidade de infraestruturas tradicionais compostas por servidores, storages SAN e softwares de gerenciamento separados.
+Seu principal objetivo é simplificar a administração de ambientes virtualizados, eliminando a necessidade de storages SAN dedicados e reduzindo a complexidade operacional.
 
-Atualmente é uma das principais alternativas ao VMware em ambientes corporativos.
-
----
-
-## Conceitos Fundamentais
-
-### Infraestrutura Tradicional
-
-Em um ambiente tradicional, normalmente existem:
-
-* Servidores físicos
-* Storage SAN
-* Switches Fibre Channel
-* Hipervisor
-* Ferramentas de gerenciamento
-
-Exemplo:
-
-Servidor → SAN → Hipervisor → Máquinas Virtuais
-
-Esse modelo costuma demandar maior complexidade de administração e manutenção.
+Atualmente, o Nutanix é uma das principais alternativas para ambientes baseados em VMware, oferecendo alta disponibilidade, escalabilidade e gerenciamento centralizado.
 
 ---
 
-### Infraestrutura Hiperconvergente
+## O que você encontrará nesta seção
 
-No modelo hiperconvergente, cada servidor contribui com:
+Nesta área serão documentados conceitos, comandos, procedimentos e troubleshooting relacionados ao ambiente Nutanix.
 
-* Processamento (CPU)
-* Memória RAM
-* Armazenamento local (SSD/NVMe)
-* Rede
+### 📚 Conteúdo
 
-Todos os recursos são agrupados em um único cluster.
+* Arquitetura Nutanix
+* Conceitos de HCI
+* AHV (Acropolis Hypervisor)
+* Prism
+* Clusters
+* Storage Distribuído
+* Snapshots
+* Replicação
+* Backup e Disaster Recovery
+* Troubleshooting
 
-Benefícios:
+---
 
-* Escalabilidade simplificada
-* Alta disponibilidade
-* Menor complexidade operacional
-* Redução de custos
+## Estrutura da documentação
+
+* [AHV](ahv.md)
+* [Prism](prism.md)
+* [Cluster](cluster.md)
+* [Storage](storage.md)
+* [Backup e DR](backup-e-dr.md)
+* [Troubleshooting](troubleshooting.md)
 
 ---
 
 ## Principais Componentes
 
-### AOS (Acropolis Operating System)
+### AHV
 
-É o sistema operacional da plataforma Nutanix.
+Hipervisor nativo da plataforma Nutanix baseado em KVM.
 
-Responsável por:
-
-* Gerenciamento do armazenamento distribuído
-* Replicação de dados
-* Balanceamento de carga
-* Snapshots
-* Recuperação de falhas
-
----
-
-### AHV (Acropolis Hypervisor)
-
-Hipervisor nativo da Nutanix.
-
-Características:
-
-* Baseado em KVM
-* Gratuito para clientes Nutanix
-* Gerenciamento integrado ao Prism
-* Alta disponibilidade nativa
-
-Principais concorrentes:
-
-* VMware ESXi
-* Microsoft Hyper-V
-
----
+Responsável pela execução das máquinas virtuais.
 
 ### Prism
 
-Interface de gerenciamento da plataforma.
+Interface web utilizada para gerenciamento do ambiente.
 
-Permite:
+Permite monitorar recursos, criar VMs e administrar clusters.
 
-* Criar máquinas virtuais
-* Monitorar desempenho
-* Gerenciar clusters
-* Realizar upgrades
-* Visualizar alertas
-* Administrar armazenamento
+### AOS
 
-O Prism é considerado um dos principais diferenciais da solução.
+Sistema operacional da plataforma Nutanix.
+
+Responsável pelo armazenamento distribuído, replicação e alta disponibilidade.
 
 ---
 
-## Estrutura de um Cluster Nutanix
-
-Um cluster é formado por múltiplos nós.
-
-Exemplo:
-
-Cluster Nutanix
-
-* Nó 1
-* Nó 2
-* Nó 3
-* Nó 4
-
-Cada nó possui:
-
-* CPU
-* Memória
-* SSD/NVMe
-* Rede
-
-O armazenamento local de todos os nós é consolidado em um único pool distribuído.
-
----
-
-## Alta Disponibilidade
-
-O Nutanix distribui os dados entre os nós do cluster.
-
-Caso um servidor apresente falha:
-
-* As máquinas virtuais continuam disponíveis
-* Os dados permanecem acessíveis
-* O ambiente mantém sua operação
-
-Esse mecanismo reduz significativamente o impacto de falhas de hardware.
-
----
-
-## Escalabilidade
-
-A expansão do ambiente ocorre através da adição de novos nós ao cluster.
-
-Exemplo:
-
-* Cluster com 3 nós
-* Adição de 1 novo nó
-* Cluster passa a possuir 4 nós
-
-Os recursos são automaticamente incorporados ao ambiente.
-
----
-
-## Funcionalidades Comuns
-
-### Snapshots
-
-Permitem criar pontos de recuperação das máquinas virtuais.
-
-Utilizados para:
-
-* Backup
-* Atualizações
-* Testes
-* Recuperação rápida
-
----
-
-### Replicação
-
-Permite replicar máquinas virtuais para outro cluster Nutanix.
-
-Utilizada para:
-
-* Disaster Recovery (DR)
-* Continuidade de negócio
-* Ambientes de contingência
-
----
-
-### Monitoramento
-
-Através do Prism é possível acompanhar:
-
-* Uso de CPU
-* Uso de memória
-* Consumo de armazenamento
-* Desempenho das VMs
-* Eventos e alertas
-
----
-
-## Vantagens
+## Benefícios do Nutanix
 
 * Administração simplificada
-* Alta disponibilidade nativa
+* Alta disponibilidade
 * Escalabilidade horizontal
-* Menor dependência de storages SAN
-* Interface intuitiva
-* Integração entre computação e armazenamento
-* Menor complexidade operacional
+* Gerenciamento centralizado
+* Menor dependência de storages dedicados
+* Expansão simplificada através da adição de nós
 
 ---
 
-## Desvantagens
+## Objetivo desta documentação
 
-* Investimento inicial elevado
-* Dependência da plataforma Nutanix
-* Menor flexibilidade em comparação com ambientes totalmente customizados
+Esta documentação tem como objetivo servir como base de conhecimento para estudos, operação e troubleshooting de ambientes Nutanix, reunindo conceitos teóricos e procedimentos práticos utilizados no dia a dia da infraestrutura.
 
 ---
 
-## Casos de Uso
-
-O Nutanix é amplamente utilizado para:
-
-* Virtualização de servidores
-* Infraestrutura corporativa
-* Ambientes de homologação
-* Bancos de dados
-* VDI (Virtual Desktop Infrastructure)
-* Nuvem privada
-* Disaster Recovery
-
----
-
-## Comandos e Acesso
-
-Em ambientes Nutanix é comum acessar:
-
-### AHV Host
-
-```bash
-ssh root@ip_do_host
-```
-
-### CVM (Controller VM)
-
-```bash
-ssh nutanix@ip_da_cvm
-```
-
-### Verificar status do cluster
-
-```bash
-cluster status
-```
-
-### Verificar informações do cluster
-
-```bash
-ncli cluster info
-```
-
-### Listar máquinas virtuais
-
-```bash
-acli vm.list
-```
-
----
-
-## Resumo
-
-O Nutanix é uma plataforma de infraestrutura hiperconvergente que combina computação, armazenamento, virtualização e gerenciamento em uma única solução.
-
-Seu principal objetivo é simplificar a administração de ambientes virtualizados, oferecendo alta disponibilidade, escalabilidade e gerenciamento centralizado através do Prism.
+> 💡 Dica: Comece pelo estudo de AHV, Prism e Clusters. Esses são os componentes mais utilizados por administradores de infraestrutura no ambiente Nutanix.
 
