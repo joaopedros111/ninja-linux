@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+</head>
+
+<body>
+
+<div style="display:flex;">
+
+  <aside style="
+      width:250px;
+      padding:20px;
+      background:#f5f5f5;
+      min-height:100vh;">
+
+    <h3>📚 Navegação</h3>
+
+    <ul>
+      <li><a href="/linux/">Linux</a></li>
+      <li><a href="/lvm/">LVM</a></li>
+      <li><a href="/git/">Git</a></li>
+      <li><a href="/redes/">Redes</a></li>
+      <li><a href="/squid/">Squid</a></li>
+      <li><a href="/zabbix/">Zabbix</a></li>
+    </ul>
+
+  </aside>
+
+  <main style="padding:30px; flex:1;">
+    {{ content }}
+  </main>
+
+</div>
+
+</body>
+</html>
