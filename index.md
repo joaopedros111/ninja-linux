@@ -10,7 +10,7 @@ title: Ninja Linux
 # 🐧 Ninja Linux 🐧
 
 
-## Sobre o projeto
+## Sobre o projeto 🚀
 
 Este site é meu laboratório de estudos em Linux e infraestrutura.
 
@@ -18,26 +18,20 @@ Aqui documento comandos, testes, erros, soluções e procedimentos utilizados no
 
 
 ---
-## 📂 Categorias
+## 📂 Categorias 🚀
 
 <h3>🐧 Linux <a href="linux/">➡️ Acessar</a></h3>
+<h3>💾 LVM <a href="lvm/">➡️ Acessar</a></h3>
+<h3>🔐 Certificados SSL <a href="certificados/">➡️ Acessar</a></h3>
+<h3>🐙 Git <a href="git/">➡️ Acessar</a></h3>
 <h3>📊 Zabbix <a href="zabbix/">➡️ Acessar</a></h3>
 <h3>🦑 Squid <a href="squid/">➡️ Acessar</a></h3>
+<h3>🔥 WatchGuard <a href="watchguard/"> ➡️ Acessar</a></h3>
 <h3>🌐 Redes <a href="redes/">➡️ Acessar</a></h3>
 <h3>📜 Script Shell <a href="scripts/">➡️ Acessar</a></h3>
-
+<h3>🚨 Troubleshooting <a href="troubleshooting/">➡️ Acessar</a></h3>
 ---
-## 🚀 Últimos Estudos
 
-* Instalação e configuração do Squid
-* Expansão de disco com LVM
-* Comandos úteis no Rocky Linux
-* Troubleshooting com journalctl
-* Laboratórios de Redes
-* Docker e Harbor
-* Atualização de certificados SSL
-
----
 ## 🔗 Contato
 
 <div style="display: flex; gap: 15px; align-items: center;">
@@ -49,4 +43,3 @@ Aqui documento comandos, testes, erros, soluções e procedimentos utilizados no
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="40" alt="LinkedIn">
   </a>
 </div>
-
