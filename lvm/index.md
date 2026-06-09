@@ -4,7 +4,7 @@ layout: default
 title: LVM
 ---
 
-# LVM
+# 💾 LVM
 
 Tutoriais sobre como administrar discos LVM
 

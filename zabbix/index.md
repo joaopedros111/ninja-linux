@@ -4,7 +4,7 @@ layout: default
 title: Zabbix
 ---
 
-# Zabbix
+# 📊 Zabbix
 
 Tutoriais sobre instalação, configuração e monitoramento com Zabbix.
 
