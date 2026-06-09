@@ -3,12 +3,26 @@ layout: default
 title: Git
 ---
 
-# 🐙 Git
+# 🌿 Git
 
-Tutoriais e comandos Git.
+## Introdução
 
-## Artigos
+O Git é um sistema de controle de versão distribuído utilizado para gerenciar alterações em códigos, documentos e projetos ao longo do tempo.
 
-* [Git Básico para Administradores Linux](git.md)
-* [Git Intermediário para Administradores Linux](gitintermediario.md)
+É a ferramenta padrão para colaboração e versionamento em projetos de software.
+
+---
+
+## Conteúdo
+
+* [Comandos Básicos](git.md)
+* [Branches](branches.md)
+* [Merge](merge.md)
+* [Rebase](rebase.md)
+* [GitHub](github.md)
+* [Troubleshooting](troubleshooting.md)
+
+---
+
+> 💡 Esta seção reúne conceitos, comandos e práticas relacionadas ao Git.
 
