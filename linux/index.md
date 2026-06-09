@@ -13,6 +13,7 @@ Tutoriais, comandos e procedimentos para administração de sistemas Linux.
 * [Atualizar Certificado Wiki Infraero](atualizarSSLwiki.md)
 * [Atualização do Certificado SSL no Harbor (Docker)](certificadossl.md)
 * [Comandos básicos do Linux](comandos-basicos.md)
+* [Troubleshooting Wiki Infraero](troubleshootingwiki.md)
 
 
 ## Em desenvolvimento
