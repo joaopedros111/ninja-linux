@@ -5,7 +5,7 @@ title: Git
 
 # 🐙 Git
 
-Tutoriais, comandos Git.
+Tutoriais e comandos Git.
 
 ## Artigos
 
