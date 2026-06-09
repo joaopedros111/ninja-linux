@@ -47,6 +47,7 @@ Disponibilizar uma referência prática para consultas rápidas, resolução de 
 
 ---
 
+
 ## 🔗 Contato
 
 <div style="display: flex; gap: 15px; align-items: center;">
@@ -56,6 +57,10 @@ Disponibilizar uma referência prática para consultas rápidas, resolução de 
 
   <a href="https://www.linkedin.com/in/jo%C3%A3o-santos-67a17685/" target="_blank">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="40" alt="LinkedIn">
+  </a>
+
+  <a href="https://www.instagram.com/joao.bz2/" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" width="40" alt="Instagram">
   </a>
 </div>
 
