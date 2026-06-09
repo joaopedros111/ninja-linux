@@ -12,9 +12,9 @@ title: Ninja Linux
 
 ## Sobre o projeto 🚀
 
-Documentação técnica de estudos, procedimentos e troubleshooting relacionados a Linux e Infraestrutura.
+Base de conhecimento voltada para Linux e Infraestrutura, criada para documentar procedimentos, troubleshooting, comandos e boas práticas utilizados no dia a dia.
 
-Conteúdo focado em administração de sistemas, redes, monitoramento, automação e tecnologias utilizadas no ambiente corporativo.
+O conteúdo abrange temas como Linux, Redes, LVM, Git, Shell Script, Squid, Zabbix, Monitoramento, Segurança e Administração de Sistemas, servindo como material de consulta rápida e registro técnico de estudos e experiências práticas.
 
 ---
 ## 📂 Categorias
