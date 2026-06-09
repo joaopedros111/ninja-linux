@@ -12,10 +12,9 @@ title: Ninja Linux
 
 ## Sobre o projeto 🚀
 
-Este site é meu laboratório de estudos em Linux e infraestrutura.
+Documentação técnica de estudos, procedimentos e troubleshooting relacionados a Linux e Infraestrutura.
 
-Aqui documento comandos, testes, erros, soluções e procedimentos utilizados no dia a dia como Analista de Infraestrutura.
-
+Conteúdo focado em administração de sistemas, redes, monitoramento, automação e tecnologias utilizadas no ambiente corporativo.
 
 ---
 ## 📂 Categorias
