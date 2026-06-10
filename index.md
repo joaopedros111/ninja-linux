@@ -2,12 +2,9 @@
 layout: default
 title: Ninja Linux
 ---
-
-<!--
 <p align="center">
   <img src="images/capacete.png" width="260">
 </p>
--->
 
 # 🐧 Ninja Linux
 
