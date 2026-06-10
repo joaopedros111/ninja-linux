@@ -37,6 +37,7 @@ O objetivo é centralizar conhecimento adquirido através de estudos, laboratór
 * 📜 Shell Script
 * 🔐 Certificados SSL
 * 🔥 WatchGuard
+* 🪟 Windows
 
 ---
 
