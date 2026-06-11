@@ -1,3 +1,154 @@
+# ⚙️ O que é DevOps?
+
+## Introdução
+
+DevOps é uma cultura e um conjunto de práticas que aproximam as equipes de Desenvolvimento (Dev) e Operações (Ops).
+
+Seu objetivo é automatizar processos, reduzir erros manuais e acelerar a entrega de software com qualidade e segurança.
+
+Antes do DevOps, era comum que os desenvolvedores criassem aplicações e a equipe de infraestrutura fosse responsável por implantá-las e mantê-las, gerando conflitos e atrasos no processo.
+
+O DevOps surgiu para integrar essas equipes e promover colaboração durante todo o ciclo de vida da aplicação.
+
+---
+
+## Objetivos do DevOps
+
+* Automatizar processos
+* Reduzir erros humanos
+* Aumentar a velocidade das entregas
+* Melhorar a qualidade das aplicações
+* Facilitar o monitoramento e troubleshooting
+* Promover colaboração entre equipes
+
+---
+
+## Ciclo DevOps
+
+O ciclo DevOps é geralmente representado pelas seguintes etapas:
+
+```text
+Planejar
+    ↓
+Desenvolver
+    ↓
+Construir
+    ↓
+Testar
+    ↓
+Implantar
+    ↓
+Monitorar
+    ↓
+Melhorar
+```
+
+Esse processo ocorre continuamente.
+
+---
+
+## Principais Conceitos
+
+### Integração Contínua (CI)
+
+Consiste em integrar alterações de código frequentemente.
+
+Exemplo:
+
+```text
+Desenvolvedor envia código
+        ↓
+Pipeline executa build
+        ↓
+Testes são executados
+```
+
+---
+
+### Entrega Contínua (CD)
+
+Automatiza o processo de entrega da aplicação para ambientes de teste, homologação ou produção.
+
+Exemplo:
+
+```text
+Build
+    ↓
+Criação da imagem
+    ↓
+Deploy automático
+```
+
+---
+
+### Infraestrutura como Código (IaC)
+
+Consiste em gerenciar infraestrutura através de código.
+
+Ferramentas comuns:
+
+* Terraform
+* Ansible
+* CloudFormation
+
+---
+
+### Containers
+
+Containers permitem empacotar aplicações juntamente com suas dependências.
+
+Ferramentas:
+
+* Docker
+* Podman
+
+---
+
+### Orquestração
+
+Responsável por gerenciar múltiplos containers.
+
+Ferramenta mais utilizada:
+
+* Kubernetes
+
+---
+
+## Ferramentas Comuns
+
+| Ferramenta   | Função                           |
+| ------------ | -------------------------------- |
+| Git          | Controle de versão               |
+| Azure DevOps | Repositório e gestão de projetos |
+| Jenkins      | Automação de pipelines           |
+| Harbor       | Registro de imagens              |
+| Docker       | Containers                       |
+| Kubernetes   | Orquestração de containers       |
+| Ansible      | Automação                        |
+| Terraform    | Infraestrutura como Código       |
+
+---
+
+## Exemplo de Fluxo DevOps
+
+```text
+Desenvolvedor
+      ↓
+Azure DevOps
+      ↓
+Jenkins
+      ↓
+Harbor
+      ↓
+Kubernetes
+      ↓
+Produção
+```
+
+Esse fluxo é semelhante ao utilizado em diversos ambientes corporativos modernos.
+
+---
+
 # Azure DevOps, Jenkins, Harbor e Kubernetes
 
 ## Introdução
