@@ -25,7 +25,7 @@ O objetivo é centralizar conhecimento adquirido através de estudos, laboratór
 ## Tecnologias e Ferramentas
 
 * 🐧 Linux
-*  DevOps
+* ⚙️ DevOps
 * ☸️ Kubernetes
 * 💾 LVM
 * 🥜 Nutanix
