@@ -13,7 +13,6 @@ title: Ninja Linux
 ---
 
 ## Sobre o projeto
-
 O Ninja Linux é uma base de conhecimento criada para documentar procedimentos, troubleshooting, comandos, boas práticas e anotações técnicas utilizadas no dia a dia da administração de sistemas.
 
 O objetivo é centralizar conhecimento adquirido através de estudos, laboratórios e experiências profissionais, mantendo uma documentação simples, organizada e de fácil consulta.
@@ -23,12 +22,12 @@ O objetivo é centralizar conhecimento adquirido através de estudos, laboratór
 ## Tecnologias e Ferramentas
 
 * 🐧 Linux
-* DevOps
+*  DevOps
 * ☸️ Kubernetes
 * 💾 LVM
 * 🥜 Nutanix
 * 🦑 Squid
-* 📊 Zabbix
+* 📊 Monitoramento
 * 🐳 Docker
 * 🌿 Git
 * 🌐 Redes
