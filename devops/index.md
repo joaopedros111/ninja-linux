@@ -1,87 +1,30 @@
 ---
-
 layout: default
 title: DevOps
 -------------
 
 # ⚙️ DevOps
 
-## Sobre
+## Introdução
 
-DevOps é um conjunto de práticas que une Desenvolvimento (Dev) e Operações (Ops), com o objetivo de automatizar processos, aumentar a qualidade das entregas e acelerar o ciclo de implantação de aplicações.
+DevOps é um conjunto de práticas, ferramentas e cultura que integra as equipes de Desenvolvimento (Dev) e Operações (Ops), com o objetivo de automatizar processos, aumentar a confiabilidade dos ambientes e acelerar a entrega de aplicações.
 
-Nesta seção serão documentados conceitos, ferramentas e procedimentos relacionados ao ecossistema DevOps utilizados no dia a dia da infraestrutura.
-
----
-
-## 📂 Conteúdo
-
-### 🔄 CI/CD
-
-Integração Contínua e Entrega Contínua.
-
-➡️ [Acessar](cicd/)
+Atualmente, o DevOps está presente em diversas tecnologias como Git, Jenkins, Docker, Harbor, Kubernetes, Azure DevOps e ferramentas de automação e monitoramento.
 
 ---
 
-### 🦊 Git
+## Conteúdo
 
-Controle de versão, branches, commits, merge e colaboração.
-
-➡️ [Acessar](git/)
-
----
-
-### 🏗️ Jenkins
-
-Automação de builds, pipelines e deploys.
-
-➡️ [Acessar](jenkins/)
+* [O que é DevOps](conceitos.md)
+* [CI/CD](cicd.md)
+* [Azure DevOps](azure-devops.md)
+* [Jenkins](jenkins.md)
+* [Harbor](harbor.md)
+* [Containers](containers.md)
+* [Kubernetes](kubernetes.md)
+* [Pipelines](pipelines.md)
+* [Troubleshooting](troubleshooting.md)
 
 ---
 
-### 📦 Harbor
-
-Registro privado de imagens Docker e Podman.
-
-➡️ [Acessar](harbor/)
-
----
-
-### ☸️ Kubernetes
-
-Orquestração de containers e deploy de aplicações.
-
-➡️ [Acessar](../kubernetes/)
-
----
-
-### 🐳 Docker
-
-Criação e gerenciamento de containers.
-
-➡️ [Acessar](../docker/)
-
----
-
-## Fluxo DevOps
-
-```text
-Desenvolvedor
-      ↓
-Azure DevOps
-      ↓
-Jenkins
-      ↓
-Harbor
-      ↓
-Kubernetes
-      ↓
-Produção
-```
-
----
-
-## Objetivo
-
-Esta área servirá como base de conhecimento para estudos e documentação prática sobre pipelines, automação, containers, Kubernetes, Git e processos de entrega contínua.
+> 💡 Esta seção reúne conceitos, ferramentas e práticas utilizadas em ambientes DevOps modernos.
