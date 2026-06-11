@@ -47,20 +47,20 @@ Select Name
 ## Verificar membros de um grupo
 
 ```powershell
-Get-ADGroupMember "SEDE_GB_InfraeroWiFi_Internet"
+Get-ADGroupMember "ProxySEDEAcessoPadrao"
 ```
 
 Exibir apenas logins:
 
 ```powershell
-Get-ADGroupMember "SEDE_GB_InfraeroWiFi_Internet" |
+Get-ADGroupMember "ProxySEDEAcessoPadrao" |
 Select SamAccountName
 ```
 
 Procurar usuário dentro do grupo:
 
 ```powershell
-Get-ADGroupMember "SEDE_GB_InfraeroWiFi_Internet" |
+Get-ADGroupMember "ProxySEDEAcessoPadrao" |
 Where-Object {$_.SamAccountName -eq "t034691811"}
 ```
 
@@ -70,7 +70,7 @@ Where-Object {$_.SamAccountName -eq "t034691811"}
 
 ```powershell
 Add-ADGroupMember `
--Identity "SEDE_GB_InfraeroWiFi_Internet" `
+-Identity "ProxySEDEAcessoPadrao" `
 -Members "t034691811"
 ```
 
@@ -80,7 +80,7 @@ Add-ADGroupMember `
 
 ```powershell
 Remove-ADGroupMember `
--Identity "SEDE_GB_InfraeroWiFi_Internet" `
+-Identity "ProxySEDEAcessoPadrao" `
 -Members "t034691811"
 ```
 
@@ -88,7 +88,7 @@ Sem confirmação:
 
 ```powershell
 Remove-ADGroupMember `
--Identity "SEDE_GB_InfraeroWiFi_Internet" `
+-Identity "ProxySEDEAcessoPadrao" `
 -Members "t034691811" `
 -Confirm:$false
 ```
@@ -224,10 +224,10 @@ whoami
 whoami /groups
 ```
 
-Filtrar por Wi-Fi:
+Filtrar por Proxy:
 
 ```cmd
-whoami /groups | findstr /i wifi
+whoami /groups | findstr /i Proxy
 ```
 
 ---
