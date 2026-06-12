@@ -104,16 +104,15 @@ code {
   font-family: Consolas, monospace;
 }
 
+:root {
+    --verde-ninja: #7CCB5E;
+}
+
+.sidebar a.active {
+    color: var(--verde-ninja);
+    border-left: 3px solid var(--verde-ninja);
+}
+
 main a {
-    color: #297c00;
-    text-decoration: none;
-}
-
-main a:hover {
-    color: #A8E88A;
-    text-decoration: underline;
-}
-
-main a:visited {
-    color: #297c00;
+    color: var(--verde-ninja);
 }
