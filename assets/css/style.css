@@ -104,15 +104,16 @@ code {
   font-family: Consolas, monospace;
 }
 
-a {
-  color: #8BC34A;
-  text-decoration: none;
+main a {
+    color: #7CCB5E;
+    text-decoration: none;
 }
 
-a:hover {
-  color: #A5D66A;
+main a:hover {
+    color: #95D97A;
+    text-decoration: underline;
 }
 
-a:visited {
-  color: #7CCB5E;
+main a:visited {
+    color: #7CCB5E;
 }
