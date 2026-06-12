@@ -1,3 +1,8 @@
+---
+layout: default
+title: O que é DevOps?
+---
+
 # ⚙️ O que é DevOps?
 
 ## Introdução
