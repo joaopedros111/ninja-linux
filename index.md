@@ -1,13 +1,12 @@
 ---
+
 layout: default
 title: Ninja Linux
----
+------------------
 
-<!-- imagem linux temporariamente removida
 <p align="center">
   <img src="images/capacete.png" width="260">
 </p>
--->
 
 # 🐧 Ninja Linux
 
@@ -16,40 +15,33 @@ title: Ninja Linux
 ---
 
 ## Sobre o projeto
+
 O Ninja Linux é uma base de conhecimento criada para documentar procedimentos, troubleshooting, comandos, boas práticas e anotações técnicas utilizadas no dia a dia da administração de sistemas.
 
-O objetivo é centralizar conhecimento adquirido através de estudos, laboratórios e experiências profissionais, mantendo uma documentação simples, organizada e de fácil consulta.
-
----
-
-## Tecnologias e Ferramentas
-
-* 🐧 Linux
-* ⚙️ DevOps
-* ☸️ Kubernetes
-* 💾 LVM
-* 🥜 Nutanix
-* 🦑 Squid
-* 📊 Monitoramento
-* 🐳 Docker
-* 🌿 Git
-* 🌐 Redes
-* 📜 Shell Script
-* 🔐 Certificados SSL
-* 🔥 WatchGuard
-* 🪟 Windows
-* Troubleshooting
+O conteúdo reúne experiências práticas, estudos, laboratórios e documentação produzida ao longo da minha trajetória profissional, servindo como fonte de consulta rápida e registro contínuo de conhecimento.
 
 ---
 
 ## Objetivo
 
-Disponibilizar uma referência prática para consultas rápidas, resolução de problemas e registro contínuo de conhecimento relacionado à infraestrutura, automação, monitoramento, virtualização e administração de sistemas.
+Disponibilizar uma referência prática para consultas rápidas, resolução de problemas e documentação técnica relacionada a:
+
+* Administração de sistemas Linux
+* Infraestrutura de TI
+* DevOps
+* Kubernetes
+* Docker
+* Monitoramento
+* Redes
+* Segurança
+* Automação
+* Troubleshooting
+
+O foco é manter o conhecimento organizado, acessível e de fácil manutenção.
 
 > 💡 Utilize o menu lateral para navegar pelas categorias e acessar os conteúdos.
 
 ---
-
 
 ## 🔗 Contato
 
@@ -66,4 +58,3 @@ Disponibilizar uma referência prática para consultas rápidas, resolução de 
     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" width="40" alt="Instagram">
   </a>
 </div>
-
