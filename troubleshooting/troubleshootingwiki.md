@@ -1,4 +1,4 @@
-#📊 Troubleshooting Completo – Wiki Infraero Indisponível (Docker, WikiJS, Nginx e Certificados)
+# 📊 Troubleshooting Completo – Wiki Infraero Indisponível (Docker, WikiJS, Nginx e Certificados)
 
 ## Objetivo
 
