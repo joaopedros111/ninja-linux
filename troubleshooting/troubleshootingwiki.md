@@ -1,3 +1,8 @@
+---
+layout: default
+title: Troubleshootingw wiki
+---
+
 # 📊 Troubleshooting Completo – Wiki Infraero Indisponível (Docker, WikiJS, Nginx e Certificados)
 
 ## Objetivo

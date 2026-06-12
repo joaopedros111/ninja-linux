@@ -1,3 +1,8 @@
+---
+layout: default
+title: Git Básico para Administradores Linux
+---
+
 # 🐙 Git Básico para Administradores Linux
 
 ## O que é Git?

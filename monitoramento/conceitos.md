@@ -1,3 +1,8 @@
+---
+layout: default
+title: Conceitos de Monitoramento
+---
+
 # 📊 Conceitos de Monitoramento
 
 ## O que é Monitoramento?

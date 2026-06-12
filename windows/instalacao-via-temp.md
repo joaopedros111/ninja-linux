@@ -1,3 +1,8 @@
+---
+layout: default
+title: Instalação de Aplicativos (.exe) via C:\Temp
+---
+
 # Instalação de Aplicativos (.exe) via C:\Temp
 
 ## Objetivo

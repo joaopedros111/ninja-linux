@@ -1,3 +1,8 @@
+---
+layout: default
+title: Git Intermediário
+---
+
 # 🐙 Git Intermediário
 
 ## Objetivo

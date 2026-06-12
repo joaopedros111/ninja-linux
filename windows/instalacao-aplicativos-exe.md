@@ -1,3 +1,8 @@
+---
+layout: default
+title: Instalação de Aplicativos (.exe) no Windows
+---
+
 # Instalação de Aplicativos (.exe) no Windows
 
 ## Objetivo

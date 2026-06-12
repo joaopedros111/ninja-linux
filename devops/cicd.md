@@ -1,3 +1,8 @@
+---
+layout: default
+title: CI/CD
+---
+
 # 🔄 CI/CD
 
 ## Introdução

@@ -1,3 +1,8 @@
+---
+layout: default
+title: Instalação do Grafana no Rocky Linux 9
+---
+
 # Instalação do Grafana no Rocky Linux 9
 
 ## Objetivo

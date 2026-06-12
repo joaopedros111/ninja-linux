@@ -1,3 +1,8 @@
+---
+layout: default
+title: Comandos Básicos do Linux
+---
+
 # Comandos Básicos do Linux
 
 Este guia apresenta alguns dos comandos mais utilizados no dia a dia de administração e suporte em sistemas Linux.
