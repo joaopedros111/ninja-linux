@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
-  background: #121212;
-  color: #e0e0e0;
+  background: #ffffff;
+  color: #222;
   line-height: 1.6;
 }
 
@@ -12,19 +12,18 @@ body {
   left: 0;
   width: 250px;
   height: 100vh;
-  background: #1b1b1b;
-  border-right: 1px solid #333;
+  background: #f5f5f5;
+  border-right: 1px solid #ddd;
 }
 
 .sidebar-header {
   padding: 20px;
-  border-bottom: 1px solid #333;
-  background: #181818;
+  border-bottom: 1px solid #ddd;
+  background: #f5f5f5;
 }
 
 .sidebar-header h3 {
   margin-top: 0;
-  color: #ffffff;
 }
 
 .sidebar-menu {
@@ -37,20 +36,18 @@ body {
 
 .sidebar a {
   display: block;
-  color: #d0d0d0;
+  color: #333;
   text-decoration: none;
   padding: 6px 8px;
   border-radius: 6px;
 }
 
 .sidebar a:hover {
-  background: #2a2a2a;
-  color: #ffffff;
+  background: #e0e0e0;
 }
 
 .sidebar a.active {
-  background: #333333;
-  color: #ffffff;
+  background: #dcdcdc;
   font-weight: bold;
 }
 
@@ -62,7 +59,6 @@ summary {
   cursor: pointer;
   font-weight: bold;
   padding: 6px 0;
-  color: #ffffff;
 }
 
 ul {
@@ -78,30 +74,21 @@ main {
 }
 
 main h1 {
-  color: #ffffff;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid #ddd;
   padding-bottom: 10px;
 }
 
 main h2 {
-  color: #f0f0f0;
   margin-top: 35px;
 }
 
-a {
-  color: #6ab0ff;
-}
-
 pre {
-  background: #1e1e1e;
-  color: #e0e0e0;
+  background: #f4f4f4;
   padding: 15px;
   border-radius: 8px;
   overflow-x: auto;
-  border: 1px solid #333;
 }
 
 code {
   font-family: Consolas, monospace;
-  color: #f1f1f1;
 }
