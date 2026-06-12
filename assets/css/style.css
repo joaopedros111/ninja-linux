@@ -106,10 +106,11 @@ code {
 
 main a {
     color: #8FD96B;
+    text-decoration: none;
 }
 
 main a:hover {
-    color: #95D97A;
+    color: #A8E88A;
     text-decoration: underline;
 }
 
