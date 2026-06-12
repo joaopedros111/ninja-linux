@@ -103,3 +103,17 @@ pre code {
 code {
   font-family: Consolas, monospace;
 }
+
+a {
+  color: #7CCB5E;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #95D97A;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #7CCB5E;
+}
