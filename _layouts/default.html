@@ -166,5 +166,40 @@
   });
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    document.querySelectorAll("pre").forEach(pre => {
+
+        const button = document.createElement("button");
+        button.className = "copy-btn";
+        button.innerText = "Copiar";
+
+        button.addEventListener("click", async () => {
+
+            const code = pre.querySelector("code");
+
+            try {
+                await navigator.clipboard.writeText(code.innerText);
+
+                button.innerText = "Copiado!";
+
+                setTimeout(() => {
+                    button.innerText = "Copiar";
+                }, 2000);
+
+            } catch (err) {
+                button.innerText = "Erro";
+            }
+
+        });
+
+        pre.appendChild(button);
+
+    });
+
+});
+</script>
+
 </body>
 </html>
