@@ -105,13 +105,12 @@ code {
 }
 
 a {
-  color: #7CCB5E;
+  color: #9BCF7A;
   text-decoration: none;
 }
 
 a:hover {
-  color: #95D97A;
-  text-decoration: underline;
+  color: #B5E39A;
 }
 
 a:visited {
