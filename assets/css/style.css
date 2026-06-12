@@ -43,12 +43,15 @@ body {
 }
 
 .sidebar a:hover {
-  background: #e0e0e0;
+  background: #2a2a2a;
+  color: #7CCB5E;
 }
 
 .sidebar a.active {
-  background: #dcdcdc;
+  background: #252525;
+  color: #7CCB5E;
   font-weight: bold;
+  border-left: 3px solid #7CCB5E;
 }
 
 details {
