@@ -38,6 +38,7 @@ O objetivo é centralizar conhecimento adquirido através de estudos, laboratór
 * 🔐 Certificados SSL
 * 🔥 WatchGuard
 * 🪟 Windows
+* Troubleshooting
 
 ---
 
