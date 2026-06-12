@@ -44,25 +44,21 @@ O foco é manter o conhecimento organizado, acessível e de fácil manutenção.
 
 ## 🔗 Contato
 
-<div style="display: flex; gap: 15px; align-items: center;">
-  <a href="https://github.com/joaopedros111" target="_blank">
-    <img
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-      width="40"
-      alt="GitHub"
-      style="
-        background:#7CCB5E;
-        padding:6px;
-        border-radius:8px;
-      "
-    >
-  </a>
+<div style="display:flex; gap:10px; flex-wrap:wrap;">
 
-  <a href="https://www.linkedin.com/in/jo%C3%A3o-santos-67a17685/" target="_blank">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="40" alt="LinkedIn">
-  </a>
+<a href="https://github.com/joaopedros111" target="_blank"
+   style="background:#7CCB5E;color:#111;padding:8px 14px;border-radius:8px;text-decoration:none;font-weight:bold;">
+   GitHub
+</a>
 
-  <a href="https://www.instagram.com/joao.bz2/" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" width="40" alt="Instagram">
-  </a>
+<a href="https://www.linkedin.com/in/jo%C3%A3o-santos-67a17685/" target="_blank"
+   style="background:#0A66C2;color:white;padding:8px 14px;border-radius:8px;text-decoration:none;font-weight:bold;">
+   LinkedIn
+</a>
+
+<a href="https://www.instagram.com/joao.bz2/" target="_blank"
+   style="background:#E4405F;color:white;padding:8px 14px;border-radius:8px;text-decoration:none;font-weight:bold;">
+   Instagram
+</a>
+
 </div>
