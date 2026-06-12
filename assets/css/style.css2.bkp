@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
-  background: #ffffff;
-  color: #222;
+  background: #121212;
+  color: #e0e0e0;
   line-height: 1.6;
 }
 
@@ -12,18 +12,19 @@ body {
   left: 0;
   width: 250px;
   height: 100vh;
-  background: #f5f5f5;
-  border-right: 1px solid #ddd;
+  background: #1b1b1b;
+  border-right: 1px solid #333;
 }
 
 .sidebar-header {
   padding: 20px;
-  border-bottom: 1px solid #ddd;
-  background: #f5f5f5;
+  border-bottom: 1px solid #333;
+  background: #181818;
 }
 
 .sidebar-header h3 {
   margin-top: 0;
+  color: #d0d0d0;
 }
 
 .sidebar-menu {
@@ -36,18 +37,20 @@ body {
 
 .sidebar a {
   display: block;
-  color: #333;
+  color: #c8c8c8;
   text-decoration: none;
   padding: 6px 8px;
   border-radius: 6px;
 }
 
 .sidebar a:hover {
-  background: #e0e0e0;
+  background: #2a2a2a;
+  color: #d0d0d0;
 }
 
 .sidebar a.active {
-  background: #dcdcdc;
+  background: #333333;
+  color: #d0d0d0;
   font-weight: bold;
 }
 
@@ -59,6 +62,7 @@ summary {
   cursor: pointer;
   font-weight: bold;
   padding: 6px 0;
+  color: #c8c8c8;
 }
 
 ul {
@@ -74,21 +78,30 @@ main {
 }
 
 main h1 {
-  border-bottom: 2px solid #ddd;
+  color: #d0d0d0;
+  border-bottom: 2px solid #333;
   padding-bottom: 10px;
 }
 
 main h2 {
+  color: #c8c8c8;
   margin-top: 35px;
 }
 
+a {
+  color: #6ab0ff;
+}
+
 pre {
-  background: #f4f4f4;
+  background: #1e1e1e;
+  color: #c8c8c8;
   padding: 15px;
   border-radius: 8px;
   overflow-x: auto;
+  border: 1px solid #333;
 }
 
 code {
   font-family: Consolas, monospace;
+  color: #f1f1f1;
 }
