@@ -84,10 +84,17 @@ main h2 {
 }
 
 pre {
-  background: #f4f4f4;
+  background: #222;
+  color: #c8c8c8;
   padding: 15px;
   border-radius: 8px;
   overflow-x: auto;
+  border: 1px solid #333;
+}
+
+pre code {
+  background: transparent;
+  color: inherit;
 }
 
 code {
