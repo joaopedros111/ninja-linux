@@ -16,11 +16,11 @@ Sua flexibilidade, estabilidade e segurança fazem dele uma das principais plata
 ## Conteúdo
 
 * [Comandos Básicos](comandos-basicos.md)
+* [LVM](expandir-lvm.md)
 * [Gerenciamento de Usuários](usuarios.md)
 * [Permissões](permissoes.md)
 * [Processos](processos.md)
 * [Serviços](servicos.md)
-* [LVM](lvm.md)
 * [Redes](redes.md)
 * [Shell Script](shell-script.md)
 * [Troubleshooting](troubleshooting.md)
