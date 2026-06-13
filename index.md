@@ -31,11 +31,11 @@ Seu objetivo é centralizar conhecimento e facilitar consultas rápidas no dia a
 - 🌿 Git
 - 🌐 Redes
 - 📊 Monitoramento
-🦑 Squid
-🔥 WatchGuard
-🥜 Nutanix
-🪟 Windows
-🛠 Troubleshooting
+- 🦑 Squid
+- 🔥 WatchGuard
+- 🥜 Nutanix
+- 🪟 Windows
+- 🛠 Troubleshooting
 
 ---
 
