@@ -1,8 +1,7 @@
 ---
-
 layout: default
 title: Monitoramento
---------------------
+---
 
 # 📊 Monitoramento
 
@@ -16,7 +15,6 @@ Nesta seção estão reunidos procedimentos, conceitos e ferramentas utilizados 
 
 ## Conteúdo
 
-* [Conceitos](conceitos.md)
 * [Zabbix](instalacao-zabbix-server.md)
 * [Grafana](grafana.md)
 * [Dashboards](dashboards.md)
