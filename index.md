@@ -59,6 +59,7 @@ LinkedIn </a>
 
 </div>
 
+
 ---
 
 <sub>Última atualização: {{ site.time | date: "%d/%m/%Y" }}</sub>
