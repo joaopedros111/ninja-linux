@@ -20,6 +20,7 @@ O Ninja Linux é uma base de conhecimento voltada para Linux, Infraestrutura, De
 O projeto reúne documentação técnica, procedimentos, troubleshooting, comandos e boas práticas utilizados em estudos, laboratórios e ambientes corporativos.
 
 Seu objetivo é centralizar conhecimento e facilitar consultas rápidas no dia a dia da administração de sistemas.
+
 ---
 
 ## Áreas documentadas
