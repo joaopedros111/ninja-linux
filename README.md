@@ -3,65 +3,62 @@ layout: default
 title: Ninja Linux
 ---
 
-<!-- imagem linux temporariamente removida
 <p align="center">
-  <img src="images/capacete.png" width="260">
+  <img src="images/capacete.png" width="180">
 </p>
--->
 
 # 🐧 Ninja Linux
 
-> Base de conhecimento sobre Linux, Infraestrutura e Tecnologias Open Source.
+> Base de conhecimento sobre Linux, Infraestrutura, DevOps e Tecnologias Open Source.
 
 ---
 
-## Sobre o projeto
-O Ninja Linux é uma base de conhecimento criada para documentar procedimentos, troubleshooting, comandos, boas práticas e anotações técnicas utilizadas no dia a dia da administração de sistemas.
+## Sobre
 
-O objetivo é centralizar conhecimento adquirido através de estudos, laboratórios e experiências profissionais, mantendo uma documentação simples, organizada e de fácil consulta.
+O Ninja Linux é uma base de conhecimento voltada para Linux, Infraestrutura, DevOps e tecnologias Open Source.
 
----
+O projeto reúne documentação técnica, procedimentos, troubleshooting, comandos e boas práticas utilizados em estudos, laboratórios e ambientes corporativos.
 
-## Tecnologias e Ferramentas
-
-* 🐧 Linux
-* ⚙️ DevOps
-* ☸️ Kubernetes
-* 💾 LVM
-* 🥜 Nutanix
-* 🦑 Squid
-* 📊 Monitoramento
-* 🐳 Docker
-* 🌿 Git
-* 🌐 Redes
-* 📜 Shell Script
-* 🔐 Certificados SSL
-* 🔥 WatchGuard
-* 🪟 Windows
+Seu objetivo é centralizar conhecimento e facilitar consultas rápidas no dia a dia da administração de sistemas.
 
 ---
 
-## Objetivo
+## Áreas documentadas
 
-Disponibilizar uma referência prática para consultas rápidas, resolução de problemas e registro contínuo de conhecimento relacionado à infraestrutura, automação, monitoramento, virtualização e administração de sistemas.
+- 🐧 Linux
+- ⚙️ DevOps
+- ☸️ Kubernetes
+- 🐳 Docker
+- 🌿 Git
+- 🌐 Redes
+- 📊 Monitoramento
+- 🦑 Squid
+- 🔥 WatchGuard
+- 🥜 Nutanix
+- 🪟 Windows
+- 🛠 Troubleshooting
+
+---
 
 > 💡 Utilize o menu lateral para navegar pelas categorias e acessar os conteúdos.
 
 ---
 
-
 ## 🔗 Contato
 
-<div style="display: flex; gap: 15px; align-items: center;">
-  <a href="https://github.com/joaopedros111" target="_blank">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="40" alt="GitHub">
-  </a>
+<div style="display:flex; gap:10px; flex-wrap:wrap;">
 
-  <a href="https://www.linkedin.com/in/jo%C3%A3o-santos-67a17685/" target="_blank">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="40" alt="LinkedIn">
-  </a>
+<a href="https://github.com/joaopedros111" target="_blank"
+style="background:#7CCB5E;color:#111;padding:8px 14px;border-radius:8px;text-decoration:none;font-weight:bold;">
+GitHub </a>
 
-  <a href="https://www.instagram.com/joao.bz2/" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" width="40" alt="Instagram">
-  </a>
+<a href="https://www.linkedin.com/in/jo%C3%A3o-santos-67a17685/" target="_blank"
+style="background:#0A66C2;color:white;padding:8px 14px;border-radius:8px;text-decoration:none;font-weight:bold;">
+LinkedIn </a>
+
 </div>
+
+
+---
+
+<sub>Última atualização: {{ site.time | date: "%d/%m/%Y" }}</sub>
