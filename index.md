@@ -4,7 +4,7 @@ title: Ninja Linux
 ---
 
 <p align="center">
-  <img src="images/capacete.png" width="260">
+  <img src="images/capacete.png" width="180">
 </p>
 
 # 🐧 Ninja Linux
@@ -21,23 +21,20 @@ O objetivo é centralizar informações técnicas em um único local, facilitand
 
 ---
 
-## Conteúdo
+## Áreas documentadas
 
-A documentação reúne conteúdos relacionados a:
-
-* Linux
-* DevOps
-* Kubernetes
-* Docker
-* Git
-* Redes
-* Monitoramento
-* Squid
-* WatchGuard
-* Nutanix
-* Windows
-* Troubleshooting
-
+- 🐧 Linux
+- ⚙️ DevOps
+- ☸️ Kubernetes
+- 🐳 Docker
+- 🌿 Git
+- 🌐 Redes
+- 📊 Monitoramento
+- 🦑 Squid
+- 🔥 WatchGuard
+- 🥜 Nutanix
+- 🪟 Windows
+- 🛠 Troubleshooting
 ---
 
 ## Objetivo
@@ -59,10 +56,6 @@ GitHub </a>
 <a href="https://www.linkedin.com/in/jo%C3%A3o-santos-67a17685/" target="_blank"
 style="background:#0A66C2;color:white;padding:8px 14px;border-radius:8px;text-decoration:none;font-weight:bold;">
 LinkedIn </a>
-
-<a href="https://www.instagram.com/joao.bz2/" target="_blank"
-style="background:#E4405F;color:white;padding:8px 14px;border-radius:8px;text-decoration:none;font-weight:bold;">
-Instagram </a>
 
 </div>
 
