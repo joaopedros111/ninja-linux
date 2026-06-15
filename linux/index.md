@@ -17,6 +17,8 @@ Sua flexibilidade, estabilidade e segurança fazem dele uma das principais plata
 
 * [Comandos Básicos](comandos-basicos.md)
 * [LVM](expandir-lvm.md)
+* [Atualizar Certificado SSL](certificadossl.md)
+* [Atualizar SSL Wiki](atualizarSSLwiki.md)
 * [Gerenciamento de Usuários](usuarios.md)
 * [Permissões](permissoes.md)
 * [Processos](processos.md)
