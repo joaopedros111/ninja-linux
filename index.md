@@ -9,7 +9,7 @@ title: Ninja Linux
 
 <!--# 🐧 Ninja Linux -->
 
-# Base de conhecimento sobre Linux, Infraestrutura, DevOps e Tecnologias Open Source.
+### Base de conhecimento sobre Linux, Infraestrutura, DevOps e Tecnologias Open Source.
 
 ---
 
