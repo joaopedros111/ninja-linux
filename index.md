@@ -2,11 +2,11 @@
 layout: default
 title: Ninja Linux
 ---
-
+<!--
 <p align="center">
   <img src="images/capacete.png" width="180">
 </p>
-
+-->
 # 🐧 Ninja Linux
 
 > Base de conhecimento sobre Linux, Infraestrutura, DevOps e Tecnologias Open Source.
