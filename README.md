@@ -1,64 +1,95 @@
----
-layout: default
-title: Ninja Linux
----
+# 🥷 Ninja Linux
 
-<p align="center">
-  <img src="images/capacete.png" width="180">
-</p>
+Portal de documentação e estudos sobre Linux, DevOps, Cloud e Infraestrutura.
 
-# 🐧 Ninja Linux
-
-> Base de conhecimento sobre Linux, Infraestrutura, DevOps e Tecnologias Open Source.
+O Ninja Linux nasceu para centralizar conhecimentos adquiridos durante minha atuação como Analista de Infraestrutura, servindo como base de consulta rápida para administração de servidores, containers, Kubernetes, redes e ferramentas corporativas.
 
 ---
 
-## Sobre
+## 📚 Conteúdo
 
-O Ninja Linux é uma base de conhecimento voltada para Linux, Infraestrutura, DevOps e tecnologias Open Source.
+### 🐧 Linux
+- Administração de sistemas
+- Gerenciamento de usuários
+- LVM
+- Systemd
+- Shell Script
 
-O projeto reúne documentação técnica, procedimentos, troubleshooting, comandos e boas práticas utilizados em estudos, laboratórios e ambientes corporativos.
+### ☸️ Kubernetes
+- kubectl
+- Deployments
+- Services
+- Ingress
+- Troubleshooting
 
-Seu objetivo é centralizar conhecimento e facilitar consultas rápidas no dia a dia da administração de sistemas.
+### 🐳 Docker
+- Containers
+- Imagens
+- Volumes
+- Docker Compose
+
+### ⚙️ DevOps
+- CI/CD
+- Jenkins
+- Azure DevOps
+- Harbor
+
+### 🌐 Redes
+- DNS
+- Proxy
+- TCP/IP
+- Troubleshooting
+
+### 🦑 Squid
+- Configuração
+- ACLs
+- Logs
+- Autenticação
+
+### 📊 Monitoramento
+- Zabbix
+- Grafana
+
+### 🏢 Infraestrutura
+- Nutanix
+- WatchGuard
+- Windows Server
 
 ---
 
-## Áreas documentadas
+## 🎯 Objetivo
 
-- 🐧 Linux
-- ⚙️ DevOps
-- ☸️ Kubernetes
-- 🐳 Docker
-- 🌿 Git
-- 🌐 Redes
-- 📊 Monitoramento
-- 🦑 Squid
-- 🔥 WatchGuard
-- 🥜 Nutanix
-- 🪟 Windows
-- 🛠 Troubleshooting
+- Consolidar conhecimento técnico
+- Compartilhar documentação
+- Registrar procedimentos e soluções
+- Criar uma base de consulta rápida para o dia a dia
 
 ---
 
-> 💡 Utilize o menu lateral para navegar pelas categorias e acessar os conteúdos.
+## 🚀 Tecnologias
+
+- Markdown
+- Jekyll
+- GitHub Pages
+- HTML
+- CSS
 
 ---
 
-## 🔗 Contato
+## 📂 Estrutura do Projeto
 
-<div style="display:flex; gap:10px; flex-wrap:wrap;">
-
-<a href="https://github.com/joaopedros111" target="_blank"
-style="background:#7CCB5E;color:#111;padding:8px 14px;border-radius:8px;text-decoration:none;font-weight:bold;">
-GitHub </a>
-
-<a href="https://www.linkedin.com/in/jo%C3%A3o-santos-67a17685/" target="_blank"
-style="background:#0A66C2;color:white;padding:8px 14px;border-radius:8px;text-decoration:none;font-weight:bold;">
-LinkedIn </a>
-
-</div>
-
-
----
-
-<sub>Última atualização: {{ site.time | date: "%d/%m/%Y" }}</sub>
+```text
+linux-docs/
+├── linux/
+├── kubernetes/
+├── docker/
+├── devops/
+├── git/
+├── redes/
+├── squid/
+├── monitoramento/
+├── nutanix/
+├── watchguard/
+├── windows/
+├── troubleshooting/
+└── docs/
