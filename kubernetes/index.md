@@ -16,6 +16,7 @@ Seu objetivo é automatizar a implantação, escalabilidade, monitoramento e ger
 ## Conteúdo
 
 - [Conceitos](conceito.md)
+- [Kubeconfig](kubeconfig.md)
 - [Pods](pods.md)
 - [Deployments](deployments.md)
 - [Services](services.md)
