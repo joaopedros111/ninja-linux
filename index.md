@@ -108,10 +108,6 @@ Seu objetivo é centralizar conhecimento e facilitar consultas rápidas no dia a
 
 ---
 
-> 💡 Utilize o menu lateral para navegar pelas categorias e acessar os conteúdos.
-
----
-
 ## 🔗 Contato
 
 <div style="display:flex; gap:10px; flex-wrap:wrap;">
