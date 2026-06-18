@@ -17,9 +17,10 @@ Nesta seção estão reunidos procedimentos, conceitos e ferramentas utilizados 
 
 * [Zabbix](instalacao-zabbix-server.md)
 * [Grafana](grafana.md)
-* [Dashboards](dashboards.md)
+<!-- * [Dashboards](dashboards.md)
 * [Alertas](alertas.md)
 * [Troubleshooting](troubleshooting.md)
+-->
 
 ---
 

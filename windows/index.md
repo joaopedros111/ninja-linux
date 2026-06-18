@@ -12,8 +12,8 @@ Aqui estão documentados processos de instalação de software, permissões, pol
 
 ### 📦 Instalação de Software
 
-* [Instalação de Aplicativos (.exe)](instalacao-aplicativos-exe.md)
-* [Instalação de Aplicativos via \Temp](instalacao-via-temp.md)
+* [Instalação de Apps (.exe)](instalacao-aplicativos-exe.md)
+* [Instalação de Apps (\Temp)](instalacao-via-temp.md)
 * [ (AD) Active Directory](activedirectory.md)
 
 ### 🔐 Permissões e Segurança
