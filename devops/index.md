@@ -17,6 +17,7 @@ Seu objetivo é reduzir o tempo entre o desenvolvimento e a disponibilização d
 
 * [CI/CD](cicd.md)
 * [Kubeconfig](kubeconfig.md)
+* [Kubectl](kubectl.md)
 * [Pods](pods.md)
 * [Git Básico](git.md)
 * [Git Intermediário](gitintermediario.md)
