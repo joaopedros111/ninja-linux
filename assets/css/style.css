@@ -20,6 +20,7 @@ body {
   padding: 20px;
   border-bottom: 1px solid #ddd;
   background: #1c1c1c;
+  sidebar-header
 }
 
 .sidebar-header h3 {
@@ -263,4 +264,5 @@ hr {
     font-size: 16px;
     font-weight: 600;
     color: #a0a0a0;
+    text-align: center;
 }
