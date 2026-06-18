@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }}</title>
 
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
@@ -9,227 +10,168 @@
 </head>
 
 <body>
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h2>🏍️ Ninja Linux</h2>
+      <p class="sidebar-subtitle">Linux • Kubernetes • DevOps</p>
 
-<aside class="sidebar">
+      <input
+        type="text"
+        id="sidebarSearchInput"
+        class="search-input"
+        placeholder="Buscar...">
+    </div>
 
-  <div class="sidebar-header">
-<h2>🏍️ Ninja Linux</h2>
-<p class="sidebar-subtitle">
-Linux • Kubernetes • DevOps
-</p>
+    <div class="sidebar-menu">
+      <a href="{{ '/' | relative_url }}">🏠 Início</a>
 
-<input type="text" id="searchInput" placeholder="Buscar..."
-  style="width:100%;padding:8px;border-radius:6px;border:1px solid #333;background:#181818;color:#ddd;margin-bottom:15px;">
+      <details>
+        <summary>🐧 Linux</summary>
+        <ul>
+          <li><a href="{{ '/linux/' | relative_url }}">Página inicial</a></li>
+          <li><a href="{{ '/linux/expandir-lvm.html' | relative_url }}">Expandir LVM</a></li>
+          <li><a href="{{ '/linux/certificadossl.html' | relative_url }}">Certificado SSL</a></li>
+          <li><a href="{{ '/linux/atualizarSSLwiki.html' | relative_url }}">Atualizar SSL - Wiki</a></li>
+        </ul>
+      </details>
 
-  </div>
+      <details>
+        <summary>⚙️ DevOps</summary>
+        <ul>
+          <li><a href="{{ '/devops/' | relative_url }}">Página inicial</a></li>
+          <li><a href="{{ '/devops/cicd.html' | relative_url }}">CI/CD</a></li>
+          <li><a href="{{ '/devops/git.html' | relative_url }}">Git</a></li>
+          <li><a href="{{ '/devops/gitintermediario.html' | relative_url }}">Git Intermediário</a></li>
+        </ul>
+      </details>
 
-  <div class="sidebar-menu">
-     <a href="{{ '/' | relative_url }}">🏠 Início</a>
-    <details>
-      <summary>🐧 Linux</summary>
-      <ul>
-        <li><a href="{{ '/linux/' | relative_url }}">Página inicial</a></li>
-        <li><a href="{{ '/linux/expandir-lvm.html' | relative_url }}">Expandir LVM</a></li>
-        <li><a href="{{ '/linux/certificadossl.html' | relative_url }}">Certificado SSL</a></li>
-        <li><a href="{{ '/linux/atualizarSSLwiki.html' | relative_url }}">Atualizar SSL - Wiki</a></li>
-      </ul>
-    </details>
+      <details>
+        <summary>☸️ Kubernetes</summary>
+        <ul>
+          <li><a href="{{ '/kubernetes/' | relative_url }}">Página inicial</a></li>
+          <li><a href="{{ '/kubernetes/kubeconfig.html' | relative_url }}">Kubeconfig</a></li>
+          <li><a href="{{ '/kubernetes/kubectl.html' | relative_url }}">Kubectl</a></li>
+          <li><a href="{{ '/kubernetes/pods.html' | relative_url }}">Pods</a></li>
+          <li><a href="{{ '/kubernetes/deployments.html' | relative_url }}">Deployments</a></li>
+          <li><a href="{{ '/kubernetes/services.html' | relative_url }}">Services</a></li>
+          <li><a href="{{ '/kubernetes/ingress.html' | relative_url }}">Ingress</a></li>
+          <li><a href="{{ '/kubernetes/troubleshooting.html' | relative_url }}">Troubleshooting</a></li>
+        </ul>
+      </details>
 
-    <details>
-      <summary>⚙️ DevOps</summary>
-      <ul>
-        <li><a href="{{ '/devops/' | relative_url }}">Página inicial</a></li>
-        <li><a href="{{ '/devops/cicd.html' | relative_url }}">CI/CD</a></li>
-        <li><a href="{{ '/devops/git.html' | relative_url }}">Git</a></li>
-        <li><a href="{{ '/devops/gitintermediario.html' | relative_url }}">Git Intermediário</a></li>
-      </ul>
-    </details>
+      <details>
+        <summary>📊 Monitoramento</summary>
+        <ul>
+          <li><a href="{{ '/monitoramento/' | relative_url }}">Página inicial</a></li>
+          <li><a href="{{ '/monitoramento/instalacao-zabbix-server.html' | relative_url }}">Instalação Zabbix Server</a></li>
+          <li><a href="{{ '/monitoramento/grafana.html' | relative_url }}">Instalação Grafana</a></li>
+        </ul>
+      </details>
 
-<details>
-  <summary>☸️ Kubernetes</summary>
-  <ul>
-    <li><a href="{{ '/kubernetes/' | relative_url }}">Página inicial</a></li>
-    <li><a href="{{ '/kubernetes/kubeconfig.html' | relative_url }}">Kubeconfig</a></li>
-    <li><a href="{{ '/kubernetes/kubectl.html' | relative_url }}">Kubectl</a></li>
-    <li><a href="{{ '/kubernetes/pods.html' | relative_url }}">Pods</a></li>
-    <li><a href="{{ '/kubernetes/deployments.html' | relative_url }}">Deployments</a></li>
-    <li><a href="{{ '/kubernetes/services.html' | relative_url }}">Services</a></li>
-    <li><a href="{{ '/kubernetes/ingress.html' | relative_url }}">Ingress</a></li>
-    <li><a href="{{ '/kubernetes/troubleshooting.html' | relative_url }}">Troubleshooting</a></li>
-  </ul>
-</details>
+      <details>
+        <summary>🪟 Windows</summary>
+        <ul>
+          <li><a href="{{ '/windows/' | relative_url }}">Página inicial</a></li>
+          <li><a href="{{ '/windows/instalacao-aplicativos-exe.html' | relative_url }}">Instalação de Apps (.exe)</a></li>
+          <li><a href="{{ '/windows/instalacao-via-temp.html' | relative_url }}">Instalação de Apps (\Temp)</a></li>
+          <li><a href="{{ '/windows/activedirectory.html' | relative_url }}">Active Directory</a></li>
+        </ul>
+      </details>
 
-<!--
-    <details>
-      <summary>🌿 Git</summary>
-      <ul>
-        <li><a href="{{ '/git/' | relative_url }}">Página inicial</a></li>
-        <li><a href="{{ '/git/git.html' | relative_url }}">Git Básico</a></li>
-        <li><a href="{{ '/git/gitintermediario.html' | relative_url }}">Git Intermediário</a></li>
-      </ul>
-    </details>
+      <details>
+        <summary>🧰 Troubleshooting</summary>
+        <ul>
+          <li><a href="{{ '/troubleshooting/' | relative_url }}">Página inicial</a></li>
+          <li><a href="{{ '/troubleshooting/troubleshootingwiki.html' | relative_url }}">Troubleshooting Wiki</a></li>
+          <li><a href="{{ '/troubleshooting/troubleshootingcitsmart.html' | relative_url }}">Troubleshooting CitSmart</a></li>
+        </ul>
+      </details>
+    </div>
+  </aside>
 
-    <details>
-      <summary>🌐 Redes</summary>
-      <ul>
-       <li><a href="{{ '/redes/' | relative_url }}">Página inicial</a></li>
-      </ul>
-    </details>
+  <main>
+    {{ content }}
+  </main>
 
-    <details>
-      <summary>🦑 Squid</summary>
-      <ul>
-        <li><a href="{{ '/squid/' | relative_url }}">Página inicial</a></li>
-      </ul>
-    </details>  -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const details = document.querySelectorAll("details");
+      const links = document.querySelectorAll(".sidebar a");
+      const currentPath = window.location.pathname;
 
-    <details>
-      <summary>📊 Monitoramento</summary>
-      <ul>
-        <li><a href="{{ '/monitoramento/' | relative_url }}">Página inicial</a></li>
-        <li><a href="{{ '/monitoramento/instalacao-zabbix-server.html' | relative_url }}">Instalação Zabbix Server</a></li>
-        <li><a href="{{ '/monitoramento/grafana.html' | relative_url }}">Instalação Grafana</a></li>
-      </ul>
-    </details>
+      details.forEach((detail, index) => {
+        const savedState = localStorage.getItem("menu-" + index);
 
-    <!--
-    <details>
-      <summary>🥜 Nutanix</summary>
-      <ul>
-        <li><a href="{{ '/nutanix/' | relative_url }}">Página inicial</a></li>
-      </ul>
-    </details>
+        if (savedState === "open") {
+          detail.open = true;
+        }
 
-    <details>
-      <summary>🐳 Docker</summary>
-      <ul>
-        <li><a href="{{ '/docker/' | relative_url }}">Página inicial</a></li>
-      </ul>
-    </details>
+        detail.addEventListener("toggle", function () {
+          localStorage.setItem("menu-" + index, detail.open ? "open" : "closed");
+        });
+      });
 
-    <details>
-      <summary>🔥 WatchGuard</summary>
-      <ul>
-        <li><a href="{{ '/watchguard/' | relative_url }}">Página inicial</a></li>
-      </ul>
-    </details>
-  -->
-    
-    <details>
-      <summary>🪟 Windows</summary>
-      <ul>
-        <li><a href="{{ '/windows/' | relative_url }}">Página inicial</a></li>
-        <li><a href="{{ '/windows/instalacao-aplicativos-exe.html' | relative_url }}">Instalação de Apps (.exe)</a></li>
-        <li><a href="{{ '/windows/instalacao-via-temp.html' | relative_url }}">Instalação de Apps (\Temp)</a></li>
-        <li><a href="{{ '/windows/activedirectory.html' | relative_url }}">Active Directory</a></li>
-      </ul>
-    </details>
+      links.forEach(link => {
+        const linkPath = new URL(link.href).pathname;
 
-    <details>
-      <summary>🧰 Troubleshooting</summary>
-      <ul>
-        <li><a href="{{ '/troubleshooting/' | relative_url }}">Página inicial</a></li>
-        <li><a href="{{ '/troubleshooting/troubleshootingwiki.html' | relative_url }}">Troubleshooting Wiki</a></li>
-        <li><a href="{{ '/troubleshooting/troubleshootingcitsmart.html' | relative_url }}">Troubleshooting CitSmart</a></li>
-      </ul>
-    </details>
+        if (linkPath === currentPath) {
+          link.classList.add("active");
 
-
-
-    
-  </div>
-</aside>
-
-<main>
-  {{ content }}
-</main>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const details = document.querySelectorAll("details");
-    const links = document.querySelectorAll(".sidebar a");
-    const currentPath = window.location.pathname;
-
-    details.forEach((detail, index) => {
-      const savedState = localStorage.getItem("menu-" + index);
-
-      if (savedState === "open") {
-        detail.open = true;
-      }
-
-      detail.addEventListener("toggle", function () {
-        localStorage.setItem("menu-" + index, detail.open ? "open" : "closed");
+          const parentDetails = link.closest("details");
+          if (parentDetails) {
+            parentDetails.open = true;
+          }
+        }
       });
     });
+  </script>
 
-    links.forEach(link => {
-      const linkPath = new URL(link.href).pathname;
-
-      if (linkPath === currentPath) {
-        link.classList.add("active");
-
-        const parentDetails = link.closest("details");
-        if (parentDetails) {
-          parentDetails.open = true;
-        }
-      }
-    });
-  });
-</script>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-    document.querySelectorAll("pre").forEach(pre => {
-
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll("pre").forEach(pre => {
         const button = document.createElement("button");
         button.className = "copy-btn";
         button.innerText = "Copiar";
 
         button.addEventListener("click", async () => {
+          const code = pre.querySelector("code");
+          const text = code ? code.innerText : pre.innerText;
 
-const code = pre.querySelector("code");
-const text = code ? code.innerText : pre.innerText;
-await navigator.clipboard.writeText(text);
+          try {
+            await navigator.clipboard.writeText(text);
+            button.innerText = "Copiado!";
 
-            try {
-                await navigator.clipboard.writeText(code.innerText);
-
-                button.innerText = "Copiado!";
-
-                setTimeout(() => {
-                    button.innerText = "Copiar";
-                }, 2000);
-
-            } catch (err) {
-                button.innerText = "Erro";
-            }
-
+            setTimeout(() => {
+              button.innerText = "Copiar";
+            }, 2000);
+          } catch (err) {
+            button.innerText = "Erro";
+          }
         });
 
         pre.appendChild(button);
-
+      });
     });
+  </script>
 
-});
-</script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const searchInput = document.getElementById("sidebarSearchInput");
 
-<script>
-document.getElementById("searchInput").addEventListener("keyup", function() {
-    let filtro = this.value.toLowerCase();
-    let links = document.querySelectorAll(".sidebar a");
+      if (!searchInput) {
+        return;
+      }
 
-    links.forEach(function(link) {
-        let texto = link.textContent.toLowerCase();
+      searchInput.addEventListener("keyup", function () {
+        const filtro = this.value.toLowerCase();
+        const links = document.querySelectorAll(".sidebar a");
 
-        if (texto.includes(filtro)) {
-            link.style.display = "block";
-        } else {
-            link.style.display = "none";
-        }
+        links.forEach(link => {
+          const texto = link.textContent.toLowerCase();
+          link.style.display = texto.includes(filtro) ? "block" : "none";
+        });
+      });
     });
-});
-</script>
-
+  </script>
 </body>
 </html>

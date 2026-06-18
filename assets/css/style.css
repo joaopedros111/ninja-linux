@@ -211,6 +211,7 @@ hr {
     padding: 15px 20px;
 }
 
+.search-input,
 #searchInput {
     width: 100%;
     box-sizing: border-box;
@@ -222,6 +223,7 @@ hr {
     font-size: 14px;
 }
 
+.search-input:focus,
 #searchInput:focus {
     outline: none;
     border-color: #7CCB5E;
