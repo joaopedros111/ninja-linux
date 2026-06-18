@@ -188,7 +188,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         button.addEventListener("click", async () => {
 
-            const code = pre.querySelector("code");
+const code = pre.querySelector("code");
+const text = code ? code.innerText : pre.innerText;
+await navigator.clipboard.writeText(text);
 
             try {
                 await navigator.clipboard.writeText(code.innerText);

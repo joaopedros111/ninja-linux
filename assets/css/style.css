@@ -256,3 +256,10 @@ hr {
     border-color: #7CCB5E;
     box-shadow: 0 0 8px rgba(124,203,94,0.3);
 }
+
+.sidebar-subtitle {
+    margin-top: -10px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    color: #888;
+}
