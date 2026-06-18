@@ -17,11 +17,11 @@ O Git é um sistema de controle de versão distribuído utilizado para gerenciar
 
 * [Git Básicos](git.md)
 * [Git Intermediário](gitintermediario.md)
-* [Merge](merge.md)
+<!-- * [Merge](merge.md)
 * [Rebase](rebase.md)
 * [GitHub](github.md)
 * [Troubleshooting](troubleshooting.md)
-
+-->
 ---
 
 > 💡 Esta seção reúne conceitos, comandos e práticas relacionadas ao Git.
