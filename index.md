@@ -3,22 +3,10 @@ layout: default
 title: Ninja Linux
 ---
 
-<!--
-<img src="images/banner-ninja-linux.png" alt="Ninja Linux" width="100%">
-
-<div style="text-align:center;">
-    <img src="images/banner-ninja-linux.png"
-         alt="Ninja Linux"
-         width="100%">
-</div>
--->
-
 <img src="images/banner-ninja-linux.png"
      alt="Ninja Linux"
      width="100%"
      class="hero-banner">
-
-<!--# 🐧 Ninja Linux -->
 
 ---
 
@@ -96,7 +84,7 @@ Seu objetivo é centralizar conhecimento e facilitar consultas rápidas no dia a
 </a>
 
 <a class="card" href="troubleshooting/">
-<h3>🛠 Troubleshooting</h3>
+<h3>🛠️ Troubleshooting</h3>
 <p>Erros, diagnósticos e soluções práticas.</p>
 </a>
 
@@ -121,7 +109,6 @@ style="background:#0A66C2;color:white;padding:8px 14px;border-radius:8px;text-de
 LinkedIn </a>
 
 </div>
-
 
 ---
 
