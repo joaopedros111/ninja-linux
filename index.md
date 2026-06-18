@@ -5,6 +5,17 @@ title: Ninja Linux
 
 <img src="images/banner-ninja-linux.png" alt="Ninja Linux" width="100%">
 
+<div style="text-align:center;">
+    <img src="images/banner-ninja-linux.png"
+         alt="Ninja Linux"
+         width="100%">
+</div>
+
+<img src="images/banner-ninja-linux.png"
+     alt="Ninja Linux"
+     width="100%"
+     style="border-radius:10px;">
+
 <!--# 🐧 Ninja Linux -->
 
 ---
