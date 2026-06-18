@@ -1,3 +1,13 @@
+:root {
+    --verde-ninja: #7CCB5E;
+    --bg-principal: #181818;
+    --bg-secundario: #202020;
+    --bg-card: #232323;
+    --texto: #b8b8b8;
+    --texto-claro: #d8d8d8;
+    --borda: #333;
+}
+
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
@@ -13,14 +23,13 @@ body {
   width: 250px;
   height: 100vh;
   background: #202020;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid #333;
 }
 
 .sidebar-header {
   padding: 20px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #333;
   background: #1c1c1c;
-  sidebar-header
 }
 
 .sidebar-header h3 {
@@ -107,16 +116,6 @@ code {
   font-family: Consolas, monospace;
 }
 
-:root {
-    --verde-ninja: #7CCB5E;
-    --bg-principal: #181818;
-    --bg-secundario: #202020;
-    --bg-card: #232323;
-    --texto: #b8b8b8;
-    --texto-claro: #d8d8d8;
-    --borda: #333;
-}
-
 .sidebar a.active {
     color: var(--verde-ninja);
     border-left: 3px solid var(--verde-ninja);
@@ -164,8 +163,8 @@ pre {
     background: var(--bg-card);
     padding: 18px;
     border-radius: 12px;
-    border-left: 4px solid var(--verde-ninja);
     border: 1px solid var(--borda);
+    border-left: 4px solid var(--verde-ninja);
     text-decoration: none;
     color: inherit;
     transition: all 0.25s ease;
