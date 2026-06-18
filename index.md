@@ -3,7 +3,7 @@ layout: default
 title: Ninja Linux
 ---
 
-<img src="/images/banner-ninja-linux.png" alt="Ninja Linux" width="100%">
+<img src="images/banner-ninja-linux.png" alt="Ninja Linux" width="100%">
 
 <!--# 🐧 Ninja Linux -->
 
