@@ -78,12 +78,14 @@ main {
 }
 
 main h1 {
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 10px;
+    border-bottom: 2px solid var(--verde-ninja);
+    padding-bottom: 10px;
+    color: white;
 }
 
 main h2 {
-  margin-top: 35px;
+    margin-top: 35px;
+    color: white;
 }
 
 pre {
@@ -106,6 +108,12 @@ code {
 
 :root {
     --verde-ninja: #7CCB5E;
+    --bg-principal: #181818;
+    --bg-secundario: #202020;
+    --bg-card: #232323;
+    --texto: #b8b8b8;
+    --texto-claro: #d8d8d8;
+    --borda: #333;
 }
 
 .sidebar a.active {
@@ -152,13 +160,31 @@ pre {
 
 .card {
     display: block;
-    background: #1f2937;
+    background: var(--bg-card);
     padding: 18px;
     border-radius: 12px;
-    border-left: 4px solid #7CCB5E;
+    border-left: 4px solid var(--verde-ninja);
+    border: 1px solid var(--borda);
     text-decoration: none;
     color: inherit;
-    transition: 0.3s;
+    transition: all 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 15px rgba(124,203,94,0.20);
+    border-color: var(--verde-ninja);
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: var(--texto-claro);
+}
+
+.card p {
+    margin: 0;
+    color: #9ca3af;
 }
 
 .card:hover {
@@ -174,4 +200,38 @@ pre {
 .card p {
     margin: 0;
     color: #cbd5e1;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 30px 0;
+}
+
+.hero-banner {
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+}
+
+@media (max-width: 768px) {
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+    }
+
+    .sidebar-menu {
+        height: auto;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
 }

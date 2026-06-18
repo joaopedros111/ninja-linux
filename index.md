@@ -16,7 +16,7 @@ title: Ninja Linux
 <img src="images/banner-ninja-linux.png"
      alt="Ninja Linux"
      width="100%"
-     style="border-radius:10px;">
+     class="hero-banner">
 
 <!--# 🐧 Ninja Linux -->
 
