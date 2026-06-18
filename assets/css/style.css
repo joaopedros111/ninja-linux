@@ -142,3 +142,36 @@ pre {
 .copy-btn:hover {
     background: #333;
 }
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.card {
+    display: block;
+    background: #1f2937;
+    padding: 18px;
+    border-radius: 12px;
+    border-left: 4px solid #7CCB5E;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.card p {
+    margin: 0;
+    color: #cbd5e1;
+}

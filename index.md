@@ -38,19 +38,69 @@ Seu objetivo é centralizar conhecimento e facilitar consultas rápidas no dia a
 
 ## Áreas documentadas
 
-- 🐧 Linux
-- ⚙️ DevOps
-- ☸️ Kubernetes
-- 🐳 Docker
-- 🌿 Git
-- 🌐 Redes
-- 📊 Monitoramento
-- 🦑 Squid
-- 🔥 WatchGuard
-- 🥜 Nutanix
-- 🪟 Windows
-- 🛠 Troubleshooting
+<div class="cards-container">
 
+<a class="card" href="linux/">
+<h3>🐧 Linux</h3>
+<p>Administração, comandos e troubleshooting.</p>
+</a>
+
+<a class="card" href="devops/">
+<h3>⚙️ DevOps</h3>
+<p>CI/CD, Jenkins, automação e pipelines.</p>
+</a>
+
+<a class="card" href="kubernetes/">
+<h3>☸️ Kubernetes</h3>
+<p>Deployments, services, ingress e kubectl.</p>
+</a>
+
+<a class="card" href="docker/">
+<h3>🐳 Docker</h3>
+<p>Containers, imagens, volumes e compose.</p>
+</a>
+
+<a class="card" href="git/">
+<h3>🌿 Git</h3>
+<p>Versionamento, branches, commits e GitHub.</p>
+</a>
+
+<a class="card" href="redes/">
+<h3>🌐 Redes</h3>
+<p>DNS, TCP/IP, proxy e conectividade.</p>
+</a>
+
+<a class="card" href="monitoramento/">
+<h3>📊 Monitoramento</h3>
+<p>Zabbix, Grafana, métricas e alertas.</p>
+</a>
+
+<a class="card" href="squid/">
+<h3>🦑 Squid</h3>
+<p>Proxy, ACLs, autenticação e logs.</p>
+</a>
+
+<a class="card" href="watchguard/">
+<h3>🔥 WatchGuard</h3>
+<p>Firewall, políticas e troubleshooting.</p>
+</a>
+
+<a class="card" href="nutanix/">
+<h3>🥜 Nutanix</h3>
+<p>Virtualização, Prism e infraestrutura.</p>
+</a>
+
+<a class="card" href="windows/">
+<h3>🪟 Windows</h3>
+<p>Servidores, ferramentas e administração.</p>
+</a>
+
+<a class="card" href="troubleshooting/">
+<h3>🛠 Troubleshooting</h3>
+<p>Erros, diagnósticos e soluções práticas.</p>
+</a>
+
+</div>
 ---
 
 > 💡 Utilize o menu lateral para navegar pelas categorias e acessar os conteúdos.
