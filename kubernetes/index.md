@@ -1,5 +1,4 @@
 ---
-
 layout: default
 title: Kubernetes
 ---
@@ -24,15 +23,6 @@ Permite executar aplicações de forma distribuída, resiliente e altamente disp
 * [Deployments](deployments.md)
 * [Services](services.md)
 * [Ingress](ingress.md)
-
-<!--
-* [Namespaces](namespaces.md)
-* [ConfigMaps](configmaps.md)
-* [Secrets](secrets.md)
-* [Volumes](volumes.md)
-* [Helm](helm.md)
-* [Troubleshooting](troubleshooting.md)
--->
 
 ---
 

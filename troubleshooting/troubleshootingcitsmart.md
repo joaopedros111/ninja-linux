@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Troubleshootingcitsmart
+title: Troubleshooting CITSmart
 ---
 
 # Troubleshooting – Indisponibilidade do CITSmart

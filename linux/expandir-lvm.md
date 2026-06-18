@@ -1,6 +1,6 @@
 ---
 layout: default
-title:LVM
+title: LVM
 ---
 
 # 💾 LVM

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Troubleshootingw wiki
+title: Troubleshooting Wiki Infraero
 ---
 
 # 📊 Troubleshooting Completo – Wiki Infraero Indisponível (Docker, WikiJS, Nginx e Certificados)

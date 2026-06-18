@@ -1,3 +1,8 @@
+---
+layout: default
+title: Atualização de Certificado SSL da Wiki Infraero
+---
+
 # Atualização de Certificado SSL da Wiki Infraero (WikiJS + Docker + Nginx)
 
 ## Objetivo
@@ -276,4 +281,3 @@ Resultado:
 ```text
 Verify return code: 0 (ok)
 ```
-

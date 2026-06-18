@@ -1,3 +1,8 @@
+---
+layout: default
+title: Atualização de Certificado SSL no Harbor
+---
+
 # Atualização de Certificado SSL no Harbor (Docker) - Rocky Linux
 
 ## Objetivo
