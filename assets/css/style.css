@@ -258,7 +258,9 @@ hr {
 }
 
 .sidebar-subtitle {
+    margin-top: -10px;
+    margin-bottom: 15px;
     font-size: 18px;
-    font-weight: 500;
-    color: #999;
+    font-weight: 600;
+    color: #a0a0a0;
 }
