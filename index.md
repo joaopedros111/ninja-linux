@@ -101,6 +101,11 @@ Seu objetivo é centralizar conhecimento e facilitar consultas rápidas no dia a
 </a>
 
 </div>
+
+<div class="search-container">
+    <input type="text" id="searchInput" placeholder="🔍 Buscar...">
+</div>
+
 ---
 
 > 💡 Utilize o menu lateral para navegar pelas categorias e acessar os conteúdos.

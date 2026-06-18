@@ -235,3 +235,24 @@ hr {
         grid-template-columns: 1fr;
     }
 }
+
+.search-container {
+    padding: 15px 20px;
+}
+
+#searchInput {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background: #181818;
+    color: #ddd;
+    font-size: 14px;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: #7CCB5E;
+    box-shadow: 0 0 8px rgba(124,203,94,0.3);
+}
