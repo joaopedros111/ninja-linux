@@ -1,18 +1,48 @@
-# KUBECONFIG - Guia Rápido
+---
 
-## O que é o KUBECONFIG?
+layout: default
+title: KUBECONFIG
+-----------------
+
+# ☸️ KUBECONFIG - Guia Rápido
+
+## Introdução
 
 O KUBECONFIG é um arquivo utilizado pelo Kubernetes para armazenar informações de acesso aos clusters.
 
-Ele contém:
+Ele contém dados como:
 
-* URL da API do cluster
+* Endereço da API do cluster
 * Certificados
 * Contextos
 * Usuários
 * Tokens de autenticação
 
-Sem um KUBECONFIG válido, o kubectl não consegue se conectar ao cluster.
+Sem um KUBECONFIG válido, o `kubectl` não consegue se conectar ao cluster.
+
+---
+
+## Estrutura de um KUBECONFIG
+
+Exemplo simplificado:
+
+```yaml
+apiVersion: v1
+kind: Config
+
+clusters:
+- name: infraero-hml
+  cluster:
+    server: https://cluster.exemplo.com
+
+contexts:
+- name: infraero-hml
+  context:
+    cluster: infraero-hml
+    user: infraero-hml
+
+current-context: infraero-hml
+```
 
 ---
 
@@ -68,7 +98,7 @@ export KUBECONFIG=/home/operador/producaorke.yaml
 
 ---
 
-## Verificar cluster atual
+## Verificando o contexto atual
 
 ```bash
 kubectl config current-context
@@ -82,15 +112,24 @@ infraero-hml
 
 ---
 
-## Listar contextos disponíveis
+## Listando os contextos
 
 ```bash
 kubectl config get-contexts
 ```
 
+Exemplo:
+
+```text
+CURRENT   NAME
+*         infraero-hml
+          infraero-prd
+          infraero-det
+```
+
 ---
 
-## Verificar conectividade
+## Testando acesso ao cluster
 
 Listar namespaces:
 
@@ -112,23 +151,49 @@ kubectl version
 
 ---
 
-## Consultar Pods
+## Comandos úteis
+
+Listar pods de todos os namespaces:
 
 ```bash
 kubectl get pods -A
 ```
 
-Listar pods de um namespace:
+Listar serviços:
 
 ```bash
-kubectl get pods -n <namespace>
+kubectl get svc -A
+```
+
+Listar ingress:
+
+```bash
+kubectl get ingress -A
+```
+
+Descrever um pod:
+
+```bash
+kubectl describe pod <pod>
+```
+
+Visualizar logs:
+
+```bash
+kubectl logs <pod>
+```
+
+Acessar um container:
+
+```bash
+kubectl exec -it <pod> -- bash
 ```
 
 ---
 
 ## Troubleshooting
 
-### Verificar variável carregada
+### Verificar KUBECONFIG carregado
 
 ```bash
 echo $KUBECONFIG
@@ -161,35 +226,34 @@ Exemplo:
 User "system:unauthenticated" cannot get resource
 ```
 
-Causa identificada em ambiente corporativo:
+#### Causa
 
-* Token incorreto configurado no Jenkins ou Rancher
+O cluster recebeu uma requisição sem autenticação válida.
 
-Solução:
+#### Caso real
 
-* Gerar novo token
-* Atualizar credenciais
-* Executar novamente o deploy
+Durante um deploy via Jenkins foi retornado:
 
----
-
-## Comandos úteis
-
-```bash
-kubectl get ns
-kubectl get nodes
-kubectl get pods -A
-kubectl get svc -A
-kubectl get ingress -A
-kubectl describe pod <pod>
-kubectl logs <pod>
-kubectl exec -it <pod> -- bash
+```text
+User "system:unauthenticated" cannot get resource "clusters"
 ```
+
+A causa foi uma credencial/token incorreto configurado no Jenkins.
+
+#### Solução
+
+* Gerar novo token no Rancher
+* Atualizar a credencial utilizada pelo Jenkins
+* Executar novamente o pipeline
 
 ---
 
 ## Referências
 
-Documentação oficial:
+Documentação oficial Kubernetes:
 
 https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/
+
+---
+
+> 💡 Sempre valide o KUBECONFIG carregado antes de iniciar qualquer operação em homologação ou produção.
