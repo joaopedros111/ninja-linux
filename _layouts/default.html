@@ -5,6 +5,7 @@
   <title>{{ page.title }}</title>
 
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="icon" type="image/png" href="{{ '/images/favicon.png' | relative_url }}">
 </head>
 
 <body>
@@ -14,6 +15,10 @@
   <div class="sidebar-header">
     <h2>📁 Ninja Linux</h2>
     <a href="{{ '/' | relative_url }}">🏠 Início</a>
+
+    <input type="text" id="searchInput" placeholder="Buscar..."
+       style="width:100%;padding:8px;border-radius:6px;border:1px solid #333;background:#181818;color:#ddd;margin-bottom:15px;">
+
   </div>
 
   <div class="sidebar-menu">
@@ -199,6 +204,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
+});
+</script>
+
+<script>
+document.getElementById("searchInput").addEventListener("keyup", function() {
+    let filtro = this.value.toLowerCase();
+    let links = document.querySelectorAll(".sidebar a");
+
+    links.forEach(function(link) {
+        let texto = link.textContent.toLowerCase();
+
+        if (texto.includes(filtro)) {
+            link.style.display = "block";
+        } else {
+            link.style.display = "none";
+        }
+    });
 });
 </script>
 
