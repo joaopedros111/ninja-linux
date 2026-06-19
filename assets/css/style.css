@@ -306,6 +306,8 @@ blockquote {
 
 .sidebar-action span {
     display: inline-block;
+    font-size: 17px;
+    line-height: 1;
     transform: rotate(90deg);
 }
 
