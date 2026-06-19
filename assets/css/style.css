@@ -295,7 +295,7 @@ blockquote {
     height: 34px;
     margin: 4px 0 14px;
     padding: 6px 8px;
-    border: 1px solid #3a3a3a;
+    border: 0;
     border-radius: 6px;
     background: #202020;
     box-sizing: border-box;
@@ -321,7 +321,6 @@ blockquote {
 
 .sidebar-action:hover,
 .sidebar-action:focus {
-    border-color: var(--verde-ninja);
     background: #252525;
     outline: none;
 }
