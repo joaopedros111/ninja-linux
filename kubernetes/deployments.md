@@ -1,13 +1,45 @@
 ---
 layout: default
-title: Deployment Kubernetes
+title: Deployments
 ---
 
-# Deployment no Kubernetes
+# ☸️ Deployments no Kubernetes
 
 Um **Deployment** no Kubernetes é o recurso usado para criar, atualizar e manter aplicações rodando em Pods.
 
 Ele controla a quantidade de réplicas, faz atualizações sem derrubar tudo de uma vez e permite voltar para uma versão anterior caso algo dê errado.
+
+Na prática, o Deployment gerencia um **ReplicaSet**, e o ReplicaSet mantém os **Pods** na quantidade desejada.
+
+```text
+Deployment
+└── ReplicaSet
+    ├── Pod
+    ├── Pod
+    └── Pod
+```
+
+---
+
+## Pré-requisitos
+
+Antes de aplicar um Deployment, valide se o `kubectl` está apontando para o cluster correto:
+
+```bash
+kubectl config current-context
+```
+
+Verifique se o namespace existe:
+
+```bash
+kubectl get ns
+```
+
+Se for usar imagens privadas, confirme se o Secret de pull da imagem existe:
+
+```bash
+kubectl get secret -n default
+```
 
 ---
 
@@ -182,6 +214,12 @@ Aplique no cluster:
 kubectl apply -f deployment-nginx.yaml
 ```
 
+Para validar o manifesto antes de aplicar:
+
+```bash
+kubectl apply -f deployment-nginx.yaml --dry-run=client
+```
+
 Verifique se o Deployment foi criado:
 
 ```bash
@@ -238,6 +276,12 @@ Verifique o andamento do rollout:
 kubectl rollout status deployment/nginx-deployment
 ```
 
+Para reiniciar os Pods sem alterar a imagem:
+
+```bash
+kubectl rollout restart deployment/nginx-deployment
+```
+
 ---
 
 ## Histórico de versões
@@ -246,6 +290,12 @@ Veja o histórico do Deployment:
 
 ```bash
 kubectl rollout history deployment/nginx-deployment
+```
+
+Para ver detalhes de uma revisão:
+
+```bash
+kubectl rollout history deployment/nginx-deployment --revision=2
 ```
 
 ---
@@ -262,6 +312,28 @@ Para voltar para uma revisão específica:
 
 ```bash
 kubectl rollout undo deployment/nginx-deployment --to-revision=2
+```
+
+---
+
+## Pausar e retomar rollout
+
+Em mudanças maiores, é possível pausar o rollout antes de continuar a atualização:
+
+```bash
+kubectl rollout pause deployment/nginx-deployment
+```
+
+Retomar:
+
+```bash
+kubectl rollout resume deployment/nginx-deployment
+```
+
+Verificar status:
+
+```bash
+kubectl rollout status deployment/nginx-deployment
 ```
 
 ---
@@ -298,7 +370,7 @@ kubectl delete -f deployment-nginx.yaml
 
 ---
 
-# Exemplo mais completo
+## Exemplo mais completo
 
 Abaixo um exemplo mais parecido com ambiente real, usando:
 
@@ -310,7 +382,7 @@ Abaixo um exemplo mais parecido com ambiente real, usando:
 
 ---
 
-## Deployment completo
+### Deployment completo
 
 ```yaml
 apiVersion: apps/v1
@@ -371,7 +443,7 @@ spec:
 
 ---
 
-## Service
+### Service
 
 O Deployment cria os Pods, mas o acesso interno normalmente é feito por um Service.
 
@@ -393,7 +465,7 @@ spec:
 
 ---
 
-## Ingress
+### Ingress
 
 Se o cluster tiver Ingress Controller configurado, é possível expor a aplicação por URL.
 
@@ -419,7 +491,7 @@ spec:
 
 ---
 
-# Arquivo único com Deployment, Service e Ingress
+## Arquivo único com Deployment, Service e Ingress
 
 Também é possível colocar tudo em um único arquivo YAML, separando os recursos com `---`.
 
@@ -487,9 +559,9 @@ kubectl apply -f minha-aplicacao.yaml
 
 ---
 
-# Comandos úteis
+## Comandos úteis
 
-## Listar recursos
+### Listar recursos
 
 ```bash
 kubectl get deployments
@@ -500,7 +572,7 @@ kubectl get ingress
 
 ---
 
-## Listar tudo no namespace
+### Listar tudo no namespace
 
 ```bash
 kubectl get all -n default
@@ -508,7 +580,7 @@ kubectl get all -n default
 
 ---
 
-## Ver detalhes de um Pod
+### Ver detalhes de um Pod
 
 ```bash
 kubectl describe pod nome-do-pod
@@ -516,7 +588,7 @@ kubectl describe pod nome-do-pod
 
 ---
 
-## Ver eventos do namespace
+### Ver eventos do namespace
 
 ```bash
 kubectl get events -n default --sort-by=.metadata.creationTimestamp
@@ -524,7 +596,7 @@ kubectl get events -n default --sort-by=.metadata.creationTimestamp
 
 ---
 
-## Acessar shell dentro do Pod
+### Acessar shell dentro do Pod
 
 ```bash
 kubectl exec -it nome-do-pod -- /bin/bash
@@ -538,7 +610,7 @@ kubectl exec -it nome-do-pod -- /bin/sh
 
 ---
 
-# Checklist antes de aplicar em produção
+## Checklist antes de aplicar em produção
 
 Antes de aplicar um Deployment em produção, confira:
 
@@ -556,9 +628,9 @@ Antes de aplicar um Deployment em produção, confira:
 
 ---
 
-# Problemas comuns
+## Problemas comuns
 
-## Pods não sobem
+### Pods não sobem
 
 Verifique:
 
@@ -579,7 +651,7 @@ Causas comuns:
 
 ---
 
-## ImagePullBackOff
+### ImagePullBackOff
 
 Esse erro indica problema ao baixar a imagem.
 
@@ -599,7 +671,7 @@ Causas comuns:
 
 ---
 
-## CrashLoopBackOff
+### CrashLoopBackOff
 
 Esse erro indica que o container inicia e depois cai.
 
@@ -625,7 +697,7 @@ Causas comuns:
 
 ---
 
-## Service não acessa o Pod
+### Service não acessa o Pod
 
 Verifique se o selector do Service bate com o label do Pod.
 
@@ -647,7 +719,7 @@ Se os labels forem diferentes, o Service não encontra os Pods.
 
 ---
 
-## Ingress não funciona
+### Ingress não funciona
 
 Verifique:
 
@@ -667,7 +739,7 @@ Possíveis causas:
 
 ---
 
-# Boas práticas
+## Boas práticas
 
 - Evite usar `latest` em produção.
 - Use tags fixas de imagem.
@@ -682,7 +754,7 @@ Possíveis causas:
 
 ---
 
-# Fluxo recomendado de deploy
+## Fluxo recomendado de deploy
 
 ```bash
 # 1. Validar contexto atual
@@ -712,7 +784,7 @@ curl http://minha-aplicacao.exemplo.com.br
 
 ---
 
-# Exemplo com namespace separado
+## Exemplo com namespace separado
 
 ```bash
 kubectl create namespace homologacao
@@ -732,7 +804,7 @@ kubectl get all -n homologacao
 
 ---
 
-# Resumo
+## Resumo
 
 O Deployment é um dos recursos mais importantes do Kubernetes.
 
@@ -753,4 +825,3 @@ Em ambientes corporativos, normalmente ele é usado junto com:
 - Secret
 - HPA
 - pipeline CI/CD
-
