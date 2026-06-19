@@ -20,6 +20,13 @@
         id="sidebarSearchInput"
         class="search-input"
         placeholder="Buscar...">
+
+      <button
+        type="button"
+        id="collapseAllMenus"
+        class="sidebar-action">
+        Recolher tudo
+      </button>
     </div>
 
     <nav class="sidebar-menu" aria-label="Menu principal">
@@ -141,6 +148,7 @@
     document.addEventListener("DOMContentLoaded", function () {
       const details = document.querySelectorAll("details");
       const links = document.querySelectorAll(".sidebar a");
+      const collapseAllButton = document.getElementById("collapseAllMenus");
       const currentPath = window.location.pathname;
 
       details.forEach((detail, index) => {
@@ -167,6 +175,15 @@
           }
         }
       });
+
+      if (collapseAllButton) {
+        collapseAllButton.addEventListener("click", function () {
+          details.forEach((detail, index) => {
+            detail.open = false;
+            localStorage.setItem("menu-" + index, "closed");
+          });
+        });
+      }
     });
   </script>
 

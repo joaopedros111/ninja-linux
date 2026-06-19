@@ -286,6 +286,25 @@ blockquote {
     box-shadow: 0 0 8px rgba(124,203,94,0.3);
 }
 
+.sidebar-action {
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px 10px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background: #242424;
+    color: var(--texto-claro);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.sidebar-action:hover {
+    border-color: var(--verde-ninja);
+    color: var(--verde-ninja);
+    background: #2a2a2a;
+}
+
 .sidebar-subtitle {
     margin-top: 0;
     margin-bottom: 15px;
