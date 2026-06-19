@@ -176,11 +176,11 @@ Um conflito ocorre quando duas alterações modificam a mesma linha de um arquiv
 Exemplo:
 
 ```text
-<<<<<<< HEAD
+[versao local]
 Servidor Rocky Linux
-=======
+[versao da branch-teste]
 Servidor Debian
->>>>>>> branch-teste
+[fim do exemplo]
 ```
 
 O Git não sabe qual alteração manter.

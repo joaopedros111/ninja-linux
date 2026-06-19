@@ -3,12 +3,40 @@ layout: default
 title: Troubleshooting
 ---
 
-# 🚨 Troubleshooting
+# 🛠️ Troubleshooting
 
-Troubleshooting no ambiente Infraero
+## Introdução
+
+Esta seção reúne procedimentos de investigação, análise de incidentes e correção de falhas em serviços corporativos.
+
+O objetivo é registrar sintomas, comandos, evidências e ações de correção para facilitar atendimentos futuros.
+
+---
 
 ## Artigos
 
-* [Wiki Indisponivel](troubleshootingwiki.md)
-* [CITSMART Indisponivel](troubleshootingcitsmart.md)
+* [Wiki indisponível](troubleshootingwiki.md)
+* [CITSmart indisponível](troubleshootingcitsmart.md)
 
+---
+
+## Fluxo recomendado
+
+```text
+Sintoma --> Impacto --> Evidências --> Causa provável --> Ação corretiva --> Validação
+```
+
+---
+
+## Boas práticas
+
+* Registre horário do incidente.
+* Identifique usuários ou sistemas impactados.
+* Colete logs antes de reiniciar serviços.
+* Valide DNS, rede, aplicação e dependências.
+* Documente a solução aplicada.
+* Inclua comandos úteis para recorrência.
+
+---
+
+> 💡 Use esta seção como base para procedimentos de suporte e análise de incidentes.

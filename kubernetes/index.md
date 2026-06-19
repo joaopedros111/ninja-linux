@@ -23,7 +23,16 @@ Permite executar aplicações de forma distribuída, resiliente e altamente disp
 * [Deployments](deployments.md)
 * [Services](services.md)
 * [Ingress](ingress.md)
+* [Troubleshooting Kubernetes](troubleshooting.md)
 
 ---
 
-> 💡 Recomenda-se iniciar pelos tópicos KUBECONFIG, Kubectl e Pods antes de avançar para Deployments, Services e Ingress.
+## Fluxo recomendado de estudo
+
+```text
+KUBECONFIG --> Kubectl --> Pods --> Deployments --> Services --> Ingress --> Troubleshooting
+```
+
+---
+
+> 💡 Recomenda-se iniciar pelos tópicos KUBECONFIG, Kubectl e Pods antes de avançar para Deployments, Services, Ingress e Troubleshooting.

@@ -13,32 +13,34 @@ Aqui estão documentados processos de instalação de software, permissões, pol
 
 ---
 
-## 📂 Conteúdo
+## Conteúdo
 
-### 📦 Instalação de Software
+### Instalação de Software
 
 * [Instalação de Apps (.exe)](instalacao-aplicativos-exe.md)
-* [Instalação de Apps (\Temp)](instalacao-via-temp.md)
-* [ (AD) Active Directory](activedirectory.md)
+* [Instalação de Apps via C:\Temp](instalacao-via-temp.md)
 
-### 🔐 Permissões e Segurança
+### Administração
 
-* Em construção
-
-### 🛠️ Troubleshooting
-
-* Em construção
-
-### ⚙️ Administração
-
-* Em construção
+* [Active Directory](activedirectory.md)
 
 ---
 
-## 🎯 Objetivo
+## Temas da seção
+
+* instalação de aplicativos
+* suporte a estações
+* Active Directory
+* permissões e segurança
+* troubleshooting de ambiente corporativo
+* ferramentas administrativas
+
+---
+
+## Objetivo
 
 Centralizar procedimentos e anotações utilizados no dia a dia da administração de estações Windows, servindo como material de consulta rápida e documentação técnica.
 
 ---
 
-📌 Última atualização: Junho/2026
+> 💡 Esta seção reúne procedimentos práticos para suporte, administração e troubleshooting de Windows em ambiente corporativo.

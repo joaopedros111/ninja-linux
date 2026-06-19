@@ -32,8 +32,11 @@ body {
   background: #1c1c1c;
 }
 
-.sidebar-header h3 {
+.sidebar-header h2 {
   margin-top: 0;
+  margin-bottom: 8px;
+  color: #f5f5f5;
+  text-align: center;
 }
 
 .sidebar-menu {
@@ -111,6 +114,15 @@ pre {
   border: 1px solid var(--borda);
 }
 
+pre .copy-btn {
+    opacity: 0;
+}
+
+pre:hover .copy-btn,
+pre:focus-within .copy-btn {
+    opacity: 1;
+}
+
 pre code {
   background: transparent;
   color: inherit;
@@ -118,6 +130,14 @@ pre code {
 
 code {
   font-family: Consolas, monospace;
+  background: #242424;
+  color: var(--texto-claro);
+  border-radius: 4px;
+  padding: 1px 4px;
+}
+
+pre code {
+  padding: 0;
 }
 
 .copy-btn {
@@ -131,6 +151,7 @@ code {
     padding: 4px 8px;
     cursor: pointer;
     font-size: 12px;
+    transition: opacity 0.2s ease, background 0.2s ease;
 }
 
 .copy-btn:hover {
@@ -148,7 +169,7 @@ code {
     display: block;
     background: var(--bg-card);
     padding: 18px;
-    border-radius: 12px;
+    border-radius: 8px;
     border: 1px solid var(--borda);
     border-left: 4px solid var(--verde-ninja);
     text-decoration: none;
@@ -180,8 +201,43 @@ hr {
 }
 
 .hero-banner {
-    border-radius: 12px;
+    border-radius: 8px;
     box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 18px 0;
+    background: #202020;
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--borda);
+    text-align: left;
+}
+
+th {
+    color: #f5f5f5;
+    background: #252525;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+blockquote {
+    margin: 20px 0;
+    padding: 12px 16px;
+    border-left: 4px solid var(--verde-ninja);
+    background: #202020;
+    color: var(--texto-claro);
+    border-radius: 0 8px 8px 0;
 }
 
 @media (max-width: 768px) {
@@ -231,9 +287,9 @@ hr {
 }
 
 .sidebar-subtitle {
-    margin-top: -10px;
+    margin-top: 0;
     margin-bottom: 15px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     color: #a0a0a0;
     text-align: center;
