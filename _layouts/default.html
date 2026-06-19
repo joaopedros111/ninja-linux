@@ -20,17 +20,18 @@
         id="sidebarSearchInput"
         class="search-input"
         placeholder="Buscar...">
-
-      <button
-        type="button"
-        id="collapseAllMenus"
-        class="sidebar-action">
-        ⌃ Recolher seções
-      </button>
     </div>
 
     <nav class="sidebar-menu" aria-label="Menu principal">
       <a href="{{ '/' | relative_url }}">🏠 Início</a>
+
+      <button
+        type="button"
+        id="collapseAllMenus"
+        class="sidebar-action"
+        aria-label="Recolher todas as seções"
+        title="Recolher todas as seções">
+      </button>
 
       <details>
         <summary>🐧 Linux</summary>
