@@ -292,12 +292,12 @@ blockquote {
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    height: 34px;
-    margin: 4px 0 14px;
-    padding: 6px 8px;
+    height: 31px;
+    margin: 10px 0 4px;
+    padding: 6px 0;
     border: 0;
     border-radius: 6px;
-    background: #202020;
+    background: transparent;
     box-sizing: border-box;
     cursor: pointer;
 }
@@ -313,7 +313,7 @@ blockquote {
 .sidebar-action::after {
     content: "";
     position: absolute;
-    left: 17px;
+    left: 9px;
     width: 7px;
     height: 1px;
     background: #8f8f8f;
@@ -321,7 +321,7 @@ blockquote {
 
 .sidebar-action:hover,
 .sidebar-action:focus {
-    background: #252525;
+    background: #2a2a2a;
     outline: none;
 }
 
