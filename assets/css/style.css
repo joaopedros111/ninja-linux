@@ -287,7 +287,6 @@ blockquote {
 }
 
 .sidebar-action {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -300,39 +299,21 @@ blockquote {
     background: transparent;
     box-sizing: border-box;
     cursor: pointer;
+    color: #c8c8c8;
+    font: inherit;
+    font-weight: bold;
 }
 
-.sidebar-action::before {
-    content: "";
-    width: 12px;
-    height: 12px;
-    border: 1px solid #8f8f8f;
-    border-radius: 3px;
-}
-
-.sidebar-action::after {
-    content: "";
-    position: absolute;
-    left: 9px;
-    width: 7px;
-    height: 1px;
-    background: #8f8f8f;
+.sidebar-action span {
+    display: inline-block;
+    transform: rotate(90deg);
 }
 
 .sidebar-action:hover,
 .sidebar-action:focus {
     background: #2a2a2a;
+    color: var(--verde-ninja);
     outline: none;
-}
-
-.sidebar-action:hover::before,
-.sidebar-action:focus::before {
-    border-color: var(--verde-ninja);
-}
-
-.sidebar-action:hover::after,
-.sidebar-action:focus::after {
-    background: var(--verde-ninja);
 }
 
 .sidebar-subtitle {
