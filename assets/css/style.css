@@ -290,14 +290,15 @@ blockquote {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 26px;
-    height: 26px;
-    margin: 4px 0 14px 8px;
-    padding: 0;
+    justify-content: flex-start;
+    width: 100%;
+    height: 34px;
+    margin: 4px 0 14px;
+    padding: 6px 8px;
     border: 1px solid #3a3a3a;
     border-radius: 6px;
     background: #202020;
+    box-sizing: border-box;
     cursor: pointer;
 }
 
@@ -312,6 +313,7 @@ blockquote {
 .sidebar-action::after {
     content: "";
     position: absolute;
+    left: 17px;
     width: 7px;
     height: 1px;
     background: #8f8f8f;
