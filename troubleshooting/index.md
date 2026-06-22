@@ -17,6 +17,7 @@ O objetivo é registrar sintomas, comandos, evidências e ações de correção 
 
 * [Wiki indisponível](troubleshootingwiki.md)
 * [CITSmart indisponível](troubleshootingcitsmart.md)
+* [utf8 wildfly](troubleshooting_utf8_wildfly.md)
 
 ---
 
