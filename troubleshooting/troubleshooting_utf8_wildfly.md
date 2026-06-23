@@ -1,79 +1,150 @@
 ---
 layout: default
-title: Troubleshooting
+title: Troubleshooting CITSmart
 ---
 
-# Troubleshooting - Problema de Caracteres Especiais (UTF-8) no WildFly
+# Troubleshooting – Correção de Caracteres Especiais (UTF-8) em Aplicação WildFly no Kubernetes
 
-## 📌 Sintoma
-Caracteres especiais (acentos como ç, ã, é) apareciam corrompidos na interface web e logs da aplicação Java (WildFly), exemplo:
+## Problema
 
-- ação → aÃ§Ã£o
-- informação → informaÃ§Ã£o
+A aplicação SGSO apresentava problemas com caracteres especiais (acentuação e cedilha) na interface web.
 
----
+Exemplos:
 
-## 🔍 Diagnóstico
+* Caracteres exibidos incorretamente na aplicação.
+* Durante acesso ao container, nomes de arquivos e textos apareciam com caracteres inválidos ou substituídos por `???`.
 
-### 1. Locale do sistema inconsistente
-Inicialmente o sistema estava configurado como:
+## Ambiente
 
-```
-LANG=en_US.UTF-8
-LC_ALL= (vazio)
-LC_* = POSIX
-```
-
-➡️ Isso gerava inconsistência de encoding no ambiente de execução Java.
+* Kubernetes RKE2
+* WildFly executando em container
+* Namespace: `sgso`
+* Deployment: `sgso`
+* Imagem: `harbor.infraero.gov.br/library/sgso:f860f`
 
 ---
 
-### 2. JVM já estava correta
-A JVM já possuía:
+## Diagnóstico
 
-```
--Dfile.encoding=UTF-8
-```
+### Verificação do Locale dentro do Container
 
-➡️ Portanto o problema NÃO era na JVM.
-
----
-
-### 3. Sistema operacional
-Sistema baseado em EL9 (RHEL/CentOS-like), com UTF-8 disponível, porém sem locale consistente aplicado na sessão.
-
----
-
-## 🛠️ Correção aplicada
-
-Foi aplicado ajuste de ambiente:
+Acessado o pod da aplicação:
 
 ```bash
-export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
+kubectl exec -it -n sgso <pod> -- sh
+```
+
+Verificação:
+
+```bash
+locale
+```
+
+Resultado:
+
+```text
+LANG=
+LC_CTYPE="POSIX"
+LC_ALL=
+```
+
+Indicando que o container estava utilizando locale padrão POSIX e não UTF-8.
+
+---
+
+### Verificação da JVM
+
+Executado:
+
+```bash
+java -XshowSettings:properties -version 2>&1 | grep -i encoding
+```
+
+Após os ajustes, a JVM passou a exibir:
+
+```text
+file.encoding = UTF-8
+native.encoding = UTF-8
+sun.jnu.encoding = UTF-8
+```
+
+Confirmando que o Java estava operando em UTF-8.
+
+---
+
+## Solução
+
+Foram adicionadas variáveis de ambiente UTF-8 diretamente no Deployment Kubernetes.
+
+### Comando aplicado
+
+```bash
+kubectl set env deployment/sgso -n sgso \
+LANG=en_US.UTF-8 \
+LC_ALL=en_US.UTF-8 \
+LC_CTYPE=en_US.UTF-8
+```
+
+O Kubernetes realizou automaticamente um rollout do Deployment, criando um novo pod.
+
+---
+
+## Validação
+
+### Verificar variáveis de ambiente
+
+```bash
+kubectl exec -it -n sgso <pod> -- env | grep -E 'LANG|LC_'
+```
+
+Resultado esperado:
+
+```text
+LANG=en_US.UTF-8
+LC_ALL=en_US.UTF-8
+LC_CTYPE=en_US.UTF-8
+```
+
+### Verificar encoding da JVM
+
+```bash
+kubectl exec -it -n sgso <pod> -- \
+java -XshowSettings:properties -version 2>&1 | grep -i encoding
+```
+
+Resultado esperado:
+
+```text
+file.encoding = UTF-8
+native.encoding = UTF-8
+sun.jnu.encoding = UTF-8
 ```
 
 ---
 
-## ✅ Resultado
+## Conclusão
 
-Após a correção:
+O problema estava relacionado à ausência de configuração explícita de locale UTF-8 no container da aplicação.
 
-- Interface web passou a exibir caracteres corretamente
-- Logs do WildFly ficaram consistentes
-- Encoding UTF-8 padronizado no ambiente de execução
-- Problema de corrupção de caracteres eliminado
+A correção consistiu em definir as variáveis:
 
----
+```text
+LANG=en_US.UTF-8
+LC_ALL=en_US.UTF-8
+LC_CTYPE=en_US.UTF-8
+```
 
-## 🧠 Causa raiz
+no Deployment Kubernetes.
 
-Inconsistência de locale no sistema operacional afetando a herança de encoding pela JVM.
+Após o rollout:
 
----
+* Container passou a utilizar UTF-8.
+* JVM passou a operar com UTF-8.
+* Ambiente ficou apto a processar e exibir caracteres especiais corretamente.
 
-## 📌 Conclusão
+Caso a aplicação continue apresentando caracteres incorretos após essa correção, a análise deve seguir para:
 
-O problema não estava na aplicação nem no container, mas sim no ambiente Linux onde o processo Java estava sendo executado.
-
-A padronização do locale para UTF-8 resolveu completamente o incidente.
+* Configuração do banco de dados.
+* Configuração HTTP/Undertow do WildFly.
+* Páginas JSP/JSF/HTML.
+* Código da aplicação responsável pela conversão de caracteres.
