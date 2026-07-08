@@ -2,12 +2,12 @@
 layout: default
 title: Ninja Linux
 ---
-
+<!-->
 <img src="images/banner-ninja-linux.png"
      alt="Ninja Linux"
      width="100%"
      class="hero-banner">
-
+-->
 ---
 
 ### Base de conhecimento sobre Linux, Infraestrutura, DevOps e tecnologias Open Source.
