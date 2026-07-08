@@ -89,6 +89,105 @@ main {
   max-width: 1000px;
 }
 
+.home-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 260px;
+    gap: 24px;
+    align-items: stretch;
+    margin-bottom: 30px;
+    padding: 28px;
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    background:
+        linear-gradient(135deg, rgba(124, 203, 94, 0.14), transparent 42%),
+        #202020;
+}
+
+.home-kicker {
+    display: inline-flex;
+    margin-bottom: 10px;
+    color: var(--verde-ninja);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.home-hero h1 {
+    margin: 0;
+    border-bottom: 0;
+    padding-bottom: 0;
+    font-size: 44px;
+    line-height: 1.1;
+}
+
+.home-hero p {
+    max-width: 620px;
+    margin: 14px 0 0;
+    color: var(--texto-claro);
+    font-size: 18px;
+}
+
+.home-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.primary-action,
+.secondary-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    padding: 0 16px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.primary-action {
+    background: var(--verde-ninja);
+    color: #111;
+}
+
+.secondary-action {
+    border: 1px solid #3f3f3f;
+    color: var(--texto-claro);
+    background: #242424;
+}
+
+.primary-action:hover,
+.secondary-action:hover {
+    filter: brightness(1.08);
+}
+
+.home-hero-panel {
+    display: grid;
+    gap: 12px;
+}
+
+.home-hero-panel div {
+    padding: 14px;
+    border: 1px solid #363636;
+    border-radius: 8px;
+    background: rgba(24, 24, 24, 0.72);
+}
+
+.home-hero-panel strong {
+    display: block;
+    color: white;
+    font-size: 28px;
+    line-height: 1;
+}
+
+.home-hero-panel span {
+    display: block;
+    margin-top: 6px;
+    color: #a8a8a8;
+    font-size: 14px;
+}
+
 main h1 {
     border-bottom: 2px solid var(--verde-ninja);
     padding-bottom: 10px;
@@ -256,6 +355,19 @@ blockquote {
     main {
         margin-left: 0;
         padding: 20px;
+    }
+
+    .home-hero {
+        grid-template-columns: 1fr;
+        padding: 22px;
+    }
+
+    .home-hero h1 {
+        font-size: 34px;
+    }
+
+    .home-hero p {
+        font-size: 16px;
     }
 
     .cards-container {

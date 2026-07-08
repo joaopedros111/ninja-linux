@@ -2,15 +2,34 @@
 layout: default
 title: Ninja Linux
 ---
-<!--
-<img src="images/banner-ninja-linux.png"
-     alt="Ninja Linux"
-     width="100%"
-     class="hero-banner">
--->
----
 
-### Base de conhecimento sobre Linux, Infraestrutura, DevOps e tecnologias Open Source.
+<section class="home-hero">
+  <div class="home-hero-content">
+    <span class="home-kicker">Base de conhecimento</span>
+    <h1>Ninja Linux</h1>
+    <p>Documentação prática para Linux, infraestrutura, DevOps, Kubernetes, redes, monitoramento e suporte corporativo.</p>
+
+    <div class="home-actions">
+      <a class="primary-action" href="#areas-documentadas">Explorar áreas</a>
+      <a class="secondary-action" href="troubleshooting/">Ver troubleshooting</a>
+    </div>
+  </div>
+
+  <div class="home-hero-panel" aria-label="Resumo do conteúdo">
+    <div>
+      <strong>13</strong>
+      <span>áreas</span>
+    </div>
+    <div>
+      <strong>30+</strong>
+      <span>procedimentos</span>
+    </div>
+    <div>
+      <strong>24/7</strong>
+      <span>consulta rápida</span>
+    </div>
+  </div>
+</section>
 
 ---
 
@@ -25,6 +44,7 @@ Seu objetivo é centralizar conhecimento e facilitar consultas rápidas no dia a
 ---
 
 ## Áreas documentadas
+<a id="areas-documentadas"></a>
 
 <div class="cards-container">
 
