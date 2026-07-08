@@ -78,6 +78,11 @@ Seu objetivo é centralizar conhecimento e facilitar consultas rápidas no dia a
 <p>Virtualização, Prism e infraestrutura.</p>
 </a>
 
+<a class="card" href="vmware/">
+<h3>VMware</h3>
+<p>ESXi, iDRAC, RAID e hosts físicos.</p>
+</a>
+
 <a class="card" href="windows/">
 <h3>🪟 Windows</h3>
 <p>Estações, ferramentas e administração.</p>

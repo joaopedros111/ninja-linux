@@ -60,6 +60,7 @@ O Ninja Linux nasceu para centralizar conhecimentos adquiridos na rotina de infr
 ### 🏢 Infraestrutura
 
 - Nutanix
+- VMware ESXi
 - Windows Server
 - Active Directory
 
@@ -98,6 +99,7 @@ ninja-linux/
 ├── squid/
 ├── monitoramento/
 ├── nutanix/
+├── vmware/
 ├── watchguard/
 ├── windows/
 ├── troubleshooting/
