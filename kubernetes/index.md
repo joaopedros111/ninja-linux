@@ -19,6 +19,7 @@ Permite executar aplicações de forma distribuída, resiliente e altamente disp
 
 * [KUBECONFIG](kubeconfig.md)
 * [Kubectl](kubectl.md)
+* [Instalação de Cluster Kubernetes com Rocky Linux, containerd e Calico](instalacao-cluster-rocky-containerd-calico.md)
 * [Pods](pods.md)
 * [Deployments](deployments.md)
 * [Services](services.md)
@@ -30,7 +31,7 @@ Permite executar aplicações de forma distribuída, resiliente e altamente disp
 ## Fluxo recomendado de estudo
 
 ```text
-KUBECONFIG --> Kubectl --> Pods --> Deployments --> Services --> Ingress --> Troubleshooting
+KUBECONFIG --> Kubectl --> Instalação do Cluster --> Pods --> Deployments --> Services --> Ingress --> Troubleshooting
 ```
 
 ---
