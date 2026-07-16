@@ -1,0 +1,10 @@
+title: Ninja Linux
+description: Documentação prática sobre Linux, DevOps, Kubernetes, redes, monitoramento e infraestrutura.
+lang: pt-BR
+url: https://joaopedros111.github.io
+baseurl: /ninja-linux
+github_username: joaopedros111
+markdown: kramdown
+permalink: pretty
+exclude:
+  - README.md
