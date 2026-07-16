@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Ninja Linux
+description: Documentação prática para Linux, infraestrutura, DevOps, Kubernetes, redes, monitoramento e suporte corporativo.
 ---
 
 <section class="home-hero">
