@@ -1,0 +1,216 @@
+<h2 id="estrutura-de-um-kubeconfig">Estrutura de um KUBECONFIG</h2>
+
+<p>Exemplo simplificado:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Config</span>
+
+<span class="na">clusters</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">infraero-hml</span>
+  <span class="na">cluster</span><span class="pi">:</span>
+    <span class="na">server</span><span class="pi">:</span> <span class="s">https://cluster.exemplo.com</span>
+
+<span class="na">contexts</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">infraero-hml</span>
+  <span class="na">context</span><span class="pi">:</span>
+    <span class="na">cluster</span><span class="pi">:</span> <span class="s">infraero-hml</span>
+    <span class="na">user</span><span class="pi">:</span> <span class="s">infraero-hml</span>
+
+<span class="na">current-context</span><span class="pi">:</span> <span class="s">infraero-hml</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="definindo-o-kubeconfig">Definindo o KUBECONFIG</h2>
+
+<h3 id="nke">NKE</h3>
+
+<h4 id="desenvolvimento">Desenvolvimento</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">KUBECONFIG</span><span class="o">=</span>/home/operador/infraero-det.yaml
+</code></pre></div></div>
+
+<h4 id="homologação">Homologação</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">KUBECONFIG</span><span class="o">=</span>/home/operador/infraero-hml.yaml
+</code></pre></div></div>
+
+<h4 id="produção">Produção</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">KUBECONFIG</span><span class="o">=</span>/home/operador/infraero-prd.yaml
+</code></pre></div></div>
+
+<h4 id="infraestrutura">Infraestrutura</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">KUBECONFIG</span><span class="o">=</span>/home/operador/infraero-infra.yaml
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="rke">RKE</h3>
+
+<h4 id="desenvolvimento-1">Desenvolvimento</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">KUBECONFIG</span><span class="o">=</span>/home/operador/desenvolvimentorke.yaml
+</code></pre></div></div>
+
+<h4 id="homologação-1">Homologação</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">KUBECONFIG</span><span class="o">=</span>/home/operador/homologacaorke.yaml
+</code></pre></div></div>
+
+<h4 id="produção-1">Produção</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">KUBECONFIG</span><span class="o">=</span>/home/operador/producaorke.yaml
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="verificando-o-contexto-atual">Verificando o contexto atual</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl config current-context
+</code></pre></div></div>
+
+<p>Exemplo:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>infraero-hml
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="listando-os-contextos">Listando os contextos</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl config get-contexts
+</code></pre></div></div>
+
+<p>Exemplo:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CURRENT   NAME
+*         infraero-hml
+          infraero-prd
+          infraero-det
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="testando-acesso-ao-cluster">Testando acesso ao cluster</h2>
+
+<p>Listar namespaces:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get ns
+</code></pre></div></div>
+
+<p>Listar nodes:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get nodes
+</code></pre></div></div>
+
+<p>Verificar versão:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl version
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="comandos-úteis">Comandos úteis</h2>
+
+<p>Listar pods de todos os namespaces:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods <span class="nt">-A</span>
+</code></pre></div></div>
+
+<p>Listar serviços:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get svc <span class="nt">-A</span>
+</code></pre></div></div>
+
+<p>Listar ingress:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get ingress <span class="nt">-A</span>
+</code></pre></div></div>
+
+<p>Descrever um pod:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl describe pod &lt;pod&gt;
+</code></pre></div></div>
+
+<p>Visualizar logs:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl logs &lt;pod&gt;
+</code></pre></div></div>
+
+<p>Acessar um container:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl <span class="nb">exec</span> <span class="nt">-it</span> &lt;pod&gt; <span class="nt">--</span> bash
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<h3 id="verificar-kubeconfig-carregado">Verificar KUBECONFIG carregado</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="nv">$KUBECONFIG</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="erro-forbidden">Erro: Forbidden</h3>
+
+<p>Exemplo:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Error from server (Forbidden)
+</code></pre></div></div>
+
+<p>Possíveis causas:</p>
+
+<ul>
+  <li>Token inválido</li>
+  <li>Token expirado</li>
+  <li>Permissões insuficientes</li>
+  <li>Usuário sem acesso ao cluster</li>
+</ul>
+
+<hr />
+
+<h3 id="erro-systemunauthenticated">Erro: system:unauthenticated</h3>
+
+<p>Exemplo:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>User "system:unauthenticated" cannot get resource
+</code></pre></div></div>
+
+<h4 id="causa">Causa</h4>
+
+<p>O cluster recebeu uma requisição sem autenticação válida.</p>
+
+<h4 id="caso-real">Caso real</h4>
+
+<p>Durante um deploy via Jenkins foi retornado:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>User "system:unauthenticated" cannot get resource "clusters"
+</code></pre></div></div>
+
+<p>A causa foi uma credencial/token incorreto configurado no Jenkins.</p>
+
+<h4 id="solução">Solução</h4>
+
+<ul>
+  <li>Gerar novo token no Rancher</li>
+  <li>Atualizar a credencial utilizada pelo Jenkins</li>
+  <li>Executar novamente o pipeline</li>
+</ul>
+
+<hr />
+
+<h2 id="referências">Referências</h2>
+
+<p>Documentação oficial Kubernetes:</p>
+
+<p>https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/</p>
+
+<hr />
+
+<blockquote>
+  <p>💡 Sempre valide o KUBECONFIG carregado antes de iniciar qualquer operação em homologação ou produção.</p>
+</blockquote>

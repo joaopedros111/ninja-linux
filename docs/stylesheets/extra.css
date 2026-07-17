@@ -1,0 +1,33 @@
+/* Tema Ninja Linux */
+
+body {
+    background-color: #111111;
+}
+
+/* Área principal */
+.md-main {
+    background-color: #111111;
+}
+
+/* Área do conteúdo */
+.md-content {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    color: #cc0000;
+}
+
+/* Links */
+a {
+    color: #cc0000;
+}
+
+/* Tabelas */
+table {
+    border-radius: 8px;
+    overflow: hidden;
+}

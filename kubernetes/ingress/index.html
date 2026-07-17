@@ -1,0 +1,2143 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingress | Ninja Linux</title>
+
+  <link rel="stylesheet" href="/ninja-linux/assets/css/style.css">
+  <link rel="icon" type="image/png" href="/ninja-linux/images/favicon.png">
+</head>
+
+<body>
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h2>🏍️ Ninja Linux</h2>
+      <p class="sidebar-subtitle">Linux • Kubernetes • DevOps</p>
+
+      <input
+        type="text"
+        id="sidebarSearchInput"
+        class="search-input"
+        placeholder="Buscar...">
+    </div>
+
+    <nav class="sidebar-menu" aria-label="Menu principal">
+      <a href="/ninja-linux/">🏠 Início</a>
+
+      <button
+        type="button"
+        id="collapseAllMenus"
+        class="sidebar-action"
+        aria-label="Recolher todas as seções"
+        title="Recolher todas as seções">
+        <span aria-hidden="true">▸</span>
+      </button>
+
+      <details>
+        <summary>🐧 Linux</summary>
+        <ul>
+          <li><a href="/ninja-linux/linux/">Página inicial</a></li>
+          <li><a href="/ninja-linux/linux/expandir-lvm.html">Expandir LVM</a></li>
+          <li><a href="/ninja-linux/linux/certificadossl.html">Certificado SSL - Harbor</a></li>
+          <li><a href="/ninja-linux/linux/atualizarSSLwiki.html">Certificado SSL - Wiki</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>⚙️ DevOps</summary>
+        <ul>
+          <li><a href="/ninja-linux/devops/">Página inicial</a></li>
+          <li><a href="/ninja-linux/devops/cicd.html">CI/CD</a></li>
+          <li><a href="/ninja-linux/devops/git.html">Git Básico</a></li>
+          <li><a href="/ninja-linux/devops/gitintermediario.html">Git Intermediário</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>☸️ Kubernetes</summary>
+        <ul>
+          <li><a href="/ninja-linux/kubernetes/">Página inicial</a></li>
+          <li><a href="/ninja-linux/kubernetes/kubeconfig.html">Kubeconfig</a></li>
+          <li><a href="/ninja-linux/kubernetes/kubectl.html">Kubectl</a></li>
+          <li><a href="/ninja-linux/kubernetes/instalacao-cluster-rocky-containerd-calico.html">Instalação do Cluster</a></li>
+          <li><a href="/ninja-linux/kubernetes/pods.html">Pods</a></li>
+          <li><a href="/ninja-linux/kubernetes/deployments.html">Deployments</a></li>
+          <li><a href="/ninja-linux/kubernetes/services.html">Services</a></li>
+          <li><a href="/ninja-linux/kubernetes/ingress.html">Ingress</a></li>
+          <li><a href="/ninja-linux/kubernetes/troubleshooting.html">Troubleshooting</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🐳 Docker</summary>
+        <ul>
+          <li><a href="/ninja-linux/docker/">Página inicial</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🌿 Git</summary>
+        <ul>
+          <li><a href="/ninja-linux/git/">Página inicial</a></li>
+          <li><a href="/ninja-linux/devops/git.html">Git Básico</a></li>
+          <li><a href="/ninja-linux/devops/gitintermediario.html">Git Intermediário</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🌐 Redes</summary>
+        <ul>
+          <li><a href="/ninja-linux/redes/">Página inicial</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🦑 Squid</summary>
+        <ul>
+          <li><a href="/ninja-linux/squid/">Página inicial</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>📊 Monitoramento</summary>
+        <ul>
+          <li><a href="/ninja-linux/monitoramento/">Página inicial</a></li>
+          <li><a href="/ninja-linux/monitoramento/instalacao-zabbix-server.html">Zabbix Server</a></li>
+          <li><a href="/ninja-linux/monitoramento/grafana.html">Grafana</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🥜 Nutanix</summary>
+        <ul>
+          <li><a href="/ninja-linux/nutanix/">Página inicial</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>VMware</summary>
+        <ul>
+          <li><a href="/ninja-linux/vmware/">Página inicial</a></li>
+          <li><a href="/ninja-linux/vmware/instalacao-esxi-7-dell-r830-idrac.html">Instalação do ESXi 7.0.3</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🔥 WatchGuard</summary>
+        <ul>
+          <li><a href="/ninja-linux/watchguard/">Página inicial</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🪟 Windows</summary>
+        <ul>
+          <li><a href="/ninja-linux/windows/">Página inicial</a></li>
+          <li><a href="/ninja-linux/windows/instalacao-aplicativos-exe.html">Instalação de Apps (.exe)</a></li>
+          <li><a href="/ninja-linux/windows/instalacao-via-temp.html">Instalação via C:\Temp</a></li>
+          <li><a href="/ninja-linux/windows/activedirectory.html">Active Directory</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🛠️ Troubleshooting</summary>
+        <ul>
+          <li><a href="/ninja-linux/troubleshooting/">Página inicial</a></li>
+          <li><a href="/ninja-linux/troubleshooting/troubleshootingwiki.html">Wiki indisponível</a></li>
+          <li><a href="/ninja-linux/troubleshooting/troubleshootingcitsmart.html">CITSmart indisponível</a></li>
+          <li><a href="/ninja-linux/troubleshooting/troubleshooting_utf8_wildfly.html">UTF-8 no WildFly</a></li>
+        </ul>
+      </details>
+    </nav>
+  </aside>
+
+  <main>
+    <h1 id="️-ingress-no-kubernetes">☸️ Ingress no Kubernetes</h1>
+
+<p>Um <strong>Ingress</strong> no Kubernetes é o recurso usado para expor aplicações HTTP e HTTPS para fora do cluster usando nomes de domínio e regras de roteamento.</p>
+
+<p>Ele normalmente fica na frente de um <strong>Service</strong> e permite acessar aplicações por URLs amigáveis, como:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://app.exemplo.com.br
+https://api.exemplo.com.br
+</code></pre></div></div>
+
+<p>Fluxo comum:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Usuário externo
+   |
+   v
+DNS
+   |
+   v
+Ingress Controller
+   |
+   v
+Ingress
+   |
+   v
+Service
+   |
+   v
+Pods
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="para-que-serve-um-ingress">Para que serve um Ingress?</h2>
+
+<p>Use um Ingress quando você precisa:</p>
+
+<ul>
+  <li>expor aplicações web por domínio</li>
+  <li>usar HTTPS com certificado TLS</li>
+  <li>rotear múltiplas aplicações pelo mesmo IP</li>
+  <li>criar regras por host</li>
+  <li>criar regras por caminho</li>
+  <li>centralizar entrada HTTP/HTTPS do cluster</li>
+  <li>evitar criar um LoadBalancer para cada aplicação</li>
+</ul>
+
+<p>Exemplo:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>app.exemplo.com.br  --&gt; service-app
+api.exemplo.com.br  --&gt; service-api
+site.exemplo.com.br --&gt; service-site
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="ingress-não-funciona-sozinho">Ingress não funciona sozinho</h2>
+
+<p>O recurso Ingress precisa de um <strong>Ingress Controller</strong> instalado no cluster.</p>
+
+<p>O Ingress é apenas a regra. O Ingress Controller é o componente que lê essa regra e recebe o tráfego externo.</p>
+
+<p>Exemplos comuns de Ingress Controller:</p>
+
+<ul>
+  <li>NGINX Ingress Controller</li>
+  <li>Traefik</li>
+  <li>HAProxy Ingress</li>
+  <li>Kong Ingress Controller</li>
+  <li>AWS Load Balancer Controller</li>
+  <li>Azure Application Gateway Ingress Controller</li>
+  <li>GKE Ingress Controller</li>
+</ul>
+
+<p>Sem Ingress Controller, o manifesto de Ingress pode até ser criado, mas não haverá componente processando as regras.</p>
+
+<hr />
+
+<h2 id="ingress-service-e-deployment">Ingress, Service e Deployment</h2>
+
+<p>O Ingress não envia tráfego diretamente para Pods.</p>
+
+<p>O caminho correto normalmente é:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ingress --&gt; Service --&gt; Pods
+</code></pre></div></div>
+
+<p>Exemplo:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Deployment cria Pods com label app=nginx
+Service encontra os Pods pelo selector app=nginx
+Ingress aponta para o Service nginx-service
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="exemplo-básico">Exemplo básico</h2>
+
+<p>Antes do Ingress, precisamos de um Deployment e um Service.</p>
+
+<p>Arquivo:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nginx-com-ingress.yaml
+</code></pre></div></div>
+
+<p>Conteúdo:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">apps/v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Deployment</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">nginx-deployment</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">default</span>
+  <span class="na">labels</span><span class="pi">:</span>
+    <span class="na">app</span><span class="pi">:</span> <span class="s">nginx</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">replicas</span><span class="pi">:</span> <span class="m">2</span>
+  <span class="na">selector</span><span class="pi">:</span>
+    <span class="na">matchLabels</span><span class="pi">:</span>
+      <span class="na">app</span><span class="pi">:</span> <span class="s">nginx</span>
+  <span class="na">template</span><span class="pi">:</span>
+    <span class="na">metadata</span><span class="pi">:</span>
+      <span class="na">labels</span><span class="pi">:</span>
+        <span class="na">app</span><span class="pi">:</span> <span class="s">nginx</span>
+    <span class="na">spec</span><span class="pi">:</span>
+      <span class="na">containers</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">nginx</span>
+          <span class="na">image</span><span class="pi">:</span> <span class="s">nginx:1.25</span>
+          <span class="na">ports</span><span class="pi">:</span>
+            <span class="pi">-</span> <span class="na">containerPort</span><span class="pi">:</span> <span class="m">80</span>
+<span class="nn">---</span>
+<span class="na">apiVersion</span><span class="pi">:</span> <span class="s">v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Service</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">nginx-service</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">default</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">type</span><span class="pi">:</span> <span class="s">ClusterIP</span>
+  <span class="na">selector</span><span class="pi">:</span>
+    <span class="na">app</span><span class="pi">:</span> <span class="s">nginx</span>
+  <span class="na">ports</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">port</span><span class="pi">:</span> <span class="m">80</span>
+      <span class="na">targetPort</span><span class="pi">:</span> <span class="m">80</span>
+      <span class="na">protocol</span><span class="pi">:</span> <span class="s">TCP</span>
+<span class="nn">---</span>
+<span class="na">apiVersion</span><span class="pi">:</span> <span class="s">networking.k8s.io/v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Ingress</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">nginx-ingress</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">default</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">rules</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">host</span><span class="pi">:</span> <span class="s">nginx.exemplo.com.br</span>
+      <span class="na">http</span><span class="pi">:</span>
+        <span class="na">paths</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="na">path</span><span class="pi">:</span> <span class="s">/</span>
+            <span class="na">pathType</span><span class="pi">:</span> <span class="s">Prefix</span>
+            <span class="na">backend</span><span class="pi">:</span>
+              <span class="na">service</span><span class="pi">:</span>
+                <span class="na">name</span><span class="pi">:</span> <span class="s">nginx-service</span>
+                <span class="na">port</span><span class="pi">:</span>
+                  <span class="na">number</span><span class="pi">:</span> <span class="m">80</span>
+</code></pre></div></div>
+
+<p>Aplicando:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl apply <span class="nt">-f</span> nginx-com-ingress.yaml
+</code></pre></div></div>
+
+<p>Verificando:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get deployment
+kubectl get svc
+kubectl get ingress
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="explicando-o-yaml-do-ingress">Explicando o YAML do Ingress</h2>
+
+<h3 id="apiversion">apiVersion</h3>
+
+<p>Define a versão da API do recurso.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">networking.k8s.io/v1</span>
+</code></pre></div></div>
+
+<p>Para Ingress, a versão atual mais comum é:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>networking.k8s.io/v1
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="kind">kind</h3>
+
+<p>Define o tipo de recurso.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">kind</span><span class="pi">:</span> <span class="s">Ingress</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="metadata">metadata</h3>
+
+<p>Define nome, namespace e metadados do Ingress.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">nginx-ingress</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">default</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="rules">rules</h3>
+
+<p>Define as regras de roteamento.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">rules</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">host</span><span class="pi">:</span> <span class="s">nginx.exemplo.com.br</span>
+</code></pre></div></div>
+
+<p>Nesse exemplo, o Ingress só atende requisições para:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nginx.exemplo.com.br
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="paths">paths</h3>
+
+<p>Define o caminho da URL.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">paths</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">path</span><span class="pi">:</span> <span class="s">/</span>
+    <span class="na">pathType</span><span class="pi">:</span> <span class="s">Prefix</span>
+</code></pre></div></div>
+
+<p>O caminho <code class="language-plaintext highlighter-rouge">/</code> representa a raiz da aplicação.</p>
+
+<hr />
+
+<h3 id="backend">backend</h3>
+
+<p>Define para qual Service o tráfego será enviado.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">backend</span><span class="pi">:</span>
+  <span class="na">service</span><span class="pi">:</span>
+    <span class="na">name</span><span class="pi">:</span> <span class="s">nginx-service</span>
+    <span class="na">port</span><span class="pi">:</span>
+      <span class="na">number</span><span class="pi">:</span> <span class="m">80</span>
+</code></pre></div></div>
+
+<p>Nesse caso, o Ingress encaminha para o Service <code class="language-plaintext highlighter-rouge">nginx-service</code> na porta <code class="language-plaintext highlighter-rouge">80</code>.</p>
+
+<hr />
+
+<h2 id="pathtype">pathType</h2>
+
+<p>O campo <code class="language-plaintext highlighter-rouge">pathType</code> define como o caminho será interpretado.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tipo</th>
+      <th>Descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Prefix</code></td>
+      <td>Combina com o prefixo da URL</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Exact</code></td>
+      <td>Combina somente com o caminho exato</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ImplementationSpecific</code></td>
+      <td>Depende do Ingress Controller</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Exemplo com <code class="language-plaintext highlighter-rouge">Prefix</code>:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">path</span><span class="pi">:</span> <span class="s">/api</span>
+<span class="na">pathType</span><span class="pi">:</span> <span class="s">Prefix</span>
+</code></pre></div></div>
+
+<p>Pode atender:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/api
+/api/v1
+/api/users
+</code></pre></div></div>
+
+<p>Exemplo com <code class="language-plaintext highlighter-rouge">Exact</code>:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">path</span><span class="pi">:</span> <span class="s">/admin</span>
+<span class="na">pathType</span><span class="pi">:</span> <span class="s">Exact</span>
+</code></pre></div></div>
+
+<p>Atende somente:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/admin
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="roteamento-por-host">Roteamento por host</h2>
+
+<p>É possível expor aplicações diferentes por domínios diferentes.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">networking.k8s.io/v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Ingress</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">multiplos-hosts</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">default</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">rules</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">host</span><span class="pi">:</span> <span class="s">app.exemplo.com.br</span>
+      <span class="na">http</span><span class="pi">:</span>
+        <span class="na">paths</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="na">path</span><span class="pi">:</span> <span class="s">/</span>
+            <span class="na">pathType</span><span class="pi">:</span> <span class="s">Prefix</span>
+            <span class="na">backend</span><span class="pi">:</span>
+              <span class="na">service</span><span class="pi">:</span>
+                <span class="na">name</span><span class="pi">:</span> <span class="s">app-service</span>
+                <span class="na">port</span><span class="pi">:</span>
+                  <span class="na">number</span><span class="pi">:</span> <span class="m">80</span>
+    <span class="pi">-</span> <span class="na">host</span><span class="pi">:</span> <span class="s">api.exemplo.com.br</span>
+      <span class="na">http</span><span class="pi">:</span>
+        <span class="na">paths</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="na">path</span><span class="pi">:</span> <span class="s">/</span>
+            <span class="na">pathType</span><span class="pi">:</span> <span class="s">Prefix</span>
+            <span class="na">backend</span><span class="pi">:</span>
+              <span class="na">service</span><span class="pi">:</span>
+                <span class="na">name</span><span class="pi">:</span> <span class="s">api-service</span>
+                <span class="na">port</span><span class="pi">:</span>
+                  <span class="na">number</span><span class="pi">:</span> <span class="m">80</span>
+</code></pre></div></div>
+
+<p>Fluxo:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>app.exemplo.com.br --&gt; app-service
+api.exemplo.com.br --&gt; api-service
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="roteamento-por-caminho">Roteamento por caminho</h2>
+
+<p>Também é possível usar o mesmo domínio com caminhos diferentes.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">networking.k8s.io/v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Ingress</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">caminhos</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">default</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">rules</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">host</span><span class="pi">:</span> <span class="s">sistema.exemplo.com.br</span>
+      <span class="na">http</span><span class="pi">:</span>
+        <span class="na">paths</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="na">path</span><span class="pi">:</span> <span class="s">/</span>
+            <span class="na">pathType</span><span class="pi">:</span> <span class="s">Prefix</span>
+            <span class="na">backend</span><span class="pi">:</span>
+              <span class="na">service</span><span class="pi">:</span>
+                <span class="na">name</span><span class="pi">:</span> <span class="s">frontend-service</span>
+                <span class="na">port</span><span class="pi">:</span>
+                  <span class="na">number</span><span class="pi">:</span> <span class="m">80</span>
+          <span class="pi">-</span> <span class="na">path</span><span class="pi">:</span> <span class="s">/api</span>
+            <span class="na">pathType</span><span class="pi">:</span> <span class="s">Prefix</span>
+            <span class="na">backend</span><span class="pi">:</span>
+              <span class="na">service</span><span class="pi">:</span>
+                <span class="na">name</span><span class="pi">:</span> <span class="s">api-service</span>
+                <span class="na">port</span><span class="pi">:</span>
+                  <span class="na">number</span><span class="pi">:</span> <span class="m">80</span>
+</code></pre></div></div>
+
+<p>Fluxo:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sistema.exemplo.com.br/     --&gt; frontend-service
+sistema.exemplo.com.br/api  --&gt; api-service
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="ingress-com-tls">Ingress com TLS</h2>
+
+<p>Para usar HTTPS, o Ingress precisa de um Secret TLS no mesmo namespace.</p>
+
+<p>Criando um Secret TLS:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl create secret tls nginx-tls <span class="se">\</span>
+  <span class="nt">--cert</span><span class="o">=</span>certificado.crt <span class="se">\</span>
+  <span class="nt">--key</span><span class="o">=</span>chave.key <span class="se">\</span>
+  <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<p>Exemplo de Ingress com TLS:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">networking.k8s.io/v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Ingress</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">nginx-ingress-tls</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">default</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">tls</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">hosts</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="s">nginx.exemplo.com.br</span>
+      <span class="na">secretName</span><span class="pi">:</span> <span class="s">nginx-tls</span>
+  <span class="na">rules</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">host</span><span class="pi">:</span> <span class="s">nginx.exemplo.com.br</span>
+      <span class="na">http</span><span class="pi">:</span>
+        <span class="na">paths</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="na">path</span><span class="pi">:</span> <span class="s">/</span>
+            <span class="na">pathType</span><span class="pi">:</span> <span class="s">Prefix</span>
+            <span class="na">backend</span><span class="pi">:</span>
+              <span class="na">service</span><span class="pi">:</span>
+                <span class="na">name</span><span class="pi">:</span> <span class="s">nginx-service</span>
+                <span class="na">port</span><span class="pi">:</span>
+                  <span class="na">number</span><span class="pi">:</span> <span class="m">80</span>
+</code></pre></div></div>
+
+<p>Validando o Secret:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get secret nginx-tls <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="ingressclass">IngressClass</h2>
+
+<p>Em clusters com mais de um Ingress Controller, é comum definir qual controller deve processar o Ingress.</p>
+
+<p>Exemplo:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">networking.k8s.io/v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Ingress</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">nginx-ingress</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">default</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">ingressClassName</span><span class="pi">:</span> <span class="s">nginx</span>
+  <span class="na">rules</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">host</span><span class="pi">:</span> <span class="s">nginx.exemplo.com.br</span>
+      <span class="na">http</span><span class="pi">:</span>
+        <span class="na">paths</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="na">path</span><span class="pi">:</span> <span class="s">/</span>
+            <span class="na">pathType</span><span class="pi">:</span> <span class="s">Prefix</span>
+            <span class="na">backend</span><span class="pi">:</span>
+              <span class="na">service</span><span class="pi">:</span>
+                <span class="na">name</span><span class="pi">:</span> <span class="s">nginx-service</span>
+                <span class="na">port</span><span class="pi">:</span>
+                  <span class="na">number</span><span class="pi">:</span> <span class="m">80</span>
+</code></pre></div></div>
+
+<p>Listar IngressClasses:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get ingressclass
+</code></pre></div></div>
+
+<p>Exemplo de saída:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NAME    CONTROLLER
+nginx   k8s.io/ingress-nginx
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="annotations">Annotations</h2>
+
+<p>Annotations são usadas para configurar comportamentos específicos do Ingress Controller.</p>
+
+<p>Exemplo com NGINX Ingress Controller:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">networking.k8s.io/v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Ingress</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">nginx-ingress</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">default</span>
+  <span class="na">annotations</span><span class="pi">:</span>
+    <span class="na">nginx.ingress.kubernetes.io/rewrite-target</span><span class="pi">:</span> <span class="s">/</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">ingressClassName</span><span class="pi">:</span> <span class="s">nginx</span>
+  <span class="na">rules</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">host</span><span class="pi">:</span> <span class="s">nginx.exemplo.com.br</span>
+      <span class="na">http</span><span class="pi">:</span>
+        <span class="na">paths</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="na">path</span><span class="pi">:</span> <span class="s">/app</span>
+            <span class="na">pathType</span><span class="pi">:</span> <span class="s">Prefix</span>
+            <span class="na">backend</span><span class="pi">:</span>
+              <span class="na">service</span><span class="pi">:</span>
+                <span class="na">name</span><span class="pi">:</span> <span class="s">nginx-service</span>
+                <span class="na">port</span><span class="pi">:</span>
+                  <span class="na">number</span><span class="pi">:</span> <span class="m">80</span>
+</code></pre></div></div>
+
+<p>Annotations comuns no NGINX Ingress:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Annotation</th>
+      <th>Uso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">nginx.ingress.kubernetes.io/rewrite-target</code></td>
+      <td>Reescrever caminho da URL</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">nginx.ingress.kubernetes.io/proxy-body-size</code></td>
+      <td>Ajustar tamanho máximo do corpo da requisição</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">nginx.ingress.kubernetes.io/ssl-redirect</code></td>
+      <td>Forçar ou desativar redirecionamento HTTPS</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">nginx.ingress.kubernetes.io/proxy-read-timeout</code></td>
+      <td>Ajustar timeout de leitura</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">nginx.ingress.kubernetes.io/proxy-send-timeout</code></td>
+      <td>Ajustar timeout de envio</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>As annotations podem variar conforme o Ingress Controller utilizado.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="dns">DNS</h2>
+
+<p>Para acessar uma aplicação pelo domínio, o DNS precisa apontar para o endereço externo do Ingress Controller.</p>
+
+<p>Verifique o endereço:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get svc <span class="nt">-n</span> ingress-nginx
+</code></pre></div></div>
+
+<p>Exemplo:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NAME                                 TYPE           EXTERNAL-IP
+ingress-nginx-controller             LoadBalancer   203.0.113.10
+</code></pre></div></div>
+
+<p>O DNS deve apontar para:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>203.0.113.10
+</code></pre></div></div>
+
+<p>Exemplo de registro:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nginx.exemplo.com.br  A  203.0.113.10
+</code></pre></div></div>
+
+<p>Em ambiente local ou laboratório, também é possível testar usando o arquivo <code class="language-plaintext highlighter-rouge">hosts</code> da máquina.</p>
+
+<p>Exemplo:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>203.0.113.10 nginx.exemplo.com.br
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="testando-o-ingress">Testando o Ingress</h2>
+
+<p>Teste usando o domínio:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl http://nginx.exemplo.com.br
+</code></pre></div></div>
+
+<p>Teste informando o header <code class="language-plaintext highlighter-rouge">Host</code> manualmente:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-H</span> <span class="s2">"Host: nginx.exemplo.com.br"</span> http://IP_DO_INGRESS
+</code></pre></div></div>
+
+<p>Teste com HTTPS:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-vk</span> https://nginx.exemplo.com.br
+</code></pre></div></div>
+
+<p>Verifique o IP externo:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get ingress
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="comandos-úteis">Comandos úteis</h2>
+
+<p>Listar Ingress:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get ingress
+</code></pre></div></div>
+
+<p>Listar em um namespace:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get ingress <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<p>Ver detalhes:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl describe ingress nginx-ingress
+</code></pre></div></div>
+
+<p>Listar IngressClass:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get ingressclass
+</code></pre></div></div>
+
+<p>Ver Services:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get svc
+</code></pre></div></div>
+
+<p>Ver Endpoints do Service:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get ep nginx-service
+</code></pre></div></div>
+
+<p>Ver Pods do Ingress Controller:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods <span class="nt">-n</span> ingress-nginx
+</code></pre></div></div>
+
+<p>Ver logs do Ingress Controller:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl logs <span class="nt">-n</span> ingress-nginx deployment/ingress-nginx-controller
+</code></pre></div></div>
+
+<p>Remover Ingress:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl delete ingress nginx-ingress
+</code></pre></div></div>
+
+<p>Remover pelo arquivo:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl delete <span class="nt">-f</span> nginx-com-ingress.yaml
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<h3 id="ingress-não-recebe-address">Ingress não recebe ADDRESS</h3>
+
+<p>Verifique:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get ingress
+kubectl describe ingress nginx-ingress
+kubectl get svc <span class="nt">-n</span> ingress-nginx
+</code></pre></div></div>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li>Ingress Controller não está instalado</li>
+  <li>Service do controller não possui IP externo</li>
+  <li>LoadBalancer está pendente</li>
+  <li><code class="language-plaintext highlighter-rouge">ingressClassName</code> incorreto</li>
+  <li>cluster local sem solução de LoadBalancer</li>
+</ul>
+
+<hr />
+
+<h3 id="erro-404">Erro 404</h3>
+
+<p>O Ingress respondeu, mas não encontrou rota compatível.</p>
+
+<p>Verifique:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl describe ingress nginx-ingress
+</code></pre></div></div>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li>host diferente do domínio acessado</li>
+  <li>caminho incorreto</li>
+  <li>regra de path não bate</li>
+  <li>header <code class="language-plaintext highlighter-rouge">Host</code> ausente no teste com IP</li>
+  <li>Ingress Controller usando outra classe</li>
+</ul>
+
+<p>Teste com header:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-H</span> <span class="s2">"Host: nginx.exemplo.com.br"</span> http://IP_DO_INGRESS/
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="erro-502-ou-503">Erro 502 ou 503</h3>
+
+<p>O Ingress recebeu a requisição, mas não conseguiu encaminhar corretamente para o backend.</p>
+
+<p>Verifique:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get svc
+kubectl get ep nginx-service
+kubectl describe svc nginx-service
+kubectl get pods
+</code></pre></div></div>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li>Service sem Endpoints</li>
+  <li>Pods não estão rodando</li>
+  <li>porta do Service incorreta</li>
+  <li><code class="language-plaintext highlighter-rouge">targetPort</code> incorreto</li>
+  <li>aplicação não está escutando na porta esperada</li>
+  <li>readinessProbe impedindo o Pod de receber tráfego</li>
+</ul>
+
+<hr />
+
+<h3 id="certificado-tls-não-funciona">Certificado TLS não funciona</h3>
+
+<p>Verifique:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get secret nginx-tls
+kubectl describe ingress nginx-ingress-tls
+</code></pre></div></div>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li>Secret TLS em namespace diferente</li>
+  <li><code class="language-plaintext highlighter-rouge">secretName</code> incorreto</li>
+  <li>certificado expirado</li>
+  <li>certificado não corresponde ao domínio</li>
+  <li>cadeia intermediária ausente</li>
+  <li>DNS apontando para IP errado</li>
+</ul>
+
+<hr />
+
+<h3 id="domínio-não-resolve">Domínio não resolve</h3>
+
+<p>Verifique DNS:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nslookup nginx.exemplo.com.br
+</code></pre></div></div>
+
+<p>Ou:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dig nginx.exemplo.com.br
+</code></pre></div></div>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li>registro DNS inexistente</li>
+  <li>DNS apontando para IP errado</li>
+  <li>propagação DNS ainda em andamento</li>
+  <li>entrada incorreta no arquivo hosts</li>
+</ul>
+
+<hr />
+
+<h3 id="redirecionamento-https-inesperado">Redirecionamento HTTPS inesperado</h3>
+
+<p>Alguns Ingress Controllers podem redirecionar HTTP para HTTPS automaticamente.</p>
+
+<p>Verifique annotations:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl describe ingress nginx-ingress
+</code></pre></div></div>
+
+<p>Exemplo para desativar no NGINX Ingress:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">annotations</span><span class="pi">:</span>
+    <span class="na">nginx.ingress.kubernetes.io/ssl-redirect</span><span class="pi">:</span> <span class="s2">"</span><span class="s">false"</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="boas-práticas">Boas práticas</h2>
+
+<ul>
+  <li>Use Ingress para aplicações HTTP e HTTPS.</li>
+  <li>Use Service do tipo <code class="language-plaintext highlighter-rouge">ClusterIP</code> atrás do Ingress.</li>
+  <li>Configure <code class="language-plaintext highlighter-rouge">ingressClassName</code> quando houver mais de um controller.</li>
+  <li>Use TLS para aplicações expostas externamente.</li>
+  <li>Mantenha certificados válidos e monitorados.</li>
+  <li>Padronize nomes de hosts e Services.</li>
+  <li>Evite expor aplicações sensíveis sem autenticação.</li>
+  <li>Valide DNS antes de investigar a aplicação.</li>
+  <li>Verifique Endpoints quando houver erro 502 ou 503.</li>
+  <li>Documente domínio, namespace, Service e porta.</li>
+</ul>
+
+<hr />
+
+<h2 id="checklist-antes-de-aplicar">Checklist antes de aplicar</h2>
+
+<p>Antes de aplicar um Ingress, confira:</p>
+
+<ul>
+  <li>O Ingress Controller está instalado?</li>
+  <li>O <code class="language-plaintext highlighter-rouge">ingressClassName</code> está correto?</li>
+  <li>O Service existe no mesmo namespace?</li>
+  <li>O Service possui Endpoints?</li>
+  <li>A porta do backend está correta?</li>
+  <li>O DNS aponta para o IP externo do Ingress Controller?</li>
+  <li>O host no YAML bate com o domínio real?</li>
+  <li>O path está correto?</li>
+  <li>O Secret TLS existe no namespace correto?</li>
+  <li>O certificado TLS corresponde ao domínio?</li>
+</ul>
+
+<hr />
+
+<h2 id="fluxo-recomendado">Fluxo recomendado</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 1. Verificar Ingress Controller</span>
+kubectl get pods <span class="nt">-n</span> ingress-nginx
+
+<span class="c"># 2. Verificar endereço externo do controller</span>
+kubectl get svc <span class="nt">-n</span> ingress-nginx
+
+<span class="c"># 3. Aplicar Deployment, Service e Ingress</span>
+kubectl apply <span class="nt">-f</span> nginx-com-ingress.yaml
+
+<span class="c"># 4. Verificar Service e Endpoints</span>
+kubectl get svc
+kubectl get ep nginx-service
+
+<span class="c"># 5. Verificar Ingress</span>
+kubectl get ingress
+kubectl describe ingress nginx-ingress
+
+<span class="c"># 6. Testar com domínio</span>
+curl http://nginx.exemplo.com.br
+
+<span class="c"># 7. Testar usando header Host</span>
+curl <span class="nt">-H</span> <span class="s2">"Host: nginx.exemplo.com.br"</span> http://IP_DO_INGRESS
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="resumo">Resumo</h2>
+
+<p>O Ingress é a porta de entrada HTTP/HTTPS para aplicações no Kubernetes.</p>
+
+<p>Ele permite:</p>
+
+<ul>
+  <li>expor aplicações por domínio</li>
+  <li>configurar HTTPS</li>
+  <li>rotear tráfego por host</li>
+  <li>rotear tráfego por caminho</li>
+  <li>reduzir a necessidade de múltiplos LoadBalancers</li>
+  <li>centralizar o acesso externo às aplicações</li>
+</ul>
+
+<p>Em ambientes reais, o desenho mais comum é:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Usuário --&gt; DNS --&gt; Ingress Controller --&gt; Ingress --&gt; Service --&gt; Pods
+</code></pre></div></div>
+
+<blockquote>
+  <p>Se o Ingress não funcionar, valide nesta ordem: Ingress Controller, DNS, IngressClass, regra de host/path, Service, Endpoints e Pods.</p>
+</blockquote>
+
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const details = document.querySelectorAll("details");
+      const links = document.querySelectorAll(".sidebar a");
+      const collapseAllButton = document.getElementById("collapseAllMenus");
+      const currentPath = window.location.pathname;
+
+      details.forEach((detail, index) => {
+        const savedState = localStorage.getItem("menu-" + index);
+
+        if (savedState === "open") {
+          detail.open = true;
+        }
+
+        detail.addEventListener("toggle", function () {
+          localStorage.setItem("menu-" + index, detail.open ? "open" : "closed");
+        });
+      });
+
+      links.forEach(link => {
+        const linkPath = new URL(link.href).pathname;
+
+        if (linkPath === currentPath) {
+          link.classList.add("active");
+
+          const parentDetails = link.closest("details");
+          if (parentDetails) {
+            parentDetails.open = true;
+          }
+        }
+      });
+
+      if (collapseAllButton) {
+        collapseAllButton.addEventListener("click", function () {
+          details.forEach((detail, index) => {
+            detail.open = false;
+            localStorage.setItem("menu-" + index, "closed");
+          });
+        });
+      }
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll("pre").forEach(pre => {
+        const button = document.createElement("button");
+        button.className = "copy-btn";
+        button.innerText = "Copiar";
+
+        button.addEventListener("click", async () => {
+          const code = pre.querySelector("code");
+          const text = code ? code.innerText : pre.innerText;
+
+          try {
+            await navigator.clipboard.writeText(text);
+            button.innerText = "Copiado!";
+
+            setTimeout(() => {
+              button.innerText = "Copiar";
+            }, 2000);
+          } catch (err) {
+            button.innerText = "Erro";
+          }
+        });
+
+=======
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0f0d">
+  <meta name="description" content="Documentação prática sobre Linux, DevOps, Kubernetes, redes, monitoramento e infraestrutura.">
+  <meta property="og:title" content="Ingress · Ninja Linux">
+  <meta property="og:description" content="Documentação prática sobre Linux, DevOps, Kubernetes, redes, monitoramento e infraestrutura.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://joaopedros111.github.io/ninja-linux/kubernetes/ingress/">
+  <meta property="og:image" content="https://joaopedros111.github.io/images/banner-ninja-linux.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ingress · Ninja Linux">
+  <meta name="twitter:description" content="Documentação prática sobre Linux, DevOps, Kubernetes, redes, monitoramento e infraestrutura.">
+  <title>Ingress · Ninja Linux</title>
+  <link rel="icon" href="/ninja-linux/images/favicon.png">
+  <link rel="stylesheet" href="/ninja-linux/assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <button class="menu-toggle" id="menuToggle" aria-controls="sidebar" aria-expanded="false">☰ <span>Menu</span></button>
+  <div class="backdrop" id="backdrop" hidden></div>
+
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="/ninja-linux/">
+      <span class="brand-mark">NL</span>
+      <span><strong>Ninja Linux</strong><small>Base de conhecimento</small></span>
+    </a>
+
+    <div class="search-box">
+      <label for="sidebarSearchInput">Buscar no menu</label>
+      <input id="sidebarSearchInput" type="search" placeholder="Ex.: Kubernetes, LVM..." autocomplete="off">
+    </div>
+
+    <nav class="sidebar-menu" aria-label="Navegação principal">
+      <a href="/ninja-linux/">⌂ Início</a>
+      
+      
+        
+        <a href="/ninja-linux/linux/">🐧 Linux</a>
+      
+        
+        <a href="/ninja-linux/devops/">⚙ DevOps</a>
+      
+        
+        <a href="/ninja-linux/kubernetes/">☸ Kubernetes</a>
+      
+        
+        <a href="/ninja-linux/docker/">🐳 Docker</a>
+      
+        
+        <a href="/ninja-linux/git/">⑂ Git</a>
+      
+        
+        <a href="/ninja-linux/redes/">◎ Redes</a>
+      
+        
+        <a href="/ninja-linux/squid/">◉ Squid</a>
+      
+        
+        <a href="/ninja-linux/monitoramento/">▥ Monitoramento</a>
+      
+        
+        <a href="/ninja-linux/nutanix/">◇ Nutanix</a>
+      
+        
+        <a href="/ninja-linux/vmware/">▣ VMware</a>
+      
+        
+        <a href="/ninja-linux/watchguard/">◈ WatchGuard</a>
+      
+        
+        <a href="/ninja-linux/windows/">⊞ Windows</a>
+      
+        
+        <a href="/ninja-linux/troubleshooting/">◆ Troubleshooting</a>
+      
+    </nav>
+
+    <div class="sidebar-footer">
+      <a href="https://github.com/joaopedros111/ninja-linux" target="_blank" rel="noopener">Ver no GitHub ↗</a>
+    </div>
+  </aside>
+
+  <div class="page-shell">
+    <header class="topbar">
+      <span>Documentação prática de infraestrutura</span>
+      <a href="https://github.com/joaopedros111" target="_blank" rel="noopener">João Santos ↗</a>
+    </header>
+    <main id="conteudo" tabindex="-1">
+      <h1 id="️-ingress-no-kubernetes">☸️ Ingress no Kubernetes</h1>
+
+<p>Um <strong>Ingress</strong> no Kubernetes é o recurso usado para expor aplicações HTTP e HTTPS para fora do cluster usando nomes de domínio e regras de roteamento.</p>
+
+<p>Ele normalmente fica na frente de um <strong>Service</strong> e permite acessar aplicações por URLs amigáveis, como:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://app.exemplo.com.br
+https://api.exemplo.com.br
+</code></pre></div></div>
+
+<p>Fluxo comum:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Usuário externo
+   |
+   v
+DNS
+   |
+   v
+Ingress Controller
+   |
+   v
+Ingress
+   |
+   v
+Service
+   |
+   v
+Pods
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="para-que-serve-um-ingress">Para que serve um Ingress?</h2>
+
+<p>Use um Ingress quando você precisa:</p>
+
+<ul>
+  <li>expor aplicações web por domínio</li>
+  <li>usar HTTPS com certificado TLS</li>
+  <li>rotear múltiplas aplicações pelo mesmo IP</li>
+  <li>criar regras por host</li>
+  <li>criar regras por caminho</li>
+  <li>centralizar entrada HTTP/HTTPS do cluster</li>
+  <li>evitar criar um LoadBalancer para cada aplicação</li>
+</ul>
+
+<p>Exemplo:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>app.exemplo.com.br  --&gt; service-app
+api.exemplo.com.br  --&gt; service-api
+site.exemplo.com.br --&gt; service-site
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="ingress-não-funciona-sozinho">Ingress não funciona sozinho</h2>
+
+<p>O recurso Ingress precisa de um <strong>Ingress Controller</strong> instalado no cluster.</p>
+
+<p>O Ingress é apenas a regra. O Ingress Controller é o componente que lê essa regra e recebe o tráfego externo.</p>
+
+<p>Exemplos comuns de Ingress Controller:</p>
+
+<ul>
+  <li>NGINX Ingress Controller</li>
+  <li>Traefik</li>
+  <li>HAProxy Ingress</li>
+  <li>Kong Ingress Controller</li>
+  <li>AWS Load Balancer Controller</li>
+  <li>Azure Application Gateway Ingress Controller</li>
+  <li>GKE Ingress Controller</li>
+</ul>
+
+<p>Sem Ingress Controller, o manifesto de Ingress pode até ser criado, mas não haverá componente processando as regras.</p>
+
+<hr />
+
+<h2 id="ingress-service-e-deployment">Ingress, Service e Deployment</h2>
+
+<p>O Ingress não envia tráfego diretamente para Pods.</p>
+
+<p>O caminho correto normalmente é:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ingress --&gt; Service --&gt; Pods
+</code></pre></div></div>
+
+<p>Exemplo:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Deployment cria Pods com label app=nginx
+Service encontra os Pods pelo selector app=nginx
+Ingress aponta para o Service nginx-service
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="exemplo-básico">Exemplo básico</h2>
+
+<p>Antes do Ingress, precisamos de um Deployment e um Service.</p>
+
+<p>Arquivo:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nginx-com-ingress.yaml
+</code></pre></div></div>
+
+<p>Conteúdo:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">apps/v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Deployment</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">nginx-deployment</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">default</span>
+  <span class="na">labels</span><span class="pi">:</span>
+    <span class="na">app</span><span class="pi">:</span> <span class="s">nginx</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">replicas</span><span class="pi">:</span> <span class="m">2</span>
+  <span class="na">selector</span><span class="pi">:</span>
+    <span class="na">matchLabels</span><span class="pi">:</span>
+      <span class="na">app</span><span class="pi">:</span> <span class="s">nginx</span>
+  <span class="na">template</span><span class="pi">:</span>
+    <span class="na">metadata</span><span class="pi">:</span>
+      <span class="na">labels</span><span class="pi">:</span>
+        <span class="na">app</span><span class="pi">:</span> <span class="s">nginx</span>
+    <span class="na">spec</span><span class="pi">:</span>
+      <span class="na">containers</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">nginx</span>
+          <span class="na">image</span><span class="pi">:</span> <span class="s">nginx:1.25</span>
+          <span class="na">ports</span><span class="pi">:</span>
+            <span class="pi">-</span> <span class="na">containerPort</span><span class="pi">:</span> <span class="m">80</span>
+<span class="nn">---</span>
+<span class="na">apiVersion</span><span class="pi">:</span> <span class="s">v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Service</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">nginx-service</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">default</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">type</span><span class="pi">:</span> <span class="s">ClusterIP</span>
+  <span class="na">selector</span><span class="pi">:</span>
+    <span class="na">app</span><span class="pi">:</span> <span class="s">nginx</span>
+  <span class="na">ports</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">port</span><span class="pi">:</span> <span class="m">80</span>
+      <span class="na">targetPort</span><span class="pi">:</span> <span class="m">80</span>
+      <span class="na">protocol</span><span class="pi">:</span> <span class="s">TCP</span>
+<span class="nn">---</span>
+<span class="na">apiVersion</span><span class="pi">:</span> <span class="s">networking.k8s.io/v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Ingress</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">nginx-ingress</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">default</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">rules</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">host</span><span class="pi">:</span> <span class="s">nginx.exemplo.com.br</span>
+      <span class="na">http</span><span class="pi">:</span>
+        <span class="na">paths</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="na">path</span><span class="pi">:</span> <span class="s">/</span>
+            <span class="na">pathType</span><span class="pi">:</span> <span class="s">Prefix</span>
+            <span class="na">backend</span><span class="pi">:</span>
+              <span class="na">service</span><span class="pi">:</span>
+                <span class="na">name</span><span class="pi">:</span> <span class="s">nginx-service</span>
+                <span class="na">port</span><span class="pi">:</span>
+                  <span class="na">number</span><span class="pi">:</span> <span class="m">80</span>
+</code></pre></div></div>
+
+<p>Aplicando:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl apply <span class="nt">-f</span> nginx-com-ingress.yaml
+</code></pre></div></div>
+
+<p>Verificando:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get deployment
+kubectl get svc
+kubectl get ingress
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="explicando-o-yaml-do-ingress">Explicando o YAML do Ingress</h2>
+
+<h3 id="apiversion">apiVersion</h3>
+
+<p>Define a versão da API do recurso.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">networking.k8s.io/v1</span>
+</code></pre></div></div>
+
+<p>Para Ingress, a versão atual mais comum é:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>networking.k8s.io/v1
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="kind">kind</h3>
+
+<p>Define o tipo de recurso.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">kind</span><span class="pi">:</span> <span class="s">Ingress</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="metadata">metadata</h3>
+
+<p>Define nome, namespace e metadados do Ingress.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">nginx-ingress</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">default</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="rules">rules</h3>
+
+<p>Define as regras de roteamento.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">rules</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">host</span><span class="pi">:</span> <span class="s">nginx.exemplo.com.br</span>
+</code></pre></div></div>
+
+<p>Nesse exemplo, o Ingress só atende requisições para:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nginx.exemplo.com.br
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="paths">paths</h3>
+
+<p>Define o caminho da URL.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">paths</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">path</span><span class="pi">:</span> <span class="s">/</span>
+    <span class="na">pathType</span><span class="pi">:</span> <span class="s">Prefix</span>
+</code></pre></div></div>
+
+<p>O caminho <code class="language-plaintext highlighter-rouge">/</code> representa a raiz da aplicação.</p>
+
+<hr />
+
+<h3 id="backend">backend</h3>
+
+<p>Define para qual Service o tráfego será enviado.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">backend</span><span class="pi">:</span>
+  <span class="na">service</span><span class="pi">:</span>
+    <span class="na">name</span><span class="pi">:</span> <span class="s">nginx-service</span>
+    <span class="na">port</span><span class="pi">:</span>
+      <span class="na">number</span><span class="pi">:</span> <span class="m">80</span>
+</code></pre></div></div>
+
+<p>Nesse caso, o Ingress encaminha para o Service <code class="language-plaintext highlighter-rouge">nginx-service</code> na porta <code class="language-plaintext highlighter-rouge">80</code>.</p>
+
+<hr />
+
+<h2 id="pathtype">pathType</h2>
+
+<p>O campo <code class="language-plaintext highlighter-rouge">pathType</code> define como o caminho será interpretado.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tipo</th>
+      <th>Descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Prefix</code></td>
+      <td>Combina com o prefixo da URL</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Exact</code></td>
+      <td>Combina somente com o caminho exato</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ImplementationSpecific</code></td>
+      <td>Depende do Ingress Controller</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Exemplo com <code class="language-plaintext highlighter-rouge">Prefix</code>:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">path</span><span class="pi">:</span> <span class="s">/api</span>
+<span class="na">pathType</span><span class="pi">:</span> <span class="s">Prefix</span>
+</code></pre></div></div>
+
+<p>Pode atender:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/api
+/api/v1
+/api/users
+</code></pre></div></div>
+
+<p>Exemplo com <code class="language-plaintext highlighter-rouge">Exact</code>:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">path</span><span class="pi">:</span> <span class="s">/admin</span>
+<span class="na">pathType</span><span class="pi">:</span> <span class="s">Exact</span>
+</code></pre></div></div>
+
+<p>Atende somente:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/admin
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="roteamento-por-host">Roteamento por host</h2>
+
+<p>É possível expor aplicações diferentes por domínios diferentes.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">networking.k8s.io/v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Ingress</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">multiplos-hosts</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">default</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">rules</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">host</span><span class="pi">:</span> <span class="s">app.exemplo.com.br</span>
+      <span class="na">http</span><span class="pi">:</span>
+        <span class="na">paths</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="na">path</span><span class="pi">:</span> <span class="s">/</span>
+            <span class="na">pathType</span><span class="pi">:</span> <span class="s">Prefix</span>
+            <span class="na">backend</span><span class="pi">:</span>
+              <span class="na">service</span><span class="pi">:</span>
+                <span class="na">name</span><span class="pi">:</span> <span class="s">app-service</span>
+                <span class="na">port</span><span class="pi">:</span>
+                  <span class="na">number</span><span class="pi">:</span> <span class="m">80</span>
+    <span class="pi">-</span> <span class="na">host</span><span class="pi">:</span> <span class="s">api.exemplo.com.br</span>
+      <span class="na">http</span><span class="pi">:</span>
+        <span class="na">paths</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="na">path</span><span class="pi">:</span> <span class="s">/</span>
+            <span class="na">pathType</span><span class="pi">:</span> <span class="s">Prefix</span>
+            <span class="na">backend</span><span class="pi">:</span>
+              <span class="na">service</span><span class="pi">:</span>
+                <span class="na">name</span><span class="pi">:</span> <span class="s">api-service</span>
+                <span class="na">port</span><span class="pi">:</span>
+                  <span class="na">number</span><span class="pi">:</span> <span class="m">80</span>
+</code></pre></div></div>
+
+<p>Fluxo:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>app.exemplo.com.br --&gt; app-service
+api.exemplo.com.br --&gt; api-service
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="roteamento-por-caminho">Roteamento por caminho</h2>
+
+<p>Também é possível usar o mesmo domínio com caminhos diferentes.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">networking.k8s.io/v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Ingress</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">caminhos</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">default</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">rules</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">host</span><span class="pi">:</span> <span class="s">sistema.exemplo.com.br</span>
+      <span class="na">http</span><span class="pi">:</span>
+        <span class="na">paths</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="na">path</span><span class="pi">:</span> <span class="s">/</span>
+            <span class="na">pathType</span><span class="pi">:</span> <span class="s">Prefix</span>
+            <span class="na">backend</span><span class="pi">:</span>
+              <span class="na">service</span><span class="pi">:</span>
+                <span class="na">name</span><span class="pi">:</span> <span class="s">frontend-service</span>
+                <span class="na">port</span><span class="pi">:</span>
+                  <span class="na">number</span><span class="pi">:</span> <span class="m">80</span>
+          <span class="pi">-</span> <span class="na">path</span><span class="pi">:</span> <span class="s">/api</span>
+            <span class="na">pathType</span><span class="pi">:</span> <span class="s">Prefix</span>
+            <span class="na">backend</span><span class="pi">:</span>
+              <span class="na">service</span><span class="pi">:</span>
+                <span class="na">name</span><span class="pi">:</span> <span class="s">api-service</span>
+                <span class="na">port</span><span class="pi">:</span>
+                  <span class="na">number</span><span class="pi">:</span> <span class="m">80</span>
+</code></pre></div></div>
+
+<p>Fluxo:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sistema.exemplo.com.br/     --&gt; frontend-service
+sistema.exemplo.com.br/api  --&gt; api-service
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="ingress-com-tls">Ingress com TLS</h2>
+
+<p>Para usar HTTPS, o Ingress precisa de um Secret TLS no mesmo namespace.</p>
+
+<p>Criando um Secret TLS:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl create secret tls nginx-tls <span class="se">\</span>
+  <span class="nt">--cert</span><span class="o">=</span>certificado.crt <span class="se">\</span>
+  <span class="nt">--key</span><span class="o">=</span>chave.key <span class="se">\</span>
+  <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<p>Exemplo de Ingress com TLS:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">networking.k8s.io/v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Ingress</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">nginx-ingress-tls</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">default</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">tls</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">hosts</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="s">nginx.exemplo.com.br</span>
+      <span class="na">secretName</span><span class="pi">:</span> <span class="s">nginx-tls</span>
+  <span class="na">rules</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">host</span><span class="pi">:</span> <span class="s">nginx.exemplo.com.br</span>
+      <span class="na">http</span><span class="pi">:</span>
+        <span class="na">paths</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="na">path</span><span class="pi">:</span> <span class="s">/</span>
+            <span class="na">pathType</span><span class="pi">:</span> <span class="s">Prefix</span>
+            <span class="na">backend</span><span class="pi">:</span>
+              <span class="na">service</span><span class="pi">:</span>
+                <span class="na">name</span><span class="pi">:</span> <span class="s">nginx-service</span>
+                <span class="na">port</span><span class="pi">:</span>
+                  <span class="na">number</span><span class="pi">:</span> <span class="m">80</span>
+</code></pre></div></div>
+
+<p>Validando o Secret:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get secret nginx-tls <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="ingressclass">IngressClass</h2>
+
+<p>Em clusters com mais de um Ingress Controller, é comum definir qual controller deve processar o Ingress.</p>
+
+<p>Exemplo:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">networking.k8s.io/v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Ingress</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">nginx-ingress</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">default</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">ingressClassName</span><span class="pi">:</span> <span class="s">nginx</span>
+  <span class="na">rules</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">host</span><span class="pi">:</span> <span class="s">nginx.exemplo.com.br</span>
+      <span class="na">http</span><span class="pi">:</span>
+        <span class="na">paths</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="na">path</span><span class="pi">:</span> <span class="s">/</span>
+            <span class="na">pathType</span><span class="pi">:</span> <span class="s">Prefix</span>
+            <span class="na">backend</span><span class="pi">:</span>
+              <span class="na">service</span><span class="pi">:</span>
+                <span class="na">name</span><span class="pi">:</span> <span class="s">nginx-service</span>
+                <span class="na">port</span><span class="pi">:</span>
+                  <span class="na">number</span><span class="pi">:</span> <span class="m">80</span>
+</code></pre></div></div>
+
+<p>Listar IngressClasses:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get ingressclass
+</code></pre></div></div>
+
+<p>Exemplo de saída:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NAME    CONTROLLER
+nginx   k8s.io/ingress-nginx
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="annotations">Annotations</h2>
+
+<p>Annotations são usadas para configurar comportamentos específicos do Ingress Controller.</p>
+
+<p>Exemplo com NGINX Ingress Controller:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">apiVersion</span><span class="pi">:</span> <span class="s">networking.k8s.io/v1</span>
+<span class="na">kind</span><span class="pi">:</span> <span class="s">Ingress</span>
+<span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">nginx-ingress</span>
+  <span class="na">namespace</span><span class="pi">:</span> <span class="s">default</span>
+  <span class="na">annotations</span><span class="pi">:</span>
+    <span class="na">nginx.ingress.kubernetes.io/rewrite-target</span><span class="pi">:</span> <span class="s">/</span>
+<span class="na">spec</span><span class="pi">:</span>
+  <span class="na">ingressClassName</span><span class="pi">:</span> <span class="s">nginx</span>
+  <span class="na">rules</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">host</span><span class="pi">:</span> <span class="s">nginx.exemplo.com.br</span>
+      <span class="na">http</span><span class="pi">:</span>
+        <span class="na">paths</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="na">path</span><span class="pi">:</span> <span class="s">/app</span>
+            <span class="na">pathType</span><span class="pi">:</span> <span class="s">Prefix</span>
+            <span class="na">backend</span><span class="pi">:</span>
+              <span class="na">service</span><span class="pi">:</span>
+                <span class="na">name</span><span class="pi">:</span> <span class="s">nginx-service</span>
+                <span class="na">port</span><span class="pi">:</span>
+                  <span class="na">number</span><span class="pi">:</span> <span class="m">80</span>
+</code></pre></div></div>
+
+<p>Annotations comuns no NGINX Ingress:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Annotation</th>
+      <th>Uso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">nginx.ingress.kubernetes.io/rewrite-target</code></td>
+      <td>Reescrever caminho da URL</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">nginx.ingress.kubernetes.io/proxy-body-size</code></td>
+      <td>Ajustar tamanho máximo do corpo da requisição</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">nginx.ingress.kubernetes.io/ssl-redirect</code></td>
+      <td>Forçar ou desativar redirecionamento HTTPS</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">nginx.ingress.kubernetes.io/proxy-read-timeout</code></td>
+      <td>Ajustar timeout de leitura</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">nginx.ingress.kubernetes.io/proxy-send-timeout</code></td>
+      <td>Ajustar timeout de envio</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>As annotations podem variar conforme o Ingress Controller utilizado.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="dns">DNS</h2>
+
+<p>Para acessar uma aplicação pelo domínio, o DNS precisa apontar para o endereço externo do Ingress Controller.</p>
+
+<p>Verifique o endereço:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get svc <span class="nt">-n</span> ingress-nginx
+</code></pre></div></div>
+
+<p>Exemplo:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NAME                                 TYPE           EXTERNAL-IP
+ingress-nginx-controller             LoadBalancer   203.0.113.10
+</code></pre></div></div>
+
+<p>O DNS deve apontar para:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>203.0.113.10
+</code></pre></div></div>
+
+<p>Exemplo de registro:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nginx.exemplo.com.br  A  203.0.113.10
+</code></pre></div></div>
+
+<p>Em ambiente local ou laboratório, também é possível testar usando o arquivo <code class="language-plaintext highlighter-rouge">hosts</code> da máquina.</p>
+
+<p>Exemplo:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>203.0.113.10 nginx.exemplo.com.br
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="testando-o-ingress">Testando o Ingress</h2>
+
+<p>Teste usando o domínio:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl http://nginx.exemplo.com.br
+</code></pre></div></div>
+
+<p>Teste informando o header <code class="language-plaintext highlighter-rouge">Host</code> manualmente:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-H</span> <span class="s2">"Host: nginx.exemplo.com.br"</span> http://IP_DO_INGRESS
+</code></pre></div></div>
+
+<p>Teste com HTTPS:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-vk</span> https://nginx.exemplo.com.br
+</code></pre></div></div>
+
+<p>Verifique o IP externo:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get ingress
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="comandos-úteis">Comandos úteis</h2>
+
+<p>Listar Ingress:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get ingress
+</code></pre></div></div>
+
+<p>Listar em um namespace:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get ingress <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<p>Ver detalhes:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl describe ingress nginx-ingress
+</code></pre></div></div>
+
+<p>Listar IngressClass:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get ingressclass
+</code></pre></div></div>
+
+<p>Ver Services:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get svc
+</code></pre></div></div>
+
+<p>Ver Endpoints do Service:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get ep nginx-service
+</code></pre></div></div>
+
+<p>Ver Pods do Ingress Controller:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods <span class="nt">-n</span> ingress-nginx
+</code></pre></div></div>
+
+<p>Ver logs do Ingress Controller:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl logs <span class="nt">-n</span> ingress-nginx deployment/ingress-nginx-controller
+</code></pre></div></div>
+
+<p>Remover Ingress:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl delete ingress nginx-ingress
+</code></pre></div></div>
+
+<p>Remover pelo arquivo:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl delete <span class="nt">-f</span> nginx-com-ingress.yaml
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<h3 id="ingress-não-recebe-address">Ingress não recebe ADDRESS</h3>
+
+<p>Verifique:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get ingress
+kubectl describe ingress nginx-ingress
+kubectl get svc <span class="nt">-n</span> ingress-nginx
+</code></pre></div></div>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li>Ingress Controller não está instalado</li>
+  <li>Service do controller não possui IP externo</li>
+  <li>LoadBalancer está pendente</li>
+  <li><code class="language-plaintext highlighter-rouge">ingressClassName</code> incorreto</li>
+  <li>cluster local sem solução de LoadBalancer</li>
+</ul>
+
+<hr />
+
+<h3 id="erro-404">Erro 404</h3>
+
+<p>O Ingress respondeu, mas não encontrou rota compatível.</p>
+
+<p>Verifique:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl describe ingress nginx-ingress
+</code></pre></div></div>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li>host diferente do domínio acessado</li>
+  <li>caminho incorreto</li>
+  <li>regra de path não bate</li>
+  <li>header <code class="language-plaintext highlighter-rouge">Host</code> ausente no teste com IP</li>
+  <li>Ingress Controller usando outra classe</li>
+</ul>
+
+<p>Teste com header:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-H</span> <span class="s2">"Host: nginx.exemplo.com.br"</span> http://IP_DO_INGRESS/
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="erro-502-ou-503">Erro 502 ou 503</h3>
+
+<p>O Ingress recebeu a requisição, mas não conseguiu encaminhar corretamente para o backend.</p>
+
+<p>Verifique:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get svc
+kubectl get ep nginx-service
+kubectl describe svc nginx-service
+kubectl get pods
+</code></pre></div></div>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li>Service sem Endpoints</li>
+  <li>Pods não estão rodando</li>
+  <li>porta do Service incorreta</li>
+  <li><code class="language-plaintext highlighter-rouge">targetPort</code> incorreto</li>
+  <li>aplicação não está escutando na porta esperada</li>
+  <li>readinessProbe impedindo o Pod de receber tráfego</li>
+</ul>
+
+<hr />
+
+<h3 id="certificado-tls-não-funciona">Certificado TLS não funciona</h3>
+
+<p>Verifique:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get secret nginx-tls
+kubectl describe ingress nginx-ingress-tls
+</code></pre></div></div>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li>Secret TLS em namespace diferente</li>
+  <li><code class="language-plaintext highlighter-rouge">secretName</code> incorreto</li>
+  <li>certificado expirado</li>
+  <li>certificado não corresponde ao domínio</li>
+  <li>cadeia intermediária ausente</li>
+  <li>DNS apontando para IP errado</li>
+</ul>
+
+<hr />
+
+<h3 id="domínio-não-resolve">Domínio não resolve</h3>
+
+<p>Verifique DNS:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nslookup nginx.exemplo.com.br
+</code></pre></div></div>
+
+<p>Ou:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dig nginx.exemplo.com.br
+</code></pre></div></div>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li>registro DNS inexistente</li>
+  <li>DNS apontando para IP errado</li>
+  <li>propagação DNS ainda em andamento</li>
+  <li>entrada incorreta no arquivo hosts</li>
+</ul>
+
+<hr />
+
+<h3 id="redirecionamento-https-inesperado">Redirecionamento HTTPS inesperado</h3>
+
+<p>Alguns Ingress Controllers podem redirecionar HTTP para HTTPS automaticamente.</p>
+
+<p>Verifique annotations:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl describe ingress nginx-ingress
+</code></pre></div></div>
+
+<p>Exemplo para desativar no NGINX Ingress:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">metadata</span><span class="pi">:</span>
+  <span class="na">annotations</span><span class="pi">:</span>
+    <span class="na">nginx.ingress.kubernetes.io/ssl-redirect</span><span class="pi">:</span> <span class="s2">"</span><span class="s">false"</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="boas-práticas">Boas práticas</h2>
+
+<ul>
+  <li>Use Ingress para aplicações HTTP e HTTPS.</li>
+  <li>Use Service do tipo <code class="language-plaintext highlighter-rouge">ClusterIP</code> atrás do Ingress.</li>
+  <li>Configure <code class="language-plaintext highlighter-rouge">ingressClassName</code> quando houver mais de um controller.</li>
+  <li>Use TLS para aplicações expostas externamente.</li>
+  <li>Mantenha certificados válidos e monitorados.</li>
+  <li>Padronize nomes de hosts e Services.</li>
+  <li>Evite expor aplicações sensíveis sem autenticação.</li>
+  <li>Valide DNS antes de investigar a aplicação.</li>
+  <li>Verifique Endpoints quando houver erro 502 ou 503.</li>
+  <li>Documente domínio, namespace, Service e porta.</li>
+</ul>
+
+<hr />
+
+<h2 id="checklist-antes-de-aplicar">Checklist antes de aplicar</h2>
+
+<p>Antes de aplicar um Ingress, confira:</p>
+
+<ul>
+  <li>O Ingress Controller está instalado?</li>
+  <li>O <code class="language-plaintext highlighter-rouge">ingressClassName</code> está correto?</li>
+  <li>O Service existe no mesmo namespace?</li>
+  <li>O Service possui Endpoints?</li>
+  <li>A porta do backend está correta?</li>
+  <li>O DNS aponta para o IP externo do Ingress Controller?</li>
+  <li>O host no YAML bate com o domínio real?</li>
+  <li>O path está correto?</li>
+  <li>O Secret TLS existe no namespace correto?</li>
+  <li>O certificado TLS corresponde ao domínio?</li>
+</ul>
+
+<hr />
+
+<h2 id="fluxo-recomendado">Fluxo recomendado</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 1. Verificar Ingress Controller</span>
+kubectl get pods <span class="nt">-n</span> ingress-nginx
+
+<span class="c"># 2. Verificar endereço externo do controller</span>
+kubectl get svc <span class="nt">-n</span> ingress-nginx
+
+<span class="c"># 3. Aplicar Deployment, Service e Ingress</span>
+kubectl apply <span class="nt">-f</span> nginx-com-ingress.yaml
+
+<span class="c"># 4. Verificar Service e Endpoints</span>
+kubectl get svc
+kubectl get ep nginx-service
+
+<span class="c"># 5. Verificar Ingress</span>
+kubectl get ingress
+kubectl describe ingress nginx-ingress
+
+<span class="c"># 6. Testar com domínio</span>
+curl http://nginx.exemplo.com.br
+
+<span class="c"># 7. Testar usando header Host</span>
+curl <span class="nt">-H</span> <span class="s2">"Host: nginx.exemplo.com.br"</span> http://IP_DO_INGRESS
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="resumo">Resumo</h2>
+
+<p>O Ingress é a porta de entrada HTTP/HTTPS para aplicações no Kubernetes.</p>
+
+<p>Ele permite:</p>
+
+<ul>
+  <li>expor aplicações por domínio</li>
+  <li>configurar HTTPS</li>
+  <li>rotear tráfego por host</li>
+  <li>rotear tráfego por caminho</li>
+  <li>reduzir a necessidade de múltiplos LoadBalancers</li>
+  <li>centralizar o acesso externo às aplicações</li>
+</ul>
+
+<p>Em ambientes reais, o desenho mais comum é:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Usuário --&gt; DNS --&gt; Ingress Controller --&gt; Ingress --&gt; Service --&gt; Pods
+</code></pre></div></div>
+
+<blockquote>
+  <p>Se o Ingress não funcionar, valide nesta ordem: Ingress Controller, DNS, IngressClass, regra de host/path, Service, Endpoints e Pods.</p>
+</blockquote>
+
+    </main>
+    <footer class="site-footer">
+      <span>🥷 Ninja Linux</span>
+      <span>Conhecimento técnico, direto ao ponto.</span>
+    </footer>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const body = document.body;
+      const toggle = document.getElementById('menuToggle');
+      const backdrop = document.getElementById('backdrop');
+      const closeMenu = () => {
+        body.classList.remove('menu-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        backdrop.hidden = true;
+      };
+      toggle.addEventListener('click', () => {
+        const open = !body.classList.contains('menu-open');
+        body.classList.toggle('menu-open', open);
+        toggle.setAttribute('aria-expanded', String(open));
+        backdrop.hidden = !open;
+      });
+      backdrop.addEventListener('click', closeMenu);
+
+      const current = location.pathname.replace(/index\.html$/, '');
+      document.querySelectorAll('.sidebar-menu a').forEach(link => {
+        const path = new URL(link.href).pathname.replace(/index\.html$/, '');
+        if (path === current) link.classList.add('active');
+      });
+
+      const search = document.getElementById('sidebarSearchInput');
+      search.addEventListener('input', () => {
+        const term = search.value.trim().toLocaleLowerCase('pt-BR');
+        document.querySelectorAll('.sidebar-menu a').forEach(link => {
+          link.hidden = term && !link.textContent.toLocaleLowerCase('pt-BR').includes(term);
+        });
+      });
+
+      document.querySelectorAll('pre').forEach(pre => {
+        const button = document.createElement('button');
+        button.className = 'copy-btn';
+        button.type = 'button';
+        button.textContent = 'Copiar';
+        button.addEventListener('click', async () => {
+          try {
+            await navigator.clipboard.writeText(pre.querySelector('code')?.innerText || pre.innerText);
+            button.textContent = 'Copiado ✓';
+          } catch (_) { button.textContent = 'Selecione e copie'; }
+          setTimeout(() => button.textContent = 'Copiar', 1800);
+        });
+>>>>>>> 2c2622c (Atualização do Ninja Linux)
+        pre.appendChild(button);
+      });
+    });
+  </script>
+<<<<<<< HEAD
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const searchInput = document.getElementById("sidebarSearchInput");
+
+      if (!searchInput) {
+        return;
+      }
+
+      searchInput.addEventListener("keyup", function () {
+        const filter = this.value.toLowerCase();
+        const links = document.querySelectorAll(".sidebar a");
+
+        links.forEach(link => {
+          const text = link.textContent.toLowerCase();
+          link.style.display = text.includes(filter) ? "block" : "none";
+        });
+      });
+    });
+  </script>
+=======
+>>>>>>> 2c2622c (Atualização do Ninja Linux)
+</body>
+</html>

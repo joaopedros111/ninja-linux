@@ -1,0 +1,2251 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instalação de Cluster Kubernetes com Rocky Linux, containerd e Calico | Ninja Linux</title>
+
+  <link rel="stylesheet" href="/ninja-linux/assets/css/style.css">
+  <link rel="icon" type="image/png" href="/ninja-linux/images/favicon.png">
+</head>
+
+<body>
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h2>🏍️ Ninja Linux</h2>
+      <p class="sidebar-subtitle">Linux • Kubernetes • DevOps</p>
+
+      <input
+        type="text"
+        id="sidebarSearchInput"
+        class="search-input"
+        placeholder="Buscar...">
+    </div>
+
+    <nav class="sidebar-menu" aria-label="Menu principal">
+      <a href="/ninja-linux/">🏠 Início</a>
+
+      <button
+        type="button"
+        id="collapseAllMenus"
+        class="sidebar-action"
+        aria-label="Recolher todas as seções"
+        title="Recolher todas as seções">
+        <span aria-hidden="true">▸</span>
+      </button>
+
+      <details>
+        <summary>🐧 Linux</summary>
+        <ul>
+          <li><a href="/ninja-linux/linux/">Página inicial</a></li>
+          <li><a href="/ninja-linux/linux/expandir-lvm.html">Expandir LVM</a></li>
+          <li><a href="/ninja-linux/linux/certificadossl.html">Certificado SSL - Harbor</a></li>
+          <li><a href="/ninja-linux/linux/atualizarSSLwiki.html">Certificado SSL - Wiki</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>⚙️ DevOps</summary>
+        <ul>
+          <li><a href="/ninja-linux/devops/">Página inicial</a></li>
+          <li><a href="/ninja-linux/devops/cicd.html">CI/CD</a></li>
+          <li><a href="/ninja-linux/devops/git.html">Git Básico</a></li>
+          <li><a href="/ninja-linux/devops/gitintermediario.html">Git Intermediário</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>☸️ Kubernetes</summary>
+        <ul>
+          <li><a href="/ninja-linux/kubernetes/">Página inicial</a></li>
+          <li><a href="/ninja-linux/kubernetes/kubeconfig.html">Kubeconfig</a></li>
+          <li><a href="/ninja-linux/kubernetes/kubectl.html">Kubectl</a></li>
+          <li><a href="/ninja-linux/kubernetes/instalacao-cluster-rocky-containerd-calico.html">Instalação do Cluster</a></li>
+          <li><a href="/ninja-linux/kubernetes/pods.html">Pods</a></li>
+          <li><a href="/ninja-linux/kubernetes/deployments.html">Deployments</a></li>
+          <li><a href="/ninja-linux/kubernetes/services.html">Services</a></li>
+          <li><a href="/ninja-linux/kubernetes/ingress.html">Ingress</a></li>
+          <li><a href="/ninja-linux/kubernetes/troubleshooting.html">Troubleshooting</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🐳 Docker</summary>
+        <ul>
+          <li><a href="/ninja-linux/docker/">Página inicial</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🌿 Git</summary>
+        <ul>
+          <li><a href="/ninja-linux/git/">Página inicial</a></li>
+          <li><a href="/ninja-linux/devops/git.html">Git Básico</a></li>
+          <li><a href="/ninja-linux/devops/gitintermediario.html">Git Intermediário</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🌐 Redes</summary>
+        <ul>
+          <li><a href="/ninja-linux/redes/">Página inicial</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🦑 Squid</summary>
+        <ul>
+          <li><a href="/ninja-linux/squid/">Página inicial</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>📊 Monitoramento</summary>
+        <ul>
+          <li><a href="/ninja-linux/monitoramento/">Página inicial</a></li>
+          <li><a href="/ninja-linux/monitoramento/instalacao-zabbix-server.html">Zabbix Server</a></li>
+          <li><a href="/ninja-linux/monitoramento/grafana.html">Grafana</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🥜 Nutanix</summary>
+        <ul>
+          <li><a href="/ninja-linux/nutanix/">Página inicial</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>VMware</summary>
+        <ul>
+          <li><a href="/ninja-linux/vmware/">Página inicial</a></li>
+          <li><a href="/ninja-linux/vmware/instalacao-esxi-7-dell-r830-idrac.html">Instalação do ESXi 7.0.3</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🔥 WatchGuard</summary>
+        <ul>
+          <li><a href="/ninja-linux/watchguard/">Página inicial</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🪟 Windows</summary>
+        <ul>
+          <li><a href="/ninja-linux/windows/">Página inicial</a></li>
+          <li><a href="/ninja-linux/windows/instalacao-aplicativos-exe.html">Instalação de Apps (.exe)</a></li>
+          <li><a href="/ninja-linux/windows/instalacao-via-temp.html">Instalação via C:\Temp</a></li>
+          <li><a href="/ninja-linux/windows/activedirectory.html">Active Directory</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🛠️ Troubleshooting</summary>
+        <ul>
+          <li><a href="/ninja-linux/troubleshooting/">Página inicial</a></li>
+          <li><a href="/ninja-linux/troubleshooting/troubleshootingwiki.html">Wiki indisponível</a></li>
+          <li><a href="/ninja-linux/troubleshooting/troubleshootingcitsmart.html">CITSmart indisponível</a></li>
+          <li><a href="/ninja-linux/troubleshooting/troubleshooting_utf8_wildfly.html">UTF-8 no WildFly</a></li>
+        </ul>
+      </details>
+    </nav>
+  </aside>
+
+  <main>
+    <h1 id="instalação-de-cluster-kubernetes-com-rocky-linux-containerd-e-calico">Instalação de Cluster Kubernetes com Rocky Linux, containerd e Calico</h1>
+
+<h2 id="1-objetivo">1. Objetivo</h2>
+
+<p>Este procedimento apresenta a instalação de um cluster Kubernetes com três máquinas:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Servidor</th>
+      <th>Função</th>
+      <th>IP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>k8s-control01</td>
+      <td>Control Plane</td>
+      <td>10.0.97.21</td>
+    </tr>
+    <tr>
+      <td>k8s-worker01</td>
+      <td>Worker</td>
+      <td>10.0.97.17</td>
+    </tr>
+    <tr>
+      <td>k8s-worker02</td>
+      <td>Worker</td>
+      <td>10.0.97.20</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tecnologias utilizadas:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Rocky Linux 9
+Kubernetes 1.34
+containerd
+kubeadm
+Calico 3.32
+Tigera Operator
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="2-pré-requisitos">2. Pré-requisitos</h2>
+
+<p>Cada máquina deve possuir, no mínimo:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2 CPUs
+2 GB de memória RAM
+20 GB de disco
+Acesso à internet
+Comunicação de rede entre os nós
+Endereço IP estável
+</code></pre></div></div>
+
+<p>O Control Plane deve possuir preferencialmente pelo menos 4 GB de RAM.</p>
+
+<p>Todos os comandos devem ser executados como usuário <code class="language-plaintext highlighter-rouge">root</code>, salvo indicação contrária.</p>
+
+<hr />
+
+<h2 id="3-configuração-dos-nomes-dos-servidores">3. Configuração dos nomes dos servidores</h2>
+
+<p>No Control Plane:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hostnamectl set-hostname k8s-control01
+</code></pre></div></div>
+
+<p>No Worker 01:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hostnamectl set-hostname k8s-worker01
+</code></pre></div></div>
+
+<p>No Worker 02:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hostnamectl set-hostname k8s-worker02
+</code></pre></div></div>
+
+<p>Configure o arquivo <code class="language-plaintext highlighter-rouge">/etc/hosts</code> nos três servidores:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi /etc/hosts
+</code></pre></div></div>
+
+<p>Adicione:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>10.0.97.21 k8s-control01
+10.0.97.17 k8s-worker01
+10.0.97.20 k8s-worker02
+</code></pre></div></div>
+
+<p>Teste a resolução dos nomes:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ping <span class="nt">-c</span> 2 k8s-control01
+ping <span class="nt">-c</span> 2 k8s-worker01
+ping <span class="nt">-c</span> 2 k8s-worker02
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="4-atualização-do-sistema">4. Atualização do sistema</h2>
+
+<p>Execute em todos os servidores:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dnf update <span class="nt">-y</span>
+</code></pre></div></div>
+
+<p>Instale os utilitários básicos:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dnf <span class="nb">install</span> <span class="nt">-y</span> curl wget vim git <span class="nb">tar</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="5-desabilitar-a-swap">5. Desabilitar a swap</h2>
+
+<p>O kubelet deve operar sem swap, salvo quando houver uma configuração específica para suportá-la.</p>
+
+<p>Execute em todos os nós:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>swapoff <span class="nt">-a</span>
+</code></pre></div></div>
+
+<p>Confirme:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>free <span class="nt">-h</span>
+</code></pre></div></div>
+
+<p>Edite o arquivo <code class="language-plaintext highlighter-rouge">/etc/fstab</code>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi /etc/fstab
+</code></pre></div></div>
+
+<p>Comente a linha referente à swap.</p>
+
+<p>Exemplo:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#/dev/mapper/rl-swap none swap defaults 0 0
+</code></pre></div></div>
+
+<p>Confirme que nenhuma swap está ativa:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>swapon <span class="nt">--show</span>
+</code></pre></div></div>
+
+<p>O comando não deve retornar nenhuma entrada.</p>
+
+<hr />
+
+<h2 id="6-configuração-do-selinux">6. Configuração do SELinux</h2>
+
+<p>Para este laboratório, coloque o SELinux em modo permissivo:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>setenforce 0
+</code></pre></div></div>
+
+<p>Edite:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi /etc/selinux/config
+</code></pre></div></div>
+
+<p>Altere:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELINUX=enforcing
+</code></pre></div></div>
+
+<p>Para:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELINUX=permissive
+</code></pre></div></div>
+
+<p>Confirme:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>getenforce
+</code></pre></div></div>
+
+<p>Resultado esperado:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Permissive
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="7-configuração-do-firewall">7. Configuração do firewall</h2>
+
+<p>Para simplificar o ambiente de laboratório, desabilite o firewalld:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl disable <span class="nt">--now</span> firewalld
+</code></pre></div></div>
+
+<p>Confirme:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl status firewalld
+</code></pre></div></div>
+
+<p>Em ambiente de produção, mantenha o firewall habilitado e libere somente as portas necessárias.</p>
+
+<hr />
+
+<h2 id="8-carregamento-dos-módulos-do-kernel">8. Carregamento dos módulos do kernel</h2>
+
+<p>Execute em todos os servidores:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cat</span> <span class="o">&gt;</span> /etc/modules-load.d/k8s.conf <span class="o">&lt;&lt;</span><span class="no">EOF</span><span class="sh">
+overlay
+br_netfilter
+</span><span class="no">EOF
+</span></code></pre></div></div>
+
+<p>Carregue os módulos imediatamente:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>modprobe overlay
+modprobe br_netfilter
+</code></pre></div></div>
+
+<p>Confirme:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lsmod | <span class="nb">grep </span>overlay
+lsmod | <span class="nb">grep </span>br_netfilter
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="9-configuração-dos-parâmetros-de-rede">9. Configuração dos parâmetros de rede</h2>
+
+<p>Crie o arquivo:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cat</span> <span class="o">&gt;</span> /etc/sysctl.d/99-kubernetes.conf <span class="o">&lt;&lt;</span><span class="no">EOF</span><span class="sh">
+net.bridge.bridge-nf-call-iptables  = 1
+net.bridge.bridge-nf-call-ip6tables = 1
+net.ipv4.ip_forward                 = 1
+</span><span class="no">EOF
+</span></code></pre></div></div>
+
+<p>Aplique as configurações:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sysctl <span class="nt">--system</span>
+</code></pre></div></div>
+
+<p>Confirme:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sysctl net.bridge.bridge-nf-call-iptables
+sysctl net.bridge.bridge-nf-call-ip6tables
+sysctl net.ipv4.ip_forward
+</code></pre></div></div>
+
+<p>Resultado esperado:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>net.bridge.bridge-nf-call-iptables = 1
+net.bridge.bridge-nf-call-ip6tables = 1
+net.ipv4.ip_forward = 1
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="10-instalação-do-containerd">10. Instalação do containerd</h2>
+
+<p>Execute em todos os nós.</p>
+
+<p>Instale o gerenciador de repositórios:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dnf <span class="nb">install</span> <span class="nt">-y</span> dnf-plugins-core
+</code></pre></div></div>
+
+<p>Adicione o repositório Docker:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dnf config-manager <span class="nt">--add-repo</span> https://download.docker.com/linux/centos/docker-ce.repo
+</code></pre></div></div>
+
+<p>Instale o containerd:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dnf <span class="nb">install</span> <span class="nt">-y</span> containerd.io
+</code></pre></div></div>
+
+<p>Crie o diretório de configuração:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-p</span> /etc/containerd
+</code></pre></div></div>
+
+<p>Gere a configuração padrão:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>containerd config default <span class="o">&gt;</span> /etc/containerd/config.toml
+</code></pre></div></div>
+
+<p>Altere o uso de cgroups para <code class="language-plaintext highlighter-rouge">systemd</code>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sed</span> <span class="nt">-i</span> <span class="s1">'s/SystemdCgroup = false/SystemdCgroup = true/'</span> /etc/containerd/config.toml
+</code></pre></div></div>
+
+<p>Confirme:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">grep </span>SystemdCgroup /etc/containerd/config.toml
+</code></pre></div></div>
+
+<p>Resultado esperado:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SystemdCgroup = true
+</code></pre></div></div>
+
+<p>Habilite e inicie o containerd:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl <span class="nb">enable</span> <span class="nt">--now</span> containerd
+</code></pre></div></div>
+
+<p>Reinicie o serviço:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl restart containerd
+</code></pre></div></div>
+
+<p>Valide:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl status containerd <span class="nt">--no-pager</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="11-instalação-do-kubernetes">11. Instalação do Kubernetes</h2>
+
+<p>Execute em todos os servidores.</p>
+
+<p>Crie o repositório:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cat</span> <span class="o">&gt;</span> /etc/yum.repos.d/kubernetes.repo <span class="o">&lt;&lt;</span><span class="no">EOF</span><span class="sh">
+[kubernetes]
+name=Kubernetes
+baseurl=https://pkgs.k8s.io/core:/stable:/v1.34/rpm/
+enabled=1
+gpgcheck=1
+gpgkey=https://pkgs.k8s.io/core:/stable:/v1.34/rpm/repodata/repomd.xml.key
+exclude=kubelet kubeadm kubectl cri-tools kubernetes-cni
+</span><span class="no">EOF
+</span></code></pre></div></div>
+
+<p>Instale os componentes:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dnf <span class="nb">install</span> <span class="nt">-y</span> kubelet kubeadm kubectl <span class="se">\</span>
+<span class="nt">--disableexcludes</span><span class="o">=</span>kubernetes
+</code></pre></div></div>
+
+<p>Habilite o kubelet:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl <span class="nb">enable</span> <span class="nt">--now</span> kubelet
+</code></pre></div></div>
+
+<p>Verifique a versão instalada:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubeadm version
+kubectl version <span class="nt">--client</span>
+kubelet <span class="nt">--version</span>
+</code></pre></div></div>
+
+<p>O kubelet poderá apresentar reinicializações até que o nó seja inicializado ou adicionado ao cluster.</p>
+
+<hr />
+
+<h2 id="12-inicialização-do-control-plane">12. Inicialização do Control Plane</h2>
+
+<p>Execute somente no servidor <code class="language-plaintext highlighter-rouge">k8s-control01</code>.</p>
+
+<p>Inicialize o cluster:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubeadm init <span class="se">\</span>
+<span class="nt">--apiserver-advertise-address</span><span class="o">=</span>10.0.97.21 <span class="se">\</span>
+<span class="nt">--pod-network-cidr</span><span class="o">=</span>192.168.0.0/16
+</code></pre></div></div>
+
+<p>Ao final, o kubeadm exibirá um comando semelhante a:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubeadm <span class="nb">join </span>10.0.97.21:6443 <span class="se">\</span>
+<span class="nt">--token</span> TOKEN_GERADO <span class="se">\</span>
+<span class="nt">--discovery-token-ca-cert-hash</span> sha256:HASH_GERADO
+</code></pre></div></div>
+
+<p>Guarde esse comando. Ele será utilizado nos workers.</p>
+
+<hr />
+
+<h2 id="13-configuração-do-kubectl">13. Configuração do kubectl</h2>
+
+<p>Execute no Control Plane.</p>
+
+<p>Para o usuário root:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-p</span> /root/.kube
+<span class="nb">cp</span> /etc/kubernetes/admin.conf /root/.kube/config
+<span class="nb">chown </span>root:root /root/.kube/config
+</code></pre></div></div>
+
+<p>Teste:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get nodes
+</code></pre></div></div>
+
+<p>Neste momento, o Control Plane poderá aparecer como:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NotReady
+</code></pre></div></div>
+
+<p>Isso é esperado porque o plugin de rede ainda não foi instalado.</p>
+
+<hr />
+
+<h2 id="14-instalação-do-calico">14. Instalação do Calico</h2>
+
+<p>Execute somente no Control Plane.</p>
+
+<p>Instale o Tigera Operator:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl create <span class="nt">-f</span> <span class="se">\</span>
+https://raw.githubusercontent.com/projectcalico/calico/v3.32.0/manifests/tigera-operator.yaml
+</code></pre></div></div>
+
+<p>Baixe o manifesto de recursos personalizados:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-O</span> <span class="se">\</span>
+https://raw.githubusercontent.com/projectcalico/calico/v3.32.0/manifests/custom-resources.yaml
+</code></pre></div></div>
+
+<p>Verifique a rede configurada:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">grep</span> <span class="nt">-A5</span> cidr custom-resources.yaml
+</code></pre></div></div>
+
+<p>O CIDR deve corresponder ao utilizado no <code class="language-plaintext highlighter-rouge">kubeadm init</code>:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>192.168.0.0/16
+</code></pre></div></div>
+
+<p>Aplique o manifesto:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl create <span class="nt">-f</span> custom-resources.yaml
+</code></pre></div></div>
+
+<p>Acompanhe a instalação:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods <span class="nt">-n</span> tigera-operator
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods <span class="nt">-n</span> calico-system <span class="nt">-o</span> wide
+</code></pre></div></div>
+
+<p>Também é possível acompanhar continuamente:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>watch kubectl get pods <span class="nt">-n</span> calico-system
+</code></pre></div></div>
+
+<p>Aguarde até que os principais pods fiquem em estado <code class="language-plaintext highlighter-rouge">Running</code>.</p>
+
+<hr />
+
+<h2 id="15-adição-dos-workers-ao-cluster">15. Adição dos workers ao cluster</h2>
+
+<p>Execute o comando <code class="language-plaintext highlighter-rouge">kubeadm join</code> nos servidores <code class="language-plaintext highlighter-rouge">k8s-worker01</code> e <code class="language-plaintext highlighter-rouge">k8s-worker02</code>.</p>
+
+<p>Exemplo:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubeadm <span class="nb">join </span>10.0.97.21:6443 <span class="se">\</span>
+<span class="nt">--token</span> TOKEN_GERADO <span class="se">\</span>
+<span class="nt">--discovery-token-ca-cert-hash</span> sha256:HASH_GERADO
+</code></pre></div></div>
+
+<p>Caso o comando tenha sido perdido ou o token tenha expirado, gere um novo no Control Plane:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubeadm token create <span class="nt">--print-join-command</span>
+</code></pre></div></div>
+
+<p>Execute o novo comando nos workers.</p>
+
+<hr />
+
+<h2 id="16-validação-dos-nós">16. Validação dos nós</h2>
+
+<p>No Control Plane:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get nodes <span class="nt">-o</span> wide
+</code></pre></div></div>
+
+<p>Resultado esperado:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NAME            STATUS   ROLES           INTERNAL-IP
+k8s-control01   Ready    control-plane   10.0.97.21
+k8s-worker01    Ready    &lt;none&gt;          10.0.97.17
+k8s-worker02    Ready    &lt;none&gt;          10.0.97.20
+</code></pre></div></div>
+
+<p>Caso algum nó ainda esteja <code class="language-plaintext highlighter-rouge">NotReady</code>, aguarde a inicialização do Calico e verifique os pods.</p>
+
+<hr />
+
+<h2 id="17-validação-dos-componentes">17. Validação dos componentes</h2>
+
+<h3 id="171-ver-todos-os-pods">17.1 Ver todos os pods</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods <span class="nt">-A</span> <span class="nt">-o</span> wide
+</code></pre></div></div>
+
+<p>Os componentes devem ficar em estado <code class="language-plaintext highlighter-rouge">Running</code>.</p>
+
+<p>Entre eles:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>calico-node
+calico-kube-controllers
+calico-typha
+csi-node-driver
+coredns
+kube-apiserver
+kube-controller-manager
+kube-scheduler
+kube-proxy
+etcd
+tigera-operator
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="172-ver-os-pods-do-calico">17.2 Ver os pods do Calico</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods <span class="nt">-n</span> calico-system <span class="nt">-o</span> wide
+</code></pre></div></div>
+
+<p>Resultado esperado para o <code class="language-plaintext highlighter-rouge">calico-node</code>:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1/1 Running
+</code></pre></div></div>
+
+<p>Resultado esperado para o CSI:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2/2 Running
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="173-ver-os-pods-do-kubernetes">17.3 Ver os pods do Kubernetes</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods <span class="nt">-n</span> kube-system <span class="nt">-o</span> wide
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="174-ver-os-pods-do-tigera-operator">17.4 Ver os pods do Tigera Operator</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods <span class="nt">-n</span> tigera-operator <span class="nt">-o</span> wide
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="18-teste-de-criação-de-pod">18. Teste de criação de pod</h2>
+
+<p>Crie um pod de teste:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl run nginx-test <span class="se">\</span>
+<span class="nt">--image</span><span class="o">=</span>nginx:latest <span class="se">\</span>
+<span class="nt">--restart</span><span class="o">=</span>Never
+</code></pre></div></div>
+
+<p>Acompanhe:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pod nginx-test <span class="nt">-o</span> wide
+</code></pre></div></div>
+
+<p>Resultado esperado:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Running
+</code></pre></div></div>
+
+<p>Veja os detalhes:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl describe pod nginx-test
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="19-teste-com-deployment">19. Teste com Deployment</h2>
+
+<p>Crie um Deployment:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl create deployment nginx <span class="se">\</span>
+<span class="nt">--image</span><span class="o">=</span>nginx:latest
+</code></pre></div></div>
+
+<p>Crie três réplicas:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl scale deployment nginx <span class="nt">--replicas</span><span class="o">=</span>3
+</code></pre></div></div>
+
+<p>Verifique:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get deployments
+kubectl get pods <span class="nt">-o</span> wide
+</code></pre></div></div>
+
+<p>Os pods devem ser distribuídos entre os workers disponíveis.</p>
+
+<hr />
+
+<h2 id="20-criação-de-um-service">20. Criação de um Service</h2>
+
+<p>Exponha o Deployment:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl expose deployment nginx <span class="se">\</span>
+<span class="nt">--port</span><span class="o">=</span>80 <span class="se">\</span>
+<span class="nt">--target-port</span><span class="o">=</span>80 <span class="se">\</span>
+<span class="nt">--type</span><span class="o">=</span>NodePort
+</code></pre></div></div>
+
+<p>Verifique:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get svc nginx
+</code></pre></div></div>
+
+<p>Exemplo de resultado:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NAME    TYPE       CLUSTER-IP     PORT(S)
+nginx   NodePort   10.96.x.x      80:30xxx/TCP
+</code></pre></div></div>
+
+<p>Teste utilizando o IP de um dos nós e a porta NodePort:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl http://10.0.97.17:PORTA
+</code></pre></div></div>
+
+<p>Ou:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl http://10.0.97.20:PORTA
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="21-teste-de-comunicação-entre-pods">21. Teste de comunicação entre pods</h2>
+
+<p>Veja os IPs:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods <span class="nt">-o</span> wide
+</code></pre></div></div>
+
+<p>Entre em um pod:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl <span class="nb">exec</span> <span class="nt">-it</span> POD <span class="nt">--</span> /bin/bash
+</code></pre></div></div>
+
+<p>Ou, caso a imagem não possua Bash:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl <span class="nb">exec</span> <span class="nt">-it</span> POD <span class="nt">--</span> /bin/sh
+</code></pre></div></div>
+
+<p>Teste outro pod:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl http://IP_DO_OUTRO_POD
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="22-comandos-de-diagnóstico">22. Comandos de diagnóstico</h2>
+
+<h3 id="ver-os-nós">Ver os nós</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get nodes <span class="nt">-o</span> wide
+</code></pre></div></div>
+
+<h3 id="ver-todos-os-pods">Ver todos os pods</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods <span class="nt">-A</span> <span class="nt">-o</span> wide
+</code></pre></div></div>
+
+<h3 id="ver-eventos-recentes">Ver eventos recentes</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get events <span class="nt">-A</span> <span class="se">\</span>
+<span class="nt">--sort-by</span><span class="o">=</span>.metadata.creationTimestamp
+</code></pre></div></div>
+
+<h3 id="descrever-um-pod">Descrever um pod</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl describe pod <span class="nt">-n</span> NAMESPACE NOME_DO_POD
+</code></pre></div></div>
+
+<h3 id="ver-logs">Ver logs</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl logs <span class="nt">-n</span> NAMESPACE NOME_DO_POD
+</code></pre></div></div>
+
+<p>Caso o pod possua mais de um container:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl logs <span class="nt">-n</span> NAMESPACE NOME_DO_POD <span class="se">\</span>
+<span class="nt">-c</span> NOME_DO_CONTAINER
+</code></pre></div></div>
+
+<h3 id="ver-logs-do-container-anterior">Ver logs do container anterior</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl logs <span class="nt">-n</span> NAMESPACE NOME_DO_POD <span class="se">\</span>
+<span class="nt">--previous</span>
+</code></pre></div></div>
+
+<h3 id="ver-logs-do-kubelet">Ver logs do kubelet</h3>
+
+<p>Execute no nó com problema:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>journalctl <span class="nt">-u</span> kubelet <span class="nt">-n</span> 100 <span class="nt">--no-pager</span>
+</code></pre></div></div>
+
+<p>Para acompanhar em tempo real:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>journalctl <span class="nt">-u</span> kubelet <span class="nt">-f</span>
+</code></pre></div></div>
+
+<h3 id="ver-logs-do-containerd">Ver logs do containerd</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>journalctl <span class="nt">-u</span> containerd <span class="nt">-n</span> 100 <span class="nt">--no-pager</span>
+</code></pre></div></div>
+
+<h3 id="ver-imagens-locais">Ver imagens locais</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ctr <span class="nt">-n</span> k8s.io images list
+</code></pre></div></div>
+
+<p>Ou:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>crictl images
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="23-reinicialização-dos-serviços">23. Reinicialização dos serviços</h2>
+
+<p>O kubelet é um serviço do sistema operacional e não deve ser reiniciado pelo <code class="language-plaintext highlighter-rouge">kubectl</code>.</p>
+
+<p>Comando incorreto:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl restart kubelet
+</code></pre></div></div>
+
+<p>Comando correto:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl restart kubelet
+</code></pre></div></div>
+
+<p>Verifique:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl status kubelet <span class="nt">--no-pager</span>
+</code></pre></div></div>
+
+<p>Para reiniciar o containerd:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl restart containerd
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="24-configuração-opcional-do-kubectl-nos-workers">24. Configuração opcional do kubectl nos workers</h2>
+
+<p>Normalmente, o <code class="language-plaintext highlighter-rouge">kubectl</code> é utilizado apenas no Control Plane ou em uma estação administrativa.</p>
+
+<p>Ao executar <code class="language-plaintext highlighter-rouge">kubectl</code> em um worker sem configuração, poderá aparecer:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The connection to the server localhost:8080 was refused
+</code></pre></div></div>
+
+<p>Para permitir o uso administrativo do kubectl em um worker, copie o arquivo de configuração do Control Plane.</p>
+
+<p>No Control Plane:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scp /etc/kubernetes/admin.conf <span class="se">\</span>
+root@10.0.97.17:/root/admin.conf
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scp /etc/kubernetes/admin.conf <span class="se">\</span>
+root@10.0.97.20:/root/admin.conf
+</code></pre></div></div>
+
+<p>No worker:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-p</span> /root/.kube
+<span class="nb">mv</span> /root/admin.conf /root/.kube/config
+<span class="nb">chmod </span>600 /root/.kube/config
+</code></pre></div></div>
+
+<p>Teste:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get nodes
+</code></pre></div></div>
+
+<p>Essa configuração concede privilégios administrativos. Utilize somente em ambiente controlado.</p>
+
+<hr />
+
+<h2 id="25-remoção-de-um-pod-de-teste">25. Remoção de um pod de teste</h2>
+
+<p>Remova o pod criado manualmente:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl delete pod nginx-test
+</code></pre></div></div>
+
+<p>Remova o Deployment e o Service:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl delete service nginx
+kubectl delete deployment nginx
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="26-remoção-de-um-worker-do-cluster">26. Remoção de um worker do cluster</h2>
+
+<p>Primeiro, no Control Plane, drene o nó:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl drain k8s-worker02 <span class="se">\</span>
+<span class="nt">--ignore-daemonsets</span> <span class="se">\</span>
+<span class="nt">--delete-emptydir-data</span>
+</code></pre></div></div>
+
+<p>Remova o nó:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl delete node k8s-worker02
+</code></pre></div></div>
+
+<p>No próprio worker:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubeadm reset <span class="nt">-f</span>
+</code></pre></div></div>
+
+<p>Remova configurações residuais:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">rm</span> <span class="nt">-rf</span> /etc/cni/net.d
+<span class="nb">rm</span> <span class="nt">-rf</span> /var/lib/cni
+<span class="nb">rm</span> <span class="nt">-rf</span> /var/lib/kubelet
+<span class="nb">rm</span> <span class="nt">-rf</span> /etc/kubernetes
+</code></pre></div></div>
+
+<p>Reinicie os serviços:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl restart containerd
+systemctl restart kubelet
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="27-reinicialização-completa-do-laboratório">27. Reinicialização completa do laboratório</h2>
+
+<p>Para apagar o cluster, execute primeiro nos workers:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubeadm reset <span class="nt">-f</span>
+</code></pre></div></div>
+
+<p>Depois, no Control Plane:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubeadm reset <span class="nt">-f</span>
+</code></pre></div></div>
+
+<p>Remova os arquivos residuais:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">rm</span> <span class="nt">-rf</span> /etc/cni/net.d
+<span class="nb">rm</span> <span class="nt">-rf</span> /var/lib/cni
+<span class="nb">rm</span> <span class="nt">-rf</span> /var/lib/calico
+<span class="nb">rm</span> <span class="nt">-rf</span> /etc/kubernetes
+<span class="nb">rm</span> <span class="nt">-rf</span> /root/.kube
+</code></pre></div></div>
+
+<p>Limpe regras de iptables somente se necessário:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>iptables <span class="nt">-F</span>
+iptables <span class="nt">-t</span> nat <span class="nt">-F</span>
+iptables <span class="nt">-t</span> mangle <span class="nt">-F</span>
+iptables <span class="nt">-X</span>
+</code></pre></div></div>
+
+<p>Reinicie:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl restart containerd
+systemctl restart kubelet
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="28-checklist-final">28. Checklist final</h2>
+
+<p>Confirme os seguintes itens:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[ ] Swap desabilitada
+[ ] SELinux permissivo
+[ ] Módulos overlay e br_netfilter carregados
+[ ] IP forwarding habilitado
+[ ] containerd em execução
+[ ] SystemdCgroup habilitado
+[ ] kubelet habilitado
+[ ] Control Plane inicializado
+[ ] kubectl configurado
+[ ] Calico instalado
+[ ] Workers adicionados
+[ ] Todos os nós em Ready
+[ ] Todos os pods essenciais em Running
+[ ] Teste com pod realizado
+[ ] Teste com Deployment realizado
+[ ] Teste com Service realizado
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="29-resultado-esperado">29. Resultado esperado</h2>
+
+<p>Ao final da instalação:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get nodes <span class="nt">-o</span> wide
+</code></pre></div></div>
+
+<p>Deve mostrar:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>k8s-control01   Ready
+k8s-worker01    Ready
+k8s-worker02    Ready
+</code></pre></div></div>
+
+<p>E:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods <span class="nt">-A</span>
+</code></pre></div></div>
+
+<p>Não deve apresentar pods em:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Pending
+Error
+ImagePullBackOff
+ErrImagePull
+CrashLoopBackOff
+Init:Error
+</code></pre></div></div>
+
+<p>O cluster estará pronto para criação de Deployments, Services, ConfigMaps, Secrets, volumes e demais recursos Kubernetes.</p>
+
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const details = document.querySelectorAll("details");
+      const links = document.querySelectorAll(".sidebar a");
+      const collapseAllButton = document.getElementById("collapseAllMenus");
+      const currentPath = window.location.pathname;
+
+      details.forEach((detail, index) => {
+        const savedState = localStorage.getItem("menu-" + index);
+
+        if (savedState === "open") {
+          detail.open = true;
+        }
+
+        detail.addEventListener("toggle", function () {
+          localStorage.setItem("menu-" + index, detail.open ? "open" : "closed");
+        });
+      });
+
+      links.forEach(link => {
+        const linkPath = new URL(link.href).pathname;
+
+        if (linkPath === currentPath) {
+          link.classList.add("active");
+
+          const parentDetails = link.closest("details");
+          if (parentDetails) {
+            parentDetails.open = true;
+          }
+        }
+      });
+
+      if (collapseAllButton) {
+        collapseAllButton.addEventListener("click", function () {
+          details.forEach((detail, index) => {
+            detail.open = false;
+            localStorage.setItem("menu-" + index, "closed");
+          });
+        });
+      }
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll("pre").forEach(pre => {
+        const button = document.createElement("button");
+        button.className = "copy-btn";
+        button.innerText = "Copiar";
+
+        button.addEventListener("click", async () => {
+          const code = pre.querySelector("code");
+          const text = code ? code.innerText : pre.innerText;
+
+          try {
+            await navigator.clipboard.writeText(text);
+            button.innerText = "Copiado!";
+
+            setTimeout(() => {
+              button.innerText = "Copiar";
+            }, 2000);
+          } catch (err) {
+            button.innerText = "Erro";
+          }
+        });
+
+=======
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0f0d">
+  <meta name="description" content="Documentação prática sobre Linux, DevOps, Kubernetes, redes, monitoramento e infraestrutura.">
+  <meta property="og:title" content="Instalação de Cluster Kubernetes com Rocky Linux, containerd e Calico · Ninja Linux">
+  <meta property="og:description" content="Documentação prática sobre Linux, DevOps, Kubernetes, redes, monitoramento e infraestrutura.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://joaopedros111.github.io/ninja-linux/kubernetes/instalacao-cluster-rocky-containerd-calico/">
+  <meta property="og:image" content="https://joaopedros111.github.io/images/banner-ninja-linux.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Instalação de Cluster Kubernetes com Rocky Linux, containerd e Calico · Ninja Linux">
+  <meta name="twitter:description" content="Documentação prática sobre Linux, DevOps, Kubernetes, redes, monitoramento e infraestrutura.">
+  <title>Instalação de Cluster Kubernetes com Rocky Linux, containerd e Calico · Ninja Linux</title>
+  <link rel="icon" href="/ninja-linux/images/favicon.png">
+  <link rel="stylesheet" href="/ninja-linux/assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <button class="menu-toggle" id="menuToggle" aria-controls="sidebar" aria-expanded="false">☰ <span>Menu</span></button>
+  <div class="backdrop" id="backdrop" hidden></div>
+
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="/ninja-linux/">
+      <span class="brand-mark">NL</span>
+      <span><strong>Ninja Linux</strong><small>Base de conhecimento</small></span>
+    </a>
+
+    <div class="search-box">
+      <label for="sidebarSearchInput">Buscar no menu</label>
+      <input id="sidebarSearchInput" type="search" placeholder="Ex.: Kubernetes, LVM..." autocomplete="off">
+    </div>
+
+    <nav class="sidebar-menu" aria-label="Navegação principal">
+      <a href="/ninja-linux/">⌂ Início</a>
+      
+      
+        
+        <a href="/ninja-linux/linux/">🐧 Linux</a>
+      
+        
+        <a href="/ninja-linux/devops/">⚙ DevOps</a>
+      
+        
+        <a href="/ninja-linux/kubernetes/">☸ Kubernetes</a>
+      
+        
+        <a href="/ninja-linux/docker/">🐳 Docker</a>
+      
+        
+        <a href="/ninja-linux/git/">⑂ Git</a>
+      
+        
+        <a href="/ninja-linux/redes/">◎ Redes</a>
+      
+        
+        <a href="/ninja-linux/squid/">◉ Squid</a>
+      
+        
+        <a href="/ninja-linux/monitoramento/">▥ Monitoramento</a>
+      
+        
+        <a href="/ninja-linux/nutanix/">◇ Nutanix</a>
+      
+        
+        <a href="/ninja-linux/vmware/">▣ VMware</a>
+      
+        
+        <a href="/ninja-linux/watchguard/">◈ WatchGuard</a>
+      
+        
+        <a href="/ninja-linux/windows/">⊞ Windows</a>
+      
+        
+        <a href="/ninja-linux/troubleshooting/">◆ Troubleshooting</a>
+      
+    </nav>
+
+    <div class="sidebar-footer">
+      <a href="https://github.com/joaopedros111/ninja-linux" target="_blank" rel="noopener">Ver no GitHub ↗</a>
+    </div>
+  </aside>
+
+  <div class="page-shell">
+    <header class="topbar">
+      <span>Documentação prática de infraestrutura</span>
+      <a href="https://github.com/joaopedros111" target="_blank" rel="noopener">João Santos ↗</a>
+    </header>
+    <main id="conteudo" tabindex="-1">
+      <h1 id="instalação-de-cluster-kubernetes-com-rocky-linux-containerd-e-calico">Instalação de Cluster Kubernetes com Rocky Linux, containerd e Calico</h1>
+
+<h2 id="1-objetivo">1. Objetivo</h2>
+
+<p>Este procedimento apresenta a instalação de um cluster Kubernetes com três máquinas:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Servidor</th>
+      <th>Função</th>
+      <th>IP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>k8s-control01</td>
+      <td>Control Plane</td>
+      <td>10.0.97.21</td>
+    </tr>
+    <tr>
+      <td>k8s-worker01</td>
+      <td>Worker</td>
+      <td>10.0.97.17</td>
+    </tr>
+    <tr>
+      <td>k8s-worker02</td>
+      <td>Worker</td>
+      <td>10.0.97.20</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tecnologias utilizadas:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Rocky Linux 9
+Kubernetes 1.34
+containerd
+kubeadm
+Calico 3.32
+Tigera Operator
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="2-pré-requisitos">2. Pré-requisitos</h2>
+
+<p>Cada máquina deve possuir, no mínimo:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2 CPUs
+2 GB de memória RAM
+20 GB de disco
+Acesso à internet
+Comunicação de rede entre os nós
+Endereço IP estável
+</code></pre></div></div>
+
+<p>O Control Plane deve possuir preferencialmente pelo menos 4 GB de RAM.</p>
+
+<p>Todos os comandos devem ser executados como usuário <code class="language-plaintext highlighter-rouge">root</code>, salvo indicação contrária.</p>
+
+<hr />
+
+<h2 id="3-configuração-dos-nomes-dos-servidores">3. Configuração dos nomes dos servidores</h2>
+
+<p>No Control Plane:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hostnamectl set-hostname k8s-control01
+</code></pre></div></div>
+
+<p>No Worker 01:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hostnamectl set-hostname k8s-worker01
+</code></pre></div></div>
+
+<p>No Worker 02:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hostnamectl set-hostname k8s-worker02
+</code></pre></div></div>
+
+<p>Configure o arquivo <code class="language-plaintext highlighter-rouge">/etc/hosts</code> nos três servidores:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi /etc/hosts
+</code></pre></div></div>
+
+<p>Adicione:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>10.0.97.21 k8s-control01
+10.0.97.17 k8s-worker01
+10.0.97.20 k8s-worker02
+</code></pre></div></div>
+
+<p>Teste a resolução dos nomes:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ping <span class="nt">-c</span> 2 k8s-control01
+ping <span class="nt">-c</span> 2 k8s-worker01
+ping <span class="nt">-c</span> 2 k8s-worker02
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="4-atualização-do-sistema">4. Atualização do sistema</h2>
+
+<p>Execute em todos os servidores:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dnf update <span class="nt">-y</span>
+</code></pre></div></div>
+
+<p>Instale os utilitários básicos:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dnf <span class="nb">install</span> <span class="nt">-y</span> curl wget vim git <span class="nb">tar</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="5-desabilitar-a-swap">5. Desabilitar a swap</h2>
+
+<p>O kubelet deve operar sem swap, salvo quando houver uma configuração específica para suportá-la.</p>
+
+<p>Execute em todos os nós:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>swapoff <span class="nt">-a</span>
+</code></pre></div></div>
+
+<p>Confirme:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>free <span class="nt">-h</span>
+</code></pre></div></div>
+
+<p>Edite o arquivo <code class="language-plaintext highlighter-rouge">/etc/fstab</code>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi /etc/fstab
+</code></pre></div></div>
+
+<p>Comente a linha referente à swap.</p>
+
+<p>Exemplo:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#/dev/mapper/rl-swap none swap defaults 0 0
+</code></pre></div></div>
+
+<p>Confirme que nenhuma swap está ativa:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>swapon <span class="nt">--show</span>
+</code></pre></div></div>
+
+<p>O comando não deve retornar nenhuma entrada.</p>
+
+<hr />
+
+<h2 id="6-configuração-do-selinux">6. Configuração do SELinux</h2>
+
+<p>Para este laboratório, coloque o SELinux em modo permissivo:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>setenforce 0
+</code></pre></div></div>
+
+<p>Edite:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi /etc/selinux/config
+</code></pre></div></div>
+
+<p>Altere:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELINUX=enforcing
+</code></pre></div></div>
+
+<p>Para:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELINUX=permissive
+</code></pre></div></div>
+
+<p>Confirme:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>getenforce
+</code></pre></div></div>
+
+<p>Resultado esperado:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Permissive
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="7-configuração-do-firewall">7. Configuração do firewall</h2>
+
+<p>Para simplificar o ambiente de laboratório, desabilite o firewalld:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl disable <span class="nt">--now</span> firewalld
+</code></pre></div></div>
+
+<p>Confirme:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl status firewalld
+</code></pre></div></div>
+
+<p>Em ambiente de produção, mantenha o firewall habilitado e libere somente as portas necessárias.</p>
+
+<hr />
+
+<h2 id="8-carregamento-dos-módulos-do-kernel">8. Carregamento dos módulos do kernel</h2>
+
+<p>Execute em todos os servidores:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cat</span> <span class="o">&gt;</span> /etc/modules-load.d/k8s.conf <span class="o">&lt;&lt;</span><span class="no">EOF</span><span class="sh">
+overlay
+br_netfilter
+</span><span class="no">EOF
+</span></code></pre></div></div>
+
+<p>Carregue os módulos imediatamente:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>modprobe overlay
+modprobe br_netfilter
+</code></pre></div></div>
+
+<p>Confirme:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lsmod | <span class="nb">grep </span>overlay
+lsmod | <span class="nb">grep </span>br_netfilter
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="9-configuração-dos-parâmetros-de-rede">9. Configuração dos parâmetros de rede</h2>
+
+<p>Crie o arquivo:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cat</span> <span class="o">&gt;</span> /etc/sysctl.d/99-kubernetes.conf <span class="o">&lt;&lt;</span><span class="no">EOF</span><span class="sh">
+net.bridge.bridge-nf-call-iptables  = 1
+net.bridge.bridge-nf-call-ip6tables = 1
+net.ipv4.ip_forward                 = 1
+</span><span class="no">EOF
+</span></code></pre></div></div>
+
+<p>Aplique as configurações:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sysctl <span class="nt">--system</span>
+</code></pre></div></div>
+
+<p>Confirme:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sysctl net.bridge.bridge-nf-call-iptables
+sysctl net.bridge.bridge-nf-call-ip6tables
+sysctl net.ipv4.ip_forward
+</code></pre></div></div>
+
+<p>Resultado esperado:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>net.bridge.bridge-nf-call-iptables = 1
+net.bridge.bridge-nf-call-ip6tables = 1
+net.ipv4.ip_forward = 1
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="10-instalação-do-containerd">10. Instalação do containerd</h2>
+
+<p>Execute em todos os nós.</p>
+
+<p>Instale o gerenciador de repositórios:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dnf <span class="nb">install</span> <span class="nt">-y</span> dnf-plugins-core
+</code></pre></div></div>
+
+<p>Adicione o repositório Docker:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dnf config-manager <span class="nt">--add-repo</span> https://download.docker.com/linux/centos/docker-ce.repo
+</code></pre></div></div>
+
+<p>Instale o containerd:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dnf <span class="nb">install</span> <span class="nt">-y</span> containerd.io
+</code></pre></div></div>
+
+<p>Crie o diretório de configuração:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-p</span> /etc/containerd
+</code></pre></div></div>
+
+<p>Gere a configuração padrão:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>containerd config default <span class="o">&gt;</span> /etc/containerd/config.toml
+</code></pre></div></div>
+
+<p>Altere o uso de cgroups para <code class="language-plaintext highlighter-rouge">systemd</code>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sed</span> <span class="nt">-i</span> <span class="s1">'s/SystemdCgroup = false/SystemdCgroup = true/'</span> /etc/containerd/config.toml
+</code></pre></div></div>
+
+<p>Confirme:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">grep </span>SystemdCgroup /etc/containerd/config.toml
+</code></pre></div></div>
+
+<p>Resultado esperado:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SystemdCgroup = true
+</code></pre></div></div>
+
+<p>Habilite e inicie o containerd:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl <span class="nb">enable</span> <span class="nt">--now</span> containerd
+</code></pre></div></div>
+
+<p>Reinicie o serviço:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl restart containerd
+</code></pre></div></div>
+
+<p>Valide:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl status containerd <span class="nt">--no-pager</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="11-instalação-do-kubernetes">11. Instalação do Kubernetes</h2>
+
+<p>Execute em todos os servidores.</p>
+
+<p>Crie o repositório:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cat</span> <span class="o">&gt;</span> /etc/yum.repos.d/kubernetes.repo <span class="o">&lt;&lt;</span><span class="no">EOF</span><span class="sh">
+[kubernetes]
+name=Kubernetes
+baseurl=https://pkgs.k8s.io/core:/stable:/v1.34/rpm/
+enabled=1
+gpgcheck=1
+gpgkey=https://pkgs.k8s.io/core:/stable:/v1.34/rpm/repodata/repomd.xml.key
+exclude=kubelet kubeadm kubectl cri-tools kubernetes-cni
+</span><span class="no">EOF
+</span></code></pre></div></div>
+
+<p>Instale os componentes:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dnf <span class="nb">install</span> <span class="nt">-y</span> kubelet kubeadm kubectl <span class="se">\</span>
+<span class="nt">--disableexcludes</span><span class="o">=</span>kubernetes
+</code></pre></div></div>
+
+<p>Habilite o kubelet:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl <span class="nb">enable</span> <span class="nt">--now</span> kubelet
+</code></pre></div></div>
+
+<p>Verifique a versão instalada:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubeadm version
+kubectl version <span class="nt">--client</span>
+kubelet <span class="nt">--version</span>
+</code></pre></div></div>
+
+<p>O kubelet poderá apresentar reinicializações até que o nó seja inicializado ou adicionado ao cluster.</p>
+
+<hr />
+
+<h2 id="12-inicialização-do-control-plane">12. Inicialização do Control Plane</h2>
+
+<p>Execute somente no servidor <code class="language-plaintext highlighter-rouge">k8s-control01</code>.</p>
+
+<p>Inicialize o cluster:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubeadm init <span class="se">\</span>
+<span class="nt">--apiserver-advertise-address</span><span class="o">=</span>10.0.97.21 <span class="se">\</span>
+<span class="nt">--pod-network-cidr</span><span class="o">=</span>192.168.0.0/16
+</code></pre></div></div>
+
+<p>Ao final, o kubeadm exibirá um comando semelhante a:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubeadm <span class="nb">join </span>10.0.97.21:6443 <span class="se">\</span>
+<span class="nt">--token</span> TOKEN_GERADO <span class="se">\</span>
+<span class="nt">--discovery-token-ca-cert-hash</span> sha256:HASH_GERADO
+</code></pre></div></div>
+
+<p>Guarde esse comando. Ele será utilizado nos workers.</p>
+
+<hr />
+
+<h2 id="13-configuração-do-kubectl">13. Configuração do kubectl</h2>
+
+<p>Execute no Control Plane.</p>
+
+<p>Para o usuário root:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-p</span> /root/.kube
+<span class="nb">cp</span> /etc/kubernetes/admin.conf /root/.kube/config
+<span class="nb">chown </span>root:root /root/.kube/config
+</code></pre></div></div>
+
+<p>Teste:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get nodes
+</code></pre></div></div>
+
+<p>Neste momento, o Control Plane poderá aparecer como:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NotReady
+</code></pre></div></div>
+
+<p>Isso é esperado porque o plugin de rede ainda não foi instalado.</p>
+
+<hr />
+
+<h2 id="14-instalação-do-calico">14. Instalação do Calico</h2>
+
+<p>Execute somente no Control Plane.</p>
+
+<p>Instale o Tigera Operator:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl create <span class="nt">-f</span> <span class="se">\</span>
+https://raw.githubusercontent.com/projectcalico/calico/v3.32.0/manifests/tigera-operator.yaml
+</code></pre></div></div>
+
+<p>Baixe o manifesto de recursos personalizados:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-O</span> <span class="se">\</span>
+https://raw.githubusercontent.com/projectcalico/calico/v3.32.0/manifests/custom-resources.yaml
+</code></pre></div></div>
+
+<p>Verifique a rede configurada:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">grep</span> <span class="nt">-A5</span> cidr custom-resources.yaml
+</code></pre></div></div>
+
+<p>O CIDR deve corresponder ao utilizado no <code class="language-plaintext highlighter-rouge">kubeadm init</code>:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>192.168.0.0/16
+</code></pre></div></div>
+
+<p>Aplique o manifesto:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl create <span class="nt">-f</span> custom-resources.yaml
+</code></pre></div></div>
+
+<p>Acompanhe a instalação:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods <span class="nt">-n</span> tigera-operator
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods <span class="nt">-n</span> calico-system <span class="nt">-o</span> wide
+</code></pre></div></div>
+
+<p>Também é possível acompanhar continuamente:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>watch kubectl get pods <span class="nt">-n</span> calico-system
+</code></pre></div></div>
+
+<p>Aguarde até que os principais pods fiquem em estado <code class="language-plaintext highlighter-rouge">Running</code>.</p>
+
+<hr />
+
+<h2 id="15-adição-dos-workers-ao-cluster">15. Adição dos workers ao cluster</h2>
+
+<p>Execute o comando <code class="language-plaintext highlighter-rouge">kubeadm join</code> nos servidores <code class="language-plaintext highlighter-rouge">k8s-worker01</code> e <code class="language-plaintext highlighter-rouge">k8s-worker02</code>.</p>
+
+<p>Exemplo:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubeadm <span class="nb">join </span>10.0.97.21:6443 <span class="se">\</span>
+<span class="nt">--token</span> TOKEN_GERADO <span class="se">\</span>
+<span class="nt">--discovery-token-ca-cert-hash</span> sha256:HASH_GERADO
+</code></pre></div></div>
+
+<p>Caso o comando tenha sido perdido ou o token tenha expirado, gere um novo no Control Plane:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubeadm token create <span class="nt">--print-join-command</span>
+</code></pre></div></div>
+
+<p>Execute o novo comando nos workers.</p>
+
+<hr />
+
+<h2 id="16-validação-dos-nós">16. Validação dos nós</h2>
+
+<p>No Control Plane:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get nodes <span class="nt">-o</span> wide
+</code></pre></div></div>
+
+<p>Resultado esperado:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NAME            STATUS   ROLES           INTERNAL-IP
+k8s-control01   Ready    control-plane   10.0.97.21
+k8s-worker01    Ready    &lt;none&gt;          10.0.97.17
+k8s-worker02    Ready    &lt;none&gt;          10.0.97.20
+</code></pre></div></div>
+
+<p>Caso algum nó ainda esteja <code class="language-plaintext highlighter-rouge">NotReady</code>, aguarde a inicialização do Calico e verifique os pods.</p>
+
+<hr />
+
+<h2 id="17-validação-dos-componentes">17. Validação dos componentes</h2>
+
+<h3 id="171-ver-todos-os-pods">17.1 Ver todos os pods</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods <span class="nt">-A</span> <span class="nt">-o</span> wide
+</code></pre></div></div>
+
+<p>Os componentes devem ficar em estado <code class="language-plaintext highlighter-rouge">Running</code>.</p>
+
+<p>Entre eles:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>calico-node
+calico-kube-controllers
+calico-typha
+csi-node-driver
+coredns
+kube-apiserver
+kube-controller-manager
+kube-scheduler
+kube-proxy
+etcd
+tigera-operator
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="172-ver-os-pods-do-calico">17.2 Ver os pods do Calico</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods <span class="nt">-n</span> calico-system <span class="nt">-o</span> wide
+</code></pre></div></div>
+
+<p>Resultado esperado para o <code class="language-plaintext highlighter-rouge">calico-node</code>:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1/1 Running
+</code></pre></div></div>
+
+<p>Resultado esperado para o CSI:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2/2 Running
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="173-ver-os-pods-do-kubernetes">17.3 Ver os pods do Kubernetes</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods <span class="nt">-n</span> kube-system <span class="nt">-o</span> wide
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="174-ver-os-pods-do-tigera-operator">17.4 Ver os pods do Tigera Operator</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods <span class="nt">-n</span> tigera-operator <span class="nt">-o</span> wide
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="18-teste-de-criação-de-pod">18. Teste de criação de pod</h2>
+
+<p>Crie um pod de teste:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl run nginx-test <span class="se">\</span>
+<span class="nt">--image</span><span class="o">=</span>nginx:latest <span class="se">\</span>
+<span class="nt">--restart</span><span class="o">=</span>Never
+</code></pre></div></div>
+
+<p>Acompanhe:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pod nginx-test <span class="nt">-o</span> wide
+</code></pre></div></div>
+
+<p>Resultado esperado:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Running
+</code></pre></div></div>
+
+<p>Veja os detalhes:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl describe pod nginx-test
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="19-teste-com-deployment">19. Teste com Deployment</h2>
+
+<p>Crie um Deployment:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl create deployment nginx <span class="se">\</span>
+<span class="nt">--image</span><span class="o">=</span>nginx:latest
+</code></pre></div></div>
+
+<p>Crie três réplicas:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl scale deployment nginx <span class="nt">--replicas</span><span class="o">=</span>3
+</code></pre></div></div>
+
+<p>Verifique:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get deployments
+kubectl get pods <span class="nt">-o</span> wide
+</code></pre></div></div>
+
+<p>Os pods devem ser distribuídos entre os workers disponíveis.</p>
+
+<hr />
+
+<h2 id="20-criação-de-um-service">20. Criação de um Service</h2>
+
+<p>Exponha o Deployment:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl expose deployment nginx <span class="se">\</span>
+<span class="nt">--port</span><span class="o">=</span>80 <span class="se">\</span>
+<span class="nt">--target-port</span><span class="o">=</span>80 <span class="se">\</span>
+<span class="nt">--type</span><span class="o">=</span>NodePort
+</code></pre></div></div>
+
+<p>Verifique:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get svc nginx
+</code></pre></div></div>
+
+<p>Exemplo de resultado:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NAME    TYPE       CLUSTER-IP     PORT(S)
+nginx   NodePort   10.96.x.x      80:30xxx/TCP
+</code></pre></div></div>
+
+<p>Teste utilizando o IP de um dos nós e a porta NodePort:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl http://10.0.97.17:PORTA
+</code></pre></div></div>
+
+<p>Ou:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl http://10.0.97.20:PORTA
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="21-teste-de-comunicação-entre-pods">21. Teste de comunicação entre pods</h2>
+
+<p>Veja os IPs:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods <span class="nt">-o</span> wide
+</code></pre></div></div>
+
+<p>Entre em um pod:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl <span class="nb">exec</span> <span class="nt">-it</span> POD <span class="nt">--</span> /bin/bash
+</code></pre></div></div>
+
+<p>Ou, caso a imagem não possua Bash:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl <span class="nb">exec</span> <span class="nt">-it</span> POD <span class="nt">--</span> /bin/sh
+</code></pre></div></div>
+
+<p>Teste outro pod:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl http://IP_DO_OUTRO_POD
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="22-comandos-de-diagnóstico">22. Comandos de diagnóstico</h2>
+
+<h3 id="ver-os-nós">Ver os nós</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get nodes <span class="nt">-o</span> wide
+</code></pre></div></div>
+
+<h3 id="ver-todos-os-pods">Ver todos os pods</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods <span class="nt">-A</span> <span class="nt">-o</span> wide
+</code></pre></div></div>
+
+<h3 id="ver-eventos-recentes">Ver eventos recentes</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get events <span class="nt">-A</span> <span class="se">\</span>
+<span class="nt">--sort-by</span><span class="o">=</span>.metadata.creationTimestamp
+</code></pre></div></div>
+
+<h3 id="descrever-um-pod">Descrever um pod</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl describe pod <span class="nt">-n</span> NAMESPACE NOME_DO_POD
+</code></pre></div></div>
+
+<h3 id="ver-logs">Ver logs</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl logs <span class="nt">-n</span> NAMESPACE NOME_DO_POD
+</code></pre></div></div>
+
+<p>Caso o pod possua mais de um container:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl logs <span class="nt">-n</span> NAMESPACE NOME_DO_POD <span class="se">\</span>
+<span class="nt">-c</span> NOME_DO_CONTAINER
+</code></pre></div></div>
+
+<h3 id="ver-logs-do-container-anterior">Ver logs do container anterior</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl logs <span class="nt">-n</span> NAMESPACE NOME_DO_POD <span class="se">\</span>
+<span class="nt">--previous</span>
+</code></pre></div></div>
+
+<h3 id="ver-logs-do-kubelet">Ver logs do kubelet</h3>
+
+<p>Execute no nó com problema:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>journalctl <span class="nt">-u</span> kubelet <span class="nt">-n</span> 100 <span class="nt">--no-pager</span>
+</code></pre></div></div>
+
+<p>Para acompanhar em tempo real:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>journalctl <span class="nt">-u</span> kubelet <span class="nt">-f</span>
+</code></pre></div></div>
+
+<h3 id="ver-logs-do-containerd">Ver logs do containerd</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>journalctl <span class="nt">-u</span> containerd <span class="nt">-n</span> 100 <span class="nt">--no-pager</span>
+</code></pre></div></div>
+
+<h3 id="ver-imagens-locais">Ver imagens locais</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ctr <span class="nt">-n</span> k8s.io images list
+</code></pre></div></div>
+
+<p>Ou:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>crictl images
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="23-reinicialização-dos-serviços">23. Reinicialização dos serviços</h2>
+
+<p>O kubelet é um serviço do sistema operacional e não deve ser reiniciado pelo <code class="language-plaintext highlighter-rouge">kubectl</code>.</p>
+
+<p>Comando incorreto:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl restart kubelet
+</code></pre></div></div>
+
+<p>Comando correto:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl restart kubelet
+</code></pre></div></div>
+
+<p>Verifique:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl status kubelet <span class="nt">--no-pager</span>
+</code></pre></div></div>
+
+<p>Para reiniciar o containerd:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl restart containerd
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="24-configuração-opcional-do-kubectl-nos-workers">24. Configuração opcional do kubectl nos workers</h2>
+
+<p>Normalmente, o <code class="language-plaintext highlighter-rouge">kubectl</code> é utilizado apenas no Control Plane ou em uma estação administrativa.</p>
+
+<p>Ao executar <code class="language-plaintext highlighter-rouge">kubectl</code> em um worker sem configuração, poderá aparecer:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The connection to the server localhost:8080 was refused
+</code></pre></div></div>
+
+<p>Para permitir o uso administrativo do kubectl em um worker, copie o arquivo de configuração do Control Plane.</p>
+
+<p>No Control Plane:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scp /etc/kubernetes/admin.conf <span class="se">\</span>
+root@10.0.97.17:/root/admin.conf
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scp /etc/kubernetes/admin.conf <span class="se">\</span>
+root@10.0.97.20:/root/admin.conf
+</code></pre></div></div>
+
+<p>No worker:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-p</span> /root/.kube
+<span class="nb">mv</span> /root/admin.conf /root/.kube/config
+<span class="nb">chmod </span>600 /root/.kube/config
+</code></pre></div></div>
+
+<p>Teste:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get nodes
+</code></pre></div></div>
+
+<p>Essa configuração concede privilégios administrativos. Utilize somente em ambiente controlado.</p>
+
+<hr />
+
+<h2 id="25-remoção-de-um-pod-de-teste">25. Remoção de um pod de teste</h2>
+
+<p>Remova o pod criado manualmente:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl delete pod nginx-test
+</code></pre></div></div>
+
+<p>Remova o Deployment e o Service:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl delete service nginx
+kubectl delete deployment nginx
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="26-remoção-de-um-worker-do-cluster">26. Remoção de um worker do cluster</h2>
+
+<p>Primeiro, no Control Plane, drene o nó:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl drain k8s-worker02 <span class="se">\</span>
+<span class="nt">--ignore-daemonsets</span> <span class="se">\</span>
+<span class="nt">--delete-emptydir-data</span>
+</code></pre></div></div>
+
+<p>Remova o nó:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl delete node k8s-worker02
+</code></pre></div></div>
+
+<p>No próprio worker:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubeadm reset <span class="nt">-f</span>
+</code></pre></div></div>
+
+<p>Remova configurações residuais:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">rm</span> <span class="nt">-rf</span> /etc/cni/net.d
+<span class="nb">rm</span> <span class="nt">-rf</span> /var/lib/cni
+<span class="nb">rm</span> <span class="nt">-rf</span> /var/lib/kubelet
+<span class="nb">rm</span> <span class="nt">-rf</span> /etc/kubernetes
+</code></pre></div></div>
+
+<p>Reinicie os serviços:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl restart containerd
+systemctl restart kubelet
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="27-reinicialização-completa-do-laboratório">27. Reinicialização completa do laboratório</h2>
+
+<p>Para apagar o cluster, execute primeiro nos workers:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubeadm reset <span class="nt">-f</span>
+</code></pre></div></div>
+
+<p>Depois, no Control Plane:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubeadm reset <span class="nt">-f</span>
+</code></pre></div></div>
+
+<p>Remova os arquivos residuais:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">rm</span> <span class="nt">-rf</span> /etc/cni/net.d
+<span class="nb">rm</span> <span class="nt">-rf</span> /var/lib/cni
+<span class="nb">rm</span> <span class="nt">-rf</span> /var/lib/calico
+<span class="nb">rm</span> <span class="nt">-rf</span> /etc/kubernetes
+<span class="nb">rm</span> <span class="nt">-rf</span> /root/.kube
+</code></pre></div></div>
+
+<p>Limpe regras de iptables somente se necessário:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>iptables <span class="nt">-F</span>
+iptables <span class="nt">-t</span> nat <span class="nt">-F</span>
+iptables <span class="nt">-t</span> mangle <span class="nt">-F</span>
+iptables <span class="nt">-X</span>
+</code></pre></div></div>
+
+<p>Reinicie:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl restart containerd
+systemctl restart kubelet
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="28-checklist-final">28. Checklist final</h2>
+
+<p>Confirme os seguintes itens:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[ ] Swap desabilitada
+[ ] SELinux permissivo
+[ ] Módulos overlay e br_netfilter carregados
+[ ] IP forwarding habilitado
+[ ] containerd em execução
+[ ] SystemdCgroup habilitado
+[ ] kubelet habilitado
+[ ] Control Plane inicializado
+[ ] kubectl configurado
+[ ] Calico instalado
+[ ] Workers adicionados
+[ ] Todos os nós em Ready
+[ ] Todos os pods essenciais em Running
+[ ] Teste com pod realizado
+[ ] Teste com Deployment realizado
+[ ] Teste com Service realizado
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="29-resultado-esperado">29. Resultado esperado</h2>
+
+<p>Ao final da instalação:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get nodes <span class="nt">-o</span> wide
+</code></pre></div></div>
+
+<p>Deve mostrar:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>k8s-control01   Ready
+k8s-worker01    Ready
+k8s-worker02    Ready
+</code></pre></div></div>
+
+<p>E:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods <span class="nt">-A</span>
+</code></pre></div></div>
+
+<p>Não deve apresentar pods em:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Pending
+Error
+ImagePullBackOff
+ErrImagePull
+CrashLoopBackOff
+Init:Error
+</code></pre></div></div>
+
+<p>O cluster estará pronto para criação de Deployments, Services, ConfigMaps, Secrets, volumes e demais recursos Kubernetes.</p>
+
+    </main>
+    <footer class="site-footer">
+      <span>🥷 Ninja Linux</span>
+      <span>Conhecimento técnico, direto ao ponto.</span>
+    </footer>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const body = document.body;
+      const toggle = document.getElementById('menuToggle');
+      const backdrop = document.getElementById('backdrop');
+      const closeMenu = () => {
+        body.classList.remove('menu-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        backdrop.hidden = true;
+      };
+      toggle.addEventListener('click', () => {
+        const open = !body.classList.contains('menu-open');
+        body.classList.toggle('menu-open', open);
+        toggle.setAttribute('aria-expanded', String(open));
+        backdrop.hidden = !open;
+      });
+      backdrop.addEventListener('click', closeMenu);
+
+      const current = location.pathname.replace(/index\.html$/, '');
+      document.querySelectorAll('.sidebar-menu a').forEach(link => {
+        const path = new URL(link.href).pathname.replace(/index\.html$/, '');
+        if (path === current) link.classList.add('active');
+      });
+
+      const search = document.getElementById('sidebarSearchInput');
+      search.addEventListener('input', () => {
+        const term = search.value.trim().toLocaleLowerCase('pt-BR');
+        document.querySelectorAll('.sidebar-menu a').forEach(link => {
+          link.hidden = term && !link.textContent.toLocaleLowerCase('pt-BR').includes(term);
+        });
+      });
+
+      document.querySelectorAll('pre').forEach(pre => {
+        const button = document.createElement('button');
+        button.className = 'copy-btn';
+        button.type = 'button';
+        button.textContent = 'Copiar';
+        button.addEventListener('click', async () => {
+          try {
+            await navigator.clipboard.writeText(pre.querySelector('code')?.innerText || pre.innerText);
+            button.textContent = 'Copiado ✓';
+          } catch (_) { button.textContent = 'Selecione e copie'; }
+          setTimeout(() => button.textContent = 'Copiar', 1800);
+        });
+>>>>>>> 2c2622c (Atualização do Ninja Linux)
+        pre.appendChild(button);
+      });
+    });
+  </script>
+<<<<<<< HEAD
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const searchInput = document.getElementById("sidebarSearchInput");
+
+      if (!searchInput) {
+        return;
+      }
+
+      searchInput.addEventListener("keyup", function () {
+        const filter = this.value.toLowerCase();
+        const links = document.querySelectorAll(".sidebar a");
+
+        links.forEach(link => {
+          const text = link.textContent.toLowerCase();
+          link.style.display = text.includes(filter) ? "block" : "none";
+        });
+      });
+    });
+  </script>
+=======
+>>>>>>> 2c2622c (Atualização do Ninja Linux)
+</body>
+</html>
