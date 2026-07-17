@@ -20,7 +20,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          gem install bundler jekyll
+          gem install bundler
+          bundle install
 
       - name: Build site
         run: |
