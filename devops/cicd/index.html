@@ -1,3 +1,449 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CI/CD | Ninja Linux</title>
+
+  <link rel="stylesheet" href="/ninja-linux/assets/css/style.css">
+  <link rel="icon" type="image/png" href="/ninja-linux/images/favicon.png">
+</head>
+
+<body>
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h2>🏍️ Ninja Linux</h2>
+      <p class="sidebar-subtitle">Linux • Kubernetes • DevOps</p>
+
+      <input
+        type="text"
+        id="sidebarSearchInput"
+        class="search-input"
+        placeholder="Buscar...">
+    </div>
+
+    <nav class="sidebar-menu" aria-label="Menu principal">
+      <a href="/ninja-linux/">🏠 Início</a>
+
+      <button
+        type="button"
+        id="collapseAllMenus"
+        class="sidebar-action"
+        aria-label="Recolher todas as seções"
+        title="Recolher todas as seções">
+        <span aria-hidden="true">▸</span>
+      </button>
+
+      <details>
+        <summary>🐧 Linux</summary>
+        <ul>
+          <li><a href="/ninja-linux/linux/">Página inicial</a></li>
+          <li><a href="/ninja-linux/linux/expandir-lvm.html">Expandir LVM</a></li>
+          <li><a href="/ninja-linux/linux/certificadossl.html">Certificado SSL - Harbor</a></li>
+          <li><a href="/ninja-linux/linux/atualizarSSLwiki.html">Certificado SSL - Wiki</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>⚙️ DevOps</summary>
+        <ul>
+          <li><a href="/ninja-linux/devops/">Página inicial</a></li>
+          <li><a href="/ninja-linux/devops/cicd.html">CI/CD</a></li>
+          <li><a href="/ninja-linux/devops/git.html">Git Básico</a></li>
+          <li><a href="/ninja-linux/devops/gitintermediario.html">Git Intermediário</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>☸️ Kubernetes</summary>
+        <ul>
+          <li><a href="/ninja-linux/kubernetes/">Página inicial</a></li>
+          <li><a href="/ninja-linux/kubernetes/kubeconfig.html">Kubeconfig</a></li>
+          <li><a href="/ninja-linux/kubernetes/kubectl.html">Kubectl</a></li>
+          <li><a href="/ninja-linux/kubernetes/instalacao-cluster-rocky-containerd-calico.html">Instalação do Cluster</a></li>
+          <li><a href="/ninja-linux/kubernetes/pods.html">Pods</a></li>
+          <li><a href="/ninja-linux/kubernetes/deployments.html">Deployments</a></li>
+          <li><a href="/ninja-linux/kubernetes/services.html">Services</a></li>
+          <li><a href="/ninja-linux/kubernetes/ingress.html">Ingress</a></li>
+          <li><a href="/ninja-linux/kubernetes/troubleshooting.html">Troubleshooting</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🐳 Docker</summary>
+        <ul>
+          <li><a href="/ninja-linux/docker/">Página inicial</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🌿 Git</summary>
+        <ul>
+          <li><a href="/ninja-linux/git/">Página inicial</a></li>
+          <li><a href="/ninja-linux/devops/git.html">Git Básico</a></li>
+          <li><a href="/ninja-linux/devops/gitintermediario.html">Git Intermediário</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🌐 Redes</summary>
+        <ul>
+          <li><a href="/ninja-linux/redes/">Página inicial</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🦑 Squid</summary>
+        <ul>
+          <li><a href="/ninja-linux/squid/">Página inicial</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>📊 Monitoramento</summary>
+        <ul>
+          <li><a href="/ninja-linux/monitoramento/">Página inicial</a></li>
+          <li><a href="/ninja-linux/monitoramento/instalacao-zabbix-server.html">Zabbix Server</a></li>
+          <li><a href="/ninja-linux/monitoramento/grafana.html">Grafana</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🥜 Nutanix</summary>
+        <ul>
+          <li><a href="/ninja-linux/nutanix/">Página inicial</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>VMware</summary>
+        <ul>
+          <li><a href="/ninja-linux/vmware/">Página inicial</a></li>
+          <li><a href="/ninja-linux/vmware/instalacao-esxi-7-dell-r830-idrac.html">Instalação do ESXi 7.0.3</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🔥 WatchGuard</summary>
+        <ul>
+          <li><a href="/ninja-linux/watchguard/">Página inicial</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🪟 Windows</summary>
+        <ul>
+          <li><a href="/ninja-linux/windows/">Página inicial</a></li>
+          <li><a href="/ninja-linux/windows/instalacao-aplicativos-exe.html">Instalação de Apps (.exe)</a></li>
+          <li><a href="/ninja-linux/windows/instalacao-via-temp.html">Instalação via C:\Temp</a></li>
+          <li><a href="/ninja-linux/windows/activedirectory.html">Active Directory</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🛠️ Troubleshooting</summary>
+        <ul>
+          <li><a href="/ninja-linux/troubleshooting/">Página inicial</a></li>
+          <li><a href="/ninja-linux/troubleshooting/troubleshootingwiki.html">Wiki indisponível</a></li>
+          <li><a href="/ninja-linux/troubleshooting/troubleshootingcitsmart.html">CITSmart indisponível</a></li>
+          <li><a href="/ninja-linux/troubleshooting/troubleshooting_utf8_wildfly.html">UTF-8 no WildFly</a></li>
+        </ul>
+      </details>
+    </nav>
+  </aside>
+
+  <main>
+    <h1 id="-cicd">🔄 CI/CD</h1>
+
+<h2 id="introdução">Introdução</h2>
+
+<p>CI/CD é um conjunto de práticas utilizadas para automatizar a integração, teste, entrega e implantação de aplicações.</p>
+
+<p>A sigla significa:</p>
+
+<ul>
+  <li><strong>CI</strong> – Continuous Integration (Integração Contínua)</li>
+  <li><strong>CD</strong> – Continuous Delivery / Continuous Deployment</li>
+</ul>
+
+<p>Essas práticas reduzem erros manuais e aceleram a entrega de software.</p>
+
+<hr />
+
+<h2 id="o-que-é-ci">O que é CI?</h2>
+
+<p>Continuous Integration (CI) consiste em integrar alterações de código frequentemente em um repositório central.</p>
+
+<p>Sempre que um desenvolvedor envia código para o repositório, um pipeline pode executar automaticamente:</p>
+
+<ul>
+  <li>Compilação</li>
+  <li>Testes</li>
+  <li>Validações</li>
+  <li>Análises de qualidade</li>
+</ul>
+
+<h3 id="fluxo-de-ci">Fluxo de CI</h3>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Desenvolvedor
+      ↓
+Git / Azure DevOps
+      ↓
+Jenkins
+      ↓
+Build
+      ↓
+Testes
+</code></pre></div></div>
+
+<h3 id="benefícios">Benefícios</h3>
+
+<ul>
+  <li>Detectar erros rapidamente</li>
+  <li>Evitar problemas de integração</li>
+  <li>Garantir qualidade do código</li>
+  <li>Automatizar validações</li>
+</ul>
+
+<hr />
+
+<h2 id="o-que-é-cd">O que é CD?</h2>
+
+<p>CD é a automação da entrega e implantação das aplicações.</p>
+
+<p>Após a conclusão da CI, a aplicação pode ser disponibilizada automaticamente para testes, homologação ou produção.</p>
+
+<p>Existem duas abordagens:</p>
+
+<h3 id="continuous-delivery">Continuous Delivery</h3>
+
+<p>O deploy fica pronto para ser executado, mas requer aprovação humana.</p>
+
+<p>Exemplo:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Build
+   ↓
+Homologação
+   ↓
+Aprovação
+   ↓
+Produção
+</code></pre></div></div>
+
+<h3 id="continuous-deployment">Continuous Deployment</h3>
+
+<p>O deploy é realizado automaticamente após a aprovação dos testes.</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Build
+   ↓
+Testes
+   ↓
+Produção
+</code></pre></div></div>
+
+<p>Sem intervenção humana.</p>
+
+<hr />
+
+<h2 id="exemplo-prático">Exemplo Prático</h2>
+
+<p>Fluxo semelhante ao utilizado no ambiente da Infraero:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Azure DevOps
+      ↓
+Jenkins
+      ↓
+Build da aplicação
+      ↓
+Criação da imagem Docker
+      ↓
+Push para Harbor
+      ↓
+Deploy em Kubernetes (DSV)
+      ↓
+Aprovação para HML
+      ↓
+Deploy em HML
+      ↓
+Aprovação para PRD
+      ↓
+Deploy em Produção
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="ferramentas-utilizadas">Ferramentas Utilizadas</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ferramenta</th>
+      <th>Função</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Git</td>
+      <td>Controle de versão</td>
+    </tr>
+    <tr>
+      <td>Azure DevOps</td>
+      <td>Repositório de código</td>
+    </tr>
+    <tr>
+      <td>Jenkins</td>
+      <td>Pipeline CI/CD</td>
+    </tr>
+    <tr>
+      <td>Docker</td>
+      <td>Criação de imagens</td>
+    </tr>
+    <tr>
+      <td>Harbor</td>
+      <td>Armazenamento de imagens</td>
+    </tr>
+    <tr>
+      <td>Kubernetes</td>
+      <td>Deploy das aplicações</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="pipeline">Pipeline</h2>
+
+<p>Um pipeline é uma sequência de etapas automatizadas.</p>
+
+<p>Exemplo:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Checkout
+    ↓
+Build
+    ↓
+Testes
+    ↓
+Push da imagem
+    ↓
+Deploy
+</code></pre></div></div>
+
+<p>No Jenkins essas etapas normalmente aparecem como:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Building the image
+Pushing to registry
+Deploying to DSV
+Aprovação para HML
+Deploying to HML
+Aprovação para PRD
+Deploying to PRD
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="vantagens-do-cicd">Vantagens do CI/CD</h2>
+
+<ul>
+  <li>Automatização de tarefas repetitivas</li>
+  <li>Redução de erros manuais</li>
+  <li>Entregas mais rápidas</li>
+  <li>Padronização dos processos</li>
+  <li>Melhor rastreabilidade das alterações</li>
+  <li>Facilidade de rollback</li>
+</ul>
+
+<hr />
+
+<h2 id="resumo">Resumo</h2>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CI = Construir e validar a aplicação
+
+CD = Entregar e implantar a aplicação
+</code></pre></div></div>
+
+<p>Fluxo resumido:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Código
+   ↓
+CI
+(Build + Testes)
+   ↓
+CD
+(Deploy)
+   ↓
+Produção
+</code></pre></div></div>
+
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const details = document.querySelectorAll("details");
+      const links = document.querySelectorAll(".sidebar a");
+      const collapseAllButton = document.getElementById("collapseAllMenus");
+      const currentPath = window.location.pathname;
+
+      details.forEach((detail, index) => {
+        const savedState = localStorage.getItem("menu-" + index);
+
+        if (savedState === "open") {
+          detail.open = true;
+        }
+
+        detail.addEventListener("toggle", function () {
+          localStorage.setItem("menu-" + index, detail.open ? "open" : "closed");
+        });
+      });
+
+      links.forEach(link => {
+        const linkPath = new URL(link.href).pathname;
+
+        if (linkPath === currentPath) {
+          link.classList.add("active");
+
+          const parentDetails = link.closest("details");
+          if (parentDetails) {
+            parentDetails.open = true;
+          }
+        }
+      });
+
+      if (collapseAllButton) {
+        collapseAllButton.addEventListener("click", function () {
+          details.forEach((detail, index) => {
+            detail.open = false;
+            localStorage.setItem("menu-" + index, "closed");
+          });
+        });
+      }
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll("pre").forEach(pre => {
+        const button = document.createElement("button");
+        button.className = "copy-btn";
+        button.innerText = "Copiar";
+
+        button.addEventListener("click", async () => {
+          const code = pre.querySelector("code");
+          const text = code ? code.innerText : pre.innerText;
+
+          try {
+            await navigator.clipboard.writeText(text);
+            button.innerText = "Copiado!";
+
+            setTimeout(() => {
+              button.innerText = "Copiar";
+            }, 2000);
+          } catch (err) {
+            button.innerText = "Erro";
+          }
+        });
+
+=======
 <!doctype html>
 <html lang="pt-BR">
 <head>
@@ -358,14 +804,36 @@ Produção
           try {
             await navigator.clipboard.writeText(pre.querySelector('code')?.innerText || pre.innerText);
             button.textContent = 'Copiado ✓';
-          } catch (_) {
-            button.textContent = 'Selecione e copie';
-          }
+          } catch (_) { button.textContent = 'Selecione e copie'; }
           setTimeout(() => button.textContent = 'Copiar', 1800);
         });
+>>>>>>> 2c2622c (Atualização do Ninja Linux)
         pre.appendChild(button);
       });
     });
   </script>
+<<<<<<< HEAD
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const searchInput = document.getElementById("sidebarSearchInput");
+
+      if (!searchInput) {
+        return;
+      }
+
+      searchInput.addEventListener("keyup", function () {
+        const filter = this.value.toLowerCase();
+        const links = document.querySelectorAll(".sidebar a");
+
+        links.forEach(link => {
+          const text = link.textContent.toLowerCase();
+          link.style.display = text.includes(filter) ? "block" : "none";
+        });
+      });
+    });
+  </script>
+=======
+>>>>>>> 2c2622c (Atualização do Ninja Linux)
 </body>
 </html>

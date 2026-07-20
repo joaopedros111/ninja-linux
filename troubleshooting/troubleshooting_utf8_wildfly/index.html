@@ -1,3 +1,371 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Troubleshooting CITSmart | Ninja Linux</title>
+
+  <link rel="stylesheet" href="/ninja-linux/assets/css/style.css">
+  <link rel="icon" type="image/png" href="/ninja-linux/images/favicon.png">
+</head>
+
+<body>
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h2>🏍️ Ninja Linux</h2>
+      <p class="sidebar-subtitle">Linux • Kubernetes • DevOps</p>
+
+      <input
+        type="text"
+        id="sidebarSearchInput"
+        class="search-input"
+        placeholder="Buscar...">
+    </div>
+
+    <nav class="sidebar-menu" aria-label="Menu principal">
+      <a href="/ninja-linux/">🏠 Início</a>
+
+      <button
+        type="button"
+        id="collapseAllMenus"
+        class="sidebar-action"
+        aria-label="Recolher todas as seções"
+        title="Recolher todas as seções">
+        <span aria-hidden="true">▸</span>
+      </button>
+
+      <details>
+        <summary>🐧 Linux</summary>
+        <ul>
+          <li><a href="/ninja-linux/linux/">Página inicial</a></li>
+          <li><a href="/ninja-linux/linux/expandir-lvm.html">Expandir LVM</a></li>
+          <li><a href="/ninja-linux/linux/certificadossl.html">Certificado SSL - Harbor</a></li>
+          <li><a href="/ninja-linux/linux/atualizarSSLwiki.html">Certificado SSL - Wiki</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>⚙️ DevOps</summary>
+        <ul>
+          <li><a href="/ninja-linux/devops/">Página inicial</a></li>
+          <li><a href="/ninja-linux/devops/cicd.html">CI/CD</a></li>
+          <li><a href="/ninja-linux/devops/git.html">Git Básico</a></li>
+          <li><a href="/ninja-linux/devops/gitintermediario.html">Git Intermediário</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>☸️ Kubernetes</summary>
+        <ul>
+          <li><a href="/ninja-linux/kubernetes/">Página inicial</a></li>
+          <li><a href="/ninja-linux/kubernetes/kubeconfig.html">Kubeconfig</a></li>
+          <li><a href="/ninja-linux/kubernetes/kubectl.html">Kubectl</a></li>
+          <li><a href="/ninja-linux/kubernetes/instalacao-cluster-rocky-containerd-calico.html">Instalação do Cluster</a></li>
+          <li><a href="/ninja-linux/kubernetes/pods.html">Pods</a></li>
+          <li><a href="/ninja-linux/kubernetes/deployments.html">Deployments</a></li>
+          <li><a href="/ninja-linux/kubernetes/services.html">Services</a></li>
+          <li><a href="/ninja-linux/kubernetes/ingress.html">Ingress</a></li>
+          <li><a href="/ninja-linux/kubernetes/troubleshooting.html">Troubleshooting</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🐳 Docker</summary>
+        <ul>
+          <li><a href="/ninja-linux/docker/">Página inicial</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🌿 Git</summary>
+        <ul>
+          <li><a href="/ninja-linux/git/">Página inicial</a></li>
+          <li><a href="/ninja-linux/devops/git.html">Git Básico</a></li>
+          <li><a href="/ninja-linux/devops/gitintermediario.html">Git Intermediário</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🌐 Redes</summary>
+        <ul>
+          <li><a href="/ninja-linux/redes/">Página inicial</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🦑 Squid</summary>
+        <ul>
+          <li><a href="/ninja-linux/squid/">Página inicial</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>📊 Monitoramento</summary>
+        <ul>
+          <li><a href="/ninja-linux/monitoramento/">Página inicial</a></li>
+          <li><a href="/ninja-linux/monitoramento/instalacao-zabbix-server.html">Zabbix Server</a></li>
+          <li><a href="/ninja-linux/monitoramento/grafana.html">Grafana</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🥜 Nutanix</summary>
+        <ul>
+          <li><a href="/ninja-linux/nutanix/">Página inicial</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>VMware</summary>
+        <ul>
+          <li><a href="/ninja-linux/vmware/">Página inicial</a></li>
+          <li><a href="/ninja-linux/vmware/instalacao-esxi-7-dell-r830-idrac.html">Instalação do ESXi 7.0.3</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🔥 WatchGuard</summary>
+        <ul>
+          <li><a href="/ninja-linux/watchguard/">Página inicial</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🪟 Windows</summary>
+        <ul>
+          <li><a href="/ninja-linux/windows/">Página inicial</a></li>
+          <li><a href="/ninja-linux/windows/instalacao-aplicativos-exe.html">Instalação de Apps (.exe)</a></li>
+          <li><a href="/ninja-linux/windows/instalacao-via-temp.html">Instalação via C:\Temp</a></li>
+          <li><a href="/ninja-linux/windows/activedirectory.html">Active Directory</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🛠️ Troubleshooting</summary>
+        <ul>
+          <li><a href="/ninja-linux/troubleshooting/">Página inicial</a></li>
+          <li><a href="/ninja-linux/troubleshooting/troubleshootingwiki.html">Wiki indisponível</a></li>
+          <li><a href="/ninja-linux/troubleshooting/troubleshootingcitsmart.html">CITSmart indisponível</a></li>
+          <li><a href="/ninja-linux/troubleshooting/troubleshooting_utf8_wildfly.html">UTF-8 no WildFly</a></li>
+        </ul>
+      </details>
+    </nav>
+  </aside>
+
+  <main>
+    <h1 id="troubleshooting--correção-de-caracteres-especiais-utf-8-em-aplicação-wildfly-no-kubernetes">Troubleshooting – Correção de Caracteres Especiais (UTF-8) em Aplicação WildFly no Kubernetes</h1>
+
+<h2 id="problema">Problema</h2>
+
+<p>A aplicação SGSO apresentava problemas com caracteres especiais (acentuação e cedilha) na interface web.</p>
+
+<p>Exemplos:</p>
+
+<ul>
+  <li>Caracteres exibidos incorretamente na aplicação.</li>
+  <li>Durante acesso ao container, nomes de arquivos e textos apareciam com caracteres inválidos ou substituídos por <code class="language-plaintext highlighter-rouge">???</code>.</li>
+</ul>
+
+<h2 id="ambiente">Ambiente</h2>
+
+<ul>
+  <li>Kubernetes RKE2</li>
+  <li>WildFly executando em container</li>
+  <li>Namespace: <code class="language-plaintext highlighter-rouge">sgso</code></li>
+  <li>Deployment: <code class="language-plaintext highlighter-rouge">sgso</code></li>
+  <li>Imagem: <code class="language-plaintext highlighter-rouge">harbor.infraero.gov.br/library/sgso:f860f</code></li>
+</ul>
+
+<hr />
+
+<h2 id="diagnóstico">Diagnóstico</h2>
+
+<h3 id="verificação-do-locale-dentro-do-container">Verificação do Locale dentro do Container</h3>
+
+<p>Acessado o pod da aplicação:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl <span class="nb">exec</span> <span class="nt">-it</span> <span class="nt">-n</span> sgso &lt;pod&gt; <span class="nt">--</span> sh
+</code></pre></div></div>
+
+<p>Verificação:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>locale
+</code></pre></div></div>
+
+<p>Resultado:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LANG=
+LC_CTYPE="POSIX"
+LC_ALL=
+</code></pre></div></div>
+
+<p>Indicando que o container estava utilizando locale padrão POSIX e não UTF-8.</p>
+
+<hr />
+
+<h3 id="verificação-da-jvm">Verificação da JVM</h3>
+
+<p>Executado:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java <span class="nt">-XshowSettings</span>:properties <span class="nt">-version</span> 2&gt;&amp;1 | <span class="nb">grep</span> <span class="nt">-i</span> encoding
+</code></pre></div></div>
+
+<p>Após os ajustes, a JVM passou a exibir:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>file.encoding = UTF-8
+native.encoding = UTF-8
+sun.jnu.encoding = UTF-8
+</code></pre></div></div>
+
+<p>Confirmando que o Java estava operando em UTF-8.</p>
+
+<hr />
+
+<h2 id="solução">Solução</h2>
+
+<p>Foram adicionadas variáveis de ambiente UTF-8 diretamente no Deployment Kubernetes.</p>
+
+<h3 id="comando-aplicado">Comando aplicado</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl <span class="nb">set env </span>deployment/sgso <span class="nt">-n</span> sgso <span class="se">\</span>
+<span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8 <span class="se">\</span>
+<span class="nv">LC_ALL</span><span class="o">=</span>en_US.UTF-8 <span class="se">\</span>
+<span class="nv">LC_CTYPE</span><span class="o">=</span>en_US.UTF-8
+</code></pre></div></div>
+
+<p>O Kubernetes realizou automaticamente um rollout do Deployment, criando um novo pod.</p>
+
+<hr />
+
+<h2 id="validação">Validação</h2>
+
+<h3 id="verificar-variáveis-de-ambiente">Verificar variáveis de ambiente</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl <span class="nb">exec</span> <span class="nt">-it</span> <span class="nt">-n</span> sgso &lt;pod&gt; <span class="nt">--</span> <span class="nb">env</span> | <span class="nb">grep</span> <span class="nt">-E</span> <span class="s1">'LANG|LC_'</span>
+</code></pre></div></div>
+
+<p>Resultado esperado:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LANG=en_US.UTF-8
+LC_ALL=en_US.UTF-8
+LC_CTYPE=en_US.UTF-8
+</code></pre></div></div>
+
+<h3 id="verificar-encoding-da-jvm">Verificar encoding da JVM</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl <span class="nb">exec</span> <span class="nt">-it</span> <span class="nt">-n</span> sgso &lt;pod&gt; <span class="nt">--</span> <span class="se">\</span>
+java <span class="nt">-XshowSettings</span>:properties <span class="nt">-version</span> 2&gt;&amp;1 | <span class="nb">grep</span> <span class="nt">-i</span> encoding
+</code></pre></div></div>
+
+<p>Resultado esperado:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>file.encoding = UTF-8
+native.encoding = UTF-8
+sun.jnu.encoding = UTF-8
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="conclusão">Conclusão</h2>
+
+<p>O problema estava relacionado à ausência de configuração explícita de locale UTF-8 no container da aplicação.</p>
+
+<p>A correção consistiu em definir as variáveis:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LANG=en_US.UTF-8
+LC_ALL=en_US.UTF-8
+LC_CTYPE=en_US.UTF-8
+</code></pre></div></div>
+
+<p>no Deployment Kubernetes.</p>
+
+<p>Após o rollout:</p>
+
+<ul>
+  <li>Container passou a utilizar UTF-8.</li>
+  <li>JVM passou a operar com UTF-8.</li>
+  <li>Ambiente ficou apto a processar e exibir caracteres especiais corretamente.</li>
+</ul>
+
+<p>Caso a aplicação continue apresentando caracteres incorretos após essa correção, a análise deve seguir para:</p>
+
+<ul>
+  <li>Configuração do banco de dados.</li>
+  <li>Configuração HTTP/Undertow do WildFly.</li>
+  <li>Páginas JSP/JSF/HTML.</li>
+  <li>Código da aplicação responsável pela conversão de caracteres.</li>
+</ul>
+
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const details = document.querySelectorAll("details");
+      const links = document.querySelectorAll(".sidebar a");
+      const collapseAllButton = document.getElementById("collapseAllMenus");
+      const currentPath = window.location.pathname;
+
+      details.forEach((detail, index) => {
+        const savedState = localStorage.getItem("menu-" + index);
+
+        if (savedState === "open") {
+          detail.open = true;
+        }
+
+        detail.addEventListener("toggle", function () {
+          localStorage.setItem("menu-" + index, detail.open ? "open" : "closed");
+        });
+      });
+
+      links.forEach(link => {
+        const linkPath = new URL(link.href).pathname;
+
+        if (linkPath === currentPath) {
+          link.classList.add("active");
+
+          const parentDetails = link.closest("details");
+          if (parentDetails) {
+            parentDetails.open = true;
+          }
+        }
+      });
+
+      if (collapseAllButton) {
+        collapseAllButton.addEventListener("click", function () {
+          details.forEach((detail, index) => {
+            detail.open = false;
+            localStorage.setItem("menu-" + index, "closed");
+          });
+        });
+      }
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll("pre").forEach(pre => {
+        const button = document.createElement("button");
+        button.className = "copy-btn";
+        button.innerText = "Copiar";
+
+        button.addEventListener("click", async () => {
+          const code = pre.querySelector("code");
+          const text = code ? code.innerText : pre.innerText;
+
+          try {
+            await navigator.clipboard.writeText(text);
+            button.innerText = "Copiado!";
+
+            setTimeout(() => {
+              button.innerText = "Copiar";
+            }, 2000);
+          } catch (err) {
+            button.innerText = "Erro";
+          }
+        });
+
+=======
 <!doctype html>
 <html lang="pt-BR">
 <head>
@@ -280,14 +648,36 @@ LC_CTYPE=en_US.UTF-8
           try {
             await navigator.clipboard.writeText(pre.querySelector('code')?.innerText || pre.innerText);
             button.textContent = 'Copiado ✓';
-          } catch (_) {
-            button.textContent = 'Selecione e copie';
-          }
+          } catch (_) { button.textContent = 'Selecione e copie'; }
           setTimeout(() => button.textContent = 'Copiar', 1800);
         });
+>>>>>>> 2c2622c (Atualização do Ninja Linux)
         pre.appendChild(button);
       });
     });
   </script>
+<<<<<<< HEAD
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const searchInput = document.getElementById("sidebarSearchInput");
+
+      if (!searchInput) {
+        return;
+      }
+
+      searchInput.addEventListener("keyup", function () {
+        const filter = this.value.toLowerCase();
+        const links = document.querySelectorAll(".sidebar a");
+
+        links.forEach(link => {
+          const text = link.textContent.toLowerCase();
+          link.style.display = text.includes(filter) ? "block" : "none";
+        });
+      });
+    });
+  </script>
+=======
+>>>>>>> 2c2622c (Atualização do Ninja Linux)
 </body>
 </html>
