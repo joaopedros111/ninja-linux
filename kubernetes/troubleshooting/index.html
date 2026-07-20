@@ -1,3 +1,1174 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Troubleshooting Kubernetes | Ninja Linux</title>
+
+  <link rel="stylesheet" href="/ninja-linux/assets/css/style.css">
+  <link rel="icon" type="image/png" href="/ninja-linux/images/favicon.png">
+</head>
+
+<body>
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h2>🏍️ Ninja Linux</h2>
+      <p class="sidebar-subtitle">Linux • Kubernetes • DevOps</p>
+
+      <input
+        type="text"
+        id="sidebarSearchInput"
+        class="search-input"
+        placeholder="Buscar...">
+    </div>
+
+    <nav class="sidebar-menu" aria-label="Menu principal">
+      <a href="/ninja-linux/">🏠 Início</a>
+
+      <button
+        type="button"
+        id="collapseAllMenus"
+        class="sidebar-action"
+        aria-label="Recolher todas as seções"
+        title="Recolher todas as seções">
+        <span aria-hidden="true">▸</span>
+      </button>
+
+      <details>
+        <summary>🐧 Linux</summary>
+        <ul>
+          <li><a href="/ninja-linux/linux/">Página inicial</a></li>
+          <li><a href="/ninja-linux/linux/expandir-lvm.html">Expandir LVM</a></li>
+          <li><a href="/ninja-linux/linux/certificadossl.html">Certificado SSL - Harbor</a></li>
+          <li><a href="/ninja-linux/linux/atualizarSSLwiki.html">Certificado SSL - Wiki</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>⚙️ DevOps</summary>
+        <ul>
+          <li><a href="/ninja-linux/devops/">Página inicial</a></li>
+          <li><a href="/ninja-linux/devops/cicd.html">CI/CD</a></li>
+          <li><a href="/ninja-linux/devops/git.html">Git Básico</a></li>
+          <li><a href="/ninja-linux/devops/gitintermediario.html">Git Intermediário</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>☸️ Kubernetes</summary>
+        <ul>
+          <li><a href="/ninja-linux/kubernetes/">Página inicial</a></li>
+          <li><a href="/ninja-linux/kubernetes/kubeconfig.html">Kubeconfig</a></li>
+          <li><a href="/ninja-linux/kubernetes/kubectl.html">Kubectl</a></li>
+          <li><a href="/ninja-linux/kubernetes/instalacao-cluster-rocky-containerd-calico.html">Instalação do Cluster</a></li>
+          <li><a href="/ninja-linux/kubernetes/pods.html">Pods</a></li>
+          <li><a href="/ninja-linux/kubernetes/deployments.html">Deployments</a></li>
+          <li><a href="/ninja-linux/kubernetes/services.html">Services</a></li>
+          <li><a href="/ninja-linux/kubernetes/ingress.html">Ingress</a></li>
+          <li><a href="/ninja-linux/kubernetes/troubleshooting.html">Troubleshooting</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🐳 Docker</summary>
+        <ul>
+          <li><a href="/ninja-linux/docker/">Página inicial</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🌿 Git</summary>
+        <ul>
+          <li><a href="/ninja-linux/git/">Página inicial</a></li>
+          <li><a href="/ninja-linux/devops/git.html">Git Básico</a></li>
+          <li><a href="/ninja-linux/devops/gitintermediario.html">Git Intermediário</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🌐 Redes</summary>
+        <ul>
+          <li><a href="/ninja-linux/redes/">Página inicial</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🦑 Squid</summary>
+        <ul>
+          <li><a href="/ninja-linux/squid/">Página inicial</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>📊 Monitoramento</summary>
+        <ul>
+          <li><a href="/ninja-linux/monitoramento/">Página inicial</a></li>
+          <li><a href="/ninja-linux/monitoramento/instalacao-zabbix-server.html">Zabbix Server</a></li>
+          <li><a href="/ninja-linux/monitoramento/grafana.html">Grafana</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🥜 Nutanix</summary>
+        <ul>
+          <li><a href="/ninja-linux/nutanix/">Página inicial</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>VMware</summary>
+        <ul>
+          <li><a href="/ninja-linux/vmware/">Página inicial</a></li>
+          <li><a href="/ninja-linux/vmware/instalacao-esxi-7-dell-r830-idrac.html">Instalação do ESXi 7.0.3</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🔥 WatchGuard</summary>
+        <ul>
+          <li><a href="/ninja-linux/watchguard/">Página inicial</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🪟 Windows</summary>
+        <ul>
+          <li><a href="/ninja-linux/windows/">Página inicial</a></li>
+          <li><a href="/ninja-linux/windows/instalacao-aplicativos-exe.html">Instalação de Apps (.exe)</a></li>
+          <li><a href="/ninja-linux/windows/instalacao-via-temp.html">Instalação via C:\Temp</a></li>
+          <li><a href="/ninja-linux/windows/activedirectory.html">Active Directory</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🛠️ Troubleshooting</summary>
+        <ul>
+          <li><a href="/ninja-linux/troubleshooting/">Página inicial</a></li>
+          <li><a href="/ninja-linux/troubleshooting/troubleshootingwiki.html">Wiki indisponível</a></li>
+          <li><a href="/ninja-linux/troubleshooting/troubleshootingcitsmart.html">CITSmart indisponível</a></li>
+          <li><a href="/ninja-linux/troubleshooting/troubleshooting_utf8_wildfly.html">UTF-8 no WildFly</a></li>
+        </ul>
+      </details>
+    </nav>
+  </aside>
+
+  <main>
+    <h1 id="️-troubleshooting-kubernetes">☸️ Troubleshooting Kubernetes</h1>
+
+<p>Troubleshooting no Kubernetes é o processo de investigar falhas em aplicações, Pods, Services, Ingress, DNS, permissões, recursos e comunicação dentro do cluster.</p>
+
+<p>O objetivo é descobrir onde o problema está acontecendo:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Usuário
+   |
+   v
+Ingress / LoadBalancer
+   |
+   v
+Service
+   |
+   v
+Pod
+   |
+   v
+Container / Aplicação
+</code></pre></div></div>
+
+<p>Em problemas reais, é importante seguir uma ordem lógica para não perder tempo investigando o lugar errado.</p>
+
+<hr />
+
+<h2 id="fluxo-rápido-de-diagnóstico">Fluxo rápido de diagnóstico</h2>
+
+<p>Use este fluxo como primeira análise:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 1. Validar contexto atual</span>
+kubectl config current-context
+
+<span class="c"># 2. Ver namespaces</span>
+kubectl get ns
+
+<span class="c"># 3. Ver recursos principais</span>
+kubectl get all <span class="nt">-n</span> default
+
+<span class="c"># 4. Ver Pods</span>
+kubectl get pods <span class="nt">-n</span> default
+
+<span class="c"># 5. Ver detalhes do Pod com problema</span>
+kubectl describe pod NOME_DO_POD <span class="nt">-n</span> default
+
+<span class="c"># 6. Ver logs</span>
+kubectl logs NOME_DO_POD <span class="nt">-n</span> default
+
+<span class="c"># 7. Ver eventos</span>
+kubectl get events <span class="nt">-n</span> default <span class="nt">--sort-by</span><span class="o">=</span>.metadata.creationTimestamp
+</code></pre></div></div>
+
+<p>Se a aplicação for exposta externamente, continue:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get svc <span class="nt">-n</span> default
+kubectl get ep <span class="nt">-n</span> default
+kubectl get ingress <span class="nt">-n</span> default
+kubectl describe ingress NOME_DO_INGRESS <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="comandos-essenciais">Comandos essenciais</h2>
+
+<h3 id="ver-contexto-atual">Ver contexto atual</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl config current-context
+</code></pre></div></div>
+
+<h3 id="ver-informações-do-cluster">Ver informações do cluster</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl cluster-info
+</code></pre></div></div>
+
+<h3 id="ver-nodes">Ver Nodes</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get nodes
+kubectl get nodes <span class="nt">-o</span> wide
+</code></pre></div></div>
+
+<h3 id="ver-recursos-de-um-namespace">Ver recursos de um namespace</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get all <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<h3 id="ver-eventos-ordenados">Ver eventos ordenados</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get events <span class="nt">-n</span> default <span class="nt">--sort-by</span><span class="o">=</span>.metadata.creationTimestamp
+</code></pre></div></div>
+
+<h3 id="ver-pods-com-labels">Ver Pods com labels</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods <span class="nt">-n</span> default <span class="nt">--show-labels</span>
+</code></pre></div></div>
+
+<h3 id="ver-yaml-de-um-recurso">Ver YAML de um recurso</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get deployment minha-app <span class="nt">-n</span> default <span class="nt">-o</span> yaml
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="pod-em-pending">Pod em Pending</h2>
+
+<p>O status <code class="language-plaintext highlighter-rouge">Pending</code> indica que o Pod foi criado, mas ainda não conseguiu iniciar.</p>
+
+<p>Verifique:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl describe pod NOME_DO_POD <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li>falta de CPU ou memória no cluster</li>
+  <li>Node indisponível</li>
+  <li><code class="language-plaintext highlighter-rouge">nodeSelector</code> incorreto</li>
+  <li>taint no Node sem toleration no Pod</li>
+  <li>PersistentVolumeClaim sem volume disponível</li>
+  <li>imagem ainda sendo baixada</li>
+  <li>problema de agendamento</li>
+</ul>
+
+<p>Comandos úteis:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get nodes
+kubectl describe node NOME_DO_NODE
+kubectl get pvc <span class="nt">-n</span> default
+kubectl describe pvc NOME_DO_PVC <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<p>Procure mensagens como:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Insufficient cpu
+Insufficient memory
+pod has unbound immediate PersistentVolumeClaims
+node(s) had taint
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="imagepullbackoff">ImagePullBackOff</h2>
+
+<p>O status <code class="language-plaintext highlighter-rouge">ImagePullBackOff</code> indica que o Kubernetes não conseguiu baixar a imagem do container.</p>
+
+<p>Verifique:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl describe pod NOME_DO_POD <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<p>Veja a seção <code class="language-plaintext highlighter-rouge">Events</code>.</p>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li>nome da imagem incorreto</li>
+  <li>tag inexistente</li>
+  <li>registry privado sem Secret</li>
+  <li>Secret de pull incorreto</li>
+  <li>problema de rede</li>
+  <li>proxy ou firewall bloqueando acesso ao registry</li>
+  <li>autenticação expirada</li>
+</ul>
+
+<p>Exemplo:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Failed to pull image
+pull access denied
+repository does not exist
+unauthorized
+</code></pre></div></div>
+
+<p>Verifique o nome da imagem no Deployment:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get deployment minha-app <span class="nt">-n</span> default <span class="nt">-o</span> yaml
+</code></pre></div></div>
+
+<p>Verifique Secrets:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get secret <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="errimagepull">ErrImagePull</h2>
+
+<p>O <code class="language-plaintext highlighter-rouge">ErrImagePull</code> geralmente aparece antes do <code class="language-plaintext highlighter-rouge">ImagePullBackOff</code>.</p>
+
+<p>Verifique:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl describe pod NOME_DO_POD <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li>erro temporário ao baixar imagem</li>
+  <li>tag errada</li>
+  <li>registry indisponível</li>
+  <li>autenticação inválida</li>
+</ul>
+
+<p>Se o problema continuar, o status pode evoluir para <code class="language-plaintext highlighter-rouge">ImagePullBackOff</code>.</p>
+
+<hr />
+
+<h2 id="crashloopbackoff">CrashLoopBackOff</h2>
+
+<p>O status <code class="language-plaintext highlighter-rouge">CrashLoopBackOff</code> indica que o container inicia, falha e o Kubernetes tenta reiniciar repetidamente.</p>
+
+<p>Verifique logs:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl logs NOME_DO_POD <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<p>Se o container reiniciou, veja os logs da execução anterior:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl logs NOME_DO_POD <span class="nt">-n</span> default <span class="nt">--previous</span>
+</code></pre></div></div>
+
+<p>Verifique detalhes:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl describe pod NOME_DO_POD <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li>erro na aplicação</li>
+  <li>variável de ambiente ausente</li>
+  <li>Secret ou ConfigMap ausente</li>
+  <li>comando de inicialização incorreto</li>
+  <li>aplicação não consegue conectar ao banco</li>
+  <li>porta incorreta</li>
+  <li>falta de permissão em arquivo ou volume</li>
+  <li>livenessProbe derrubando o container</li>
+</ul>
+
+<p>Procure por:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Exit Code
+Reason
+Last State
+Restart Count
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="pod-em-running-mas-aplicação-não-responde">Pod em Running, mas aplicação não responde</h2>
+
+<p>Um Pod pode estar <code class="language-plaintext highlighter-rouge">Running</code> e mesmo assim a aplicação não estar funcionando.</p>
+
+<p>Verifique logs:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl logs NOME_DO_POD <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<p>Acesse o container:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl <span class="nb">exec</span> <span class="nt">-it</span> NOME_DO_POD <span class="nt">-n</span> default <span class="nt">--</span> /bin/sh
+</code></pre></div></div>
+
+<p>Teste localmente dentro do Pod:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl localhost:8080
+</code></pre></div></div>
+
+<p>Verifique portas:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl describe pod NOME_DO_POD <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li>aplicação escutando em outra porta</li>
+  <li>aplicação escutando apenas em <code class="language-plaintext highlighter-rouge">127.0.0.1</code></li>
+  <li>readinessProbe falhando</li>
+  <li>configuração incorreta</li>
+  <li>dependência externa indisponível</li>
+  <li>erro de DNS interno</li>
+</ul>
+
+<hr />
+
+<h2 id="readinessprobe-falhando">ReadinessProbe falhando</h2>
+
+<p>Quando a <code class="language-plaintext highlighter-rouge">readinessProbe</code> falha, o Pod pode ficar rodando, mas não recebe tráfego pelo Service.</p>
+
+<p>Verifique:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl describe pod NOME_DO_POD <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li>path HTTP incorreto</li>
+  <li>porta incorreta</li>
+  <li>aplicação demora mais para iniciar</li>
+  <li>endpoint de health check retorna erro</li>
+  <li>timeout muito baixo</li>
+  <li>dependência externa indisponível</li>
+</ul>
+
+<p>Exemplo:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">readinessProbe</span><span class="pi">:</span>
+  <span class="na">httpGet</span><span class="pi">:</span>
+    <span class="na">path</span><span class="pi">:</span> <span class="s">/health</span>
+    <span class="na">port</span><span class="pi">:</span> <span class="m">8080</span>
+  <span class="na">initialDelaySeconds</span><span class="pi">:</span> <span class="m">10</span>
+  <span class="na">periodSeconds</span><span class="pi">:</span> <span class="m">10</span>
+</code></pre></div></div>
+
+<p>Teste dentro do Pod:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl localhost:8080/health
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="livenessprobe-derrubando-o-container">LivenessProbe derrubando o container</h2>
+
+<p>Quando a <code class="language-plaintext highlighter-rouge">livenessProbe</code> falha, o Kubernetes reinicia o container.</p>
+
+<p>Verifique:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl describe pod NOME_DO_POD <span class="nt">-n</span> default
+kubectl logs NOME_DO_POD <span class="nt">-n</span> default <span class="nt">--previous</span>
+</code></pre></div></div>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li>probe configurada com path errado</li>
+  <li>tempo inicial muito curto</li>
+  <li>aplicação demora para subir</li>
+  <li>endpoint de health check instável</li>
+  <li>timeout muito agressivo</li>
+</ul>
+
+<p>Em aplicações que demoram para iniciar, ajuste:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">initialDelaySeconds</span><span class="pi">:</span> <span class="m">30</span>
+<span class="na">timeoutSeconds</span><span class="pi">:</span> <span class="m">5</span>
+<span class="na">failureThreshold</span><span class="pi">:</span> <span class="m">3</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="deployment-não-cria-pods">Deployment não cria Pods</h2>
+
+<p>Verifique o Deployment:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get deployment <span class="nt">-n</span> default
+kubectl describe deployment NOME_DO_DEPLOYMENT <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<p>Verifique ReplicaSet:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get rs <span class="nt">-n</span> default
+kubectl describe rs NOME_DO_REPLICASET <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">replicas: 0</code></li>
+  <li>selector incorreto</li>
+  <li>erro no template do Pod</li>
+  <li>falta de recursos</li>
+  <li>namespace errado</li>
+  <li>política de quota bloqueando criação</li>
+</ul>
+
+<p>Verifique quotas:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get resourcequota <span class="nt">-n</span> default
+kubectl describe resourcequota <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="rollout-travado">Rollout travado</h2>
+
+<p>Verifique o status:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl rollout status deployment/NOME_DO_DEPLOYMENT <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<p>Ver histórico:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl rollout <span class="nb">history </span>deployment/NOME_DO_DEPLOYMENT <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li>nova imagem com erro</li>
+  <li>Pods novos não passam na readinessProbe</li>
+  <li>falta de recursos</li>
+  <li><code class="language-plaintext highlighter-rouge">maxUnavailable</code> e <code class="language-plaintext highlighter-rouge">maxSurge</code> inadequados</li>
+  <li>aplicação nova quebra na inicialização</li>
+</ul>
+
+<p>Se precisar voltar:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl rollout undo deployment/NOME_DO_DEPLOYMENT <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="service-sem-endpoints">Service sem Endpoints</h2>
+
+<p>Quando um Service não possui Endpoints, ele não encontrou Pods para receber tráfego.</p>
+
+<p>Verifique:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get svc <span class="nt">-n</span> default
+kubectl get ep <span class="nt">-n</span> default
+kubectl describe svc NOME_DO_SERVICE <span class="nt">-n</span> default
+kubectl get pods <span class="nt">-n</span> default <span class="nt">--show-labels</span>
+</code></pre></div></div>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li>selector do Service não bate com labels dos Pods</li>
+  <li>Pods estão em outro namespace</li>
+  <li>Pods não estão prontos</li>
+  <li>Deployment não criou Pods</li>
+  <li>labels foram alterados</li>
+</ul>
+
+<p>Exemplo:</p>
+
+<p>Service:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">selector</span><span class="pi">:</span>
+  <span class="na">app</span><span class="pi">:</span> <span class="s">nginx</span>
+</code></pre></div></div>
+
+<p>Pod:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">labels</span><span class="pi">:</span>
+  <span class="na">app</span><span class="pi">:</span> <span class="s">nginx-app</span>
+</code></pre></div></div>
+
+<p>Nesse caso, o Service não encontra o Pod.</p>
+
+<hr />
+
+<h2 id="service-responde-na-porta-errada">Service responde na porta errada</h2>
+
+<p>Verifique Service e Deployment:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl describe svc NOME_DO_SERVICE <span class="nt">-n</span> default
+kubectl describe pod NOME_DO_POD <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">targetPort</code> incorreto</li>
+  <li>aplicação escutando em outra porta</li>
+  <li>porta nomeada incorretamente</li>
+  <li>container não expõe a porta esperada</li>
+</ul>
+
+<p>Exemplo correto:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">ports</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">port</span><span class="pi">:</span> <span class="m">80</span>
+    <span class="na">targetPort</span><span class="pi">:</span> <span class="m">8080</span>
+</code></pre></div></div>
+
+<p>Nesse caso:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Service porta 80 --&gt; Container porta 8080
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="ingress-retorna-404">Ingress retorna 404</h2>
+
+<p>Erro 404 geralmente indica que o Ingress Controller recebeu a requisição, mas nenhuma regra bateu.</p>
+
+<p>Verifique:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get ingress <span class="nt">-n</span> default
+kubectl describe ingress NOME_DO_INGRESS <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li>domínio acessado diferente do <code class="language-plaintext highlighter-rouge">host</code> configurado</li>
+  <li>path incorreto</li>
+  <li><code class="language-plaintext highlighter-rouge">ingressClassName</code> errado</li>
+  <li>teste com IP sem header <code class="language-plaintext highlighter-rouge">Host</code></li>
+  <li>regra criada em namespace errado</li>
+</ul>
+
+<p>Teste com header:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-H</span> <span class="s2">"Host: app.exemplo.com.br"</span> http://IP_DO_INGRESS
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="ingress-retorna-502-ou-503">Ingress retorna 502 ou 503</h2>
+
+<p>Erro 502 ou 503 geralmente indica problema entre Ingress, Service e Pods.</p>
+
+<p>Verifique:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get ingress <span class="nt">-n</span> default
+kubectl describe ingress NOME_DO_INGRESS <span class="nt">-n</span> default
+kubectl get svc <span class="nt">-n</span> default
+kubectl get ep <span class="nt">-n</span> default
+kubectl get pods <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li>Service sem Endpoints</li>
+  <li>Pods não estão prontos</li>
+  <li>porta do backend incorreta</li>
+  <li>Service errado no Ingress</li>
+  <li>aplicação não responde</li>
+  <li>readinessProbe falhando</li>
+</ul>
+
+<hr />
+
+<h2 id="dns-interno-não-resolve">DNS interno não resolve</h2>
+
+<p>Problemas de DNS interno afetam comunicação entre aplicações no cluster.</p>
+
+<p>Verifique CoreDNS:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods <span class="nt">-n</span> kube-system
+</code></pre></div></div>
+
+<p>Teste DNS com um Pod temporário:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl run teste-dns <span class="nt">--image</span><span class="o">=</span>busybox:1.36 <span class="nt">-it</span> <span class="nt">--rm</span> <span class="nt">--</span> nslookup kubernetes.default
+</code></pre></div></div>
+
+<p>Teste um Service:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl run teste-dns <span class="nt">--image</span><span class="o">=</span>busybox:1.36 <span class="nt">-it</span> <span class="nt">--rm</span> <span class="nt">--</span> nslookup nginx-service.default.svc.cluster.local
+</code></pre></div></div>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li>CoreDNS indisponível</li>
+  <li>Service não existe</li>
+  <li>namespace errado</li>
+  <li>NetworkPolicy bloqueando tráfego</li>
+  <li>problema no plugin de rede do cluster</li>
+</ul>
+
+<hr />
+
+<h2 id="dns-externo-não-resolve">DNS externo não resolve</h2>
+
+<p>Se o problema for acesso externo por domínio:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nslookup app.exemplo.com.br
+</code></pre></div></div>
+
+<p>Ou:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dig app.exemplo.com.br
+</code></pre></div></div>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li>registro DNS não criado</li>
+  <li>DNS apontando para IP errado</li>
+  <li>propagação DNS pendente</li>
+  <li>entrada incorreta no arquivo hosts</li>
+  <li>domínio diferente do host configurado no Ingress</li>
+</ul>
+
+<hr />
+
+<h2 id="falha-de-comunicação-entre-pods">Falha de comunicação entre Pods</h2>
+
+<p>Teste origem e destino.</p>
+
+<p>Entre no Pod de origem:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl <span class="nb">exec</span> <span class="nt">-it</span> POD_ORIGEM <span class="nt">-n</span> default <span class="nt">--</span> /bin/sh
+</code></pre></div></div>
+
+<p>Teste o Service:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl http://NOME_DO_SERVICE:PORTA
+</code></pre></div></div>
+
+<p>Verifique:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get svc <span class="nt">-n</span> default
+kubectl get ep <span class="nt">-n</span> default
+kubectl get networkpolicy <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li>Service sem Endpoints</li>
+  <li>NetworkPolicy bloqueando tráfego</li>
+  <li>aplicação escutando na porta errada</li>
+  <li>DNS interno com problema</li>
+  <li>namespace errado</li>
+  <li>firewall ou CNI com falha</li>
+</ul>
+
+<hr />
+
+<h2 id="node-notready">Node NotReady</h2>
+
+<p>Quando um Node fica <code class="language-plaintext highlighter-rouge">NotReady</code>, os Pods nele podem ser afetados.</p>
+
+<p>Verifique:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get nodes
+kubectl describe node NOME_DO_NODE
+</code></pre></div></div>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li>kubelet parado</li>
+  <li>falta de CPU, memória ou disco</li>
+  <li>problema de rede</li>
+  <li>runtime de container com falha</li>
+  <li>Node sem comunicação com o control plane</li>
+  <li>pressão de disco ou memória</li>
+</ul>
+
+<p>Procure por:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MemoryPressure
+DiskPressure
+PIDPressure
+Ready
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="evicted-pods">Evicted Pods</h2>
+
+<p>Pods com status <code class="language-plaintext highlighter-rouge">Evicted</code> foram removidos do Node, normalmente por falta de recursos.</p>
+
+<p>Verifique:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl describe pod NOME_DO_POD <span class="nt">-n</span> default
+kubectl describe node NOME_DO_NODE
+</code></pre></div></div>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li>falta de memória</li>
+  <li>falta de disco</li>
+  <li>excesso de logs</li>
+  <li>ausência de requests e limits</li>
+  <li>Node sob pressão</li>
+</ul>
+
+<p>Boas ações:</p>
+
+<ul>
+  <li>configurar requests e limits</li>
+  <li>limpar imagens antigas no Node</li>
+  <li>revisar uso de logs</li>
+  <li>aumentar recursos do cluster</li>
+  <li>distribuir melhor as cargas</li>
+</ul>
+
+<hr />
+
+<h2 id="oomkilled">OOMKilled</h2>
+
+<p><code class="language-plaintext highlighter-rouge">OOMKilled</code> indica que o container foi encerrado por exceder memória.</p>
+
+<p>Verifique:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl describe pod NOME_DO_POD <span class="nt">-n</span> default
+kubectl logs NOME_DO_POD <span class="nt">-n</span> default <span class="nt">--previous</span>
+</code></pre></div></div>
+
+<p>Procure por:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Reason: OOMKilled
+Exit Code: 137
+</code></pre></div></div>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li>limite de memória muito baixo</li>
+  <li>vazamento de memória na aplicação</li>
+  <li>pico de carga</li>
+  <li>falta de configuração adequada de recursos</li>
+</ul>
+
+<p>Exemplo de resources:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">resources</span><span class="pi">:</span>
+  <span class="na">requests</span><span class="pi">:</span>
+    <span class="na">memory</span><span class="pi">:</span> <span class="s2">"</span><span class="s">256Mi"</span>
+    <span class="na">cpu</span><span class="pi">:</span> <span class="s2">"</span><span class="s">100m"</span>
+  <span class="na">limits</span><span class="pi">:</span>
+    <span class="na">memory</span><span class="pi">:</span> <span class="s2">"</span><span class="s">512Mi"</span>
+    <span class="na">cpu</span><span class="pi">:</span> <span class="s2">"</span><span class="s">500m"</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="forbidden-ou-erro-de-permissão">Forbidden ou erro de permissão</h2>
+
+<p>Erros de permissão geralmente estão relacionados a RBAC.</p>
+
+<p>Exemplo:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Error from server (Forbidden)
+</code></pre></div></div>
+
+<p>Verifique se o usuário ou ServiceAccount pode executar a ação:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl auth can-i get pods <span class="nt">-n</span> default
+kubectl auth can-i create deployment <span class="nt">-n</span> default
+kubectl auth can-i list secrets <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<p>Verifique ServiceAccount:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get serviceaccount <span class="nt">-n</span> default
+kubectl get role,rolebinding <span class="nt">-n</span> default
+kubectl get clusterrole,clusterrolebinding
+</code></pre></div></div>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li>Role sem permissão necessária</li>
+  <li>RoleBinding ausente</li>
+  <li>ServiceAccount errada no Pod</li>
+  <li>usuário autenticado no contexto errado</li>
+  <li>namespace errado</li>
+</ul>
+
+<hr />
+
+<h2 id="configmap-ou-secret-ausente">ConfigMap ou Secret ausente</h2>
+
+<p>Quando ConfigMap ou Secret não existe, o Pod pode falhar ao iniciar.</p>
+
+<p>Verifique:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl describe pod NOME_DO_POD <span class="nt">-n</span> default
+kubectl get configmap <span class="nt">-n</span> default
+kubectl get secret <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li>nome incorreto no manifesto</li>
+  <li>recurso criado em outro namespace</li>
+  <li>Secret não foi aplicado</li>
+  <li>chave específica não existe dentro do Secret ou ConfigMap</li>
+</ul>
+
+<p>Exemplo:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">envFrom</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">secretRef</span><span class="pi">:</span>
+      <span class="na">name</span><span class="pi">:</span> <span class="s">app-secret</span>
+</code></pre></div></div>
+
+<p>O Secret precisa existir:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get secret app-secret <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="pvc-pending">PVC Pending</h2>
+
+<p>Um PVC em <code class="language-plaintext highlighter-rouge">Pending</code> indica que o volume solicitado ainda não foi vinculado.</p>
+
+<p>Verifique:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pvc <span class="nt">-n</span> default
+kubectl describe pvc NOME_DO_PVC <span class="nt">-n</span> default
+kubectl get storageclass
+</code></pre></div></div>
+
+<p>Causas comuns:</p>
+
+<ul>
+  <li>StorageClass inexistente</li>
+  <li>provisionador de storage com erro</li>
+  <li>volume disponível não atende ao tamanho solicitado</li>
+  <li>acesso solicitado incompatível</li>
+  <li>ambiente local sem provisionador</li>
+</ul>
+
+<hr />
+
+<h2 id="namespace-errado">Namespace errado</h2>
+
+<p>Muitos problemas são apenas recursos criados no namespace errado.</p>
+
+<p>Verifique:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods <span class="nt">--all-namespaces</span>
+kubectl get svc <span class="nt">--all-namespaces</span>
+kubectl get ingress <span class="nt">--all-namespaces</span>
+</code></pre></div></div>
+
+<p>Use sempre <code class="language-plaintext highlighter-rouge">-n</code> nos comandos:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods <span class="nt">-n</span> homologacao
+</code></pre></div></div>
+
+<p>Ou defina namespace no contexto:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl config set-context <span class="nt">--current</span> <span class="nt">--namespace</span><span class="o">=</span>homologacao
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="checklist-geral">Checklist geral</h2>
+
+<p>Antes de aprofundar a investigação, confira:</p>
+
+<ul>
+  <li>O contexto do <code class="language-plaintext highlighter-rouge">kubectl</code> está correto?</li>
+  <li>O namespace está correto?</li>
+  <li>O Deployment existe?</li>
+  <li>O Deployment criou ReplicaSet?</li>
+  <li>O ReplicaSet criou Pods?</li>
+  <li>Os Pods estão <code class="language-plaintext highlighter-rouge">Running</code> e <code class="language-plaintext highlighter-rouge">Ready</code>?</li>
+  <li>Os logs indicam erro da aplicação?</li>
+  <li>O Service existe?</li>
+  <li>O Service possui Endpoints?</li>
+  <li>O <code class="language-plaintext highlighter-rouge">targetPort</code> está correto?</li>
+  <li>O Ingress aponta para o Service correto?</li>
+  <li>O DNS aponta para o IP correto?</li>
+  <li>O Ingress Controller está rodando?</li>
+  <li>Existem eventos recentes indicando falha?</li>
+  <li>Há falta de CPU, memória ou disco?</li>
+  <li>Existe NetworkPolicy bloqueando comunicação?</li>
+  <li>O usuário possui permissão RBAC?</li>
+</ul>
+
+<hr />
+
+<h2 id="sequência-recomendada-por-sintoma">Sequência recomendada por sintoma</h2>
+
+<h3 id="aplicação-não-abre-pelo-navegador">Aplicação não abre pelo navegador</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get ingress <span class="nt">-n</span> default
+kubectl describe ingress NOME_DO_INGRESS <span class="nt">-n</span> default
+kubectl get svc <span class="nt">-n</span> default
+kubectl get ep <span class="nt">-n</span> default
+kubectl get pods <span class="nt">-n</span> default
+kubectl logs NOME_DO_POD <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<h3 id="pod-não-sobe">Pod não sobe</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods <span class="nt">-n</span> default
+kubectl describe pod NOME_DO_POD <span class="nt">-n</span> default
+kubectl logs NOME_DO_POD <span class="nt">-n</span> default
+kubectl get events <span class="nt">-n</span> default <span class="nt">--sort-by</span><span class="o">=</span>.metadata.creationTimestamp
+</code></pre></div></div>
+
+<h3 id="service-não-responde">Service não responde</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl describe svc NOME_DO_SERVICE <span class="nt">-n</span> default
+kubectl get ep NOME_DO_SERVICE <span class="nt">-n</span> default
+kubectl get pods <span class="nt">-n</span> default <span class="nt">--show-labels</span>
+kubectl describe pod NOME_DO_POD <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<h3 id="deployment-travado">Deployment travado</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl rollout status deployment/NOME_DO_DEPLOYMENT <span class="nt">-n</span> default
+kubectl describe deployment NOME_DO_DEPLOYMENT <span class="nt">-n</span> default
+kubectl get rs <span class="nt">-n</span> default
+kubectl get pods <span class="nt">-n</span> default
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="boas-práticas-para-facilitar-troubleshooting">Boas práticas para facilitar troubleshooting</h2>
+
+<ul>
+  <li>Use labels padronizados.</li>
+  <li>Defina <code class="language-plaintext highlighter-rouge">requests</code> e <code class="language-plaintext highlighter-rouge">limits</code>.</li>
+  <li>Configure readinessProbe e livenessProbe com cuidado.</li>
+  <li>Evite usar imagem com tag <code class="language-plaintext highlighter-rouge">latest</code> em produção.</li>
+  <li>Documente portas, namespaces, domínios e Services.</li>
+  <li>Use logs claros na aplicação.</li>
+  <li>Separe ambientes por namespace.</li>
+  <li>Monitore eventos do cluster.</li>
+  <li>Mantenha o Ingress Controller documentado.</li>
+  <li>Use nomes descritivos para Deployments, Services e Ingress.</li>
+  <li>Crie dashboards e alertas para CPU, memória, disco e reinícios.</li>
+</ul>
+
+<hr />
+
+<h2 id="resumo">Resumo</h2>
+
+<p>Em Kubernetes, a investigação deve seguir o caminho do tráfego e da criação dos recursos.</p>
+
+<p>Para problemas de aplicação:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ingress --&gt; Service --&gt; Endpoints --&gt; Pods --&gt; Logs
+</code></pre></div></div>
+
+<p>Para problemas de criação:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Deployment --&gt; ReplicaSet --&gt; Pod --&gt; Events
+</code></pre></div></div>
+
+<p>Para problemas de infraestrutura:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Node --&gt; Recursos --&gt; CNI/DNS --&gt; Storage --&gt; RBAC
+</code></pre></div></div>
+
+<blockquote>
+  <p>Regra prática: se um recurso parece correto, valide o próximo recurso da cadeia. Na maioria dos casos, o erro aparece nos eventos, nos logs ou na ausência de Endpoints.</p>
+</blockquote>
+
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const details = document.querySelectorAll("details");
+      const links = document.querySelectorAll(".sidebar a");
+      const collapseAllButton = document.getElementById("collapseAllMenus");
+      const currentPath = window.location.pathname;
+
+      details.forEach((detail, index) => {
+        const savedState = localStorage.getItem("menu-" + index);
+
+        if (savedState === "open") {
+          detail.open = true;
+        }
+
+        detail.addEventListener("toggle", function () {
+          localStorage.setItem("menu-" + index, detail.open ? "open" : "closed");
+        });
+      });
+
+      links.forEach(link => {
+        const linkPath = new URL(link.href).pathname;
+
+        if (linkPath === currentPath) {
+          link.classList.add("active");
+
+          const parentDetails = link.closest("details");
+          if (parentDetails) {
+            parentDetails.open = true;
+          }
+        }
+      });
+
+      if (collapseAllButton) {
+        collapseAllButton.addEventListener("click", function () {
+          details.forEach((detail, index) => {
+            detail.open = false;
+            localStorage.setItem("menu-" + index, "closed");
+          });
+        });
+      }
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll("pre").forEach(pre => {
+        const button = document.createElement("button");
+        button.className = "copy-btn";
+        button.innerText = "Copiar";
+
+        button.addEventListener("click", async () => {
+          const code = pre.querySelector("code");
+          const text = code ? code.innerText : pre.innerText;
+
+          try {
+            await navigator.clipboard.writeText(text);
+            button.innerText = "Copiado!";
+
+            setTimeout(() => {
+              button.innerText = "Copiar";
+            }, 2000);
+          } catch (err) {
+            button.innerText = "Erro";
+          }
+        });
+
+=======
 <!doctype html>
 <html lang="pt-BR">
 <head>
@@ -1083,14 +2254,36 @@ kubectl get pods <span class="nt">-n</span> default
           try {
             await navigator.clipboard.writeText(pre.querySelector('code')?.innerText || pre.innerText);
             button.textContent = 'Copiado ✓';
-          } catch (_) {
-            button.textContent = 'Selecione e copie';
-          }
+          } catch (_) { button.textContent = 'Selecione e copie'; }
           setTimeout(() => button.textContent = 'Copiar', 1800);
         });
+>>>>>>> 2c2622c (Atualização do Ninja Linux)
         pre.appendChild(button);
       });
     });
   </script>
+<<<<<<< HEAD
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const searchInput = document.getElementById("sidebarSearchInput");
+
+      if (!searchInput) {
+        return;
+      }
+
+      searchInput.addEventListener("keyup", function () {
+        const filter = this.value.toLowerCase();
+        const links = document.querySelectorAll(".sidebar a");
+
+        links.forEach(link => {
+          const text = link.textContent.toLowerCase();
+          link.style.display = text.includes(filter) ? "block" : "none";
+        });
+      });
+    });
+  </script>
+=======
+>>>>>>> 2c2622c (Atualização do Ninja Linux)
 </body>
 </html>

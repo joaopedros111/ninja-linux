@@ -1,3 +1,446 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Git Básico para Administradores Linux | Ninja Linux</title>
+
+  <link rel="stylesheet" href="/ninja-linux/assets/css/style.css">
+  <link rel="icon" type="image/png" href="/ninja-linux/images/favicon.png">
+</head>
+
+<body>
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h2>🏍️ Ninja Linux</h2>
+      <p class="sidebar-subtitle">Linux • Kubernetes • DevOps</p>
+
+      <input
+        type="text"
+        id="sidebarSearchInput"
+        class="search-input"
+        placeholder="Buscar...">
+    </div>
+
+    <nav class="sidebar-menu" aria-label="Menu principal">
+      <a href="/ninja-linux/">🏠 Início</a>
+
+      <button
+        type="button"
+        id="collapseAllMenus"
+        class="sidebar-action"
+        aria-label="Recolher todas as seções"
+        title="Recolher todas as seções">
+        <span aria-hidden="true">▸</span>
+      </button>
+
+      <details>
+        <summary>🐧 Linux</summary>
+        <ul>
+          <li><a href="/ninja-linux/linux/">Página inicial</a></li>
+          <li><a href="/ninja-linux/linux/expandir-lvm.html">Expandir LVM</a></li>
+          <li><a href="/ninja-linux/linux/certificadossl.html">Certificado SSL - Harbor</a></li>
+          <li><a href="/ninja-linux/linux/atualizarSSLwiki.html">Certificado SSL - Wiki</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>⚙️ DevOps</summary>
+        <ul>
+          <li><a href="/ninja-linux/devops/">Página inicial</a></li>
+          <li><a href="/ninja-linux/devops/cicd.html">CI/CD</a></li>
+          <li><a href="/ninja-linux/devops/git.html">Git Básico</a></li>
+          <li><a href="/ninja-linux/devops/gitintermediario.html">Git Intermediário</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>☸️ Kubernetes</summary>
+        <ul>
+          <li><a href="/ninja-linux/kubernetes/">Página inicial</a></li>
+          <li><a href="/ninja-linux/kubernetes/kubeconfig.html">Kubeconfig</a></li>
+          <li><a href="/ninja-linux/kubernetes/kubectl.html">Kubectl</a></li>
+          <li><a href="/ninja-linux/kubernetes/instalacao-cluster-rocky-containerd-calico.html">Instalação do Cluster</a></li>
+          <li><a href="/ninja-linux/kubernetes/pods.html">Pods</a></li>
+          <li><a href="/ninja-linux/kubernetes/deployments.html">Deployments</a></li>
+          <li><a href="/ninja-linux/kubernetes/services.html">Services</a></li>
+          <li><a href="/ninja-linux/kubernetes/ingress.html">Ingress</a></li>
+          <li><a href="/ninja-linux/kubernetes/troubleshooting.html">Troubleshooting</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🐳 Docker</summary>
+        <ul>
+          <li><a href="/ninja-linux/docker/">Página inicial</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🌿 Git</summary>
+        <ul>
+          <li><a href="/ninja-linux/git/">Página inicial</a></li>
+          <li><a href="/ninja-linux/devops/git.html">Git Básico</a></li>
+          <li><a href="/ninja-linux/devops/gitintermediario.html">Git Intermediário</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🌐 Redes</summary>
+        <ul>
+          <li><a href="/ninja-linux/redes/">Página inicial</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🦑 Squid</summary>
+        <ul>
+          <li><a href="/ninja-linux/squid/">Página inicial</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>📊 Monitoramento</summary>
+        <ul>
+          <li><a href="/ninja-linux/monitoramento/">Página inicial</a></li>
+          <li><a href="/ninja-linux/monitoramento/instalacao-zabbix-server.html">Zabbix Server</a></li>
+          <li><a href="/ninja-linux/monitoramento/grafana.html">Grafana</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🥜 Nutanix</summary>
+        <ul>
+          <li><a href="/ninja-linux/nutanix/">Página inicial</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>VMware</summary>
+        <ul>
+          <li><a href="/ninja-linux/vmware/">Página inicial</a></li>
+          <li><a href="/ninja-linux/vmware/instalacao-esxi-7-dell-r830-idrac.html">Instalação do ESXi 7.0.3</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🔥 WatchGuard</summary>
+        <ul>
+          <li><a href="/ninja-linux/watchguard/">Página inicial</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🪟 Windows</summary>
+        <ul>
+          <li><a href="/ninja-linux/windows/">Página inicial</a></li>
+          <li><a href="/ninja-linux/windows/instalacao-aplicativos-exe.html">Instalação de Apps (.exe)</a></li>
+          <li><a href="/ninja-linux/windows/instalacao-via-temp.html">Instalação via C:\Temp</a></li>
+          <li><a href="/ninja-linux/windows/activedirectory.html">Active Directory</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🛠️ Troubleshooting</summary>
+        <ul>
+          <li><a href="/ninja-linux/troubleshooting/">Página inicial</a></li>
+          <li><a href="/ninja-linux/troubleshooting/troubleshootingwiki.html">Wiki indisponível</a></li>
+          <li><a href="/ninja-linux/troubleshooting/troubleshootingcitsmart.html">CITSmart indisponível</a></li>
+          <li><a href="/ninja-linux/troubleshooting/troubleshooting_utf8_wildfly.html">UTF-8 no WildFly</a></li>
+        </ul>
+      </details>
+    </nav>
+  </aside>
+
+  <main>
+    <h1 id="-git-básico-para-administradores-linux">🐙 Git Básico para Administradores Linux</h1>
+
+<h2 id="o-que-é-git">O que é Git?</h2>
+
+<p>Git é um sistema de controle de versão que permite registrar alterações em arquivos, manter histórico de mudanças e colaborar em projetos.</p>
+
+<hr />
+
+<h2 id="verificar-se-o-git-está-instalado">Verificar se o Git está instalado</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git <span class="nt">--version</span>
+</code></pre></div></div>
+
+<p>Exemplo:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git version 2.43.5
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="configuração-inicial">Configuração inicial</h2>
+
+<p>Defina seu nome e e-mail:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--global</span> user.name <span class="s2">"João Santos"</span>
+git config <span class="nt">--global</span> user.email <span class="s2">"joao@email.com"</span>
+</code></pre></div></div>
+
+<p>Verificar configuração:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--list</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="clonar-um-repositório">Clonar um repositório</h2>
+
+<p>Baixar um projeto existente:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/usuario/repositorio.git
+</code></pre></div></div>
+
+<p>Exemplo:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/joaopedros111/linux-docs.git
+</code></pre></div></div>
+
+<p>Entrar no diretório:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>linux-docs
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="verificar-status">Verificar status</h2>
+
+<p>Mostrar arquivos modificados:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git status
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="adicionar-arquivos">Adicionar arquivos</h2>
+
+<p>Adicionar um arquivo específico:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add arquivo.md
+</code></pre></div></div>
+
+<p>Adicionar todos os arquivos:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add <span class="nb">.</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="criar-um-commit">Criar um commit</h2>
+
+<p>Salvar alterações localmente:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit <span class="nt">-m</span> <span class="s2">"Adicionado tutorial de Git"</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="enviar-alterações-para-o-github">Enviar alterações para o GitHub</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push origin main
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="atualizar-repositório-local">Atualizar repositório local</h2>
+
+<p>Baixar alterações do GitHub:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git pull origin main
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="ver-histórico">Ver histórico</h2>
+
+<p>Mostrar commits realizados:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git log
+</code></pre></div></div>
+
+<p>Versão resumida:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git log <span class="nt">--oneline</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="ver-diferenças">Ver diferenças</h2>
+
+<p>Mostrar alterações antes do commit:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git diff
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="remover-arquivo-do-git">Remover arquivo do Git</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git <span class="nb">rm </span>arquivo.md
+git commit <span class="nt">-m</span> <span class="s2">"Removido arquivo antigo"</span>
+git push origin main
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="fluxo-básico-do-dia-a-dia">Fluxo básico do dia a dia</h2>
+
+<p>Verificar alterações:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git status
+</code></pre></div></div>
+
+<p>Adicionar arquivos:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add <span class="nb">.</span>
+</code></pre></div></div>
+
+<p>Criar commit:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit <span class="nt">-m</span> <span class="s2">"Descrição da alteração"</span>
+</code></pre></div></div>
+
+<p>Enviar para o GitHub:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push origin main
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="comandos-mais-utilizados">Comandos mais utilizados</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Comando</th>
+      <th>Função</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>git status</td>
+      <td>Verificar alterações</td>
+    </tr>
+    <tr>
+      <td>git add .</td>
+      <td>Adicionar arquivos</td>
+    </tr>
+    <tr>
+      <td>git commit -m</td>
+      <td>Criar commit</td>
+    </tr>
+    <tr>
+      <td>git push</td>
+      <td>Enviar para GitHub</td>
+    </tr>
+    <tr>
+      <td>git pull</td>
+      <td>Atualizar repositório</td>
+    </tr>
+    <tr>
+      <td>git log</td>
+      <td>Ver histórico</td>
+    </tr>
+    <tr>
+      <td>git diff</td>
+      <td>Ver diferenças</td>
+    </tr>
+    <tr>
+      <td>git clone</td>
+      <td>Clonar repositório</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="exemplo-prático">Exemplo prático</h2>
+
+<p>Após criar um novo tutorial:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git status
+git add <span class="nb">.</span>
+git commit <span class="nt">-m</span> <span class="s2">"Adicionado tutorial LVM"</span>
+git push origin main
+</code></pre></div></div>
+
+<p>O conteúdo será enviado para o GitHub e atualizado no site após a publicação.</p>
+
+
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const details = document.querySelectorAll("details");
+      const links = document.querySelectorAll(".sidebar a");
+      const collapseAllButton = document.getElementById("collapseAllMenus");
+      const currentPath = window.location.pathname;
+
+      details.forEach((detail, index) => {
+        const savedState = localStorage.getItem("menu-" + index);
+
+        if (savedState === "open") {
+          detail.open = true;
+        }
+
+        detail.addEventListener("toggle", function () {
+          localStorage.setItem("menu-" + index, detail.open ? "open" : "closed");
+        });
+      });
+
+      links.forEach(link => {
+        const linkPath = new URL(link.href).pathname;
+
+        if (linkPath === currentPath) {
+          link.classList.add("active");
+
+          const parentDetails = link.closest("details");
+          if (parentDetails) {
+            parentDetails.open = true;
+          }
+        }
+      });
+
+      if (collapseAllButton) {
+        collapseAllButton.addEventListener("click", function () {
+          details.forEach((detail, index) => {
+            detail.open = false;
+            localStorage.setItem("menu-" + index, "closed");
+          });
+        });
+      }
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll("pre").forEach(pre => {
+        const button = document.createElement("button");
+        button.className = "copy-btn";
+        button.innerText = "Copiar";
+
+        button.addEventListener("click", async () => {
+          const code = pre.querySelector("code");
+          const text = code ? code.innerText : pre.innerText;
+
+          try {
+            await navigator.clipboard.writeText(text);
+            button.innerText = "Copiado!";
+
+            setTimeout(() => {
+              button.innerText = "Copiar";
+            }, 2000);
+          } catch (err) {
+            button.innerText = "Erro";
+          }
+        });
+
+=======
 <!doctype html>
 <html lang="pt-BR">
 <head>
@@ -355,14 +798,36 @@ git push origin main
           try {
             await navigator.clipboard.writeText(pre.querySelector('code')?.innerText || pre.innerText);
             button.textContent = 'Copiado ✓';
-          } catch (_) {
-            button.textContent = 'Selecione e copie';
-          }
+          } catch (_) { button.textContent = 'Selecione e copie'; }
           setTimeout(() => button.textContent = 'Copiar', 1800);
         });
+>>>>>>> 2c2622c (Atualização do Ninja Linux)
         pre.appendChild(button);
       });
     });
   </script>
+<<<<<<< HEAD
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const searchInput = document.getElementById("sidebarSearchInput");
+
+      if (!searchInput) {
+        return;
+      }
+
+      searchInput.addEventListener("keyup", function () {
+        const filter = this.value.toLowerCase();
+        const links = document.querySelectorAll(".sidebar a");
+
+        links.forEach(link => {
+          const text = link.textContent.toLowerCase();
+          link.style.display = text.includes(filter) ? "block" : "none";
+        });
+      });
+    });
+  </script>
+=======
+>>>>>>> 2c2622c (Atualização do Ninja Linux)
 </body>
 </html>
