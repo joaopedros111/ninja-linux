@@ -122,13 +122,9 @@ Seu objetivo é centralizar conhecimento e facilitar consultas rápidas no dia a
 
 <div style="display:flex; gap:10px; flex-wrap:wrap;">
 
-<a href="https://github.com/joaopedros111" target="_blank"
-style="background:#7CCB5E;color:#111;padding:8px 14px;border-radius:8px;text-decoration:none;font-weight:bold;">
-GitHub</a>
+<a class="primary-action" href="https://github.com/joaopedros111" target="_blank" rel="noopener">GitHub</a>
 
-<a href="https://www.linkedin.com/in/jo%C3%A3o-santos-67a17685/" target="_blank"
-style="background:#0A66C2;color:white;padding:8px 14px;border-radius:8px;text-decoration:none;font-weight:bold;">
-LinkedIn</a>
+<a class="secondary-action" href="https://www.linkedin.com/in/jo%C3%A3o-santos-67a17685/" target="_blank" rel="noopener">LinkedIn</a>
 
 </div>
 
