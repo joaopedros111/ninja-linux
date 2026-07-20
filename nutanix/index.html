@@ -19,7 +19,7 @@
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
-  <button class="menu-toggle" id="menuToggle" aria-controls="sidebar" aria-expanded="false">☰ <span>Menu</span></button>
+  <button class="menu-toggle" id="menuToggle" aria-controls="sidebar" aria-expanded="false" aria-label="Abrir menu">☰ <span>Menu</span></button>
   <div class="backdrop" id="backdrop" hidden></div>
 
   <aside class="sidebar" id="sidebar">
@@ -160,6 +160,7 @@
         const open = !body.classList.contains('menu-open');
         body.classList.toggle('menu-open', open);
         toggle.setAttribute('aria-expanded', String(open));
+        toggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
         backdrop.hidden = !open;
       });
       backdrop.addEventListener('click', closeMenu);
