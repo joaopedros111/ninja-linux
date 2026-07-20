@@ -9,12 +9,33 @@
     --borda: #333;
 }
 
+html,
+body {
+  min-height: 100%;
+}
+
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
-  background: var(--bg-principal);
+  background: radial-gradient(circle at top right, rgba(124, 203, 94, 0.14), transparent 30%), var(--bg-principal);
   color: var(--texto);
   line-height: 1.6;
+}
+
+.page-shell {
+  min-height: 100vh;
+  margin-left: 290px;
+  background: transparent;
+}
+
+main {
+  margin-left: 0;
+  padding: 30px;
+  max-width: 1000px;
+  background: rgba(24, 24, 24, 0.95);
+  border-radius: 28px;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(124, 203, 94, 0.12);
 }
 
 .sidebar {
@@ -88,6 +109,9 @@ main {
   margin-left: 290px;
   padding: 30px;
   max-width: 1000px;
+  background: rgba(24, 24, 24, 0.96);
+  border-radius: 18px;
+  box-shadow: 0 20px 56px rgba(0, 0, 0, 0.25);
 }
 
 .home-hero {
@@ -338,6 +362,26 @@ blockquote {
     background: #202020;
     color: var(--texto-claro);
     border-radius: 0 8px 8px 0;
+}
+
+.site-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 24px clamp(24px, 5vw, 72px);
+    border-top: 1px solid #2a2a2a;
+    color: var(--texto);
+    background: rgba(16, 18, 16, 0.95);
+}
+
+.site-footer span {
+    min-width: 0;
+}
+
+.site-footer span:last-child {
+    flex: 1 1 auto;
+    text-align: right;
 }
 
 @media (max-width: 768px) {
