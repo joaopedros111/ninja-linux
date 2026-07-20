@@ -133,7 +133,7 @@ body {
 }
 
 main {
-  margin: 32px 40px 40px 280px;
+  margin: 32px 40px 40px 20px;
   padding: 32px;
   max-width: 1040px;
   background: rgba(16, 18, 16, 0.95);
