@@ -1,14 +1,14 @@
 ---
 layout: default
 title: Ninja Linux
-description: Documentação prática para Linux, infraestrutura, DevOps, Kubernetes, redes, monitoramento e suporte corporativo.
+description: Ninja Linux é a base de conhecimento prática para Linux, infraestrutura, DevOps, Kubernetes, redes, monitoramento e troubleshooting.
 ---
 
 <section class="home-hero">
   <div class="home-hero-content">
     <span class="home-kicker">Base de conhecimento</span>
     <h1>Ninja Linux</h1>
-    <p>Documentação prática para Linux, infraestrutura, DevOps, Kubernetes, redes, monitoramento e suporte corporativo.</p>
+    <p>Guias diretos e procedimentos úteis para administrar Linux, redes, containers, monitoramento e infraestrutura em produção.</p>
 
     <div class="home-actions">
       <a class="primary-action" href="#areas-documentadas">Explorar áreas</a>
@@ -19,114 +19,117 @@ description: Documentação prática para Linux, infraestrutura, DevOps, Kuberne
   <div class="home-hero-panel" aria-label="Resumo do conteúdo">
     <div>
       <strong>13</strong>
-      <span>áreas</span>
+      <span>áreas técnicas</span>
     </div>
     <div>
-      <strong>30+</strong>
-      <span>procedimentos</span>
+      <strong>50+</strong>
+      <span>procedimentos e guias</span>
     </div>
     <div>
-      <strong>24/7</strong>
-      <span>consulta rápida</span>
+      <strong>Rápido</strong>
+      <span>acesso direto</span>
     </div>
   </div>
 </section>
 
 ---
 
+<section class="home-section">
 ## Sobre
 
-O Ninja Linux é uma base de conhecimento voltada para Linux, infraestrutura, DevOps, Kubernetes, redes, monitoramento e tecnologias Open Source.
+O Ninja Linux centraliza conhecimento técnico prático em um único lugar. Aqui você encontra:
 
-O projeto reúne documentação técnica, procedimentos, troubleshooting, comandos e boas práticas utilizados em estudos, laboratórios e ambientes corporativos.
+- procedimentos objetivos,
+- comandos essenciais,
+- troubleshooting direto ao ponto,
+- boas práticas para ambientes Linux e infraestrutura.
 
-Seu objetivo é centralizar conhecimento e facilitar consultas rápidas no dia a dia da administração de sistemas.
+A ideia é facilitar consultas rápidas e entregar conteúdo claro para quem opera sistemas e redes.
+</section>
 
 ---
 
+<section class="home-section" id="areas-documentadas">
 ## Áreas documentadas
-<a id="areas-documentadas"></a>
 
 <div class="cards-container">
+  <a class="card" href="linux/">
+    <h3>🐧 Linux</h3>
+    <p>Administração, comandos, LVM e certificados.</p>
+  </a>
 
-<a class="card" href="linux/">
-<h3>🐧 Linux</h3>
-<p>Administração, comandos, LVM e certificados.</p>
-</a>
+  <a class="card" href="devops/">
+    <h3>⚙️ DevOps</h3>
+    <p>CI/CD, Git, automação e pipelines.</p>
+  </a>
 
-<a class="card" href="devops/">
-<h3>⚙️ DevOps</h3>
-<p>CI/CD, Git, automação e pipelines.</p>
-</a>
+  <a class="card" href="kubernetes/">
+    <h3>☸️ Kubernetes</h3>
+    <p>Kubectl, Pods, Deployments, Services e Ingress.</p>
+  </a>
 
-<a class="card" href="kubernetes/">
-<h3>☸️ Kubernetes</h3>
-<p>Kubectl, Pods, Deployments, Services e Ingress.</p>
-</a>
+  <a class="card" href="docker/">
+    <h3>🐳 Docker</h3>
+    <p>Containers, imagens, volumes e Compose.</p>
+  </a>
 
-<a class="card" href="docker/">
-<h3>🐳 Docker</h3>
-<p>Containers, imagens, volumes e Compose.</p>
-</a>
+  <a class="card" href="git/">
+    <h3>🌿 Git</h3>
+    <p>Versionamento, branches, commits e GitHub.</p>
+  </a>
 
-<a class="card" href="git/">
-<h3>🌿 Git</h3>
-<p>Versionamento, branches, commits e GitHub.</p>
-</a>
+  <a class="card" href="redes/">
+    <h3>🌐 Redes</h3>
+    <p>DNS, TCP/IP, proxy e conectividade.</p>
+  </a>
 
-<a class="card" href="redes/">
-<h3>🌐 Redes</h3>
-<p>DNS, TCP/IP, proxy e conectividade.</p>
-</a>
+  <a class="card" href="monitoramento/">
+    <h3>📊 Monitoramento</h3>
+    <p>Zabbix, Grafana, métricas e alertas.</p>
+  </a>
 
-<a class="card" href="monitoramento/">
-<h3>📊 Monitoramento</h3>
-<p>Zabbix, Grafana, métricas e alertas.</p>
-</a>
+  <a class="card" href="squid/">
+    <h3>🦑 Squid</h3>
+    <p>Proxy, ACLs, autenticação e logs.</p>
+  </a>
 
-<a class="card" href="squid/">
-<h3>🦑 Squid</h3>
-<p>Proxy, ACLs, autenticação e logs.</p>
-</a>
+  <a class="card" href="watchguard/">
+    <h3>🔥 WatchGuard</h3>
+    <p>Firewall, políticas, VPN e troubleshooting.</p>
+  </a>
 
-<a class="card" href="watchguard/">
-<h3>🔥 WatchGuard</h3>
-<p>Firewall, políticas, VPN e troubleshooting.</p>
-</a>
+  <a class="card" href="nutanix/">
+    <h3>🥜 Nutanix</h3>
+    <p>Virtualização, Prism e infraestrutura.</p>
+  </a>
 
-<a class="card" href="nutanix/">
-<h3>🥜 Nutanix</h3>
-<p>Virtualização, Prism e infraestrutura.</p>
-</a>
+  <a class="card" href="vmware/">
+    <h3>VMware</h3>
+    <p>ESXi, iDRAC, RAID e hosts físicos.</p>
+  </a>
 
-<a class="card" href="vmware/">
-<h3>VMware</h3>
-<p>ESXi, iDRAC, RAID e hosts físicos.</p>
-</a>
+  <a class="card" href="windows/">
+    <h3>🪟 Windows</h3>
+    <p>Estações, ferramentas e administração.</p>
+  </a>
 
-<a class="card" href="windows/">
-<h3>🪟 Windows</h3>
-<p>Estações, ferramentas e administração.</p>
-</a>
-
-<a class="card" href="troubleshooting/">
-<h3>🛠️ Troubleshooting</h3>
-<p>Erros, diagnósticos e soluções práticas.</p>
-</a>
-
+  <a class="card" href="troubleshooting/">
+    <h3>🛠️ Troubleshooting</h3>
+    <p>Erros, diagnósticos e soluções práticas.</p>
+  </a>
 </div>
+</section>
 
 ---
 
+<section class="home-section">
 ## Contato
 
-<div style="display:flex; gap:10px; flex-wrap:wrap;">
-
-<a class="primary-action" href="https://github.com/joaopedros111" target="_blank" rel="noopener">GitHub</a>
-
-<a class="secondary-action" href="https://www.linkedin.com/in/jo%C3%A3o-santos-67a17685/" target="_blank" rel="noopener">LinkedIn</a>
-
+<div class="home-actions">
+  <a class="primary-action" href="https://github.com/joaopedros111" target="_blank" rel="noopener">GitHub</a>
+  <a class="secondary-action" href="https://www.linkedin.com/in/jo%C3%A3o-santos-67a17685/" target="_blank" rel="noopener">LinkedIn</a>
 </div>
+</section>
 
 ---
 
