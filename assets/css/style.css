@@ -133,12 +133,12 @@ body {
 }
 
 main {
-  margin: 32px 40px 40px 20px;
-  padding: 32px;
+  margin: 24px 32px 32px 20px;
+  padding: 24px;
   max-width: 1040px;
   background: rgba(16, 18, 16, 0.95);
-  border-radius: 28px;
-  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.25);
   border: 1px solid rgba(124, 203, 94, 0.08);
 }
 
