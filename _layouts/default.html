@@ -34,7 +34,6 @@
     </div>
 
     <nav class="sidebar-menu" aria-label="Navegação principal">
-      <a href="{{ '/' | relative_url }}">⌂ Início</a>
       {% assign sections = "linux:🐧 Linux,devops:⚙ DevOps,kubernetes:☸ Kubernetes,docker:🐳 Docker,git:⑂ Git,redes:◎ Redes,squid:◉ Squid,monitoramento:▥ Monitoramento,nutanix:◇ Nutanix,vmware:▣ VMware,watchguard:◈ WatchGuard,windows:⊞ Windows,troubleshooting:◆ Troubleshooting" | split: "," %}
       {% for item in sections %}
         {% assign parts = item | split: ":" %}
