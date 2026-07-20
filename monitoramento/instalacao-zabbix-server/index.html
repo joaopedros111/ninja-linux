@@ -310,6 +310,14 @@ systemctl status php-fpm
         });
       });
 
+      document.querySelectorAll('.sidebar-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+          if (body.classList.contains('menu-open')) {
+            closeMenu();
+          }
+        });
+      });
+
       document.querySelectorAll('pre').forEach(pre => {
         const button = document.createElement('button');
         button.className = 'copy-btn';
